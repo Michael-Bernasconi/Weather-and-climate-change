@@ -1,30 +1,57 @@
 \section{Purpose Definition}
+The iTelos methodology proposes a systematic approach designed to simplify and reduce the effort required to build Knowledge Graphs (KGs), focusing on the specific purpose indicated by the end user. This section provides a detailed overview of the first phase of the methodology.
 
 \subsection{Purpose Formalization}
-The Purpose formalization sub-section has to report the process activities included in the current phase of the iTelos methodology, as well as the results achieved. The description of the activities below are required:
-        \begin{itemize}
-            \item \textbf{Scenarios definition}: a set of usage scenarios, describing the multiple aspects considered by the project purpose.
-            \item \textbf{Personas}: a set of real users acting  within the scenarios defined above. Each Persona is defined over a specific features included in the main Purpose.  
-            \item \textbf{Competency Questions (CQs)}: the list of CQs created considering the personas in the scenarios defined.
-        \end{itemize}
+In this phase, the informal purpose is structured and formalized to guide the development of the Knowledge Graph. Purpose formalization includes the specification of the Domain of Interest, the identification of the main concepts (Concept Identification), the definition of usage scenarios and personas, the formulation of the Competency Questions (CQs) that the Knowledge Graph must be able to answer, and the definition of the conceptual model (ER Model Definition). This step ensures that the design of the KG is aligned with user requirements and provides a clear and consistent framework for the subsequent modeling and implementation phases.
+\subsubsection{Informal Purpose}
+The purpose of this project is to build a Knowledge Graph (KG) that models the meteorological facilities in the territory and, consequently, the climate and potential climate change in Trentino. The KG will organize information in a structured and accessible way, allowing it to answer precise user queries, such as identifying the locations of weather stations, analyzing temperature and rainfall over recent years, pinpointing areas with the highest temperature increases, and detecting signs of climate change based on historical data.
 
-\noindent The above steps aim at catching the diversity expressed by the project purpose, by defining clearly the different aspects, about the involved scenarios and actors. To this end, while describing the above activities the author has to report those scenarios, personas and questions, who better describe all the several and diverse aspects of the project purpose.\\
-
-\noindent In the remaining two activities, the author has to specify the informal labels for entity types (etypes), object properties and data properties which can be defined from the CQs and how they satisfy the project purpose. Therefore, the two activities are - 
-        
-        \begin{itemize}
-            \item the informal labels representing the etypes and their properties, to be considered in the KGE project, classified using the popularity categories.
-            \item  \textbf{ER model definition}: the etypes and property identified in the step above, are used to design the purpose ER model. this is the last step of the purpose formalization process.
-        \end{itemize}
+\subsubsection{Domain of Interest}
+The Domain of Interest (DoI) for this project is the Trentino region in 2025, with a particular focus on meteorological phenomena and climate change. The Trentino region exhibits a wide variety of microclimates and weather conditions, ranging from high alpine areas to valleys and lakes, making it an ideal natural laboratory for climate study. The project’s geographic scope covers the entire region, including weather stations, climate sensors, and historical data, enabling a comprehensive analysis of climate patterns.\\
+Key features of the domain include:
+\begin{itemize}
+    \item \textit{Meteorological Monitoring}: Data on temperature, precipitation, humidity, wind, and other variables measured by weather stations distributed throughout the territory.
+    \item \textit{Climate Change Monitoring}: Analysis of historical trends and detection of climate variation signals, such as increases in average temperature, changes in precipitation patterns, and local climatic anomalies.
+\end{itemize}
 
 
-\noindent The report of the work done during the above activities also includes the description of the  different choices made, with their strong and weak points. In other words the report should provide to the reader, a clear description of the reasoning conducted by all the different team members.
+\subsubsection{Scenario}
+This section presents several usage scenarios, describing the different aspects considered by the project’s purpose.
+\begin{itemize}
+    \item \textbf{Maria} and her boyfriend, two local researchers, are analyzing precipitation trends in Trentino over the past ten years. They want to identify areas where rainfall has significantly increased or decreased to understand potential impacts on agricultural and forested areas. They use the Knowledge Graph to retrieve historical data from multiple weather stations and compare time series.
+    \item \textbf{Giulia}, a climatology student, wants to study the microclimates present in the different valleys of Trentino. She needs access to temperature, humidity, and wind data collected by sensors across the territory to analyze climate variations between alpine and lake areas.
+    \item \textbf{Alessandro}, responsible for civil protection, is monitoring climatic anomalies in real time. He aims to quickly identify areas with unusual temperatures or precipitation to plan preventive interventions against landslides or hydrogeological risks.
+    \item \textbf{Francesca} and her group of students want to study the impact of climate change on the seasons in Trentino. They need to compare historical data with current measurements to understand the evolution of climatic phenomena, such as delayed snowfall or increased heatwaves.
+    \item \textbf{Marco}, a weather enthusiast, uses the Knowledge Graph to explore long-term trends in temperature and precipitation, identify areas with the highest temperature increases, and better understand the signals of climate change in the Trentino region.
+\end{itemize}
+
+\subsubsection{Personas}
+This section defines a set of real users acting within the previously described scenarios.
+\begin{itemize}
+    \item \textbf{Maria}, 35 years old, a local researcher passionate about meteorology. She is interested in analyzing precipitation trends and the impact of climate change on the territory.
+    \item \textbf{Giulia}, 23 years old, a climatology student. She enjoys studying microclimates and climate variations between alpine and lake areas.
+    \item \textbf{Alessandro}, 40 years old, responsible for civil protection. He monitors climatic anomalies in real time to prevent landslides and hydrogeological risks.
+    \item \textbf{Francesca}, 22 years old, an Erasmus student. She is interested in comparing historical and current data to study the evolution of seasonal climate phenomena.
+    \item \textbf{Marco}, 28 years old, a weather enthusiast. He likes exploring long-term temperature and precipitation trends to better understand the signals of climate change in the Trentino region
+\end{itemize}
+
+
+
+\subsubsection{Competency Questions (CQs)}
+the list of CQs created considering the personas in the scenarios defined.
+\subsubsection{Concept Identification}
+\subsubsection{ER model definition}
+\subsubsection{Report}
+
+
+
+
+
 
 \subsection{Information Gathering}
 This sub-section aims at reporting the execution of the activities involved in Information Gathering. The report, starting from the current section, is organized along two main dimensions. The information gathering sub activities are:
 \begin{itemize}
     \item \textbf{KG/KnowDive Data Sources}: these activities aim at collecting the already available KG/KnowDive resources considered for the project. More in detail the resources here described, are "quality and formal" resources (compliant with the quality and reusability guidelines defined by iTleos) which need minimal processing or don't need to be processed or created. The resources described in this section are those that can be already considered to satisfy the project's purpose.
-    
     \begin{itemize}
         \item Knowledge layer:
         \begin{itemize}

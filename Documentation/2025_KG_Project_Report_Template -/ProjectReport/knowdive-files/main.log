@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.29)  29 OCT 2025 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.29)  29 OCT 2025 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -544,7 +544,7 @@ Package hyperref Info: Link coloring OFF on input line 54.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<knowDiveUNITN.png, id=48, 668.4975pt x 137.51375pt>
+<knowDiveUNITN.png, id=80, 668.4975pt x 137.51375pt>
 File: knowDiveUNITN.png Graphic file (type png)
 <use knowDiveUNITN.png>
 Package pdftex.def Info: knowDiveUNITN.png  used on input line 56.
@@ -594,7 +594,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
-<Knowdive_color_bar.png, id=50, 2260.445pt x 375.4025pt>
+<Knowdive_color_bar.png, id=82, 2260.445pt x 375.4025pt>
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
 Package pdftex.def Info: Knowdive_color_bar.png  used on input line 56.
@@ -634,10 +634,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-) (../section/1-purpose-doi.tex) (../section/4-purposeFormaliation.tex
+)
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 7.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 65.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -649,25 +649,11 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.7             \item \textbf
-                             {Personas}: a set of real users acting  within ... [1]
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
-
- []
-
+l.65 \newpage
+              [1] (../section/1-purpose-doi.tex)
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 40.
-(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
-
-Package fancyhdr Warning: \footskip is too small (30.0pt): 
-(fancyhdr)                Make it at least 48.59483pt, for example:
-(fancyhdr)                \setlength{\footskip}{48.59483pt}.
-
-[2]) (../section/6-languageDefinition.tex
-File: Knowdive_color_bar.png Graphic file (type png)
-<use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 11.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 67.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -675,10 +661,10 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[3]) (../section/7-knowledgeDefinition.tex
+[2] (../section/4-purposeFormaliation.tex
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 10.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 22.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -686,10 +672,10 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[4]) (../section/8-dataDefinition.tex
+[3]
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 3.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 53.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -697,10 +683,10 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[5]) (../section/9-evaluation.tex
+[4]
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 9.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 93.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -708,7 +694,73 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[6]) (../section/10-metadataDefinition.tex
+[5])
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 69.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[6] (../section/6-languageDefinition.tex)
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 71.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[7] (../section/7-knowledgeDefinition.tex
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 28.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[8])
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 73.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[9] (../section/8-dataDefinition.tex)
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 75.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[10] (../section/9-evaluation.tex)
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 77.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[11] (../section/10-metadataDefinition.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -723,7 +775,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-) (../section/11-openIssues.tex
+)
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 79.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[12] (../section/11-openIssues.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -733,19 +796,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
+)
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 15.
-(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
-
-Package fancyhdr Warning: \footskip is too small (30.0pt): 
-(fancyhdr)                Make it at least 48.59483pt, for example:
-(fancyhdr)                \setlength{\footskip}{48.59483pt}.
-
-[7])
-File: Knowdive_color_bar.png Graphic file (type png)
-<use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 76.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 84.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -753,7 +807,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[8] 
+[13] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -761,21 +815,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 543B37364BA2C3858A408922C9881C28;1440.
+(rerunfilecheck)             Checksum: D1599059715EAF2AA98634C69DDC3425;2629.
  ) 
 Here is how much of TeX's memory you used:
- 14896 strings out of 474222
- 235429 string characters out of 5748732
+ 14922 strings out of 474222
+ 235868 string characters out of 5748732
  1934975 words of memory out of 5000000
- 36862 multiletter control sequences out of 15000+600000
- 610251 words of font info for 64 fonts, out of 8000000 for 9000
+ 36874 multiletter control sequences out of 15000+600000
+ 614513 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,754b,824s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb>
-Output written on main.pdf (10 pages, 565043 bytes).
+ 75i,14n,79p,838b,731s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
+Output written on main.pdf (15 pages, 588326 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
- 99 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 
