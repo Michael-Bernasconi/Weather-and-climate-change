@@ -56,9 +56,9 @@
 
 \LoadClass[titlepage]{article}
 
-\usepackage{fontspec}
-\setsansfont{Arial}
-\setmainfont{Arial}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}   % font moderno compatibile pdflatex
 \large
 
 \RequirePackage{graphicx}
