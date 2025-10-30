@@ -6,14 +6,14 @@
 \contentsline {subsubsection}{\numberline {3.1.2}Domain of Interest}{3}{subsubsection.3.1.2}%
 \contentsline {subsubsection}{\numberline {3.1.3}Scenario}{3}{subsubsection.3.1.3}%
 \contentsline {subsubsection}{\numberline {3.1.4}Personas}{4}{subsubsection.3.1.4}%
-\contentsline {subsubsection}{\numberline {3.1.5}Competency Questions (CQs)}{4}{subsubsection.3.1.5}%
-\contentsline {subsubsection}{\numberline {3.1.6}Concept Identification}{5}{subsubsection.3.1.6}%
-\contentsline {subsubsection}{\numberline {3.1.7}ER model definition}{5}{subsubsection.3.1.7}%
-\contentsline {subsubsection}{\numberline {3.1.8}Report}{5}{subsubsection.3.1.8}%
-\contentsline {subsection}{\numberline {3.2}Information Gathering}{5}{subsection.3.2}%
-\contentsline {section}{\numberline {4}Language Definition}{7}{section.4}%
-\contentsline {section}{\numberline {5}Knowledge Definition}{8}{section.5}%
-\contentsline {section}{\numberline {6}Entity Definition}{10}{section.6}%
-\contentsline {section}{\numberline {7}Evaluation}{11}{section.7}%
-\contentsline {section}{\numberline {8}Metadata Definition}{12}{section.8}%
-\contentsline {section}{\numberline {9}Open Issues}{13}{section.9}%
+\contentsline {subsubsection}{\numberline {3.1.5}Competency Questions (CQs)}{5}{subsubsection.3.1.5}%
+\contentsline {subsubsection}{\numberline {3.1.6}Concept Identification}{6}{subsubsection.3.1.6}%
+\contentsline {subsubsection}{\numberline {3.1.7}ER model definition}{6}{subsubsection.3.1.7}%
+\contentsline {subsubsection}{\numberline {3.1.8}Report}{6}{subsubsection.3.1.8}%
+\contentsline {subsection}{\numberline {3.2}Information Gathering}{6}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Language Definition}{8}{section.4}%
+\contentsline {section}{\numberline {5}Knowledge Definition}{9}{section.5}%
+\contentsline {section}{\numberline {6}Entity Definition}{11}{section.6}%
+\contentsline {section}{\numberline {7}Evaluation}{12}{section.7}%
+\contentsline {section}{\numberline {8}Metadata Definition}{13}{section.8}%
+\contentsline {section}{\numberline {9}Open Issues}{14}{section.9}%
