@@ -67,6 +67,19 @@ Concept identification aims to identify which are the main entities and componen
     \label{fig:purpose_formalization_sheet}
 \end{figure}
 \subsubsection{ER model definition}
+The purpose of the Knowledge Graph is to provide users with comprehensive access to meteorological information over time.
+To achieve this, an Entity–Relationship (ER) model was designed according to the Competency Questions (CQs) defined in the previous section, ensuring that all user queries can be expressed and satisfied.
+The central entity of the model is \textit{WeatherReport}, which represents the set of meteorological observations collected over time.
+A specific focus is given to \textit{PrecipitationReport}, a component of the \textit{WeatherReport} entity that captures precipitation-related data relevant to several queries.
+Spatial aspects are represented through the \textit{WeatherStation} and \textit{Region} entities, which enable location-based analyses and support the spatial dimension of the CQs.
+Additional entities, such as \textit{ClimateTrend}, \textit{Season}, \textit{Anomaly}, and \textit{Microclimate}, enrich the model by representing temporal patterns, climatic variations, and exceptional phenomena, as required by the different user scenarios.
+Figure \ref{fig:ER_model} illustrates the overall structure of the ER model, which integrates temporal, spatial, and climatic perspectives.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{../knowdive-files/ER_model.png}
+    \caption{ER Model for Meteorological KG}
+    \label{fig:ER_model}
+\end{figure}
 \subsubsection{Report}
 
 
