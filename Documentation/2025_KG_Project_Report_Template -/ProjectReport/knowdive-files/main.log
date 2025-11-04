@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  4 NOV 2025 17:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  4 NOV 2025 17:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -552,7 +552,7 @@ Package hyperref Info: Link coloring OFF on input line 54.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<knowDiveUNITN.png, id=80, 668.4975pt x 137.51375pt>
+<knowDiveUNITN.png, id=88, 668.4975pt x 137.51375pt>
 File: knowDiveUNITN.png Graphic file (type png)
 <use knowDiveUNITN.png>
 Package pdftex.def Info: knowDiveUNITN.png  used on input line 56.
@@ -602,7 +602,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--56
 
  []
 
-<Knowdive_color_bar.png, id=82, 2260.445pt x 375.4025pt>
+<Knowdive_color_bar.png, id=90, 2260.445pt x 375.4025pt>
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
 Package pdftex.def Info: Knowdive_color_bar.png  used on input line 56.
@@ -727,12 +727,12 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [5]
-<../knowdive-files/purpose_formalization_sheet.png, id=150, 944.52875pt x 170.6375pt>
+<../knowdive-files/purpose_formalization_sheet.png, id=161, 944.52875pt x 170.6375pt>
 File: ../knowdive-files/purpose_formalization_sheet.png Graphic file (type png)
 <use ../knowdive-files/purpose_formalization_sheet.png>
 Package pdftex.def Info: ../knowdive-files/purpose_formalization_sheet.png  used on input line 65.
 (pdftex.def)             Requested size: 500.484pt x 90.4192pt.
-<../knowdive-files/ER_model.png, id=152, 1102.1175pt x 827.03981pt>
+<../knowdive-files/ER_model.png, id=163, 1102.1175pt x 827.03981pt>
 File: ../knowdive-files/ER_model.png Graphic file (type png)
 <use ../knowdive-files/ER_model.png>
 Package pdftex.def Info: ../knowdive-files/ER_model.png  used on input line 79.
@@ -885,21 +885,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D1599059715EAF2AA98634C69DDC3425;2629.
+(rerunfilecheck)             Checksum: 1F79A54A8200DBE3353285CF13AEACBA;2916.
  ) 
 Here is how much of TeX's memory you used:
- 15284 strings out of 473190
- 244590 string characters out of 5715799
+ 15288 strings out of 473190
+ 244670 string characters out of 5715799
  669666 words of memory out of 5000000
- 38220 multiletter control sequences out of 15000+600000
+ 38222 multiletter control sequences out of 15000+600000
  626082 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,993b,779s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,993b,789s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on main.pdf (17 pages, 729168 bytes).
+Output written on main.pdf (17 pages, 730244 bytes).
 PDF statistics:
- 258 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 38 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 
