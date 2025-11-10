@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  7 NOV 2025 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  10 NOV 2025 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -732,10 +732,10 @@ File: ../knowdive-files/purpose_formalization_sheet.png Graphic file (type png)
 <use ../knowdive-files/purpose_formalization_sheet.png>
 Package pdftex.def Info: ../knowdive-files/purpose_formalization_sheet.png  used on input line 65.
 (pdftex.def)             Requested size: 500.484pt x 90.4192pt.
-<../knowdive-files/er_model.png, id=163, 1174.3875pt x 827.03981pt>
-File: ../knowdive-files/er_model.png Graphic file (type png)
-<use ../knowdive-files/er_model.png>
-Package pdftex.def Info: ../knowdive-files/er_model.png  used on input line 79.
+<../../../../Phase 1 - Purpose Definition/er_model_modified.png, id=163, 1174.3875pt x 827.03981pt>
+File: ../../../../Phase 1 - Purpose Definition/er_model_modified.png Graphic file (type png)
+<use ../../../../Phase 1 - Purpose Definition/er_model_modified.png>
+Package pdftex.def Info: ../../../../Phase 1 - Purpose Definition/er_model_modified.png  used on input line 79.
 (pdftex.def)             Requested size: 500.484pt x 352.45267pt.
 
 
@@ -764,7 +764,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[7 <../knowdive-files/er_model.png>]
+[7 <../../../../Phase 1 - Purpose Definition/er_model_modified.png>]
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
@@ -900,14 +900,14 @@ Package rerunfilecheck Info: File `main.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  15289 strings out of 473190
- 244677 string characters out of 5715799
+ 244901 string characters out of 5715799
  669738 words of memory out of 5000000
  38222 multiletter control sequences out of 15000+600000
  626082 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,14n,82p,1216b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
-Output written on main.pdf (18 pages, 734936 bytes).
+Output written on main.pdf (18 pages, 733702 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  231 compressed objects within 3 object streams
