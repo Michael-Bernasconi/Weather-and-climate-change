@@ -113,22 +113,19 @@ The main data sources identified for this project are:
 \item \textbf{\href{https://dati.trentino.it/dataset/observations-site-list}{Open Data Trentino}}: provides a comprehensive list of meteorological stations in the Trentino region. The dataset includes information such as station location, altitude, and available measurements, which can be used to analyze local weather conditions over time. The data is freely accessible and can be integrated into applications for environmental monitoring and weather analysis.
 \item \textbf{\href{https://www.ilmeteo.it/portale/archivio-meteo/Trento}{ilMeteo.it}}:  gives access to historical weather data for Trento from 1973 to 2025. For each year, there are historical data for each day of months. The main attributes for the weather reports are:
     \begin{itemize}
-        \item Average temperature (float)
-        \item Minimum temperature (float)
-        \item Maximum temperature (float)
-        \item Precipitation (float)
-        \item Umidity rate (float)
-        \item Wind speed max (float)
-        \item Wind speed average (float)
-        \item Metereological phenomena (string)
+        \item \textbf{Mean, Maximum and Minimum temperature}: these data, like for ilMeteo.it source, are relevant for the majority of scenarios: in particular, for Scenario 2 as it helps to analyse microclimates, for Scenario 3 to track anomalies related to temperatures, Scenario 4 to track temperature changes and Scenario 5 for temperature long term trends. 
+        \item \textbf{Precipitation (float)}: this data is particularly relevant to Scenario 1, to Scenario 3 and Scenario 5, but can also be usefull for the others. 
+        \item \textbf{Umidity rate (float)}: this is usefull for the Scenario 2, for the Scenario 3, for the Scenario 4 and can also helps to analyze trends for Scenario 5.
+        \item \textbf{Max and average wind speed}: these are relevant for the Scenario 2 about microclimates and for Scenario 3.
+        \item \textbf{Metereological phenomena (string)}: it's useful for queries about analysis of weather phenomena in time and also to individuate anomalies.
     \end{itemize}
     All the attributes indicated above are usefull to answer the Competency Questions (CQs) defined in the previous section.
-    \item \textbf{\href{https://open-meteo.com/en/docs/historical-weather-api}{Historical Weather API}}: it is based on reanalysis dataset and use of weather station, aircraft, buoy, radar and satellite observations to create a record of past weather conditions. The data is available for any location worldwide. The datasets used are: ECMWF IFS, ERA5, ERA5-Land, ERA5-Ensemble, CERRA, ECMWF IFS Assimilation Long Window. There is a set of meteorological variables available, both in hourly and daily granularity. The main attributes usefull for our project are: 
+    \item \textbf{\href{https://open-meteo.com/en/docs/historical-weather-api}{Historical Weather API}}: it is based on reanalysis dataset and use of weather station, aircraft, buoy, radar and satellite observations to create a record of past weather conditions. The data is available for any location worldwide. The datasets used are: ECMWF IFS, ERA5, ERA5-Land, ERA5-Ensemble, CERRA, ECMWF IFS Assimilation Long Window. There is a set of meteorological variables available, both in hourly and daily granularity. Some of datas are very similiar to \textit{ilMeteo.it} source, but there are some slightly differences that can help to analyze different aspects. The main attributes usefull for our project are: 
     \begin{itemize}
-        \item \textbf{Weather Code}: is a numerical  identifier used to identify weather phenomena. In our case, it's useful for queries about analysis of weather phenomena in time and also to rilevate anomalies.
+        \item \textbf{Weather Code}: is a numerical  identifier used to identify weather phenomena. In our case, it's useful for queries about analysis of weather phenomena in time and also to individuate anomalies.
         \item \textbf{Mean, Maximum and Minimum temperature}: these data, like for ilMeteo.it source, are relevant for the majority of scenarios: in particular, for Scenario 2 as it helps to analyse microclimates, for Scenario 3 to track anomalies related to temperatures, Scenario 4 to track temperature changes and Scenario 5 for temperature long term trends. 
         \item \textbf{Precipitation, Rain and Snowfall sum and Precipitation Hours}: these datas are particularly relevant to Scenario 1, to Scenario 3 and Scenario 5, but can also be usefull for the others. 
-        \item \textbf{Wind Direction, Gusts and Speed}: these are relevant for the Scenario 2 about microclimates and for Scenario 3, the data about wind gusts can help to individuate anomalies.
+        \item \textbf{Wind Direction, Gusts and Speed}: these are relevant for the Scenario 2 about microclimates and for Scenario 3, such as the data about wind gusts can help to individuate anomalies.
         \item \textbf{Mean, Maximum and Minimum Humidity}: these are usefull for the Scenario 2, for the Scenario 3, for the Scenario 4 and can also helps to analyze trends for Scenario 5.
     \end{itemize}
 \end{itemize}
