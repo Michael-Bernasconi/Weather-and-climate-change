@@ -125,7 +125,8 @@ The main data sources identified for this project are:
     All the attributes indicated above are usefull to answer the Competency Questions (CQs) defined in the previous section.
     \item \textbf{\href{https://open-meteo.com/en/docs/historical-weather-api}{Historical Weather API}}: it is based on reanalysis dataset and use of weather station, aircraft, buoy, radar and satellite observations to create a record of past weather conditions. The data is available for any location worldwide. The datasets used are: ECMWF IFS, ERA5, ERA5-Land, ERA5-Ensemble, CERRA, ECMWF IFS Assimilation Long Window. There is a set of meteorological variables available, both in hourly and daily granularity. The main attributes usefull for our project are: 
     \begin{itemize}
-        \item Weather Code: is a numerical  identifier used to identify weather phenomena. In our case, it's useful for queries about analysis of weather phenomena in time and also to rilevate anomalies.
-        \item 
+        \item \textbf{Weather Code}: is a numerical  identifier used to identify weather phenomena. In our case, it's useful for queries about analysis of weather phenomena in time and also to rilevate anomalies.
+        \item \textbf{Mean, Maximum and Minimum temperature}: these data, like for ilMeteo.it source, are relevant for the majority of scenarios: in particular, for Scenario 2 as it helps to analyse microclimates, for Scenario 3 to track anomalies related to temperatures, Scenario 4 to track temperature changes and Scenario 5 for temperature long term trends. 
+        \item \textbf{Precipitation, Rain and Snowfall sum and Precipitation Hours}
     \end{itemize}
 \end{itemize}
