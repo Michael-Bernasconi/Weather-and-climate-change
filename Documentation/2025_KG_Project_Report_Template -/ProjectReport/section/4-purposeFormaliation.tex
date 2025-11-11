@@ -110,7 +110,17 @@ The main knowledge sources identified for this project are:
 \subsubsection{Data Sources}
 The main data sources identified for this project are:
 \begin{itemize}
-\item \textbf{\href{https://dati.trentino.it/dataset/observations-site-list}{Open Data Trentino}}: provides a comprehensive list of meteorological stations in the Trentino region. The dataset includes information such as station location, altitude, and available measurements, which can be used to analyze local weather conditions over time. The data is freely accessible and can be integrated into applications for environmental monitoring and weather analysis.
+\item \textbf{\href{https://dati.trentino.it/dataset/observations-site-list}{Open Data Trentino}}: provides a comprehensive list of meteorological stations in the Trentino region. The dataset includes information such as station location, altitude, and available measurements, which can be used to analyze local weather conditions over time. The data is freely accessible and can be integrated into applications for environmental monitoring and weather analysis. For each station, the information indicated are:
+\begin{itemize}
+    \item \textbf{Code}: an identifier for each weather station.
+    \item \textbf{Name}
+    \item \textbf{Shortname}
+    \item \textbf{Elevation}
+    \item \textbf{Latitude and Longitude}: identify the location of the weather station.
+    \item \textbf{Start and end date}: indicate from which date the weather station is working and, in some cases, the date in which it has stopped. 
+    \item 
+\end{itemize}
+The datas about weather stations are really important because can help to link information of weather data from the other sources to a precise location, which are aspects really relevant in Scenario 2 and 3. 
 \item \textbf{\href{https://www.ilmeteo.it/portale/archivio-meteo/Trento}{ilMeteo.it}}:  gives access to historical weather data for Trento from 1973 to 2025. For each year, there are historical data for each day of months. The main attributes for the weather reports are:
     \begin{itemize}
         \item \textbf{Mean, Maximum and Minimum temperature}: these data, like for ilMeteo.it source, are relevant for the majority of scenarios: in particular, for Scenario 2 as it helps to analyse microclimates, for Scenario 3 to track anomalies related to temperatures, Scenario 4 to track temperature changes and Scenario 5 for temperature long term trends. 
