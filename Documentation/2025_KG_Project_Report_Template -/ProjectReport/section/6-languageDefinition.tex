@@ -1,20 +1,31 @@
 \section{Language Definition}
+This section describes the Language Definition phase. The main objective of this phase is to ensure clarity, consistency, and interoperability by addressing the ambiguity and diversity of both natural and domain-specific languages. By fixing the vocabulary and formalizing the meaning of concepts, object properties, and data properties, this phase enables accurate data annotation, reduces misunderstandings, and supports system integration. The outputs produced in this phase are stored in the folder: Phase 2 - Information Gathering.
 
-This section is dedicated to the description of the Language Definition phase. Like in the previous section, it aims to describe the different sub activities performed by all the team members, as well as the phase outcomes produced. The language definition sub activities include:
-\begin{itemize}
-    \item The activities aim at fixing the language (concepts and words for etype, object property and data property) used to represent the information required to satisfy the project purpose. With this objective, the knowledge ad data resources are handled in this phase following the below activities:
-    \begin{itemize}
-        \item Knowledge layer:
-        \begin{itemize}
-            \item Fixing Language Terms: finalize the informal terms for - etype, object property and data property - considered in the purpose definition phase.
-            \item Language Teleontology alignment: Given the already provided Language Teleontology, align each language term to a parent lexical-semantic concept in the Language Teleontology. In case, there is no parent concept, enrich and align the Language Teleontology with your purpose-specific terms.
-        \end{itemize}
-        \item Data layer:
+\subsection{Concept Identification}
+During the language definition phase, the relevant concepts needed to represent the information defined in the Purpose Definition phase were identified. Each concept was assigned a unique identifier ID and an accompanying gloss to clarify its meaning. This approach ensures reusability and reduces ambiguity. Some examples of the defined concepts are reported in Table~\ref{tab:language_resources}.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        \textbf{ID} & \textbf{Custom Concept} & \textbf{Equivalent Concept - Knowledge Source} & \textbf{Gloss} \\
+        \hline
+        KG-25-1 & WeatherReport & WeatherReport - Home Weather Ontology & Daily meteorological report \\
+        KG-25-2 & Date & Date - Schema.org & A date value in ISO 8601 format \\
+        \hline
+    \end{tabular}
+    \caption{Examples of concepts defined during the Language Definition phase.}
+    \label{tab:language_resources}
+\end{table}
+Concepts were aligned with the Language Teleontology when available. When no appropriate parent concept existed, the Teleontology was enriched with project-specific concepts to maintain completeness and consistency with the project purpose. In some cases, when formal descriptions were not available in reference sources, custom definitions were created to ensure that all necessary concepts were properly represented.
+
+
+%DATA LAYER, DATASET CLEANING
+\subsection{data layer}
         \begin{itemize}
             \item Dataset filtering/cleaning/formatting.
         \end{itemize}
-    \end{itemize}
-\end{itemize}
+
 
 \noindent The report of the work done during this phase of the methodology, has to includes also the description of the  different choices made, with their strong and weak points. In other words the report should provide to the reader, a clear description of the reasoning conducted by all the different team members.
 
