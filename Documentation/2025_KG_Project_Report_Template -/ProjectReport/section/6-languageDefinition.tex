@@ -20,15 +20,44 @@ During the language definition phase, the relevant concepts needed to represent 
 Concepts were aligned with the Language Teleontology when available. When no appropriate parent concept existed, the Teleontology was enriched with project-specific concepts to maintain completeness and consistency with the project purpose. In some cases, when formal descriptions were not available in reference sources, custom definitions were created to ensure that all necessary concepts were properly represented.
 
 
-%DATA LAYER, DATASET CLEANING
-\subsection{data layer}
-        \begin{itemize}
-            \item Dataset filtering/cleaning/formatting.
-        \end{itemize}
+\subsection{Data Layer}
+The data layer is responsible for acquiring, filtering, cleaning, and formatting the datasets used in the system.
+
+\begin{itemize}
+    \item Dataset filtering, cleaning, and formatting.
+\end{itemize}
+\subsubsection{Data Collected from IlMeteo.it}
+
+Historical weather data were downloaded from \textit{IlMeteo.it}, organized by month and year, from January 2000 to October 2025. 
+The datasets were collected for the following locations: Rovereto, Trento, Povo, Tenno, Mezzana, Predazzo, Lavarone, Telve, Cavalese, and Valsugana. 
+Each file contained a complete set of daily weather observations for a given month and location.
+
+During the data cleaning and preprocessing phase, only the relevant columns were retained in order to standardize the format and remove redundant information. 
+The selected attributes were: 
+\begin{itemize}
+    \item \textbf{Location}
+    \item \textbf{Date}
+    \item \textbf{MeanTemp}
+    \item \textbf{MinTemperature}
+    \item \textbf{MaxTemperature}
+    \item \textbf{MeanHumidity}
+    \item \textbf{WindSpeed}
+    \item \textbf{WindGusts}
+    \item \textbf{Rainfall}
+    \item \textbf{Phenomena}
+\end{itemize}
+
+Each dataset was then merged chronologically, maintaining a consistent structure suitable for further integration into the knowledge graph. 
+All files can be found in the folder Phase 2 - Language Definition.
+\\
+
+\subsubsection{Data Collected from APIs}
+In addition to the historical datasets from IlMeteo.it, real-time meteorological data were also obtained via external APIs. 
+These APIs provide current weather parameters such as temperature, humidity, wind speed, and precipitation in a machine-readable format (typically JSON). 
+The collected data undergoes a similar cleaning and normalization process to ensure consistency with the IlMeteo.it datasets, enabling seamless integration within the data layer and downstream processing components of the system.
 
 
 \noindent The report of the work done during this phase of the methodology, has to includes also the description of the  different choices made, with their strong and weak points. In other words the report should provide to the reader, a clear description of the reasoning conducted by all the different team members.
-
 Evaluation - Language Definition: A detailed description of the Language layer evaluation over the language layer of the KG -
 \begin{itemize}
     \item How many etypes terms initially considered? How many etypes terms finally considered? How many etypes terms could be aligned to the  language teleontology? report each etype term level details in a table.
