@@ -19,6 +19,17 @@ During the language definition phase, the relevant concepts needed to represent 
 \end{table}
 Concepts were aligned with the Language Teleontology when available. When no appropriate parent concept existed, the Teleontology was enriched with project-specific concepts to maintain completeness and consistency with the project purpose. In some cases, when formal descriptions were not available in reference sources, custom definitions were created to ensure that all necessary concepts were properly represented.
 
+\subsection{Knowledge layer}
+The Knowledge layer is responsible for define the concept of our KG. It has been aimed to reuse some concepts already present in the actual state of art. In particular, the base of our ontology is represented by Home Weather Ontology, as already indicated in the Information Gathering section of the previous chapter. The choice to use that ontology is strictly related to the fact that it defined a lot of useful concepts for our domain. 
+
+Once it has been taken the Home Weather ontology, it has been started to define the concepts that weren't present and that were needed (e.g. the Anomaly concept that is relevant for our Scenario 3). Even for the new concepts, it has been tried to link them with already exsiting type and axioms. The final results in term of classes defined of this process is shown on Figure \ref{fig:ontology_classes}. For each class has been defined appropriate data properties and object properties to link the concepts in order to represent our domain. In conclusion, from the original schema has been deleted the concepts that were useless to our domain, like the concept of weather forecast, that it's not considered in our KG. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../../../../Phase 2 - Language Definition/ontology_definition.png}
+    \caption{Classes of our ontology properly defined. There are some classed directly from the Weather Ontology schema and some defined to fit the ontology to our domain}
+    \label{fig:ontology_classes}
+\end{figure}
 
 \subsection{Data Layer}
 The data layer is responsible for acquiring, filtering, cleaning, and formatting the datasets used in the system.
