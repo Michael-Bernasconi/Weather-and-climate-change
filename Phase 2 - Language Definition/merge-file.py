@@ -3,8 +3,8 @@ import pandas as pd
 import numpy as np
 
 # Base directory
-base_dir = os.path.expanduser("~/Scaricati/Arco")
-output_file = os.path.join(base_dir, "Arco_2000_2025_clean.csv")
+base_dir = os.path.expanduser("~/Scaricati/Tenno")
+output_file = os.path.join(base_dir, "Tenno_2000_2025_clean.csv")
 
 # Month mapping (for sorting)
 months = {
@@ -75,7 +75,7 @@ all_data = []
 for year in years:
     year_path = os.path.join(base_dir, year)
     for file in os.listdir(year_path):
-        if file.startswith("Arco-") and file.endswith(".csv"):
+        if file.startswith("Tenno-") and file.endswith(".csv"):
             month_name = file.split("-")[2].replace(".csv", "").capitalize()
             month_num = months.get(month_name, 0)
             if month_num == 0:
