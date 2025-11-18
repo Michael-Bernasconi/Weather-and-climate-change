@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  18 NOV 2025 16:43
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.29)  18 NOV 2025 09:57
+>>>>>>> 1d4039945dce942f8c3b49a60efe064335ce7804
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1008,9 +1012,15 @@ Here is how much of TeX's memory you used:
  38253 multiletter control sequences out of 15000+600000
  626082 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
+<<<<<<< HEAD
  75i,14n,82p,1216b,837s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb>
 Output written on main.pdf (23 pages, 1190718 bytes).
+=======
+ 75i,14n,79p,1202b,833s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb>
+Output written on main.pdf (23 pages, 876577 bytes).
+>>>>>>> 1d4039945dce942f8c3b49a60efe064335ce7804
 PDF statistics:
  354 PDF objects out of 1000 (max. 8388607)
  296 compressed objects within 3 object streams
