@@ -2,21 +2,15 @@
 This section describes the Language Definition phase. The main objective of this phase is to ensure clarity, consistency, and interoperability by addressing the ambiguity and diversity of both natural and domain-specific languages. By fixing the vocabulary and formalizing the meaning of concepts, object properties, and data properties, this phase enables accurate data annotation, reduces misunderstandings, and supports system integration. The outputs produced in this phase are stored in the folder: Phase 2 - Information Gathering.
 
 \subsection{Concept Identification}
-During the language definition phase, the relevant concepts needed to represent the information defined in the Purpose Definition phase were identified. Each concept was assigned a unique identifier ID and an accompanying gloss to clarify its meaning. This approach ensures reusability and reduces ambiguity. Some examples of the defined concepts are reported in Table~\ref{tab:language_resources}.
+During the language definition phase, the relevant concepts needed to represent the information defined in the Purpose Definition phase were identified. Each concept was assigned a unique identifier ID and an accompanying gloss to clarify its meaning. This approach ensures reusability and reduces ambiguity. Some examples of the defined concepts are reported in Figure \ref{fig:language_definition}
 
-\begin{table}[h!]
+\begin{figure}[h]
     \centering
-    \begin{tabular}{|l|l|l|l|}
-        \hline
-        \textbf{ID} & \textbf{Custom Concept} & \textbf{Equivalent Concept - Knowledge Source} & \textbf{Gloss} \\
-        \hline
-        KG-25-1 & WeatherReport & WeatherReport - Home Weather Ontology & Daily meteorological report \\
-        KG-25-2 & Date & Date - Schema.org & A date value in ISO 8601 format \\
-        \hline
-    \end{tabular}
-    \caption{Examples of concepts defined during the Language Definition phase.}
-    \label{tab:language_resources}
-\end{table}
+    \includegraphics[width=0.75\textwidth]{../../../../Phase 2 - Language Definition/language_definition.png}
+    \caption{Classes of our ontology properly defined. There are some classed directly from the Weather Ontology schema and some defined to fit the ontology to our domain}
+    \label{fig:language_definition}
+\end{figure}
+
 Concepts were aligned with the Language Teleontology when available. When no appropriate parent concept existed, the Teleontology was enriched with project-specific concepts to maintain completeness and consistency with the project purpose. In some cases, when formal descriptions were not available in reference sources, custom definitions were created to ensure that all necessary concepts were properly represented.
 
 \subsection{Knowledge layer}
