@@ -1,0 +1,87 @@
+\documentclass{knowdive}
+\usepackage{color,soul}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{textcomp}
+\usepackage{lscape}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{rotating}
+\graphicspath{ {images/} }
+
+\usepackage{titlesec}
+\titleformat{\section}{\LARGE\bfseries}{\thesection}{1em}{}
+
+\usepackage{array, makecell}
+%\hypersetup{
+	%pdfauthor={Author1, \and Author2},
+	%pdftitle={Collectives.State of the Art},
+       %pdfkeywords = {},
+      %pdfsubject={}
+      %}
+%\usepackage{hyperref}
+
+
+\graphicspath{ {images/} }
+\usepackage{comment}
+
+\title{KGE 2025 - Weather and climate change}
+
+\author{Michael Bernasconi, Gabriele Fronzoni}
+
+\revisionhistory{
+    \revision{1}{29 October 2025}{Michael Bernasconi}{Purpose Definition}
+    \revision{2}{05 November 2025}{Gabriele Fronzoni}{Purpose Definition completed}
+    \revision{3}{12 November 2025}{Michael Bernasconi}{Language Definition}
+    \revision{4}{16 November 2025}{Gabriele Fronzoni}{Ontology and language definition }
+}
+\newpage
+
+\fancypagestyle{plain}{
+  \fancyhf{}% Clear header/footer
+  %\fancyhead[R]{\includegraphics[width=1.0\linewidth,height=5pt]{Knowdive_color_bar}}% Right header
+  \fancyfoot[L]{\includegraphics[width=1.0\linewidth,height=45pt]{Knowdive_color_bar}}% Left footer
+  \fancyfoot[C]{Page \thepage\  / \pageref{LastPage}}
+}
+
+\pagestyle{plain}
+%\makeglossaries
+%input{glossaries}
+\begin{document}
+\maketitle
+\begin{sloppypar}
+\large
+\begin{spacing}{1.05}
+%\gls{latex}
+%\gls{batex}
+%\gls{eType}
+%\printglossary
+
+\input{../section/0-introduction}
+\clearpage
+\input{../section/1-purpose-doi}
+\clearpage
+\input{../section/4-purposeFormaliation}
+\clearpage
+\input{../section/6-languageDefinition}
+\clearpage
+\input{../section/7-knowledgeDefinition}
+\clearpage
+\input{../section/8-dataDefinition}
+\clearpage
+\input{../section/9-evaluation}
+\clearpage
+\input{../section/10-metadataDefinition}
+\clearpage
+\input{../section/11-openIssues}
+
+\end{spacing}
+\end{sloppypar}
+\end{document} 
