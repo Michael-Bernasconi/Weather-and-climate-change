@@ -1,4 +1,4 @@
-City,MicroClimate,TypeMicroCustom,TemperatureRange,HumidityRange,WindPattern
+City,MicroClimate,TypeMicro,TemperatureRange,HumidityRange,WindPattern
 Trento,temperate microclimate (1990-2025),temperate,-20.9°C - 20.7°C,22% - 100%,"light winds, avg 4.0 km/h, dominant 312°"
 Povo,warm microclimate (1990-2025),warm,-15.0°C - 26.6°C,29% - 99%,"light winds, avg 3.9 km/h, dominant 337°"
 Rovereto,very warm microclimate (1990-2025),hot,-6.1°C - 31.9°C,23% - 99%,"moderate winds, avg 5.7 km/h, dominant 82°"

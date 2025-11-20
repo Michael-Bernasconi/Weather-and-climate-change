@@ -356,6 +356,55 @@ INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png
+INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
+INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
+INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtt12.tfm
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
 INPUT ../section/7-knowledgeDefinition.tex
 INPUT ../section/7-knowledgeDefinition.tex
 INPUT ../section/7-knowledgeDefinition.tex
@@ -409,3 +458,5 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb

@@ -53,6 +53,59 @@ All files can be found in the folder Phase 2 - Language Definition.
 \\
 
 \subsubsection{Data Collected from APIs}
-In addition to the historical datasets from IlMeteo.it, real-time meteorological data were also obtained via external APIs.
+In addition to the historical datasets from IlMeteo.it, data were also obtained via external APIs.
 These APIs provide current weather parameters such as temperature, humidity, wind speed, and precipitation in a machine-readable format (typically CSV).
 The collected data undergo a similar cleaning and normalization process to ensure consistency with the IlMeteo.it datasets, enabling seamless integration within the data layer and downstream processing components of the system.
+
+\subsubsection{Data Collected and Derived from APIs and Local Sources}
+In parallel with the historical collection, the data layer integrates meteorological data obtained via external APIs. These APIs supply current weather parameters—such as temperature, humidity, wind speed, and precipitation—in a machine-readable CSV format. This data is subject to rigorous cleaning and normalization to ensure structural and semantic consistency with the \textit{IlMeteo.it} datasets, enabling seamless integration within the system.
+
+A crucial function of the data layer is the derivation of complex, high-level entities from the raw and aggregated data. These derived datasets form essential nodes and relationships within the Knowledge Graph, providing specialized context and analytical depth:
+
+\begin{itemize}
+\item \textbf{WeatherReport}: This is the primary dataset, acting as a chronological record of daily weather observations. It is derived by merging the cleaned historical data (\textit{IlMeteo.it}) and the real-time observations (API) to create a continuous and comprehensive view of meteorological events. This comprehensive dataset is logically partitioned and organized for all ten monitored cities (\textit{Rovereto, Trento, Povo, Tenno, Mezzana, Predazzo, Lavarone, Telve, Cavalese, and Arco}).   
+\centerline{\includegraphics[width=1\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png}}
+    \captionof{figure}{Example rows of the \textbf{WeatherReport}.}
+    \label{fig:weatherreport_data_example}
+\vspace{1em}
+
+    \item \textbf{WeatherStation}: This entity maps the physical infrastructure used for data collection. It is derived from publicly available data (e.g., from the "Weather Trentino" service) and enriched with key metadata such as \texttt{code}, \texttt{name}, \texttt{elevation}, and geographic coordinates (\texttt{latitude}, \texttt{longitude}).
+    % Inserimento Immagine forzato
+    \centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png}}
+    \captionof{figure}{Example rows of the \textbf{WeatherStation} derived dataset, showing key metadata for the physical monitoring infrastructure.}
+    \label{fig:weatherstation_data_example}
+    \vspace{1em}
+
+    \item \textbf{Region}: This dataset establishes the geographic hierarchy, listing all relevant locations (cities) for which weather data is tracked. It is directly derived from the list of locations queried via the APIs.
+    % Inserimento Immagine forzato
+    \centerline{\includegraphics[width=0.1\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png}}
+    \captionof{figure}{Example rows of the \textbf{Region} derived dataset, detailing the monitored locations.}
+    \label{fig:region_data_example}
+    \vspace{1em}
+
+    \item \textbf{Microclimate}: This dataset provides a specialized classification of the local climate for each city. It is derived from long-term API data by aggregating minimum and maximum temperature values and classifying the result into custom categories such as \texttt{cold}, \texttt{temperate}, or \texttt{hot}, based on defined thresholds.
+    % Inserimento Immagine forzato
+    \centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png}}
+    \captionof{figure}{Example rows of the \textbf{Microclimate} derived dataset, showing the temperature range and climate classification for each city.}
+    \label{fig:microclimate_data_example}
+    \vspace{1em}
+
+    \item \textbf{Season}: This dataset abstracts daily weather data into seasonal averages. By aggregating temperature and precipitation values over defined seasonal periods for each year, it facilitates multi-year comparison and seasonal impact analysis.
+    % Inserimento Immagine forzato
+    \centerline{\includegraphics[width=0.5\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png}}
+    \captionof{figure}{Example rows of the \textbf{Season} derived dataset, with averaged meteorological parameters for each city and year.}
+    \label{fig:season_data_example}
+    \vspace{1em}
+
+\item \textbf{ClimateTrend}: This entity is the result of a statistical time series analysis. It tracks the long-term temperature change for each city.The analysis produces a specific \texttt{Rate} (e.g., $^\circ$C/year) and classifies the overall trend as \texttt{Warming}, \texttt{Cooling}, or \texttt{Stable}.    \centerline{\includegraphics[width=0.9\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png}}
+    \captionof{figure}{Example rows of the \textbf{ClimateTrend} derived dataset, detailing the calculated long-term temperature rate and variation.}
+    \label{fig:climatetrend_data_example}
+    \vspace{1em}
+
+    \item \textbf{Anomaly}: This dataset identifies and classifies extreme weather events. It is derived by comparing recorded observations against established historical norms for a specific location. Each entry includes the \texttt{TypeAnomaly} (e.g., Excessive Wind, Too Hot Temperature) and a qualitative \texttt{Severity} level (e.g., Critical, High).
+    % Inserimento Immagine forzato
+    \centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png}}
+    \captionof{figure}{Example rows of the \textbf{Anomaly} derived dataset, showing the type and severity of detected extreme weather events.}
+    \label{fig:anomaly_data_example}
+    \vspace{1em}
+\end{itemize}

@@ -1,4 +1,4 @@
-City,ClimateTrendCustom,ParameterMeasuredCustom,TimeWindowCustom,VariationCustom,RateCustom
+City,ClimateTrend,ParameterMeasured,TimeWindow,Variation,Rate
 Trento,Warming (Increase),temperature_2m_mean (°C),1990-2025 (35.0 years),2.48°C (total change),0.0708°C/year
 Povo,Warming (Increase),temperature_2m_mean (°C),1990-2025 (35.0 years),2.53°C (total change),0.0724°C/year
 Rovereto,Stable (Minimal Change),temperature_2m_mean (°C),1990-2025 (35.0 years),1.72°C (total change),0.0490°C/year
