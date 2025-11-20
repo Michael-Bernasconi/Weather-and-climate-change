@@ -59,3 +59,4 @@ In addition to the historical datasets from IlMeteo.it, real-time meteorological
 These APIs provide current weather parameters such as temperature, humidity, wind speed, and precipitation in a machine-readable format (typically CSV).
 The collected data undergo a similar cleaning and normalization process to ensure consistency with the IlMeteo.it datasets, enabling seamless integration within the data layer and downstream processing components of the system.
 
+After the work done both on knowledge and data layer, we decided to modify some aspects of the previous version of the ER model: for the \textit{WeatherStation} entity we removed the \textit{shortname} attribute, as it was useless. Then, we added \textit{City} attribute directly in the \textit{Anomaly} entity: this modify has been done to link directly the anomaly with the city in which it has been detected. 
