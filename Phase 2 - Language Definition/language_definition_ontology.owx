@@ -12,7 +12,6 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://sweetontology.net/phenAtmo/MeteorologicalPhenomena</Import>
     <Import>http://www.w3.org/2006/time</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
@@ -127,12 +126,6 @@ Ontology engineering by Simon J D Cox</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="http://knowdive.disi.unitn.it/etype#Region"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://sweetontology.net/phenAtmo/AtmosphericPhenomena"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://sweetontology.net/phenAtmo/MeteorologicalPhenomena"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://sweetontology.net/phenPlanetClimate/Climate"/>
@@ -1765,10 +1758,6 @@ Ontology engineering by Simon J D Cox</Literal>
     <SubClassOf>
         <Class IRI="http://knowdive.disi.unitn.it/etype#ClimateTrend"/>
         <Class IRI="http://sweetontology.net/phenPlanetClimate/Climate"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://sweetontology.net/phenAtmo/MeteorologicalPhenomena"/>
-        <Class IRI="http://sweetontology.net/phenAtmo/AtmosphericPhenomena"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://sweetontology.net/phenPlanetClimate/Microclimate"/>
@@ -3668,11 +3657,6 @@ Ontology engineering by Simon J D Cox</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://knowdive.disi.unitn.it/etype#Region</IRI>
         <Literal>A geographical region</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://sweetontology.net/phenAtmo/MeteorologicalPhenomena</IRI>
-        <Literal xml:lang="en">meteorological phenomena</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
