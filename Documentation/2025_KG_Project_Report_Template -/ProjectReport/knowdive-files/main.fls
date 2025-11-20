@@ -353,6 +353,15 @@ INPUT ../../../../Phase 2 - Language Definition/ontology_definition.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
+INPUT ../../../../Phase 2 - Language Definition/Knoledge data link.png
+INPUT ../../../../Phase 2 - Language Definition/Knoledge data link.png
+INPUT ../../../../Phase 2 - Language Definition/Knoledge data link.png
+INPUT ../../../../Phase 2 - Language Definition/Knoledge data link.png
+INPUT ../../../../Phase 2 - Language Definition/Knoledge data link.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
@@ -361,6 +370,9 @@ INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
 INPUT /usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -375,14 +387,14 @@ INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png
@@ -393,15 +405,15 @@ INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png
 INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
+INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT /usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
-INPUT ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
@@ -454,6 +466,7 @@ INPUT ./main.out
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
