@@ -13,108 +13,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.w3.org/2006/time</Import>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <IRI>https://orcid.org/0000-0001-8269-8171</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
-        <IRI>mailto:chris.little@metoffice.gov.uk</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2006-09-27</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <IRI>http://orcid.org/0000-0002-3884-3420</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <IRI>https://en.wikipedia.org/wiki/Jerry_Hobbs</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
-        <IRI>mailto:panfeng66@gmail.com</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/isVersionOf"/>
-        <IRI>http://www.w3.org/TR/owl-time</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
-        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2017-04-06</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/rights"/>
-        <Literal xml:lang="en">Copyright © 2006-2017 W3C, OGC. W3C and OGC liability, trademark and document use rules apply.</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en">smart home ontology for weather phenomena and exterior conditions</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <Literal xml:lang="en">OWL-Time</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <Literal xml:lang="es">Tiempo en OWL</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <Literal>Weather and Climate in Trentino</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>http://dx.doi.org/10.3233/SW-150187</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>http://www.semantic-web-journal.net/content/time-ontology-extended-non-gregorian-calendar-applications</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>http://www.w3.org/TR/owl-time</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:priorVersion"/>
-        <IRI>http://www.w3.org/2006/time#2006</IRI>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>1.03</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#changeNote"/>
-        <Literal>2016-06-15 - initial update of OWL-Time - modified to support arbitrary temporal reference systems. </Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#changeNote"/>
-        <Literal>2016-12-20 - adjust range of time:timeZone to time:TimeZone, moved up from the tzont ontology.  </Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#changeNote"/>
-        <Literal>2016-12-20 - restore time:Year and time:January which were present in the 2006 version of the ontology, but now marked &quot;deprecated&quot;. </Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#changeNote"/>
-        <Literal>2017-02 - intervalIn, intervalDisjoint, monthOfYear added; TemporalUnit subclass of TemporalDuration</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#changeNote"/>
-        <Literal>2017-04-06 - hasTime, hasXSDDuration added; Number removed; all duration elements changed to xsd:decimal</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#historyNote"/>
-        <Literal xml:lang="en">Update of OWL-Time ontology, extended to support general temporal reference systems. 
-
-Ontology engineering by Simon J D Cox</Literal>
-    </Annotation>
     <Declaration>
         <Class IRI="http://knowdive.disi.unitn.it/etype#Anomaly"/>
     </Declaration>
@@ -126,6 +24,9 @@ Ontology engineering by Simon J D Cox</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="http://knowdive.disi.unitn.it/etype#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://knowdive.disi.unitn.it/etype#YearSeason"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://sweetontology.net/phenPlanetClimate/Climate"/>
@@ -3632,6 +3533,16 @@ Ontology engineering by Simon J D Cox</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://knowdive.disi.unitn.it/etype#Region</IRI>
         <Literal>A geographical region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#YearSeason</IRI>
+        <Literal xml:lang="en">A climatological analysis unit representing the seasonal conditions observed in a specific geographic region during a given year, serving as a context for assessing climate trends.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://knowdive.disi.unitn.it/etype#YearSeason</IRI>
+        <Literal xml:lang="it">Un&apos;unità di analisi climatologica che rappresenta le condizioni stagionali osservate in una specifica regione geografica durante un determinato anno, fungendo da contesto per la valutazione dei trend climatici.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7550,32 +7461,32 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484759"/>
+        <AnonymousIndividual nodeID="_:genid2147483722"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484760"/>
+        <AnonymousIndividual nodeID="_:genid2147483723"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484761"/>
+        <AnonymousIndividual nodeID="_:genid2147483724"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484762"/>
+        <AnonymousIndividual nodeID="_:genid2147483725"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484763"/>
+        <AnonymousIndividual nodeID="_:genid2147483726"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484764"/>
+        <AnonymousIndividual nodeID="_:genid2147483727"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
 </Ontology>
