@@ -320,12 +320,6 @@ Ontology engineering by Simon J D Cox</Literal>
         <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#RoomTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SensorReportSource"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ServiceReportSource"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
     </Declaration>
     <Declaration>
@@ -1704,13 +1698,6 @@ Ontology engineering by Simon J D Cox</Literal>
         </ObjectOneOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource"/>
-        <ObjectUnionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SensorReportSource"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ServiceReportSource"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WholeGale"/>
         <ObjectIntersectionOf>
             <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
@@ -2249,14 +2236,6 @@ Ontology engineering by Simon J D Cox</Literal>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SensorReportSource"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ServiceReportSource"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
         <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
     </SubClassOf>
@@ -2376,10 +2355,6 @@ Ontology engineering by Simon J D Cox</Literal>
         <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind"/>
         <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm"/>
         <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SensorReportSource"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ServiceReportSource"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
@@ -7456,16 +7431,6 @@ The range of this property is not specified, so can be replaced by any specific 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SensorReportSource</IRI>
-        <Literal xml:lang="en">this class was known as &quot;SensorSource&quot; in prior versions of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ServiceReportSource</IRI>
-        <Literal xml:lang="en">this class was known as &quot;ServiceSource&quot; in prior versions of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance</IRI>
         <Literal xml:lang="en">measurement of solar irrradiation at a specific location in Watts per square meter (W/m²)</Literal>
     </AnnotationAssertion>
@@ -7585,32 +7550,32 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484753"/>
+        <AnonymousIndividual nodeID="_:genid2147484759"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484754"/>
+        <AnonymousIndividual nodeID="_:genid2147484760"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484755"/>
+        <AnonymousIndividual nodeID="_:genid2147484761"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484756"/>
+        <AnonymousIndividual nodeID="_:genid2147484762"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484757"/>
+        <AnonymousIndividual nodeID="_:genid2147484763"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147484758"/>
+        <AnonymousIndividual nodeID="_:genid2147484764"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
 </Ontology>
