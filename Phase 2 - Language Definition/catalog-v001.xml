@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1763658264170" name="duplicate:http://www.semanticweb.org/fronzofronzo/ontologies/2025/10/weather-and-climate" uri="weather-and-climate.owx"/>
-        <uri id="Automatically generated entry, Timestamp=1763658264170" name="duplicate:http://www.semanticweb.org/fronzofronzo/ontologies/2025/10/weather-and-climate" uri="language_definition_ontology.owx"/>
-        <uri id="Automatically generated entry, Timestamp=1763658264170" name="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl" uri="WeatherOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1763750148450" name="duplicate:http://www.semanticweb.org/fronzofronzo/ontologies/2025/10/weather-and-climate" uri="weather-and-climate.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1763750148450" name="duplicate:http://www.semanticweb.org/fronzofronzo/ontologies/2025/10/weather-and-climate" uri="language_definition_ontology.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1763750148450" name="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl" uri="WeatherOntology.owl"/>
     </group>
 </catalog>
