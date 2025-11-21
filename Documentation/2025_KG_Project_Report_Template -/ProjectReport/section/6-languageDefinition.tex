@@ -42,7 +42,7 @@ The mapping process allowed us to identify, for each key concept in the Knowledg
 Furthermore, the \textbf{Knowledge-Data link} includes concepts that have been \textbf{Generated} (such as $TypeAnomaly$, $MicroClimate$, $ClimateTrend$, $Season$, and $Variation$), which do not originate directly from an API endpoint but are the result of internal processing or inference processes applied to the raw data extracted from the primary sources. This approach ensures that the Knowledge Graph is not merely a data container but also a hub for \textbf{processed knowledge}.
 
 % Inserimento Immagine forzato
-    \centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/Knoledge data link.png}}
+    \centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/knowledge_data_link.png}}
     \captionof{figure}{For each concept of the ontology, it's indicated the relative attribute taken in the data }
     \label{fig:knowledge_data_link}
     \vspace{1em}
@@ -148,4 +148,11 @@ In addition, to reflect in the best way the changes made, we also modified Perso
     \item \textbf{Persona}: Giulia Ferrari, 23 years old, a climatology student. She enjoys studying microclimates and climate variations \textbf{between different cities of Trentino}.
 \end{itemize}
 
-Another modified made to the previous ER model it is about the \textit{Anomaly} entity: since an anomaly it's strictly related to the city where it has been relevated, we decided to add directly this information as an attribute of the entity. Given the modifies described, the ER model after this phase is shown on 
+Another modified made to the previous ER model it is about the \textit{Anomaly} entity: since an anomaly it's strictly related to the city where it has been relevated, we decided to add directly this information as an attribute of the entity. Given the modifies described, the ER model after this phase is shown on Figure \ref{fig:language_definition}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{../../../../Phase 2 - Language Definition/er_model_language_definition.png}
+    \caption{ER model after the Language Definition Phase}
+    \label{fig:er_ld}
+\end{figure}
