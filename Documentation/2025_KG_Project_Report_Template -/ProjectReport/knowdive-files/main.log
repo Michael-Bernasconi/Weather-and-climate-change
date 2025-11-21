@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  21 NOV 2025 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  21 NOV 2025 19:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -867,7 +867,7 @@ Package pdftex.def Info: ../../../../Phase 2 - Language Definition/ontology_defi
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 33.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 30.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -878,19 +878,19 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 <../../../../Phase 2 - Language Definition/knowledge_data_link.png, id=276, 438.63875pt x 541.52313pt>
 File: ../../../../Phase 2 - Language Definition/knowledge_data_link.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/knowledge_data_link.png>
-Package pdftex.def Info: ../../../../Phase 2 - Language Definition/knowledge_data_link.png  used on input line 45.
+Package pdftex.def Info: ../../../../Phase 2 - Language Definition/knowledge_data_link.png  used on input line 46.
 (pdftex.def)             Requested size: 400.38872pt x 494.31546pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 46.
+(caption)                particular \caption on input line 47.
 See the caption package documentation for explanation.
 
 
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 46.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 47.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -901,7 +901,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 57.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 58.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -909,52 +909,52 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [15 <../../../../Phase 2 - Language Definition/knowledge_data_link.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 73--76
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
 
 <../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png, id=291, 2828.5675pt x 461.725pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png>
-Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png  used on input line 89.
+Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png  used on input line 90.
 (pdftex.def)             Requested size: 500.484pt x 81.69785pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 90.
+(caption)                particular \caption on input line 91.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 2573) in paragraph at lines 88--90
+Underfull \hbox (badness 2573) in paragraph at lines 89--91
 []\T1/lmr/bx/n/12 WeatherReport\T1/lmr/m/n/12 : This is the pri-mary dataset, act-ing as a chrono-log-i-cal record
  []
 
 
-Underfull \hbox (badness 4673) in paragraph at lines 88--90
+Underfull \hbox (badness 4673) in paragraph at lines 89--91
 \T1/lmr/m/n/12 of daily weather ob-ser-va-tions. It is de-rived by merg-ing the cleaned his-tor-i-
  []
 
 
-Underfull \hbox (badness 3884) in paragraph at lines 88--90
+Underfull \hbox (badness 3884) in paragraph at lines 89--91
 \T1/lmr/m/n/12 cal data (\T1/lmr/m/it/12 Il-Me-teo.it\T1/lmr/m/n/12 ) and the real-time ob-ser-va-tions (API) to cre-ate a con-tin-u-
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 88--90
+Underfull \hbox (badness 1436) in paragraph at lines 89--91
 \T1/lmr/m/n/12 ous and com-pre-hen-sive view of me-te-o-ro-log-i-cal events. This com-pre-hen-sive dataset
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--90
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
 \T1/lmr/m/n/12 is log-i-cally par-ti-tioned and or-ga-nized for all ten mon-i-tored cities (\T1/lmr/m/it/12 Rovereto,
  []
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 88--90
+Underfull \hbox (badness 2951) in paragraph at lines 89--91
 \T1/lmr/m/it/12 Trento, Povo, Tenno, Mez-zana, Predazzo, Lavarone, Telve, Cav-alese, and Arco\T1/lmr/m/n/12 ).
  []
 
 
-Overfull \hbox (25.00003pt too wide) in paragraph at lines 88--90
+Overfull \hbox (25.00003pt too wide) in paragraph at lines 89--91
 [] 
  []
 
@@ -962,7 +962,7 @@ Overfull \hbox (25.00003pt too wide) in paragraph at lines 88--90
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 90.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 91.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -970,58 +970,58 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [16]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 94.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 95.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 <../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png, id=298, 2016.53375pt x 274.02374pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png>
-Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png  used on input line 96.
+Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png  used on input line 97.
 (pdftex.def)             Requested size: 400.38872pt x 54.40656pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 97.
+(caption)                particular \caption on input line 98.
 See the caption package documentation for explanation.
 
 <../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png, id=299, 146.5475pt x 368.37625pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png>
-Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png  used on input line 103.
+Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png  used on input line 104.
 (pdftex.def)             Requested size: 50.05145pt x 125.81398pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 104.
+(caption)                particular \caption on input line 105.
 See the caption package documentation for explanation.
 
 <../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png, id=300, 1805.74625pt x 393.47pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png>
-Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png  used on input line 110.
+Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png  used on input line 111.
 (pdftex.def)             Requested size: 400.38872pt x 87.2421pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 111.
+(caption)                particular \caption on input line 112.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 6284) in paragraph at lines 108--111
+Underfull \hbox (badness 6284) in paragraph at lines 109--112
 []\T1/lmr/bx/n/12 Microclimate\T1/lmr/m/n/12 : This dataset pro-vides a spe-cial-ized clas-si-fi-ca-tion of the lo-cal cli-
  []
 
 
-Underfull \hbox (badness 3758) in paragraph at lines 108--111
+Underfull \hbox (badness 3758) in paragraph at lines 109--112
 \T1/lmr/m/n/12 mate for each city. It is de-rived from long-term API data by ag-gre-gat-ing min-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--111
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
 \T1/lmr/m/n/12 i-mum and max-i-mum tem-per-a-ture val-ues and clas-si-fy-ing the re-sult into cus-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--111
+Underfull \hbox (badness 10000) in paragraph at lines 109--112
 \T1/lmr/m/n/12 tom cat-e-gories such as \T1/lmtt/m/n/12 cold\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 temperate\T1/lmr/m/n/12 , or \T1/lmtt/m/n/12 hot\T1/lmr/m/n/12 , based on de-fined thresh-olds.
  []
 
@@ -1029,7 +1029,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 111.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 112.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -1040,81 +1040,81 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 <../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png, id=313, 926.46124pt x 285.065pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png>
-Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png  used on input line 117.
+Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png  used on input line 118.
 (pdftex.def)             Requested size: 250.24199pt x 76.99467pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 118.
+(caption)                particular \caption on input line 119.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 5756) in paragraph at lines 115--118
+Underfull \hbox (badness 5756) in paragraph at lines 116--119
 []\T1/lmr/bx/n/12 Season\T1/lmr/m/n/12 : This dataset ab-stracts daily weather data into sea-sonal av-er-ages. By
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
 \T1/lmr/m/n/12 ag-gre-gat-ing tem-per-a-ture and pre-cip-i-ta-tion val-ues over de-fined sea-sonal pe-ri-ods
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--118
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
 \T1/lmr/m/n/12 for each year, it fa-cil-i-tates multi-year com-par-i-son and sea-sonal im-pact anal-y-sis.
  []
 
 <../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png, id=314, 1528.71124pt x 393.47pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png>
-Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png  used on input line 122.
+Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png  used on input line 123.
 (pdftex.def)             Requested size: 450.43253pt x 115.93454pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 123.
+(caption)                particular \caption on input line 124.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 3138) in paragraph at lines 122--123
+Underfull \hbox (badness 3138) in paragraph at lines 123--124
 []\T1/lmr/bx/n/12 ClimateTrend\T1/lmr/m/n/12 : This en-tity is the re-sult of a sta-tis-ti-cal time se-ries anal-y-sis. It
  []
 
 
-Underfull \hbox (badness 1776) in paragraph at lines 122--123
+Underfull \hbox (badness 1776) in paragraph at lines 123--124
 \T1/lmr/m/n/12 tracks the long-term tem-per-a-ture change for each city.The anal-y-sis pro-duces a spe-cific
  []
 
 
-Underfull \hbox (badness 1701) in paragraph at lines 122--123
+Underfull \hbox (badness 1701) in paragraph at lines 123--124
 \T1/lmtt/m/n/12 Rate \T1/lmr/m/n/12 (e.g., $[]$C/year) and clas-si-fies the over-all trend as \T1/lmtt/m/n/12 Warming\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 Cooling\T1/lmr/m/n/12 , or \T1/lmtt/m/n/12 Stable\T1/lmr/m/n/12 .
  []
 
 <../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png, id=315, 1308.89pt x 435.6275pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png>
-Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png  used on input line 129.
+Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png  used on input line 130.
 (pdftex.def)             Requested size: 400.38872pt x 133.25505pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 130.
+(caption)                particular \caption on input line 131.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 2689) in paragraph at lines 127--130
+Underfull \hbox (badness 2689) in paragraph at lines 128--131
 []\T1/lmr/bx/n/12 Anomaly\T1/lmr/m/n/12 : This dataset iden-ti-fies and clas-si-fies ex-treme weather events. It is de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--130
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 \T1/lmr/m/n/12 rived by com-par-ing recorded ob-ser-va-tions against es-tab-lished his-tor-i-cal norms for
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 127--130
+Underfull \hbox (badness 5316) in paragraph at lines 128--131
 \T1/lmr/m/n/12 a spe-cific lo-ca-tion. Each en-try in-cludes the \T1/lmtt/m/n/12 TypeAnomaly \T1/lmr/m/n/12 (e.g., Ex-ces-sive Wind,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--130
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 \T1/lmr/m/n/12 Too Hot Tem-per-a-ture) and a qual-i-ta-tive \T1/lmtt/m/n/12 Severity \T1/lmr/m/n/12 level (e.g., Crit-i-cal, High).
  []
 
@@ -1122,7 +1122,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--130
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 130.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 131.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -1133,7 +1133,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 <../../../../Phase 2 - Language Definition/er_model_language_definition.png, id=329, 1075.01625pt x 839.68706pt>
 File: ../../../../Phase 2 - Language Definition/er_model_language_definition.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/er_model_language_definition.png>
-Package pdftex.def Info: ../../../../Phase 2 - Language Definition/er_model_language_definition.png  used on input line 155.
+Package pdftex.def Info: ../../../../Phase 2 - Language Definition/er_model_language_definition.png  used on input line 156.
 (pdftex.def)             Requested size: 375.36299pt x 293.19019pt.
 
 
@@ -1281,7 +1281,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,15n,87p,1216b,949s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (29 pages, 2339554 bytes).
+Output written on main.pdf (29 pages, 2340198 bytes).
 PDF statistics:
  446 PDF objects out of 1000 (max. 8388607)
  357 compressed objects within 4 object streams
