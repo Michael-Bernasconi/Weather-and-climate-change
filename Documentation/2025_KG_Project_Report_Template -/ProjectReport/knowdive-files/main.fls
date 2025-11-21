@@ -416,6 +416,7 @@ INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
@@ -424,6 +425,8 @@ INPUT ../section/7-knowledgeDefinition.tex
 INPUT ../section/7-knowledgeDefinition.tex
 INPUT ../section/7-knowledgeDefinition.tex
 INPUT ../section/7-knowledgeDefinition.tex
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmri12.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ec-lmbxi10.tfm
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
@@ -467,6 +470,7 @@ INPUT ./main.out
 INPUT ./main.out
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb
