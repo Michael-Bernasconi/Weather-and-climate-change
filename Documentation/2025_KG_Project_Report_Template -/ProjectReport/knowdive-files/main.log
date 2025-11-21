@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  21 NOV 2025 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  21 NOV 2025 19:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -467,11 +467,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count319
 \l__pdf_internal_box=\box60
-) (./main.aux
-
-LaTeX Warning: Label `fig:ontology_classes' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -879,7 +875,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [13 <../../../../Phase 2 - Language Definition/ontology_definition.png>]
-<../../../../Phase 2 - Language Definition/Knoledge data link.png, id=276, 882.29625pt x 1083.04625pt>
+<../../../../Phase 2 - Language Definition/Knoledge data link.png, id=275, 882.29625pt x 1083.04625pt>
 File: ../../../../Phase 2 - Language Definition/Knoledge data link.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Knoledge data link.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Knoledge data link.png  used on input line 45.
@@ -1252,23 +1248,19 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: FB3428DC32F75268BA3334B23C00C4E0;4292.
  ) 
 Here is how much of TeX's memory you used:
- 15468 strings out of 473190
- 252398 string characters out of 5715799
- 671324 words of memory out of 5000000
- 38358 multiletter control sequences out of 15000+600000
+ 15469 strings out of 473190
+ 252423 string characters out of 5715799
+ 671402 words of memory out of 5000000
+ 38359 multiletter control sequences out of 15000+600000
  626400 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,87p,1216b,949s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (28 pages, 2148164 bytes).
+Output written on main.pdf (28 pages, 2148573 bytes).
 PDF statistics:
  435 PDF objects out of 1000 (max. 8388607)
  349 compressed objects within 4 object streams
