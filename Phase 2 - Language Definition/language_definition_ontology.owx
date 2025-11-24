@@ -7,35 +7,38 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/fronzofronzo/ontologies/2025/10/weather-and-climate">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="hwo" IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="swo" IRI="http://sweetontology.net/phenPlanetClimate/"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="wccdl" IRI="http://knowdive.disi.unitn.it/etype#"/>
     <Import>http://www.w3.org/2006/time</Import>
     <Declaration>
-        <Class IRI="http://knowdive.disi.unitn.it/etype#Anomaly"/>
+        <Class abbreviatedIRI="wccdl:Anomaly"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://knowdive.disi.unitn.it/etype#ClimateTrend"/>
+        <Class abbreviatedIRI="wccdl:ClimateTrend"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://knowdive.disi.unitn.it/etype#Range"/>
+        <Class abbreviatedIRI="wccdl:Range"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://knowdive.disi.unitn.it/etype#Region"/>
+        <Class abbreviatedIRI="wccdl:Region"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://knowdive.disi.unitn.it/etype#YearSeason"/>
+        <Class abbreviatedIRI="wccdl:WeatherStation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://sweetontology.net/phenPlanetClimate/Climate"/>
+        <Class abbreviatedIRI="wccdl:YearSeason"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://sweetontology.net/phenPlanetClimate/Microclimate"/>
+        <Class abbreviatedIRI="swo:Climate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#WeatherStation"/>
+        <Class abbreviatedIRI="swo:Microclimate"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
@@ -104,178 +107,169 @@
         <Class IRI="http://www.w3.org/2006/time#Year"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveRoomTemperature"/>
+        <Class abbreviatedIRI="hwo:AboveRoomTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveZeroTemperature"/>
+        <Class abbreviatedIRI="hwo:AboveZeroTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
+        <Class abbreviatedIRI="hwo:AirPollution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure"/>
+        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowOrZeroTemperature"/>
+        <Class abbreviatedIRI="hwo:BelowOrZeroTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowRoomTemperature"/>
+        <Class abbreviatedIRI="hwo:BelowRoomTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover"/>
+        <Class abbreviatedIRI="hwo:CloudCover"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature"/>
+        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity"/>
+        <Class abbreviatedIRI="hwo:DryHumidity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeFrost"/>
+        <Class abbreviatedIRI="hwo:ExtremeFrost"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeHeat"/>
+        <Class abbreviatedIRI="hwo:ExtremeHeat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze"/>
+        <Class abbreviatedIRI="hwo:FreshBreeze"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshGale"/>
+        <Class abbreviatedIRI="hwo:FreshGale"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Frost"/>
+        <Class abbreviatedIRI="hwo:Frost"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze"/>
+        <Class abbreviatedIRI="hwo:GentleBreeze"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Heat"/>
+        <Class abbreviatedIRI="hwo:Heat"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation"/>
+        <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighAirPollution"/>
+        <Class abbreviatedIRI="hwo:HighAirPollution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:HighSolarIrradiance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity"/>
+        <Class abbreviatedIRI="hwo:Humidity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hurricane"/>
+        <Class abbreviatedIRI="hwo:Hurricane"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightAir"/>
+        <Class abbreviatedIRI="hwo:LightAir"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightBreeze"/>
+        <Class abbreviatedIRI="hwo:LightBreeze"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation"/>
+        <Class abbreviatedIRI="hwo:LightPrecipitation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind"/>
+        <Class abbreviatedIRI="hwo:LightWind"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowAirPollution"/>
+        <Class abbreviatedIRI="hwo:LowAirPollution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:LowSolarIrradiance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MediumAirPollution"/>
+        <Class abbreviatedIRI="hwo:MediumAirPollution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateBreeze"/>
+        <Class abbreviatedIRI="hwo:ModerateBreeze"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateGale"/>
+        <Class abbreviatedIRI="hwo:ModerateGale"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation"/>
+        <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity"/>
+        <Class abbreviatedIRI="hwo:MoistHumidity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NeglectibleSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:NeglectibleSolarIrradiance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation"/>
+        <Class abbreviatedIRI="hwo:NoPrecipitation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind"/>
+        <Class abbreviatedIRI="hwo:NoWind"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity"/>
+        <Class abbreviatedIRI="hwo:OptimumHumidity"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
+        <Class abbreviatedIRI="hwo:Precipitation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#RoomTemperature"/>
+        <Class abbreviatedIRI="hwo:RoomTemperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm"/>
+        <Class abbreviatedIRI="hwo:Storm"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongBreeze"/>
+        <Class abbreviatedIRI="hwo:StrongBreeze"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongGale"/>
+        <Class abbreviatedIRI="hwo:StrongGale"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind"/>
+        <Class abbreviatedIRI="hwo:StrongWind"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+        <Class abbreviatedIRI="hwo:Temperature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#UnknownCloudCover"/>
+        <Class abbreviatedIRI="hwo:UnknownCloudCover"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryHighAirPollution"/>
+        <Class abbreviatedIRI="hwo:VeryHighAirPollution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryLowAirPollution"/>
+        <Class abbreviatedIRI="hwo:VeryLowAirPollution"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ViolentStorm"/>
+        <Class abbreviatedIRI="hwo:ViolentStorm"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource"/>
+        <Class abbreviatedIRI="hwo:WeatherReportSource"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WholeGale"/>
+        <Class abbreviatedIRI="hwo:WholeGale"/>
     </Declaration>
     <Declaration>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://sweetontology.net/relaSpace/hasSpatialScale"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#recordedAt"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#relatedTo"/>
+        <Class abbreviatedIRI="hwo:Wind"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
@@ -380,64 +374,58 @@
         <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#createdAt"/>
+        <ObjectProperty abbreviatedIRI="hwo:createdAt"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAirPollution"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasAirPollution"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAtmosphericPressure"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasAtmosphericPressure"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasCloudCover"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasCloudCover"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDewPointTemperature"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasDewPointTemperature"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasExteriorTemperature"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasExteriorTemperature"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasHumidity"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasHumidity"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasObservationTime"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasObservationTime"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPrecipitation"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasPrecipitation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSolarIrradiation"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasSolarIrradiation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSource"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasSource"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherCondition"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherCondition"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherReport"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherReport"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWind"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWind"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#isSourceOf"/>
+        <ObjectProperty abbreviatedIRI="hwo:isSourceOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherForTimeInterval"/>
+        <ObjectProperty abbreviatedIRI="hwo:reportsWeatherForTimeInterval"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherObservation"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasName"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasType"/>
+        <ObjectProperty abbreviatedIRI="hwo:reportsWeatherObservation"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
@@ -524,31 +512,31 @@
         <DataProperty IRI="http://www.w3.org/2006/time#years"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection"/>
+        <DataProperty abbreviatedIRI="hwo:hasDirection"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
+        <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLatitude"/>
+        <DataProperty abbreviatedIRI="hwo:hasLatitude"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLongitude"/>
+        <DataProperty abbreviatedIRI="hwo:hasLongitude"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+        <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasStartTime"/>
+        <DataProperty abbreviatedIRI="hwo:hasStartTime"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasTime"/>
+        <DataProperty abbreviatedIRI="hwo:hasTime"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasUnit"/>
+        <DataProperty abbreviatedIRI="hwo:hasUnit"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+        <DataProperty abbreviatedIRI="hwo:hasValue"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://sweetontology.net/stateSpaceScale/Microscale"/>
@@ -599,37 +587,37 @@
         <NamedIndividual IRI="http://www.w3.org/2006/time#unitYear"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Cloud"/>
+        <NamedIndividual abbreviatedIRI="hwo:Cloud"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Fog"/>
+        <NamedIndividual abbreviatedIRI="hwo:Fog"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hail"/>
+        <NamedIndividual abbreviatedIRI="hwo:Hail"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightCloud"/>
+        <NamedIndividual abbreviatedIRI="hwo:LightCloud"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightRainSun"/>
+        <NamedIndividual abbreviatedIRI="hwo:LightRainSun"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#PartlyCloud"/>
+        <NamedIndividual abbreviatedIRI="hwo:PartlyCloud"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Rain"/>
+        <NamedIndividual abbreviatedIRI="hwo:Rain"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Sleet"/>
+        <NamedIndividual abbreviatedIRI="hwo:Sleet"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Snow"/>
+        <NamedIndividual abbreviatedIRI="hwo:Snow"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Sun"/>
+        <NamedIndividual abbreviatedIRI="hwo:Sun"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Thunder"/>
+        <NamedIndividual abbreviatedIRI="hwo:Thunder"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
@@ -717,11 +705,11 @@
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveRoomTemperature"/>
+        <Class abbreviatedIRI="hwo:AboveRoomTemperature"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+            <Class abbreviatedIRI="hwo:Temperature"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -732,11 +720,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveZeroTemperature"/>
+        <Class abbreviatedIRI="hwo:AboveZeroTemperature"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+            <Class abbreviatedIRI="hwo:Temperature"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -747,21 +735,21 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
+        <Class abbreviatedIRI="hwo:AirPollution"/>
         <ObjectUnionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighAirPollution"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowAirPollution"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MediumAirPollution"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryHighAirPollution"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryLowAirPollution"/>
+            <Class abbreviatedIRI="hwo:HighAirPollution"/>
+            <Class abbreviatedIRI="hwo:LowAirPollution"/>
+            <Class abbreviatedIRI="hwo:MediumAirPollution"/>
+            <Class abbreviatedIRI="hwo:VeryHighAirPollution"/>
+            <Class abbreviatedIRI="hwo:VeryLowAirPollution"/>
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowOrZeroTemperature"/>
+        <Class abbreviatedIRI="hwo:BelowOrZeroTemperature"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+            <Class abbreviatedIRI="hwo:Temperature"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -772,11 +760,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowRoomTemperature"/>
+        <Class abbreviatedIRI="hwo:BelowRoomTemperature"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+            <Class abbreviatedIRI="hwo:Temperature"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -787,11 +775,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity"/>
+        <Class abbreviatedIRI="hwo:DryHumidity"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity"/>
+            <Class abbreviatedIRI="hwo:Humidity"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -802,11 +790,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeFrost"/>
+        <Class abbreviatedIRI="hwo:ExtremeFrost"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+            <Class abbreviatedIRI="hwo:Temperature"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -817,11 +805,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeHeat"/>
+        <Class abbreviatedIRI="hwo:ExtremeHeat"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+            <Class abbreviatedIRI="hwo:Temperature"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -832,11 +820,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze"/>
+        <Class abbreviatedIRI="hwo:FreshBreeze"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -845,7 +833,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -856,11 +844,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshGale"/>
+        <Class abbreviatedIRI="hwo:FreshGale"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -869,7 +857,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -880,11 +868,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Frost"/>
+        <Class abbreviatedIRI="hwo:Frost"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+            <Class abbreviatedIRI="hwo:Temperature"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -893,7 +881,7 @@
                 </DatatypeRestriction>
             </DataAllValuesFrom>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -904,11 +892,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze"/>
+        <Class abbreviatedIRI="hwo:GentleBreeze"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -917,7 +905,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -928,11 +916,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Heat"/>
+        <Class abbreviatedIRI="hwo:Heat"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+            <Class abbreviatedIRI="hwo:Temperature"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -943,11 +931,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation"/>
+        <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
+            <Class abbreviatedIRI="hwo:Precipitation"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
+                <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -958,11 +946,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighAirPollution"/>
+        <Class abbreviatedIRI="hwo:HighAirPollution"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
+            <Class abbreviatedIRI="hwo:AirPollution"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -971,7 +959,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -982,11 +970,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:HighSolarIrradiance"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
+            <Class abbreviatedIRI="hwo:SolarIrradiance"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -997,19 +985,19 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity"/>
+        <Class abbreviatedIRI="hwo:Humidity"/>
         <ObjectUnionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity"/>
+            <Class abbreviatedIRI="hwo:DryHumidity"/>
+            <Class abbreviatedIRI="hwo:MoistHumidity"/>
+            <Class abbreviatedIRI="hwo:OptimumHumidity"/>
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hurricane"/>
+        <Class abbreviatedIRI="hwo:Hurricane"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1020,11 +1008,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightAir"/>
+        <Class abbreviatedIRI="hwo:LightAir"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1033,7 +1021,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1044,11 +1032,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightBreeze"/>
+        <Class abbreviatedIRI="hwo:LightBreeze"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1057,7 +1045,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1068,11 +1056,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation"/>
+        <Class abbreviatedIRI="hwo:LightPrecipitation"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
+            <Class abbreviatedIRI="hwo:Precipitation"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
+                <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1081,7 +1069,7 @@
                 </DatatypeRestriction>
             </DataAllValuesFrom>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
+                <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1092,11 +1080,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind"/>
+        <Class abbreviatedIRI="hwo:LightWind"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1105,7 +1093,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1116,11 +1104,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowAirPollution"/>
+        <Class abbreviatedIRI="hwo:LowAirPollution"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
+            <Class abbreviatedIRI="hwo:AirPollution"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1129,7 +1117,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1140,11 +1128,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:LowSolarIrradiance"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
+            <Class abbreviatedIRI="hwo:SolarIrradiance"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1153,7 +1141,7 @@
                 </DatatypeRestriction>
             </DataAllValuesFrom>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1164,11 +1152,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MediumAirPollution"/>
+        <Class abbreviatedIRI="hwo:MediumAirPollution"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
+            <Class abbreviatedIRI="hwo:AirPollution"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1177,7 +1165,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1188,11 +1176,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateBreeze"/>
+        <Class abbreviatedIRI="hwo:ModerateBreeze"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1201,7 +1189,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1212,11 +1200,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateGale"/>
+        <Class abbreviatedIRI="hwo:ModerateGale"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1225,7 +1213,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1236,11 +1224,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation"/>
+        <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
+            <Class abbreviatedIRI="hwo:Precipitation"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
+                <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1249,7 +1237,7 @@
                 </DatatypeRestriction>
             </DataAllValuesFrom>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
+                <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1260,11 +1248,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
+            <Class abbreviatedIRI="hwo:SolarIrradiance"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1273,7 +1261,7 @@
                 </DatatypeRestriction>
             </DataAllValuesFrom>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1284,11 +1272,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity"/>
+        <Class abbreviatedIRI="hwo:MoistHumidity"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity"/>
+            <Class abbreviatedIRI="hwo:Humidity"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1299,11 +1287,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NeglectibleSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:NeglectibleSolarIrradiance"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
+            <Class abbreviatedIRI="hwo:SolarIrradiance"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -1312,7 +1300,7 @@
                 </DatatypeRestriction>
             </DataAllValuesFrom>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1323,21 +1311,21 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation"/>
+        <Class abbreviatedIRI="hwo:NoPrecipitation"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
+            <Class abbreviatedIRI="hwo:Precipitation"/>
             <DataHasValue>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
+                <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind"/>
+        <Class abbreviatedIRI="hwo:NoWind"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -1346,7 +1334,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1357,11 +1345,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity"/>
+        <Class abbreviatedIRI="hwo:OptimumHumidity"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity"/>
+            <Class abbreviatedIRI="hwo:Humidity"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1370,7 +1358,7 @@
                 </DatatypeRestriction>
             </DataAllValuesFrom>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1381,20 +1369,20 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
+        <Class abbreviatedIRI="hwo:Precipitation"/>
         <ObjectUnionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation"/>
+            <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
+            <Class abbreviatedIRI="hwo:LightPrecipitation"/>
+            <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
+            <Class abbreviatedIRI="hwo:NoPrecipitation"/>
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#RoomTemperature"/>
+        <Class abbreviatedIRI="hwo:RoomTemperature"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+            <Class abbreviatedIRI="hwo:Temperature"/>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -1403,7 +1391,7 @@
                 </DatatypeRestriction>
             </DataAllValuesFrom>
             <DataAllValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1414,20 +1402,20 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
         <ObjectUnionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighSolarIrradiance"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowSolarIrradiance"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateSolarIrradiance"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NeglectibleSolarIrradiance"/>
+            <Class abbreviatedIRI="hwo:HighSolarIrradiance"/>
+            <Class abbreviatedIRI="hwo:LowSolarIrradiance"/>
+            <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
+            <Class abbreviatedIRI="hwo:NeglectibleSolarIrradiance"/>
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm"/>
+        <Class abbreviatedIRI="hwo:Storm"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1438,11 +1426,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongBreeze"/>
+        <Class abbreviatedIRI="hwo:StrongBreeze"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1451,7 +1439,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1462,11 +1450,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongGale"/>
+        <Class abbreviatedIRI="hwo:StrongGale"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1475,7 +1463,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1486,11 +1474,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind"/>
+        <Class abbreviatedIRI="hwo:StrongWind"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1499,7 +1487,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1510,21 +1498,21 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#UnknownCloudCover"/>
+        <Class abbreviatedIRI="hwo:UnknownCloudCover"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover"/>
+            <Class abbreviatedIRI="hwo:CloudCover"/>
             <DataHasValue>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryHighAirPollution"/>
+        <Class abbreviatedIRI="hwo:VeryHighAirPollution"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
+            <Class abbreviatedIRI="hwo:AirPollution"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1535,11 +1523,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryLowAirPollution"/>
+        <Class abbreviatedIRI="hwo:VeryLowAirPollution"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
+            <Class abbreviatedIRI="hwo:AirPollution"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -1548,7 +1536,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+                <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1559,11 +1547,11 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ViolentStorm"/>
+        <Class abbreviatedIRI="hwo:ViolentStorm"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1572,7 +1560,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1583,27 +1571,27 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
         <ObjectOneOf>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Cloud"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Fog"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hail"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightCloud"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightRainSun"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#PartlyCloud"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Rain"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Sleet"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Snow"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Sun"/>
-            <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Thunder"/>
+            <NamedIndividual abbreviatedIRI="hwo:Cloud"/>
+            <NamedIndividual abbreviatedIRI="hwo:Fog"/>
+            <NamedIndividual abbreviatedIRI="hwo:Hail"/>
+            <NamedIndividual abbreviatedIRI="hwo:LightCloud"/>
+            <NamedIndividual abbreviatedIRI="hwo:LightRainSun"/>
+            <NamedIndividual abbreviatedIRI="hwo:PartlyCloud"/>
+            <NamedIndividual abbreviatedIRI="hwo:Rain"/>
+            <NamedIndividual abbreviatedIRI="hwo:Sleet"/>
+            <NamedIndividual abbreviatedIRI="hwo:Snow"/>
+            <NamedIndividual abbreviatedIRI="hwo:Sun"/>
+            <NamedIndividual abbreviatedIRI="hwo:Thunder"/>
         </ObjectOneOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WholeGale"/>
+        <Class abbreviatedIRI="hwo:WholeGale"/>
         <ObjectIntersectionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+            <Class abbreviatedIRI="hwo:Wind"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -1612,7 +1600,7 @@
                 </DatatypeRestriction>
             </DataSomeValuesFrom>
             <DataSomeValuesFrom>
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -1623,44 +1611,37 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+        <Class abbreviatedIRI="hwo:Wind"/>
         <ObjectUnionOf>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshGale"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hurricane"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightAir"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightBreeze"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateBreeze"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateGale"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongBreeze"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongGale"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ViolentStorm"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WholeGale"/>
+            <Class abbreviatedIRI="hwo:FreshBreeze"/>
+            <Class abbreviatedIRI="hwo:FreshGale"/>
+            <Class abbreviatedIRI="hwo:GentleBreeze"/>
+            <Class abbreviatedIRI="hwo:Hurricane"/>
+            <Class abbreviatedIRI="hwo:LightAir"/>
+            <Class abbreviatedIRI="hwo:LightBreeze"/>
+            <Class abbreviatedIRI="hwo:LightWind"/>
+            <Class abbreviatedIRI="hwo:ModerateBreeze"/>
+            <Class abbreviatedIRI="hwo:ModerateGale"/>
+            <Class abbreviatedIRI="hwo:NoWind"/>
+            <Class abbreviatedIRI="hwo:Storm"/>
+            <Class abbreviatedIRI="hwo:StrongBreeze"/>
+            <Class abbreviatedIRI="hwo:StrongGale"/>
+            <Class abbreviatedIRI="hwo:StrongWind"/>
+            <Class abbreviatedIRI="hwo:ViolentStorm"/>
+            <Class abbreviatedIRI="hwo:WholeGale"/>
         </ObjectUnionOf>
     </EquivalentClasses>
     <SubClassOf>
-        <Class IRI="http://knowdive.disi.unitn.it/etype#ClimateTrend"/>
-        <Class IRI="http://sweetontology.net/phenPlanetClimate/Climate"/>
+        <Class abbreviatedIRI="wccdl:ClimateTrend"/>
+        <Class abbreviatedIRI="swo:Climate"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://sweetontology.net/phenPlanetClimate/Microclimate"/>
-        <Class IRI="http://sweetontology.net/phenPlanetClimate/Climate"/>
+        <Class abbreviatedIRI="wccdl:WeatherStation"/>
+        <Class abbreviatedIRI="hwo:WeatherReportSource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://sweetontology.net/phenPlanetClimate/Microclimate"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="http://sweetontology.net/relaSpace/hasSpatialScale"/>
-            <NamedIndividual IRI="http://sweetontology.net/stateSpaceScale/Microscale"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#WeatherStation"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource"/>
+        <Class abbreviatedIRI="swo:Microclimate"/>
+        <Class abbreviatedIRI="swo:Climate"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
@@ -2069,24 +2050,24 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:AirPollution"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
+        <Class abbreviatedIRI="hwo:AirPollution"/>
         <DataSomeValuesFrom>
-            <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+            <DataProperty abbreviatedIRI="hwo:hasValue"/>
             <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure"/>
+        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+            <DataProperty abbreviatedIRI="hwo:hasValue"/>
             <DatatypeRestriction>
                 <Datatype abbreviatedIRI="xsd:float"/>
                 <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
@@ -2096,109 +2077,109 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:CloudCover"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature"/>
+        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+            <DataProperty abbreviatedIRI="hwo:hasValue"/>
             <Datatype abbreviatedIRI="xsd:float"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:Humidity"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity"/>
+        <Class abbreviatedIRI="hwo:Humidity"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+            <DataProperty abbreviatedIRI="hwo:hasValue"/>
             <Datatype abbreviatedIRI="xsd:float"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateSolarIrradiance"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:Precipitation"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
+        <Class abbreviatedIRI="hwo:Precipitation"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
+            <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
             <Datatype abbreviatedIRI="xsd:float"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+            <DataProperty abbreviatedIRI="hwo:hasValue"/>
             <Datatype abbreviatedIRI="xsd:float"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:Temperature"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+        <Class abbreviatedIRI="hwo:Temperature"/>
         <DataExactCardinality cardinality="1">
-            <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+            <DataProperty abbreviatedIRI="hwo:hasValue"/>
             <Datatype abbreviatedIRI="xsd:float"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
             <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#createdAt"/>
+            <ObjectProperty abbreviatedIRI="hwo:createdAt"/>
             <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSource"/>
-            <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource"/>
+            <ObjectProperty abbreviatedIRI="hwo:hasSource"/>
+            <Class abbreviatedIRI="hwo:WeatherReportSource"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherForTimeInterval"/>
+            <ObjectProperty abbreviatedIRI="hwo:reportsWeatherForTimeInterval"/>
             <Class IRI="http://www.w3.org/2006/time#Interval"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:Wind"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+        <Class abbreviatedIRI="hwo:Wind"/>
         <ObjectIntersectionOf>
             <DataExactCardinality cardinality="1">
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection"/>
+                <DataProperty abbreviatedIRI="hwo:hasDirection"/>
                 <DatatypeRestriction>
                     <Datatype abbreviatedIRI="xsd:float"/>
                     <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -2207,7 +2188,7 @@
                 </DatatypeRestriction>
             </DataExactCardinality>
             <DataExactCardinality cardinality="1">
-                <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+                <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <Datatype abbreviatedIRI="xsd:float"/>
             </DataExactCardinality>
         </ObjectIntersectionOf>
@@ -2217,45 +2198,45 @@
         <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+        <Class abbreviatedIRI="hwo:AirPollution"/>
+        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
+        <Class abbreviatedIRI="hwo:CloudCover"/>
+        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
+        <Class abbreviatedIRI="hwo:Humidity"/>
+        <Class abbreviatedIRI="hwo:Precipitation"/>
+        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:Temperature"/>
+        <Class abbreviatedIRI="hwo:Wind"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity"/>
+        <Class abbreviatedIRI="hwo:DryHumidity"/>
+        <Class abbreviatedIRI="hwo:MoistHumidity"/>
+        <Class abbreviatedIRI="hwo:OptimumHumidity"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation"/>
+        <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
+        <Class abbreviatedIRI="hwo:LightPrecipitation"/>
+        <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
+        <Class abbreviatedIRI="hwo:NoPrecipitation"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighAirPollution"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowAirPollution"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MediumAirPollution"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryHighAirPollution"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#VeryLowAirPollution"/>
+        <Class abbreviatedIRI="hwo:HighAirPollution"/>
+        <Class abbreviatedIRI="hwo:LowAirPollution"/>
+        <Class abbreviatedIRI="hwo:MediumAirPollution"/>
+        <Class abbreviatedIRI="hwo:VeryHighAirPollution"/>
+        <Class abbreviatedIRI="hwo:VeryLowAirPollution"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighSolarIrradiance"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowSolarIrradiance"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateSolarIrradiance"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NeglectibleSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:HighSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:LowSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
+        <Class abbreviatedIRI="hwo:NeglectibleSolarIrradiance"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind"/>
+        <Class abbreviatedIRI="hwo:LightWind"/>
+        <Class abbreviatedIRI="hwo:NoWind"/>
+        <Class abbreviatedIRI="hwo:Storm"/>
+        <Class abbreviatedIRI="hwo:StrongWind"/>
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
@@ -2314,48 +2295,48 @@
         <NamedIndividual IRI="http://www.w3.org/2006/time#unitYear"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Cloud"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:Cloud"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Fog"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:Fog"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hail"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:Hail"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightCloud"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:LightCloud"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightRainSun"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:LightRainSun"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#PartlyCloud"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:PartlyCloud"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Rain"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:Rain"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Sleet"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:Sleet"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Snow"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:Snow"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Sun"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:Sun"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
-        <NamedIndividual IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Thunder"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <NamedIndividual abbreviatedIRI="hwo:Thunder"/>
     </ClassAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.w3.org/2006/time#days"/>
@@ -2602,14 +2583,6 @@
         <NamedIndividual IRI="http://www.w3.org/2006/time#unitYear"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#recordedAt"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#relatedTo"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasTime"/>
@@ -2663,51 +2636,51 @@
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalIn"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAirPollution"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasAirPollution"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAtmosphericPressure"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasAtmosphericPressure"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasCloudCover"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasCloudCover"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDewPointTemperature"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasDewPointTemperature"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasExteriorTemperature"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasExteriorTemperature"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasHumidity"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasHumidity"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPrecipitation"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasPrecipitation"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPrecipitation"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasPrecipitation"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSolarIrradiation"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasSolarIrradiation"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWind"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWind"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#isSourceOf"/>
+        <ObjectProperty abbreviatedIRI="hwo:isSourceOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherObservation"/>
+        <ObjectProperty abbreviatedIRI="hwo:reportsWeatherObservation"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
@@ -2739,69 +2712,61 @@
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalStarts"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSource"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#isSourceOf"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasSource"/>
+        <ObjectProperty abbreviatedIRI="hwo:isSourceOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherReport"/>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherObservation"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherReport"/>
+        <ObjectProperty abbreviatedIRI="hwo:reportsWeatherObservation"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAirPollution"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasAirPollution"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAtmosphericPressure"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasAtmosphericPressure"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasCloudCover"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasCloudCover"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDewPointTemperature"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasDewPointTemperature"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasExteriorTemperature"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasExteriorTemperature"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasHumidity"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasHumidity"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPrecipitation"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasPrecipitation"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSolarIrradiation"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasSolarIrradiation"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherCondition"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherCondition"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWind"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWind"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherObservation"/>
+        <ObjectProperty abbreviatedIRI="hwo:reportsWeatherObservation"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherReport"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherReport"/>
     </InverseFunctionalObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
     </TransitiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#recordedAt"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#relatedTo"/>
-        <Class IRI="http://knowdive.disi.unitn.it/etype#Anomaly"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-        <Class IRI="#WeatherStation"/>
+        <Class abbreviatedIRI="wccdl:WeatherStation"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#after"/>
@@ -2930,29 +2895,21 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#createdAt"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <ObjectProperty abbreviatedIRI="hwo:createdAt"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPrecipitation"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasPrecipitation"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSource"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasSource"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherForTimeInterval"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <ObjectProperty abbreviatedIRI="hwo:reportsWeatherForTimeInterval"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#recordedAt"/>
-        <Class IRI="#WeatherStation"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#relatedTo"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
@@ -3090,80 +3047,76 @@
         <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#createdAt"/>
+        <ObjectProperty abbreviatedIRI="hwo:createdAt"/>
         <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAirPollution"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasAirPollution"/>
+        <Class abbreviatedIRI="hwo:AirPollution"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasAtmosphericPressure"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasAtmosphericPressure"/>
+        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasCloudCover"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasCloudCover"/>
+        <Class abbreviatedIRI="hwo:CloudCover"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDewPointTemperature"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasDewPointTemperature"/>
+        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasExteriorTemperature"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasExteriorTemperature"/>
+        <Class abbreviatedIRI="hwo:Temperature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasHumidity"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasHumidity"/>
+        <Class abbreviatedIRI="hwo:Humidity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasObservationTime"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasObservationTime"/>
         <ObjectUnionOf>
             <Class IRI="http://www.w3.org/2006/time#Instant"/>
             <Class IRI="http://www.w3.org/2006/time#Interval"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPrecipitation"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasPrecipitation"/>
+        <Class abbreviatedIRI="hwo:Precipitation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSolarIrradiation"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasSolarIrradiation"/>
+        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSource"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasSource"/>
+        <Class abbreviatedIRI="hwo:WeatherReportSource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherCondition"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherCondition"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
+        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherReport"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWeatherReport"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWind"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+        <ObjectProperty abbreviatedIRI="hwo:hasWind"/>
+        <Class abbreviatedIRI="hwo:Wind"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherForTimeInterval"/>
+        <ObjectProperty abbreviatedIRI="hwo:reportsWeatherForTimeInterval"/>
         <Class IRI="http://www.w3.org/2006/time#Interval"/>
     </ObjectPropertyRange>
     <DisjointObjectProperties>
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalEquals"/>
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalIn"/>
     </DisjointObjectProperties>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasType"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
     <FunctionalDataProperty>
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
     </FunctionalDataProperty>
@@ -3171,42 +3124,26 @@
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection"/>
+        <DataProperty abbreviatedIRI="hwo:hasDirection"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLatitude"/>
+        <DataProperty abbreviatedIRI="hwo:hasLatitude"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLongitude"/>
+        <DataProperty abbreviatedIRI="hwo:hasLongitude"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+        <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasStartTime"/>
+        <DataProperty abbreviatedIRI="hwo:hasStartTime"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasTime"/>
+        <DataProperty abbreviatedIRI="hwo:hasTime"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+        <DataProperty abbreviatedIRI="hwo:hasValue"/>
     </FunctionalDataProperty>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasName"/>
-        <Class IRI="http://knowdive.disi.unitn.it/etype#Region"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasName"/>
-        <Class IRI="#WeatherStation"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasType"/>
-        <Class IRI="http://knowdive.disi.unitn.it/etype#Anomaly"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasType"/>
-        <Class IRI="http://sweetontology.net/phenPlanetClimate/Microclimate"/>
-    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
@@ -3320,33 +3257,25 @@
         <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+        <DataProperty abbreviatedIRI="hwo:hasDirection"/>
+        <Class abbreviatedIRI="hwo:Wind"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation"/>
+        <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
+        <Class abbreviatedIRI="hwo:Precipitation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
-        <Class IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind"/>
+        <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
+        <Class abbreviatedIRI="hwo:Wind"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasStartTime"/>
+        <DataProperty abbreviatedIRI="hwo:hasStartTime"/>
         <Class IRI="http://www.w3.org/2006/time#Interval"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasTime"/>
+        <DataProperty abbreviatedIRI="hwo:hasTime"/>
         <Class IRI="http://www.w3.org/2006/time#Instant"/>
     </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasName"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasType"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="http://www.w3.org/2006/time#dayOfYear"/>
         <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
@@ -3436,7 +3365,7 @@
         <Datatype abbreviatedIRI="xsd:decimal"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection"/>
+        <DataProperty abbreviatedIRI="hwo:hasDirection"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:float"/>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxExclusive">
@@ -3445,11 +3374,11 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity"/>
+        <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLatitude"/>
+        <DataProperty abbreviatedIRI="hwo:hasLatitude"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:float"/>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -3458,7 +3387,7 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLatitude"/>
+        <DataProperty abbreviatedIRI="hwo:hasLatitude"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:float"/>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -3467,7 +3396,7 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLongitude"/>
+        <DataProperty abbreviatedIRI="hwo:hasLongitude"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:float"/>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
@@ -3476,7 +3405,7 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasLongitude"/>
+        <DataProperty abbreviatedIRI="hwo:hasLongitude"/>
         <DatatypeRestriction>
             <Datatype abbreviatedIRI="xsd:float"/>
             <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
@@ -3485,73 +3414,73 @@
         </DatatypeRestriction>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed"/>
+        <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasStartTime"/>
+        <DataProperty abbreviatedIRI="hwo:hasStartTime"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasTime"/>
+        <DataProperty abbreviatedIRI="hwo:hasTime"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasUnit"/>
+        <DataProperty abbreviatedIRI="hwo:hasUnit"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue"/>
+        <DataProperty abbreviatedIRI="hwo:hasValue"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://knowdive.disi.unitn.it/etype#Anomaly</IRI>
+        <AbbreviatedIRI>wccdl:Anomaly</AbbreviatedIRI>
         <Literal xml:lang="en">The difference between the observed value of a meteorological variable and its long-term climatological average (baseline).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://knowdive.disi.unitn.it/etype#Anomaly</IRI>
+        <AbbreviatedIRI>wccdl:Anomaly</AbbreviatedIRI>
         <Literal xml:lang="it">Una deviazione significativa delle condizioni climatiche medie o normali per una specifica area e periodo di tempo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://knowdive.disi.unitn.it/etype#ClimateTrend</IRI>
+        <AbbreviatedIRI>wccdl:ClimateTrend</AbbreviatedIRI>
         <Literal xml:lang="en">A persistent pattern or direction of change in average climatic conditions (such as temperature or precipitation) observed over a long period of time.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://knowdive.disi.unitn.it/etype#ClimateTrend</IRI>
+        <AbbreviatedIRI>wccdl:ClimateTrend</AbbreviatedIRI>
         <Literal xml:lang="it">Una tendenza o direzione persistente di cambiamento nelle condizioni climatiche medie (come temperatura o precipitazioni) osservata su un lungo periodo di tempo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://knowdive.disi.unitn.it/etype#Range</IRI>
+        <AbbreviatedIRI>wccdl:Range</AbbreviatedIRI>
         <Literal xml:lang="en">A range is an interval characterized by a lower bound and an upper bound, representing the span between two limiting values. It is used to specify the permissible or observed limits of a measurable quantity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://knowdive.disi.unitn.it/etype#Region</IRI>
+        <AbbreviatedIRI>wccdl:Region</AbbreviatedIRI>
         <Literal>A geographical region</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://knowdive.disi.unitn.it/etype#YearSeason</IRI>
+        <AbbreviatedIRI>wccdl:YearSeason</AbbreviatedIRI>
         <Literal xml:lang="en">A climatological analysis unit representing the seasonal conditions observed in a specific geographic region during a given year, serving as a context for assessing climate trends.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://knowdive.disi.unitn.it/etype#YearSeason</IRI>
+        <AbbreviatedIRI>wccdl:YearSeason</AbbreviatedIRI>
         <Literal xml:lang="it">Un&apos;unità di analisi climatologica che rappresenta le condizioni stagionali osservate in una specifica regione geografica durante un determinato anno, fungendo da contesto per la valutazione dei trend climatici.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://sweetontology.net/phenPlanetClimate/Microclimate</IRI>
+        <AbbreviatedIRI>swo:Microclimate</AbbreviatedIRI>
         <Literal>A set of local atmospheric conditions that differ from those in the surrounding general area. Microclimates are influenced by local features such as topography, water bodies, vegetation, and urban structures, and can exist on scales ranging from a few square meters to several kilometers.&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://sweetontology.net/phenPlanetClimate/Microclimate</IRI>
+        <AbbreviatedIRI>swo:Microclimate</AbbreviatedIRI>
         <Literal xml:lang="en">microclimate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -7286,207 +7215,207 @@ The range of this property is not specified, so can be replaced by any specific 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AirPollution</IRI>
+        <AbbreviatedIRI>hwo:AirPollution</AbbreviatedIRI>
         <Literal xml:lang="en">the current air pollution represented as European Air Quality Index value. The index value is based on 3 pollutants of major concern in Europe: PM10, NO2, O3 and will be able to take into account to 3 additional pollutants (CO, PM2.5 and SO2) where data are also available.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AtmosphericPressure</IRI>
+        <AbbreviatedIRI>hwo:AtmosphericPressure</AbbreviatedIRI>
         <Literal xml:lang="en">atmospheric pressure in hectopascal (hPa)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#CloudCover</IRI>
+        <AbbreviatedIRI>hwo:CloudCover</AbbreviatedIRI>
         <Literal xml:lang="en">clound cover in the unit &quot;Okta&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature</IRI>
+        <AbbreviatedIRI>hwo:DewPointTemperature</AbbreviatedIRI>
         <Literal xml:lang="en">The dewpoint temperature in degrees Celsius. It is the temperature at which the air can no longer hold all of its water vapor, and some of the water vapor must condense into liquid water. The dew point is always lower than (or equal to) the air temperature.
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DewPointTemperature</IRI>
+        <AbbreviatedIRI>hwo:DewPointTemperature</AbbreviatedIRI>
         <Literal xml:lang="en">this concept was known as &quot;DewPoint&quot; in prior versions of the ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HighSolarIrradiance</IRI>
+        <AbbreviatedIRI>hwo:HighSolarIrradiance</AbbreviatedIRI>
         <Literal xml:lang="en">this concept was known as &quot;HighSolarRadiation&quot; in prior versions of the ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity</IRI>
+        <AbbreviatedIRI>hwo:Humidity</AbbreviatedIRI>
         <Literal xml:lang="en">represents the relative humidity of the air in percent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LowSolarIrradiance</IRI>
+        <AbbreviatedIRI>hwo:LowSolarIrradiance</AbbreviatedIRI>
         <Literal xml:lang="en">this concept was known as &quot;LowSolarRadiation&quot; in prior versions of the ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation</IRI>
+        <AbbreviatedIRI>hwo:ModeratePrecipitation</AbbreviatedIRI>
         <Literal xml:lang="en">this concept was known as &quot;MediumPrecipitation&quot; in prior versions of the ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NeglectibleSolarIrradiance</IRI>
+        <AbbreviatedIRI>hwo:NeglectibleSolarIrradiance</AbbreviatedIRI>
         <Literal xml:lang="en">this concept was known as &quot;NeglectibleSolarRadiation&quot; in prior versions of the ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation</IRI>
+        <AbbreviatedIRI>hwo:Precipitation</AbbreviatedIRI>
         <Literal xml:lang="en">represents precipitation in millimetres</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance</IRI>
+        <AbbreviatedIRI>hwo:SolarIrradiance</AbbreviatedIRI>
         <Literal xml:lang="en">measurement of solar irrradiation at a specific location in Watts per square meter (W/m²)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#SolarIrradiance</IRI>
+        <AbbreviatedIRI>hwo:SolarIrradiance</AbbreviatedIRI>
         <Literal xml:lang="en">this concept was known as &quot;SolarRadiation&quot; in prior versions of the ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature</IRI>
+        <AbbreviatedIRI>hwo:Temperature</AbbreviatedIRI>
         <Literal xml:lang="en">exterior temperature in degrees Celsius</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition</IRI>
+        <AbbreviatedIRI>hwo:WeatherCondition</AbbreviatedIRI>
         <Literal xml:lang="en">One-word description of the observed weather condition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon</IRI>
+        <AbbreviatedIRI>hwo:WeatherPhenomenon</AbbreviatedIRI>
         <Literal xml:lang="en">different weather phenomena that may influence the current and forecasted weather state.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport</IRI>
+        <AbbreviatedIRI>hwo:WeatherReport</AbbreviatedIRI>
         <Literal xml:lang="en">a weather report that can be retrieved through a local sensor (e.g. weather station integrated in the smart home) or a remote internet service. Further a time division has been realized to differentiate between current, short, mid and long term forecasts. 
 
 For the smart home domain, a time window of 24 hours for weather forecasts has been seen as suitable with a 24 hours forecast being classified as long-term forecast</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource</IRI>
+        <AbbreviatedIRI>hwo:WeatherReportSource</AbbreviatedIRI>
         <Literal xml:lang="en">Holds information about the origins of weather reports</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind</IRI>
+        <AbbreviatedIRI>hwo:Wind</AbbreviatedIRI>
         <Literal xml:lang="en">Unit of wind direction is degrees 
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind</IRI>
+        <AbbreviatedIRI>hwo:Wind</AbbreviatedIRI>
         <Literal xml:lang="en">Unit of wind speed in metres per second (m/s).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind</IRI>
+        <AbbreviatedIRI>hwo:Wind</AbbreviatedIRI>
         <Literal xml:lang="en">Wind direction and speed are represented as datatype properties&quot;hasDirection&quot; and &quot;hasSpeed&quot;
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#createdAt</IRI>
+        <AbbreviatedIRI>hwo:createdAt</AbbreviatedIRI>
         <Literal xml:lang="en">The instant at which a weather report is created</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection</IRI>
+        <AbbreviatedIRI>hwo:hasDirection</AbbreviatedIRI>
         <Literal xml:lang="en">Wind direction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection</IRI>
+        <AbbreviatedIRI>hwo:hasDirection</AbbreviatedIRI>
         <Literal xml:lang="en">Wind direction represented in degrees</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasObservationTime</IRI>
+        <AbbreviatedIRI>hwo:hasObservationTime</AbbreviatedIRI>
         <Literal xml:lang="en">Denotes the time a weather state has been observed or is forecasted for.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSource</IRI>
+        <AbbreviatedIRI>hwo:hasSource</AbbreviatedIRI>
         <Literal xml:lang="en">links a weather report to the reporting source, either an internet weather service or a local weather sensor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed</IRI>
+        <AbbreviatedIRI>hwo:hasSpeed</AbbreviatedIRI>
         <Literal xml:lang="en">Wind speed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed</IRI>
+        <AbbreviatedIRI>hwo:hasSpeed</AbbreviatedIRI>
         <Literal xml:lang="en">wind speed in metres per second (m/s)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasUnit</IRI>
+        <AbbreviatedIRI>hwo:hasUnit</AbbreviatedIRI>
         <Literal>Unit associated with the selected property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasValue</IRI>
+        <AbbreviatedIRI>hwo:hasValue</AbbreviatedIRI>
         <Literal xml:lang="en">Value associated with the selected property</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherCondition</IRI>
+        <AbbreviatedIRI>hwo:hasWeatherCondition</AbbreviatedIRI>
         <Literal xml:lang="en">relation of weather states and a one-word description for the observed weather situation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherPhenomenon</IRI>
+        <AbbreviatedIRI>hwo:hasWeatherPhenomenon</AbbreviatedIRI>
         <Literal xml:lang="en">Relation between weather states and the phenomena that are observed or forecasted</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasWeatherReport</IRI>
+        <AbbreviatedIRI>hwo:hasWeatherReport</AbbreviatedIRI>
         <Literal xml:lang="en">a specific weather state is reported for a location by a weather report.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#reportsWeatherForTimeInterval</IRI>
+        <AbbreviatedIRI>hwo:reportsWeatherForTimeInterval</AbbreviatedIRI>
         <Literal xml:lang="en">this property describes an interval that denotes the time in the future (offset) for which the weather is reported</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483722"/>
+        <AnonymousIndividual nodeID="_:genid2147483734"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483723"/>
+        <AnonymousIndividual nodeID="_:genid2147483735"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483724"/>
+        <AnonymousIndividual nodeID="_:genid2147483736"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483725"/>
+        <AnonymousIndividual nodeID="_:genid2147483737"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483726"/>
+        <AnonymousIndividual nodeID="_:genid2147483738"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483727"/>
+        <AnonymousIndividual nodeID="_:genid2147483739"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
 </Ontology>
