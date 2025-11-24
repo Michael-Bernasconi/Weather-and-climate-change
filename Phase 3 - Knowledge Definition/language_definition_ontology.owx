@@ -272,6 +272,36 @@
         <Class abbreviatedIRI="hwo:Wind"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_applied_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_derived_from"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_developed_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_located_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_max_temperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_mean_temperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_min_temperature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_observed_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_relation_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
     </Declaration>
     <Declaration>
@@ -426,6 +456,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="hwo:reportsWeatherObservation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="wccdl:has_weather_code"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
@@ -2584,6 +2617,46 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_applied_to"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_derived_from"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_developed_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_located_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_max_temperature"/>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_mean_temperature"/>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_min_temperature"/>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_observed_in"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_relation_to"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasTime"/>
     </SubObjectPropertyOf>
@@ -2720,6 +2793,21 @@
         <ObjectProperty abbreviatedIRI="hwo:reportsWeatherObservation"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_derived_from"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_developed_in"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_observed_in"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
@@ -2761,9 +2849,40 @@
     <InverseFunctionalObjectProperty>
         <ObjectProperty abbreviatedIRI="hwo:hasWeatherReport"/>
     </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
+    </AsymmetricObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
     </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wccdl:has_applied_to"/>
+        <Class abbreviatedIRI="wccdl:ClimateTrend"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wccdl:has_derived_from"/>
+        <Class abbreviatedIRI="wccdl:ClimateTrend"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wccdl:has_developed_in"/>
+        <Class abbreviatedIRI="swo:Microclimate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wccdl:has_located_in"/>
+        <Class abbreviatedIRI="wccdl:WeatherStation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wccdl:has_observed_in"/>
+        <Class abbreviatedIRI="wccdl:YearSeason"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wccdl:has_relation_to"/>
+        <Class abbreviatedIRI="wccdl:Anomaly"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
         <Class abbreviatedIRI="wccdl:WeatherStation"/>
@@ -2910,6 +3029,34 @@
         <ObjectProperty abbreviatedIRI="hwo:reportsWeatherForTimeInterval"/>
         <Class abbreviatedIRI="hwo:WeatherReport"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wccdl:has_applied_to"/>
+        <Class abbreviatedIRI="wccdl:City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wccdl:has_derived_from"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wccdl:has_developed_in"/>
+        <Class abbreviatedIRI="wccdl:City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wccdl:has_located_in"/>
+        <Class abbreviatedIRI="wccdl:City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wccdl:has_observed_in"/>
+        <Class abbreviatedIRI="wccdl:City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wccdl:has_relation_to"/>
+        <Class abbreviatedIRI="hwo:WeatherReport"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
+        <Class abbreviatedIRI="hwo:Temperature"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
@@ -3117,6 +3264,10 @@
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalEquals"/>
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalIn"/>
     </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="wccdl:has_weather_code"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
     <FunctionalDataProperty>
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
     </FunctionalDataProperty>
@@ -3144,6 +3295,10 @@
     <FunctionalDataProperty>
         <DataProperty abbreviatedIRI="hwo:hasValue"/>
     </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="wccdl:has_weather_code"/>
+        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
         <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
@@ -3276,6 +3431,10 @@
         <DataProperty abbreviatedIRI="hwo:hasTime"/>
         <Class IRI="http://www.w3.org/2006/time#Instant"/>
     </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="wccdl:has_weather_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="http://www.w3.org/2006/time#dayOfYear"/>
         <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
@@ -3477,6 +3636,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:YearSeason</AbbreviatedIRI>
         <Literal xml:lang="it">Un&apos;unità di analisi climatologica che rappresenta le condizioni stagionali osservate in una specifica regione geografica durante un determinato anno, fungendo da contesto per la valutazione dei trend climatici.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_temperature_information</AbbreviatedIRI>
+        <Literal xml:lang="it">Informazioni sulla temperatura per un certo report metereologico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_temperature_information</AbbreviatedIRI>
+        <Literal xml:lang="en">Temperature information for a weather report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_weather_code</AbbreviatedIRI>
+        <Literal xml:lang="it">esprime la relazione tra un Weather_Phenomenon (ad esempio: nuvoloso, pioggia lieve, pioggia forte) e il relativo codice meteorologico WMO, che identifica lo stesso fenomeno secondo il sistema di classificazione della World Meteorological Organization.ù</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_weather_code</AbbreviatedIRI>
+        <Literal xml:lang="en">expresses the relationship between a Weather_Phenomenon (e.g., cloudy, light rain, heavy rain) and the corresponding WMO weather code that identifies the same phenomenon according to the World Meteorological Organization classification system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7395,32 +7574,32 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483722"/>
+        <AnonymousIndividual nodeID="_:genid2147483802"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483723"/>
+        <AnonymousIndividual nodeID="_:genid2147483803"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483724"/>
+        <AnonymousIndividual nodeID="_:genid2147483804"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483725"/>
+        <AnonymousIndividual nodeID="_:genid2147483805"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483726"/>
+        <AnonymousIndividual nodeID="_:genid2147483806"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483727"/>
+        <AnonymousIndividual nodeID="_:genid2147483807"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
 </Ontology>
