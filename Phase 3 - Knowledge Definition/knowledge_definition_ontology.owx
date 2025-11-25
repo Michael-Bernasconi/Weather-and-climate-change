@@ -1436,6 +1436,10 @@
         <Class abbreviatedIRI="wccdl:City"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wccdl:has_precipitation_information"/>
+        <Class abbreviatedIRI="wccdl:Precipitation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="wccdl:has_precipitation_mm"/>
         <Class abbreviatedIRI="wccdl:Precipitation"/>
     </ObjectPropertyRange>
@@ -1457,7 +1461,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
-        <Class abbreviatedIRI="wccdl:Precipitation"/>
+        <Class abbreviatedIRI="wccdl:Temperature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="wccdl:has_temperature_range"/>
