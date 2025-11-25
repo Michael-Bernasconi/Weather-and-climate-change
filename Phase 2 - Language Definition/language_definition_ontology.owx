@@ -15,7 +15,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="wccdl" IRI="http://knowdive.disi.unitn.it/etype#"/>
-    <Import>http://www.w3.org/2006/time</Import>
     <Declaration>
         <Class abbreviatedIRI="wccdl:Anomaly"/>
     </Declaration>
@@ -23,85 +22,73 @@
         <Class abbreviatedIRI="wccdl:City"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="wccdl:Climate"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="wccdl:ClimateTrend"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:Humidity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:Instant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:Interval"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:Microclimate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:Point"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:Precipitation"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="wccdl:Range"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="wccdl:SpatialThing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:WeatherPhenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:WeatherReportSource"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="wccdl:WeatherStation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:Wind"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="wccdl:YearSeason"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="swo:Climate"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="swo:Microclimate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.w3.org/2006/time#DateTimeInterval"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#Duration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#Interval"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2006/time#January"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#TRS"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#TemporalDuration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#TemporalPosition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#TimePosition"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/2006/time#TimeZone"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2006/time#Year"/>
@@ -113,22 +100,10 @@
         <Class abbreviatedIRI="hwo:AboveZeroTemperature"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="hwo:AirPollution"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="hwo:BelowOrZeroTemperature"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="hwo:BelowRoomTemperature"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:CloudCover"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="hwo:DryHumidity"/>
@@ -158,15 +133,6 @@
         <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="hwo:HighAirPollution"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:HighSolarIrradiance"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:Humidity"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="hwo:Hurricane"/>
     </Declaration>
     <Declaration>
@@ -182,15 +148,6 @@
         <Class abbreviatedIRI="hwo:LightWind"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="hwo:LowAirPollution"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:LowSolarIrradiance"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:MediumAirPollution"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="hwo:ModerateBreeze"/>
     </Declaration>
     <Declaration>
@@ -200,13 +157,7 @@
         <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="hwo:MoistHumidity"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:NeglectibleSolarIrradiance"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="hwo:NoPrecipitation"/>
@@ -218,13 +169,7 @@
         <Class abbreviatedIRI="hwo:OptimumHumidity"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="hwo:Precipitation"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="hwo:RoomTemperature"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="hwo:Storm"/>
@@ -239,37 +184,10 @@
         <Class abbreviatedIRI="hwo:StrongWind"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="hwo:Temperature"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:UnknownCloudCover"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:VeryHighAirPollution"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:VeryLowAirPollution"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="hwo:ViolentStorm"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:WeatherReportSource"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="hwo:WholeGale"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:Wind"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
@@ -698,16 +616,70 @@
         <Datatype IRI="http://www.w3.org/2006/time#generalYear"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        <Class abbreviatedIRI="wccdl:Humidity"/>
         <ObjectUnionOf>
-            <Class IRI="http://www.w3.org/2006/time#Instant"/>
-            <Class IRI="http://www.w3.org/2006/time#Interval"/>
+            <Class abbreviatedIRI="hwo:DryHumidity"/>
+            <Class abbreviatedIRI="hwo:MoistHumidity"/>
+            <Class abbreviatedIRI="hwo:OptimumHumidity"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="wccdl:Precipitation"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
+            <Class abbreviatedIRI="hwo:LightPrecipitation"/>
+            <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
+            <Class abbreviatedIRI="hwo:NoPrecipitation"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="wccdl:Instant"/>
+            <Class abbreviatedIRI="wccdl:Interval"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
+        <ObjectOneOf>
+            <NamedIndividual abbreviatedIRI="hwo:Cloud"/>
+            <NamedIndividual abbreviatedIRI="hwo:Fog"/>
+            <NamedIndividual abbreviatedIRI="hwo:Hail"/>
+            <NamedIndividual abbreviatedIRI="hwo:LightCloud"/>
+            <NamedIndividual abbreviatedIRI="hwo:LightRainSun"/>
+            <NamedIndividual abbreviatedIRI="hwo:PartlyCloud"/>
+            <NamedIndividual abbreviatedIRI="hwo:Rain"/>
+            <NamedIndividual abbreviatedIRI="hwo:Sleet"/>
+            <NamedIndividual abbreviatedIRI="hwo:Snow"/>
+            <NamedIndividual abbreviatedIRI="hwo:Sun"/>
+            <NamedIndividual abbreviatedIRI="hwo:Thunder"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="wccdl:Wind"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="hwo:FreshBreeze"/>
+            <Class abbreviatedIRI="hwo:FreshGale"/>
+            <Class abbreviatedIRI="hwo:GentleBreeze"/>
+            <Class abbreviatedIRI="hwo:Hurricane"/>
+            <Class abbreviatedIRI="hwo:LightAir"/>
+            <Class abbreviatedIRI="hwo:LightBreeze"/>
+            <Class abbreviatedIRI="hwo:LightWind"/>
+            <Class abbreviatedIRI="hwo:ModerateBreeze"/>
+            <Class abbreviatedIRI="hwo:ModerateGale"/>
+            <Class abbreviatedIRI="hwo:NoWind"/>
+            <Class abbreviatedIRI="hwo:Storm"/>
+            <Class abbreviatedIRI="hwo:StrongBreeze"/>
+            <Class abbreviatedIRI="hwo:StrongGale"/>
+            <Class abbreviatedIRI="hwo:StrongWind"/>
+            <Class abbreviatedIRI="hwo:ViolentStorm"/>
+            <Class abbreviatedIRI="hwo:WholeGale"/>
         </ObjectUnionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:AboveRoomTemperature"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Temperature"/>
+            <Class abbreviatedIRI="wccdl:Temperature"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -722,7 +694,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:AboveZeroTemperature"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Temperature"/>
+            <Class abbreviatedIRI="wccdl:Temperature"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -735,19 +707,9 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:AirPollution"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="hwo:HighAirPollution"/>
-            <Class abbreviatedIRI="hwo:LowAirPollution"/>
-            <Class abbreviatedIRI="hwo:MediumAirPollution"/>
-            <Class abbreviatedIRI="hwo:VeryHighAirPollution"/>
-            <Class abbreviatedIRI="hwo:VeryLowAirPollution"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="hwo:BelowOrZeroTemperature"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Temperature"/>
+            <Class abbreviatedIRI="wccdl:Temperature"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -762,7 +724,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:BelowRoomTemperature"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Temperature"/>
+            <Class abbreviatedIRI="wccdl:Temperature"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -777,7 +739,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:DryHumidity"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Humidity"/>
+            <Class abbreviatedIRI="wccdl:Humidity"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -792,7 +754,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:ExtremeFrost"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Temperature"/>
+            <Class abbreviatedIRI="wccdl:Temperature"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -807,7 +769,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:ExtremeHeat"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Temperature"/>
+            <Class abbreviatedIRI="wccdl:Temperature"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -822,7 +784,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:FreshBreeze"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -846,7 +808,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:FreshGale"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -870,7 +832,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:Frost"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Temperature"/>
+            <Class abbreviatedIRI="wccdl:Temperature"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -894,7 +856,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:GentleBreeze"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -918,7 +880,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:Heat"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Temperature"/>
+            <Class abbreviatedIRI="wccdl:Temperature"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -933,7 +895,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Precipitation"/>
+            <Class abbreviatedIRI="wccdl:Precipitation"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <DatatypeRestriction>
@@ -946,56 +908,9 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:HighAirPollution"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:AirPollution"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">75</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:HighSolarIrradiance"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:SolarIrradiance"/>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">500.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:Humidity"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="hwo:DryHumidity"/>
-            <Class abbreviatedIRI="hwo:MoistHumidity"/>
-            <Class abbreviatedIRI="hwo:OptimumHumidity"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="hwo:Hurricane"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1010,7 +925,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:LightAir"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1034,7 +949,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:LightBreeze"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1058,7 +973,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:LightPrecipitation"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Precipitation"/>
+            <Class abbreviatedIRI="wccdl:Precipitation"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <DatatypeRestriction>
@@ -1082,7 +997,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:LightWind"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1104,81 +1019,9 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:LowAirPollution"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:AirPollution"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:LowSolarIrradiance"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:SolarIrradiance"/>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">250.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:MediumAirPollution"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:AirPollution"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">75</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="hwo:ModerateBreeze"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1202,7 +1045,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:ModerateGale"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1226,7 +1069,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Precipitation"/>
+            <Class abbreviatedIRI="wccdl:Precipitation"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <DatatypeRestriction>
@@ -1248,33 +1091,9 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:SolarIrradiance"/>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">250.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">500.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="hwo:MoistHumidity"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Humidity"/>
+            <Class abbreviatedIRI="wccdl:Humidity"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -1287,33 +1106,9 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:NeglectibleSolarIrradiance"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:SolarIrradiance"/>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">50.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="hwo:NoPrecipitation"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Precipitation"/>
+            <Class abbreviatedIRI="wccdl:Precipitation"/>
             <DataHasValue>
                 <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
@@ -1323,7 +1118,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:NoWind"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1347,7 +1142,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:OptimumHumidity"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Humidity"/>
+            <Class abbreviatedIRI="wccdl:Humidity"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -1369,18 +1164,9 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:Precipitation"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
-            <Class abbreviatedIRI="hwo:LightPrecipitation"/>
-            <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
-            <Class abbreviatedIRI="hwo:NoPrecipitation"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="hwo:RoomTemperature"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Temperature"/>
+            <Class abbreviatedIRI="wccdl:Temperature"/>
             <DataAllValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasValue"/>
                 <DatatypeRestriction>
@@ -1402,18 +1188,9 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="hwo:HighSolarIrradiance"/>
-            <Class abbreviatedIRI="hwo:LowSolarIrradiance"/>
-            <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
-            <Class abbreviatedIRI="hwo:NeglectibleSolarIrradiance"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="hwo:Storm"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1428,7 +1205,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:StrongBreeze"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1452,7 +1229,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:StrongGale"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1476,7 +1253,7 @@
     <EquivalentClasses>
         <Class abbreviatedIRI="hwo:StrongWind"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1498,58 +1275,9 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:UnknownCloudCover"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:CloudCover"/>
-            <DataHasValue>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:VeryHighAirPollution"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:AirPollution"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:VeryLowAirPollution"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:AirPollution"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="hwo:hasValue"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">25</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="hwo:ViolentStorm"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1571,25 +1299,9 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
-        <ObjectOneOf>
-            <NamedIndividual abbreviatedIRI="hwo:Cloud"/>
-            <NamedIndividual abbreviatedIRI="hwo:Fog"/>
-            <NamedIndividual abbreviatedIRI="hwo:Hail"/>
-            <NamedIndividual abbreviatedIRI="hwo:LightCloud"/>
-            <NamedIndividual abbreviatedIRI="hwo:LightRainSun"/>
-            <NamedIndividual abbreviatedIRI="hwo:PartlyCloud"/>
-            <NamedIndividual abbreviatedIRI="hwo:Rain"/>
-            <NamedIndividual abbreviatedIRI="hwo:Sleet"/>
-            <NamedIndividual abbreviatedIRI="hwo:Snow"/>
-            <NamedIndividual abbreviatedIRI="hwo:Sun"/>
-            <NamedIndividual abbreviatedIRI="hwo:Thunder"/>
-        </ObjectOneOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="hwo:WholeGale"/>
         <ObjectIntersectionOf>
-            <Class abbreviatedIRI="hwo:Wind"/>
+            <Class abbreviatedIRI="wccdl:Wind"/>
             <DataSomeValuesFrom>
                 <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
                 <DatatypeRestriction>
@@ -1610,573 +1322,109 @@
             </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:Wind"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="hwo:FreshBreeze"/>
-            <Class abbreviatedIRI="hwo:FreshGale"/>
-            <Class abbreviatedIRI="hwo:GentleBreeze"/>
-            <Class abbreviatedIRI="hwo:Hurricane"/>
-            <Class abbreviatedIRI="hwo:LightAir"/>
-            <Class abbreviatedIRI="hwo:LightBreeze"/>
-            <Class abbreviatedIRI="hwo:LightWind"/>
-            <Class abbreviatedIRI="hwo:ModerateBreeze"/>
-            <Class abbreviatedIRI="hwo:ModerateGale"/>
-            <Class abbreviatedIRI="hwo:NoWind"/>
-            <Class abbreviatedIRI="hwo:Storm"/>
-            <Class abbreviatedIRI="hwo:StrongBreeze"/>
-            <Class abbreviatedIRI="hwo:StrongGale"/>
-            <Class abbreviatedIRI="hwo:StrongWind"/>
-            <Class abbreviatedIRI="hwo:ViolentStorm"/>
-            <Class abbreviatedIRI="hwo:WholeGale"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
     <SubClassOf>
         <Class abbreviatedIRI="wccdl:ClimateTrend"/>
-        <Class abbreviatedIRI="swo:Climate"/>
+        <Class abbreviatedIRI="wccdl:Climate"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="wccdl:WeatherStation"/>
-        <Class abbreviatedIRI="hwo:WeatherReportSource"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="swo:Microclimate"/>
-        <Class abbreviatedIRI="swo:Climate"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
-            <NamedIndividual IRI="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#day"/>
-            <Datatype abbreviatedIRI="xsd:gDay"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#month"/>
-            <Datatype abbreviatedIRI="xsd:gMonth"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#year"/>
-            <Datatype abbreviatedIRI="xsd:gYear"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DateTimeInterval"/>
-        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Duration"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalDuration"/>
+        <Class abbreviatedIRI="wccdl:Humidity"/>
+        <Class abbreviatedIRI="wccdl:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Duration"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Duration"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#numericDuration"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
-            <NamedIndividual IRI="http://www.opengis.net/def/uom/ISO-8601/0/Gregorian"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#days"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#hours"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#minutes"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#months"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#seconds"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#weeks"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-        <DataAllValuesFrom>
-            <DataProperty IRI="http://www.w3.org/2006/time#years"/>
-            <Datatype abbreviatedIRI="xsd:decimal"/>
-        </DataAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalPosition"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.w3.org/2006/time#dayOfWeek"/>
-        </ObjectMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.w3.org/2006/time#monthOfYear"/>
-        </ObjectMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <ObjectMaxCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.w3.org/2006/time#timeZone"/>
-        </ObjectMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#day"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#dayOfYear"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#hour"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#minute"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#month"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#second"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#week"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#year"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalDuration"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#days"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#hours"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#minutes"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#months"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#seconds"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#weeks"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-        <DataMaxCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#years"/>
-        </DataMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Interval"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#January"/>
-        <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#January"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
-            <NamedIndividual IRI="http://www.w3.org/2006/time#unitMonth"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#January"/>
-        <DataHasValue>
-            <DataProperty IRI="http://www.w3.org/2006/time#month"/>
-            <Literal>--01</Literal>
-        </DataHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-        <Class IRI="http://www.w3.org/2006/time#DateTimeDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
-            <NamedIndividual IRI="http://www.w3.org/2006/time#unitMonth"/>
-        </ObjectHasValue>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#day"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#hour"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#minute"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#month"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#second"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#week"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#year"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
-        <Class IRI="http://www.w3.org/2006/time#Interval"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#TemporalPosition"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalDuration"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#TimePosition"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalPosition"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#TimePosition"/>
-        <ObjectUnionOf>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="http://www.w3.org/2006/time#nominalPosition"/>
-            </DataExactCardinality>
-            <DataExactCardinality cardinality="1">
-                <DataProperty IRI="http://www.w3.org/2006/time#numericPosition"/>
-            </DataExactCardinality>
-        </ObjectUnionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Year"/>
-        <Class IRI="http://www.w3.org/2006/time#DurationDescription"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Year"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#days"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Year"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#hours"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Year"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#minutes"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Year"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#months"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Year"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#seconds"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Year"/>
-        <DataExactCardinality cardinality="0">
-            <DataProperty IRI="http://www.w3.org/2006/time#weeks"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/2006/time#Year"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="http://www.w3.org/2006/time#years"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="hwo:AirPollution"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="hwo:AirPollution"/>
-        <DataSomeValuesFrom>
-            <DataProperty abbreviatedIRI="hwo:hasValue"/>
-            <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="hwo:hasValue"/>
-            <DatatypeRestriction>
-                <Datatype abbreviatedIRI="xsd:float"/>
-                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
-                </FacetRestriction>
-            </DatatypeRestriction>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="hwo:CloudCover"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
+        <Class abbreviatedIRI="wccdl:Humidity"/>
         <DataExactCardinality cardinality="1">
             <DataProperty abbreviatedIRI="hwo:hasValue"/>
             <Datatype abbreviatedIRI="xsd:float"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:Humidity"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:Humidity"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="hwo:hasValue"/>
-            <Datatype abbreviatedIRI="xsd:float"/>
-        </DataExactCardinality>
+        <Class abbreviatedIRI="wccdl:Interval"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
-        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
+        <Class abbreviatedIRI="wccdl:Microclimate"/>
+        <Class abbreviatedIRI="wccdl:Climate"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:Precipitation"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
+        <Class abbreviatedIRI="wccdl:Point"/>
+        <Class abbreviatedIRI="wccdl:SpatialThing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:Precipitation"/>
+        <Class abbreviatedIRI="wccdl:Precipitation"/>
+        <Class abbreviatedIRI="wccdl:WeatherPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wccdl:Precipitation"/>
         <DataExactCardinality cardinality="1">
             <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
             <Datatype abbreviatedIRI="xsd:float"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
+        <Class abbreviatedIRI="wccdl:Temperature"/>
+        <Class abbreviatedIRI="wccdl:WeatherPhenomenon"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
+        <Class abbreviatedIRI="wccdl:Temperature"/>
         <DataExactCardinality cardinality="1">
             <DataProperty abbreviatedIRI="hwo:hasValue"/>
             <Datatype abbreviatedIRI="xsd:float"/>
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:Temperature"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="hwo:Temperature"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty abbreviatedIRI="hwo:hasValue"/>
-            <Datatype abbreviatedIRI="xsd:float"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-            <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+            <Class abbreviatedIRI="wccdl:Point"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="hwo:createdAt"/>
-            <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+            <Class abbreviatedIRI="wccdl:TemporalEntity"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="hwo:hasSource"/>
-            <Class abbreviatedIRI="hwo:WeatherReportSource"/>
+            <Class abbreviatedIRI="wccdl:WeatherReportSource"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty abbreviatedIRI="hwo:reportsWeatherForTimeInterval"/>
-            <Class IRI="http://www.w3.org/2006/time#Interval"/>
+            <Class abbreviatedIRI="wccdl:Interval"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:Wind"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
+        <Class abbreviatedIRI="wccdl:WeatherStation"/>
+        <Class abbreviatedIRI="wccdl:WeatherReportSource"/>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="hwo:Wind"/>
+        <Class abbreviatedIRI="wccdl:Wind"/>
+        <Class abbreviatedIRI="wccdl:WeatherPhenomenon"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="wccdl:Wind"/>
         <ObjectIntersectionOf>
             <DataExactCardinality cardinality="1">
                 <DataProperty abbreviatedIRI="hwo:hasDirection"/>
@@ -2193,20 +1441,73 @@
             </DataExactCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#DateTimeInterval"/>
         <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
-    </DisjointClasses>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#January"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
+            <NamedIndividual IRI="http://www.w3.org/2006/time#unitMonth"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#January"/>
+        <DataHasValue>
+            <DataProperty IRI="http://www.w3.org/2006/time#month"/>
+            <Literal>--01</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
+        <Class abbreviatedIRI="wccdl:Interval"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="http://www.w3.org/2006/time#days"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="http://www.w3.org/2006/time#hours"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="http://www.w3.org/2006/time#minutes"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="http://www.w3.org/2006/time#months"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="http://www.w3.org/2006/time#seconds"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Year"/>
+        <DataExactCardinality cardinality="0">
+            <DataProperty IRI="http://www.w3.org/2006/time#weeks"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/2006/time#Year"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="http://www.w3.org/2006/time#years"/>
+        </DataExactCardinality>
+    </SubClassOf>
     <DisjointClasses>
-        <Class abbreviatedIRI="hwo:AirPollution"/>
-        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
-        <Class abbreviatedIRI="hwo:CloudCover"/>
-        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
-        <Class abbreviatedIRI="hwo:Humidity"/>
-        <Class abbreviatedIRI="hwo:Precipitation"/>
-        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
-        <Class abbreviatedIRI="hwo:Temperature"/>
-        <Class abbreviatedIRI="hwo:Wind"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
+        <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class abbreviatedIRI="hwo:DryHumidity"/>
@@ -2220,122 +1521,81 @@
         <Class abbreviatedIRI="hwo:NoPrecipitation"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI="hwo:HighAirPollution"/>
-        <Class abbreviatedIRI="hwo:LowAirPollution"/>
-        <Class abbreviatedIRI="hwo:MediumAirPollution"/>
-        <Class abbreviatedIRI="hwo:VeryHighAirPollution"/>
-        <Class abbreviatedIRI="hwo:VeryLowAirPollution"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class abbreviatedIRI="hwo:HighSolarIrradiance"/>
-        <Class abbreviatedIRI="hwo:LowSolarIrradiance"/>
-        <Class abbreviatedIRI="hwo:ModerateSolarIrradiance"/>
-        <Class abbreviatedIRI="hwo:NeglectibleSolarIrradiance"/>
-    </DisjointClasses>
-    <DisjointClasses>
         <Class abbreviatedIRI="hwo:LightWind"/>
         <Class abbreviatedIRI="hwo:NoWind"/>
         <Class abbreviatedIRI="hwo:Storm"/>
         <Class abbreviatedIRI="hwo:StrongWind"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
         <NamedIndividual IRI="http://www.w3.org/2006/time#Friday"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
         <NamedIndividual IRI="http://www.w3.org/2006/time#Monday"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
         <NamedIndividual IRI="http://www.w3.org/2006/time#Saturday"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
         <NamedIndividual IRI="http://www.w3.org/2006/time#Sunday"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
         <NamedIndividual IRI="http://www.w3.org/2006/time#Thursday"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
         <NamedIndividual IRI="http://www.w3.org/2006/time#Tuesday"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
         <NamedIndividual IRI="http://www.w3.org/2006/time#Wednesday"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-        <NamedIndividual IRI="http://www.w3.org/2006/time#unitDay"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-        <NamedIndividual IRI="http://www.w3.org/2006/time#unitHour"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-        <NamedIndividual IRI="http://www.w3.org/2006/time#unitMinute"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-        <NamedIndividual IRI="http://www.w3.org/2006/time#unitMonth"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-        <NamedIndividual IRI="http://www.w3.org/2006/time#unitSecond"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-        <NamedIndividual IRI="http://www.w3.org/2006/time#unitWeek"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-        <NamedIndividual IRI="http://www.w3.org/2006/time#unitYear"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:Cloud"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:Fog"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:Hail"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:LightCloud"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:LightRainSun"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:PartlyCloud"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:Rain"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:Sleet"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:Snow"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:Sun"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <NamedIndividual abbreviatedIRI="hwo:Thunder"/>
     </ClassAssertion>
     <DataPropertyAssertion>
@@ -2770,19 +2030,15 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#after"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#dayOfWeek"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasDateTimeDescription"/>
@@ -2790,34 +2046,27 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasEnd"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
-        <ObjectUnionOf>
-            <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-            <Class IRI="http://www.w3.org/2006/time#TemporalPosition"/>
-        </ObjectUnionOf>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasTemporalDuration"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#inDateTime"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#inTemporalPosition"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#inTimePosition"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#inside"/>
-        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+        <Class abbreviatedIRI="wccdl:Interval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalAfter"/>
@@ -2880,99 +2129,52 @@
         <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#monthOfYear"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#timeZone"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
-        <ObjectUnionOf>
-            <Class IRI="http://www.w3.org/2006/time#Duration"/>
-            <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="hwo:createdAt"/>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="hwo:hasPrecipitation"/>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="hwo:hasSource"/>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty abbreviatedIRI="hwo:reportsWeatherForTimeInterval"/>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#location"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <Class abbreviatedIRI="wccdl:SpatialThing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2006/time#after"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2006/time#before"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2006/time#dayOfWeek"/>
-        <Class IRI="http://www.w3.org/2006/time#DayOfWeek"/>
+        <Class abbreviatedIRI="wccdl:DayOfWeek"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasBeginning"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasDateTimeDescription"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasDuration"/>
-        <Class IRI="http://www.w3.org/2006/time#Duration"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasDurationDescription"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasEnd"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasTRS"/>
-        <Class IRI="http://www.w3.org/2006/time#TRS"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#hasTemporalDuration"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalDuration"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2006/time#hasTime"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#inDateTime"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#inTemporalPosition"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalPosition"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#inTimePosition"/>
-        <Class IRI="http://www.w3.org/2006/time#TimePosition"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2006/time#inside"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalAfter"/>
@@ -3035,83 +2237,51 @@
         <Class IRI="http://www.w3.org/2006/time#ProperInterval"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#monthOfYear"/>
-        <Class IRI="http://www.w3.org/2006/time#MonthOfYear"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#timeZone"/>
-        <Class IRI="http://www.w3.org/2006/time#TimeZone"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/2006/time#unitType"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalUnit"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:createdAt"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="hwo:hasAirPollution"/>
-        <Class abbreviatedIRI="hwo:AirPollution"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="hwo:hasAtmosphericPressure"/>
-        <Class abbreviatedIRI="hwo:AtmosphericPressure"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="hwo:hasCloudCover"/>
-        <Class abbreviatedIRI="hwo:CloudCover"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="hwo:hasDewPointTemperature"/>
-        <Class abbreviatedIRI="hwo:DewPointTemperature"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:hasExteriorTemperature"/>
-        <Class abbreviatedIRI="hwo:Temperature"/>
+        <Class abbreviatedIRI="wccdl:Temperature"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:hasHumidity"/>
-        <Class abbreviatedIRI="hwo:Humidity"/>
+        <Class abbreviatedIRI="wccdl:Humidity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:hasObservationTime"/>
         <ObjectUnionOf>
-            <Class IRI="http://www.w3.org/2006/time#Instant"/>
-            <Class IRI="http://www.w3.org/2006/time#Interval"/>
+            <Class abbreviatedIRI="wccdl:Instant"/>
+            <Class abbreviatedIRI="wccdl:Interval"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:hasPrecipitation"/>
-        <Class abbreviatedIRI="hwo:Precipitation"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty abbreviatedIRI="hwo:hasSolarIrradiation"/>
-        <Class abbreviatedIRI="hwo:SolarIrradiance"/>
+        <Class abbreviatedIRI="wccdl:Precipitation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:hasSource"/>
-        <Class abbreviatedIRI="hwo:WeatherReportSource"/>
+        <Class abbreviatedIRI="wccdl:WeatherReportSource"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:hasWeatherCondition"/>
-        <Class abbreviatedIRI="hwo:WeatherCondition"/>
+        <Class abbreviatedIRI="wccdl:WeatherCondition"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:hasWeatherPhenomenon"/>
-        <Class abbreviatedIRI="hwo:WeatherPhenomenon"/>
+        <Class abbreviatedIRI="wccdl:WeatherPhenomenon"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:hasWeatherReport"/>
-        <Class abbreviatedIRI="hwo:WeatherReport"/>
+        <Class abbreviatedIRI="wccdl:WeatherReport"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:hasWind"/>
-        <Class abbreviatedIRI="hwo:Wind"/>
+        <Class abbreviatedIRI="wccdl:Wind"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="hwo:reportsWeatherForTimeInterval"/>
-        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+        <Class abbreviatedIRI="wccdl:Interval"/>
     </ObjectPropertyRange>
     <DisjointObjectProperties>
         <ObjectProperty IRI="http://www.w3.org/2006/time#intervalEquals"/>
@@ -3146,135 +2316,63 @@
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#alt"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <Class abbreviatedIRI="wccdl:SpatialThing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+        <Class abbreviatedIRI="wccdl:SpatialThing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
-        <Class IRI="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#day"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#dayOfYear"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#days"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
+        <Class abbreviatedIRI="wccdl:SpatialThing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2006/time#hasXSDDuration"/>
-        <Class IRI="http://www.w3.org/2006/time#TemporalEntity"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#hour"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#hours"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
+        <Class abbreviatedIRI="wccdl:TemporalEntity"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2006/time#inXSDDate"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2006/time#inXSDDateTime"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2006/time#inXSDDateTimeStamp"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2006/time#inXSDgYear"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2006/time#inXSDgYearMonth"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#minute"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#minutes"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#month"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#months"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#nominalPosition"/>
-        <Class IRI="http://www.w3.org/2006/time#TimePosition"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#numericDuration"/>
-        <Class IRI="http://www.w3.org/2006/time#Duration"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#numericPosition"/>
-        <Class IRI="http://www.w3.org/2006/time#TimePosition"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#second"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#seconds"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#week"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#weeks"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="http://www.w3.org/2006/time#xsdDateTime"/>
         <Class IRI="http://www.w3.org/2006/time#DateTimeInterval"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#year"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDateTimeDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="http://www.w3.org/2006/time#years"/>
-        <Class IRI="http://www.w3.org/2006/time#GeneralDurationDescription"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty abbreviatedIRI="hwo:hasDirection"/>
-        <Class abbreviatedIRI="hwo:Wind"/>
+        <Class abbreviatedIRI="wccdl:Wind"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="hwo:hasIntensity"/>
-        <Class abbreviatedIRI="hwo:Precipitation"/>
+        <Class abbreviatedIRI="wccdl:Precipitation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="hwo:hasSpeed"/>
-        <Class abbreviatedIRI="hwo:Wind"/>
+        <Class abbreviatedIRI="wccdl:Wind"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="hwo:hasStartTime"/>
-        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+        <Class abbreviatedIRI="wccdl:Interval"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="hwo:hasTime"/>
-        <Class IRI="http://www.w3.org/2006/time#Instant"/>
+        <Class abbreviatedIRI="wccdl:Instant"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="http://www.w3.org/2006/time#dayOfYear"/>
@@ -3455,6 +2553,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Climate</AbbreviatedIRI>
+        <Literal>Original eType: http://sweetontology.net/phenPlanetClimate/Climate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:ClimateTrend</AbbreviatedIRI>
         <Literal xml:lang="en">A persistent pattern or direction of change in average climatic conditions (such as temperature or precipitation) observed over a long period of time.</Literal>
     </AnnotationAssertion>
@@ -3465,8 +2568,326 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="es">El día de la semana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="en">The day of week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal>Original eType: http://www.w3.org/2006/time#DayOfWeek</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="en">Day of week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="es">día de la semana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#changeNote"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="en">Remove enumeration from definition, in order to allow other days to be used when required in other calendars. 
+NOTE: existing days are still present as members of the class, but the class membership is now open. 
+
+In the original OWL-Time the following constraint appeared: 
+  owl:oneOf (
+      time:Monday
+      time:Tuesday
+      time:Wednesday
+      time:Thursday
+      time:Friday
+      time:Saturday
+      time:Sunday
+    ) ;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="es">El día de la semana</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="en">The day of week</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="es">La pertenencia a la clase &apos;día de la semana&apos; está abierta, para permitir longitudes de semana alternativas y diferentes nombres de días.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
+        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
+        <Literal xml:lang="en">Membership of the class :DayOfWeek is open, to allow for alternative week lengths and different day names.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Humidity</AbbreviatedIRI>
+        <Literal xml:lang="en">represents the relative humidity of the air in percent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Humidity</AbbreviatedIRI>
+        <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Instant</AbbreviatedIRI>
+        <Literal xml:lang="en">A temporal entity with zero extent or duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Instant</AbbreviatedIRI>
+        <Literal xml:lang="es">Una entidad temporal con una extensión o duración cero.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Instant</AbbreviatedIRI>
+        <Literal>Original eType: http://www.w3.org/2006/time#Instant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Instant</AbbreviatedIRI>
+        <Literal xml:lang="en">Time instant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Instant</AbbreviatedIRI>
+        <Literal xml:lang="es">instante de tiempo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>wccdl:Instant</AbbreviatedIRI>
+        <Literal xml:lang="en">A temporal entity with zero extent or duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>wccdl:Instant</AbbreviatedIRI>
+        <Literal xml:lang="es">Una entidad temporal con una extensión o duración cero.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Interval</AbbreviatedIRI>
+        <Literal xml:lang="en">A temporal entity with an extent or duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Interval</AbbreviatedIRI>
+        <Literal xml:lang="es">Una entidad temporal con una extensión o duración.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Interval</AbbreviatedIRI>
+        <Literal>Original eType: http://www.w3.org/2006/time#Interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Interval</AbbreviatedIRI>
+        <Literal xml:lang="en">Time interval</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Interval</AbbreviatedIRI>
+        <Literal xml:lang="es">intervalo de tiempo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>wccdl:Interval</AbbreviatedIRI>
+        <Literal xml:lang="en">A temporal entity with an extent or duration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>wccdl:Interval</AbbreviatedIRI>
+        <Literal xml:lang="es">Una entidad temporal con una extensión o duración.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Microclimate</AbbreviatedIRI>
+        <Literal>A set of local atmospheric conditions that differ from those in the surrounding general area. Microclimates are influenced by local features such as topography, water bodies, vegetation, and urban structures, and can exist on scales ranging from a few square meters to several kilometers.&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Microclimate</AbbreviatedIRI>
+        <Literal>Original eType: http://sweetontology.net/phenPlanetClimate/Microclimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Microclimate</AbbreviatedIRI>
+        <Literal xml:lang="en">microclimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Point</AbbreviatedIRI>
+        <Literal xml:lang="en"> 
+Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Point</AbbreviatedIRI>
+        <Literal xml:lang="en">A point, typically described using a coordinate system relative to Earth, such as WGS84.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Point</AbbreviatedIRI>
+        <Literal>Original eType: http://www.w3.org/2003/01/geo/wgs84_pos#Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Point</AbbreviatedIRI>
+        <Literal>point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Precipitation</AbbreviatedIRI>
+        <Literal xml:lang="en">represents precipitation in millimetres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Precipitation</AbbreviatedIRI>
+        <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:Range</AbbreviatedIRI>
         <Literal xml:lang="en">A range is an interval characterized by a lower bound and an upper bound, representing the span between two limiting values. It is used to specify the permissible or observed limits of a measurable quantity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:SpatialThing</AbbreviatedIRI>
+        <Literal xml:lang="en">Anything with spatial extent, i.e. size, shape, or position.
+ e.g. people, places, bowling balls, as well as abstract areas like cubes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:SpatialThing</AbbreviatedIRI>
+        <Literal>Original eType: http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:SpatialThing</AbbreviatedIRI>
+        <Literal>SpatialThing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">exterior temperature in degrees Celsius</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Temperature</AbbreviatedIRI>
+        <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:TemporalEntity</AbbreviatedIRI>
+        <Literal xml:lang="en">A temporal interval or instant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:TemporalEntity</AbbreviatedIRI>
+        <Literal xml:lang="es">Un intervalo temporal o un instante.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:TemporalEntity</AbbreviatedIRI>
+        <Literal>Original eType:http://www.w3.org/2006/time#TemporalEntity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:TemporalEntity</AbbreviatedIRI>
+        <Literal xml:lang="en">Temporal entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:TemporalEntity</AbbreviatedIRI>
+        <Literal xml:lang="es">entidad temporal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>wccdl:TemporalEntity</AbbreviatedIRI>
+        <Literal xml:lang="en">A temporal interval or instant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <AbbreviatedIRI>wccdl:TemporalEntity</AbbreviatedIRI>
+        <Literal xml:lang="es">Un intervalo temporal o un instante.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherCondition</AbbreviatedIRI>
+        <Literal xml:lang="en">One-word description of the observed weather condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherCondition</AbbreviatedIRI>
+        <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherPhenomenon</AbbreviatedIRI>
+        <Literal xml:lang="en">different weather phenomena that may influence the current and forecasted weather state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherPhenomenon</AbbreviatedIRI>
+        <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherReport</AbbreviatedIRI>
+        <Literal xml:lang="en">a weather report that can be retrieved through a local sensor (e.g. weather station integrated in the smart home) or a remote internet service. Further a time division has been realized to differentiate between current, short, mid and long term forecasts. 
+
+For the smart home domain, a time window of 24 hours for weather forecasts has been seen as suitable with a 24 hours forecast being classified as long-term forecast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherReport</AbbreviatedIRI>
+        <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherReportSource</AbbreviatedIRI>
+        <Literal xml:lang="en">Holds information about the origins of weather reports</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherReportSource</AbbreviatedIRI>
+        <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Wind</AbbreviatedIRI>
+        <Literal xml:lang="en">Unit of wind direction is degrees 
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Wind</AbbreviatedIRI>
+        <Literal xml:lang="en">Unit of wind speed in metres per second (m/s).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Wind</AbbreviatedIRI>
+        <Literal xml:lang="en">Wind direction and speed are represented as datatype properties&quot;hasDirection&quot; and &quot;hasSpeed&quot;
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Wind</AbbreviatedIRI>
+        <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Wind</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3479,51 +2900,9 @@
         <Literal xml:lang="it">Un&apos;unità di analisi climatologica che rappresenta le condizioni stagionali osservate in una specifica regione geografica durante un determinato anno, fungendo da contesto per la valutazione dei trend climatici.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>swo:Microclimate</AbbreviatedIRI>
-        <Literal>A set of local atmospheric conditions that differ from those in the surrounding general area. Microclimates are influenced by local features such as topography, water bodies, vegetation, and urban structures, and can exist on scales ranging from a few square meters to several kilometers.&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>swo:Microclimate</AbbreviatedIRI>
-        <Literal xml:lang="en">microclimate</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>xsd:dateTimeStamp</AbbreviatedIRI>
         <Literal xml:lang="es">sello de tiempo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#Point</IRI>
-        <Literal xml:lang="en"> 
-Uniquely identified by lat/long/alt. i.e.
-
-spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
-  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
-
-sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#Point</IRI>
-        <Literal xml:lang="en">A point, typically described using a coordinate system relative to Earth, such as WGS84.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#Point</IRI>
-        <Literal>point</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</IRI>
-        <Literal xml:lang="en">Anything with spatial extent, i.e. size, shape, or position.
- e.g. people, places, bowling balls, as well as abstract areas like cubes.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</IRI>
-        <Literal>SpatialThing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3574,36 +2953,6 @@ above the local reference ellipsoid).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#DateTimeDescription</IRI>
-        <Literal xml:lang="es">Descripción de fecha y tiempo estructurada con valores separados para los diferentes elementos de un sistema calendario-reloj. El sistema de referencia temporal está fijado al calendario gregoriano, y el rango de las propiedades año, mes, día restringidas a los correspondientes tipos del XML Schema xsd:gYear, xsd:gMonth y xsd:gDay respectivamente.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#DateTimeDescription</IRI>
-        <Literal xml:lang="en">Description of date and time structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of year, month, day properties restricted to corresponding XML Schema types xsd:gYear, xsd:gMonth and xsd:gDay, respectively.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#DateTimeDescription</IRI>
-        <Literal xml:lang="en">Date-Time description</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#DateTimeDescription</IRI>
-        <Literal xml:lang="es">descripción de fecha-tiempo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#DateTimeDescription</IRI>
-        <Literal xml:lang="es">Descripción de fecha y tiempo estructurada con valores separados para los diferentes elementos de un sistema calendario-reloj. El sistema de referencia temporal está fijado al calendario gregoriano, y el rango de las propiedades año, mes, día restringidas a los correspondientes tipos del XML Schema xsd:gYear, xsd:gMonth y xsd:gDay respectivamente.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#DateTimeDescription</IRI>
-        <Literal xml:lang="en">Description of date and time structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of year, month, day properties restricted to corresponding XML Schema types xsd:gYear, xsd:gMonth and xsd:gDay, respectively.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.w3.org/2006/time#DateTimeInterval</IRI>
         <Literal xml:lang="es">&apos;intervalo de fecha-hora&apos; es una subclase de &apos;intervalo propio&apos;, definida utilizando el multi-elemento &apos;descripción de fecha-hora&apos;.</Literal>
     </AnnotationAssertion>
@@ -3641,143 +2990,6 @@ above the local reference ellipsoid).</Literal>
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
         <IRI>http://www.w3.org/2006/time#DateTimeInterval</IRI>
         <Literal xml:lang="en">:DateTimeInterval can only be used for an interval whose limits coincide with a date-time element aligned to the calendar and timezone indicated. For example, while both have a duration of one day, the 24-hour interval beginning at midnight at the beginning of 8 May in Central Europe can be expressed as a :DateTimeInterval, but the 24-hour interval starting at 1:30pm cannot.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
-        <Literal xml:lang="es">El día de la semana</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
-        <Literal xml:lang="en">The day of week</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
-        <Literal xml:lang="en">Day of week</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
-        <Literal xml:lang="es">día de la semana</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#changeNote"/>
-        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
-        <Literal xml:lang="en">Remove enumeration from definition, in order to allow other days to be used when required in other calendars. 
-NOTE: existing days are still present as members of the class, but the class membership is now open. 
-
-In the original OWL-Time the following constraint appeared: 
-  owl:oneOf (
-      time:Monday
-      time:Tuesday
-      time:Wednesday
-      time:Thursday
-      time:Friday
-      time:Saturday
-      time:Sunday
-    ) ;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
-        <Literal xml:lang="es">El día de la semana</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
-        <Literal xml:lang="en">The day of week</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
-        <Literal xml:lang="es">La pertenencia a la clase &apos;día de la semana&apos; está abierta, para permitir longitudes de semana alternativas y diferentes nombres de días.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#DayOfWeek</IRI>
-        <Literal xml:lang="en">Membership of the class :DayOfWeek is open, to allow for alternative week lengths and different day names.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#Duration</IRI>
-        <Literal xml:lang="es">Duración de una extensión temporal expresada como un número escalado por una unidad temporal.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#Duration</IRI>
-        <Literal xml:lang="en">Duration of a temporal extent expressed as a number scaled by a temporal unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#Duration</IRI>
-        <Literal xml:lang="en">Time duration</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#Duration</IRI>
-        <Literal>duración de tiempo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#Duration</IRI>
-        <Literal xml:lang="es">Duración de una extensión temporal expresada como un número escalado por una unidad temporal.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#Duration</IRI>
-        <Literal xml:lang="en">Duration of a temporal extent expressed as a number scaled by a temporal unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#Duration</IRI>
-        <Literal xml:lang="es">Alternativa a &apos;descripción de tiempo&apos; para proporcionar descripción soporte a una duración temporal diferente a utilizar un sistema de calendario/reloj.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#Duration</IRI>
-        <Literal xml:lang="en">Alternative to time:DurationDescription to support description of a temporal duration other than using a calendar/clock system.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#DurationDescription</IRI>
-        <Literal xml:lang="es">Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario. El sistema de referencia temporal se fija al calendario gregoriano, y el intervalo de cada una de las propiedades numéricas se restringe a xsd:decimal.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#DurationDescription</IRI>
-        <Literal xml:lang="en">Description of temporal extent structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of each of the numeric properties is restricted to xsd:decimal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#DurationDescription</IRI>
-        <Literal xml:lang="en">Duration description</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#DurationDescription</IRI>
-        <Literal xml:lang="es">descripción de duración</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#DurationDescription</IRI>
-        <Literal xml:lang="es">Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario. El sistema de referencia temporal se fija al calendario gregoriano, y el intervalo de cada una de las propiedades numéricas se restringe a xsd:decimal.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#DurationDescription</IRI>
-        <Literal xml:lang="en">Description of temporal extent structured with separate values for the various elements of a calendar-clock system. The temporal reference system is fixed to Gregorian Calendar, and the range of each of the numeric properties is restricted to xsd:decimal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#DurationDescription</IRI>
-        <Literal xml:lang="es">En el calendario gregoriano la longitud de los meses no es fija. Por lo tanto, un valor como &quot;2,5 meses&quot; no se puede comparar exactamente con una duración similar expresada en términos de semanas o días.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#DurationDescription</IRI>
-        <Literal xml:lang="en">In the Gregorian calendar the length of the month is not fixed. Therefore, a value like &quot;2.5 months&quot; cannot be exactly compared with a similar duration expressed in terms of weeks or days.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3843,146 +3055,6 @@ In the original OWL-Time the following constraint appeared:
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>http://www.w3.org/2006/time#Friday</IRI>
         <Literal xml:lang="ja">金曜日</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDateTimeDescription</IRI>
-        <Literal xml:lang="es">Descripción de fecha y hora estructurada con valores separados para los distintos elementos de un sistema calendario-reloj.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDateTimeDescription</IRI>
-        <Literal xml:lang="en">Description of date and time structured with separate values for the various elements of a calendar-clock system</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDateTimeDescription</IRI>
-        <Literal xml:lang="en">Generalized date-time description</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDateTimeDescription</IRI>
-        <Literal xml:lang="es">descripción de fecha-hora generalizada</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDateTimeDescription</IRI>
-        <Literal>Descripción de fecha y hora estructurada con valores separados para los distintos elementos de un sistema calendario-reloj.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDateTimeDescription</IRI>
-        <Literal xml:lang="en">Description of date and time structured with separate values for the various elements of a calendar-clock system</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDateTimeDescription</IRI>
-        <Literal xml:lang="es">Algunas combinaciones de propiedades son redundantes - por ejemplo, dentro de un &apos;año&apos; especificado si se proporciona &apos;día del año&apos; entonces &apos;día&apos; y &apos;mes&apos; se pueden computar, y viceversa. Los valores individuales deberían ser consistentes entre ellos y con el calendario, indicado a través del valor de la propiedad &apos;tiene TRS&apos;.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDateTimeDescription</IRI>
-        <Literal>Some combinations of properties are redundant - for example, within a specified :year if :dayOfYear is provided then :day and :month can be computed, and vice versa. Individual values should be consistent with each other and the calendar, indicated through the value of the :hasTRS property.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDurationDescription</IRI>
-        <Literal xml:lang="es">Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDurationDescription</IRI>
-        <Literal xml:lang="en">Description of temporal extent structured with separate values for the various elements of a calendar-clock system.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDurationDescription</IRI>
-        <Literal xml:lang="en">Generalized duration description</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDurationDescription</IRI>
-        <Literal xml:lang="es">descripción de duración generalizada</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDurationDescription</IRI>
-        <Literal xml:lang="es">Descripción de extensión temporal estructurada con valores separados para los distintos elementos de un sistema de horario-calendario.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDurationDescription</IRI>
-        <Literal xml:lang="en">Description of temporal extent structured with separate values for the various elements of a calendar-clock system.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDurationDescription</IRI>
-        <Literal xml:lang="es">La extensión de una duración de tiempo expresada como una &apos;descripción de duración general&apos; depende del Sistema de Referencia Temporal. En algunos calendarios la longitud de la semana o del mes no es constante a lo largo del año. Por tanto, un valor como &quot;25 meses&quot; puede no ser necesariamente ser comparado con un duración similar expresada en términos de semanas o días. Cuando se consideran calendarios que no están basados en el movimiento de la Tierra, se deben tomar incluso más precauciones en la comparación de duraciones.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#GeneralDurationDescription</IRI>
-        <Literal xml:lang="en">The extent of a time duration expressed as a GeneralDurationDescription depends on the Temporal Reference System. In some calendars the length of the week or month is not constant within the year. Therefore, a value like &quot;2.5 months&quot; may not necessarily be exactly compared with a similar duration expressed in terms of weeks or days. When non-earth-based calendars are considered even more care must be taken in comparing durations.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#Instant</IRI>
-        <Literal xml:lang="en">A temporal entity with zero extent or duration</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#Instant</IRI>
-        <Literal xml:lang="es">Una entidad temporal con una extensión o duración cero.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#Instant</IRI>
-        <Literal xml:lang="en">Time instant</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#Instant</IRI>
-        <Literal xml:lang="es">instante de tiempo.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#Instant</IRI>
-        <Literal xml:lang="en">A temporal entity with zero extent or duration</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#Instant</IRI>
-        <Literal xml:lang="es">Una entidad temporal con una extensión o duración cero.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#Interval</IRI>
-        <Literal xml:lang="en">A temporal entity with an extent or duration</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#Interval</IRI>
-        <Literal xml:lang="es">Una entidad temporal con una extensión o duración.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#Interval</IRI>
-        <Literal xml:lang="en">Time interval</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#Interval</IRI>
-        <Literal xml:lang="es">intervalo de tiempo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#Interval</IRI>
-        <Literal xml:lang="en">A temporal entity with an extent or duration</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#Interval</IRI>
-        <Literal xml:lang="es">Una entidad temporal con una extensión o duración.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -4063,56 +3135,6 @@ In the original OWL-Time the following constraint appeared:
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>http://www.w3.org/2006/time#Monday</IRI>
         <Literal xml:lang="ja">月曜日</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="es">El mes del año.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="en">The month of the year</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="en">Month of year</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="es">mes del año</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="es">El mes del año.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="en">The month of the year</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="es">Característica en riesgo - añadida en la revisión de 2017, y no utilizada todavía de forma amplia.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#editorialNote"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="en">Feature at risk - added in 2017 revision, and not yet widely used. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="es">La pertenencia a la clase &apos;mes del año&apos; está abierta, a permitir calendarios anuales alternativos y diferentes nombres de meses.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#MonthOfYear</IRI>
-        <Literal xml:lang="en">Membership of the class :MonthOfYear is open, to allow for alternative annual calendars and different month names.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -4275,199 +3297,6 @@ In the original OWL-Time the following constraint appeared:
         <Literal xml:lang="zh">星期日</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TRS</IRI>
-        <Literal xml:lang="en">A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
-
-This is a stub class, representing the set of all temporal reference systems.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TRS</IRI>
-        <Literal xml:lang="es">Un sistema de referencia temporal, tal como un sistema de coordenadas temporales (con un origen, una dirección y una escala), una combinación calendario-reloj, o un sistema ordinal (posiblemente jerárquico).
-        Esta clase comodín representa el conjunto de todos los sistemas de referencia temporal.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TRS</IRI>
-        <Literal xml:lang="en">Temporal Reference System</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TRS</IRI>
-        <Literal xml:lang="es">sistema de referencia temporal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TRS</IRI>
-        <Literal xml:lang="en">A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
-
-This is a stub class, representing the set of all temporal reference systems.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TRS</IRI>
-        <Literal xml:lang="es">Un sistema de referencia temporal, tal como un sistema de coordenadas temporales (con un origen, una dirección y una escala), una combinación calendario-reloj, o un sistema ordinal (posiblemente jerárquico).
-    Esta clase comodín representa el conjunto de todos los sistemas de referencia temporal.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#TRS</IRI>
-        <Literal xml:lang="en">A taxonomy of temporal reference systems is provided in ISO 19108:2002 [ISO19108], including (a) calendar + clock systems; (b) temporal coordinate systems (i.e. numeric offset from an epoch); (c) temporal ordinal reference systems (i.e. ordered sequence of named intervals, not necessarily of equal duration).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#TRS</IRI>
-        <Literal xml:lang="es">En el ISO 19108:2002 [ISO19108] se proporciona una taxonomía de sistemas de referencia temporal, incluyendo (a) sistemas de calendario + reloj; (b) sistemas de coordenadas temporales (es decir, desplazamiento numérico a partir de una época); (c) sistemas de referencia ordinales temporales (es decir, secuencia ordenada de intervalos nombrados, no necesariamente de igual duración).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TemporalDuration</IRI>
-        <Literal xml:lang="es">Extensión de tiempo; duración de un intervalo de tiempo independiente de su posición de inicio particular.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TemporalDuration</IRI>
-        <Literal xml:lang="en">Time extent; duration of a time interval separate from its particular start position</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TemporalDuration</IRI>
-        <Literal xml:lang="en">Temporal duration</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TemporalDuration</IRI>
-        <Literal xml:lang="es">duración temporal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TemporalDuration</IRI>
-        <Literal xml:lang="es">Extensión de tiempo; duración de un intervalo de tiempo independiente de su posición de inicio particular.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TemporalDuration</IRI>
-        <Literal xml:lang="en">Time extent; duration of a time interval separate from its particular start position</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TemporalEntity</IRI>
-        <Literal xml:lang="en">A temporal interval or instant.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TemporalEntity</IRI>
-        <Literal xml:lang="es">Un intervalo temporal o un instante.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TemporalEntity</IRI>
-        <Literal xml:lang="en">Temporal entity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TemporalEntity</IRI>
-        <Literal xml:lang="es">entidad temporal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TemporalEntity</IRI>
-        <Literal xml:lang="en">A temporal interval or instant.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TemporalEntity</IRI>
-        <Literal xml:lang="es">Un intervalo temporal o un instante.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TemporalPosition</IRI>
-        <Literal xml:lang="en">A position on a time-line</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TemporalPosition</IRI>
-        <Literal xml:lang="es">Una posición sobre una línea de tiempo.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TemporalPosition</IRI>
-        <Literal xml:lang="en">Temporal position</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TemporalPosition</IRI>
-        <Literal xml:lang="es">posición temporal</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TemporalPosition</IRI>
-        <Literal xml:lang="en">A position on a time-line</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TemporalPosition</IRI>
-        <Literal xml:lang="es">Una posición sobre una línea de tiempo.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TemporalUnit</IRI>
-        <Literal xml:lang="en">A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TemporalUnit</IRI>
-        <Literal xml:lang="es">Una duración estándar, que proporciona un factor de escala para una extensión de tiempo, o la granularidad o precisión para una posición de tiempo.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TemporalUnit</IRI>
-        <Literal xml:lang="en">Temporal unit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TemporalUnit</IRI>
-        <Literal xml:lang="es">unidad de tiempo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#changeNote"/>
-        <IRI>http://www.w3.org/2006/time#TemporalUnit</IRI>
-        <Literal xml:lang="en">Remove enumeration from definition, in order to allow other units to be used when required in other coordinate systems. 
-NOTE: existing units are still present as members of the class, but the class membership is now open. 
-
-In the original OWL-Time the following constraint appeared: 
-  owl:oneOf (
-      time:unitSecond
-      time:unitMinute
-      time:unitHour
-      time:unitDay
-      time:unitWeek
-      time:unitMonth
-      time:unitYear
-    ) ;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TemporalUnit</IRI>
-        <Literal xml:lang="en">A standard duration, which provides a scale factor for a time extent, or the granularity or precision for a time position.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TemporalUnit</IRI>
-        <Literal xml:lang="es">Una duración estándar, que proporciona un factor de escala para una extensión de tiempo, o la granularidad o precisión para una posición de tiempo.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#TemporalUnit</IRI>
-        <Literal xml:lang="es">La pertenencia de la clase &apos;unidad de tiempo&apos; está abierta, para permitir otras unidades de tiempo utilizadas en algunas aplicaciones técnicas (por ejemplo, millones de años o el mes Baha&apos;i).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#TemporalUnit</IRI>
-        <Literal xml:lang="en">Membership of the class TemporalUnit is open, to allow for other temporal units used in some technical applications (e.g. millions of years, Baha&apos;i month).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.w3.org/2006/time#Thursday</IRI>
         <Literal xml:lang="en">Thursday</Literal>
@@ -4531,120 +3360,6 @@ In the original OWL-Time the following constraint appeared:
         <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
         <IRI>http://www.w3.org/2006/time#Thursday</IRI>
         <Literal xml:lang="ja">木曜日</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TimePosition</IRI>
-        <Literal xml:lang="en">A temporal position described using either a (nominal) value from an ordinal reference system, or a (numeric) value in a temporal coordinate system. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TimePosition</IRI>
-        <Literal xml:lang="es">Una posición temporal descrita utilizando bien un valor (nominal) de un sistema de referencia ordinal, o un valor (numérico) en un sistema de coordenadas temporales.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TimePosition</IRI>
-        <Literal xml:lang="en">Time position</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TimePosition</IRI>
-        <Literal xml:lang="es">posición de tiempo</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TimePosition</IRI>
-        <Literal xml:lang="en">A temporal position described using either a (nominal) value from an ordinal reference system, or a (numeric) value in a temporal coordinate system. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TimePosition</IRI>
-        <Literal xml:lang="es">Una posición temporal descrita utilizando bien un valor (nominal) de un sistema de referencia ordinal, o un valor (numérico) en un sistema de coordenadas temporales.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="en">A Time Zone specifies the amount by which the local time is offset from UTC. 
-	A time zone is usually denoted geographically (e.g. Australian Eastern Daylight Time), with a constant value in a given region. 
-The region where it applies and the offset from UTC are specified by a locally recognised governing authority.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="es">Un huso horario especifica la cantidad en que la hora local está desplazada con respecto a UTC.
-        Un huso horario normalmente se denota geográficamente (p.ej. el horario de verano del este de Australia), con un valor constante en una región dada.
-        La región donde aplica y el desplazamiento desde UTC las especifica una autoridad gubernamental localmente reconocida.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="en">Time Zone</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="es">huso horario</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="en">A Time Zone specifies the amount by which the local time is offset from UTC. 
-	A time zone is usually denoted geographically (e.g. Australian Eastern Daylight Time), with a constant value in a given region. 
-The region where it applies and the offset from UTC are specified by a locally recognised governing authority.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="es">Un huso horario especifica la cantidad en que la hora local está desplazada con respecto a UTC.
-    Un huso horario normalmente se denota geográficamente (p.ej. el horario de verano del este de Australia), con un valor constante en una región dada.
-    La región donde aplica y el desplazamiento desde UTC las especifica una autoridad gubernamental localmente reconocida.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#historyNote"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="es">En la versión original de OWL-Time de 2006, se definió, en un espacio de nombres diferente &quot;http://www.w3.org/2006/timezone#&quot;, la clase &apos;huso horario&apos;, con varias propiedades específicas correspondientes a un modelo específico de huso horario.
-    En la versión actual hay una clase con el mismo nombre local en el espacio de nombres de OWL-Time, eliminando la dependencia del espacio de nombres externo.
-    Un axioma de alineación permite que los datos codificados de acuerdo con la versión anterior sean consistentes con la ontología actualizada.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#historyNote"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal>In the original 2006 version of OWL-Time, the TimeZone class, with several properties corresponding to a specific model of time-zones, was defined in a separate namespace &quot;http://www.w3.org/2006/timezone#&quot;. 
-
-In the current version a class with same local name is put into the main OWL-Time namespace, removing the dependency on the external namespace. 
-
-An alignment axiom 
-	tzont:TimeZone rdfs:subClassOf time:TimeZone . 
-allows data encoded according to the previous version to be consistent with the updated ontology. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="en">A designated timezone is associated with a geographic region. However, for a particular region the offset from UTC often varies seasonally, and the dates of the changes may vary from year to year. The timezone designation usually changes for the different seasons (e.g. Australian Eastern Standard Time vs. Australian Eastern Daylight Time). Furthermore, the offset for a timezone may change over longer timescales, though its designation might not.  
-
-Detailed guidance about working with time zones is given in http://www.w3.org/TR/timezone/ .</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="en">An ontology for time zone descriptions was described in [owl-time-20060927] and provided as RDF in a separate namespace tzont:. However, that ontology was incomplete in scope, and the example datasets were selective. Furthermore, since the use of a class from an external ontology as the range of an ObjectProperty in OWL-Time creates a dependency, reference to the time zone class has been replaced with the &apos;stub&apos; class in the normative part of this version of OWL-Time.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#note"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="es">Un huso horario designado está asociado con una región geográfica. Sin embargo, para una región particular el desplazamiento desde UTC a menudo varía según las estaciones, y las fechas de los cambios pueden variar de un año a otro. La designación de huso horario  normalmente cambia de una estación a otra (por ejemplo, el horario estándar frente al horario de verano ambos del este de Australia). Además, del desplazamiento para un huso horario puede cambiar sobre escalas de tiempo mayores, aunque su designación no lo haga.
-    Se puede encontrar una guía detallada sobre el funcionamiento de husos horarios en http://www.w3.org/TR/timezone/.&quot;@es , &quot;En [owl-time-20060927] se describió una ontología para descripciones de husos horarios, y se proporcionó en un espacio de nombres separado tzont:. Sin embargo, dicha ontología estaba incompleta en su alcance, y el ejemplo de conjuntos de datos (datasets) era selectivo. Además, puesto que el uso de una clase de una ontología externa como el rango de una propiedad de objeto en OWL-Time crea una dependencia, la referencia a la clase huso horario se ha reemplazado por una clase que viene a ser un &quot;cajón de sastre&quot; en la en la parte normativa de esta versión de OWL-Time.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal xml:lang="es">En esta implementación &apos;huso horario&apos; no tiene definidas propiedades. Se debería pensar como una superclase &quot;abstracta&quot; de todas las implementaciones de huso horario específicas.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#scopeNote"/>
-        <IRI>http://www.w3.org/2006/time#TimeZone</IRI>
-        <Literal>In this implementation TimeZone has no properties defined. It should be thought of as an &apos;abstract&apos; superclass of all specific timezone implementations.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7220,113 +5935,8 @@ The range of this property is not specified, so can be replaced by any specific 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:AirPollution</AbbreviatedIRI>
-        <Literal xml:lang="en">the current air pollution represented as European Air Quality Index value. The index value is based on 3 pollutants of major concern in Europe: PM10, NO2, O3 and will be able to take into account to 3 additional pollutants (CO, PM2.5 and SO2) where data are also available.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:AtmosphericPressure</AbbreviatedIRI>
-        <Literal xml:lang="en">atmospheric pressure in hectopascal (hPa)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:CloudCover</AbbreviatedIRI>
-        <Literal xml:lang="en">clound cover in the unit &quot;Okta&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:DewPointTemperature</AbbreviatedIRI>
-        <Literal xml:lang="en">The dewpoint temperature in degrees Celsius. It is the temperature at which the air can no longer hold all of its water vapor, and some of the water vapor must condense into liquid water. The dew point is always lower than (or equal to) the air temperature.
-</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:DewPointTemperature</AbbreviatedIRI>
-        <Literal xml:lang="en">this concept was known as &quot;DewPoint&quot; in prior versions of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:HighSolarIrradiance</AbbreviatedIRI>
-        <Literal xml:lang="en">this concept was known as &quot;HighSolarRadiation&quot; in prior versions of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:Humidity</AbbreviatedIRI>
-        <Literal xml:lang="en">represents the relative humidity of the air in percent</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:LowSolarIrradiance</AbbreviatedIRI>
-        <Literal xml:lang="en">this concept was known as &quot;LowSolarRadiation&quot; in prior versions of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>hwo:ModeratePrecipitation</AbbreviatedIRI>
         <Literal xml:lang="en">this concept was known as &quot;MediumPrecipitation&quot; in prior versions of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:NeglectibleSolarIrradiance</AbbreviatedIRI>
-        <Literal xml:lang="en">this concept was known as &quot;NeglectibleSolarRadiation&quot; in prior versions of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:Precipitation</AbbreviatedIRI>
-        <Literal xml:lang="en">represents precipitation in millimetres</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:SolarIrradiance</AbbreviatedIRI>
-        <Literal xml:lang="en">measurement of solar irrradiation at a specific location in Watts per square meter (W/m²)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:SolarIrradiance</AbbreviatedIRI>
-        <Literal xml:lang="en">this concept was known as &quot;SolarRadiation&quot; in prior versions of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:Temperature</AbbreviatedIRI>
-        <Literal xml:lang="en">exterior temperature in degrees Celsius</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:WeatherCondition</AbbreviatedIRI>
-        <Literal xml:lang="en">One-word description of the observed weather condition</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:WeatherPhenomenon</AbbreviatedIRI>
-        <Literal xml:lang="en">different weather phenomena that may influence the current and forecasted weather state.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:WeatherReport</AbbreviatedIRI>
-        <Literal xml:lang="en">a weather report that can be retrieved through a local sensor (e.g. weather station integrated in the smart home) or a remote internet service. Further a time division has been realized to differentiate between current, short, mid and long term forecasts. 
-
-For the smart home domain, a time window of 24 hours for weather forecasts has been seen as suitable with a 24 hours forecast being classified as long-term forecast</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:WeatherReportSource</AbbreviatedIRI>
-        <Literal xml:lang="en">Holds information about the origins of weather reports</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:Wind</AbbreviatedIRI>
-        <Literal xml:lang="en">Unit of wind direction is degrees 
-</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:Wind</AbbreviatedIRI>
-        <Literal xml:lang="en">Unit of wind speed in metres per second (m/s).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:Wind</AbbreviatedIRI>
-        <Literal xml:lang="en">Wind direction and speed are represented as datatype properties&quot;hasDirection&quot; and &quot;hasSpeed&quot;
-</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -7395,32 +6005,47 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483722"/>
+        <AnonymousIndividual nodeID="_:genid2147483728"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483723"/>
+        <AnonymousIndividual nodeID="_:genid2147483729"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483724"/>
+        <AnonymousIndividual nodeID="_:genid2147483730"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483725"/>
+        <AnonymousIndividual nodeID="_:genid2147483731"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483726"/>
+        <AnonymousIndividual nodeID="_:genid2147483732"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483727"/>
+        <AnonymousIndividual nodeID="_:genid2147483733"/>
+        <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+        <AnonymousIndividual nodeID="_:genid2147483734"/>
+        <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+        <AnonymousIndividual nodeID="_:genid2147483735"/>
+        <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+        <AnonymousIndividual nodeID="_:genid2147483736"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
 </Ontology>
