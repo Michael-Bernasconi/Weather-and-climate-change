@@ -2030,6 +2030,11 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_altitude</AbbreviatedIRI>
+        <Literal>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#alt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_altitude</AbbreviatedIRI>
         <Literal xml:lang="en">The WGS84 altitude of a SpatialThing (decimal meters 
 above the local reference ellipsoid).</Literal>
     </AnnotationAssertion>
@@ -2040,23 +2045,18 @@ above the local reference ellipsoid).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>wccdl:has_altitude</AbbreviatedIRI>
-        <Literal>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#alt</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_anomaly_type</AbbreviatedIRI>
         <Literal xml:lang="en">It indicates the type of the anomaly that has been registered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_been_created_at</AbbreviatedIRI>
-        <Literal xml:lang="en">The instant at which a weather report is created</Literal>
+        <Literal>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#createdAt</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_been_created_at</AbbreviatedIRI>
-        <Literal>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#createdAt</Literal>
+        <Literal xml:lang="en">The instant at which a weather report is created</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2081,17 +2081,17 @@ above the local reference ellipsoid).</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_direction</AbbreviatedIRI>
+        <Literal>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_direction</AbbreviatedIRI>
         <Literal xml:lang="en">Wind direction</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_direction</AbbreviatedIRI>
         <Literal xml:lang="en">Wind direction represented in degrees</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>wccdl:has_direction</AbbreviatedIRI>
-        <Literal>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2106,12 +2106,12 @@ above the local reference ellipsoid).</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_latitude</AbbreviatedIRI>
-        <Literal xml:lang="en">The WGS84 latitude of a SpatialThing (decimal degrees).</Literal>
+        <Literal>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#lat</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_latitude</AbbreviatedIRI>
-        <Literal>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#lat</Literal>
+        <Literal xml:lang="en">The WGS84 latitude of a SpatialThing (decimal degrees).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2126,12 +2126,12 @@ above the local reference ellipsoid).</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_longitude</AbbreviatedIRI>
-        <Literal xml:lang="en">The WGS84 longitude of a SpatialThing (decimal degrees)</Literal>
+        <Literal>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#long</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_longitude</AbbreviatedIRI>
-        <Literal>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#long</Literal>
+        <Literal xml:lang="en">The WGS84 longitude of a SpatialThing (decimal degrees)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2161,17 +2161,17 @@ above the local reference ellipsoid).</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_speed</AbbreviatedIRI>
+        <Literal>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_speed</AbbreviatedIRI>
         <Literal xml:lang="en">Wind speed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_speed</AbbreviatedIRI>
         <Literal xml:lang="en">wind speed in metres per second (m/s)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>wccdl:has_speed</AbbreviatedIRI>
-        <Literal>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasSpeed</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3440,47 +3440,47 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483863"/>
+        <AnonymousIndividual nodeID="_:genid2147483648"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483864"/>
+        <AnonymousIndividual nodeID="_:genid2147483649"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483865"/>
+        <AnonymousIndividual nodeID="_:genid2147483650"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483866"/>
+        <AnonymousIndividual nodeID="_:genid2147483651"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483867"/>
+        <AnonymousIndividual nodeID="_:genid2147483652"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483868"/>
+        <AnonymousIndividual nodeID="_:genid2147483653"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483869"/>
+        <AnonymousIndividual nodeID="_:genid2147483654"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483870"/>
+        <AnonymousIndividual nodeID="_:genid2147483655"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483871"/>
+        <AnonymousIndividual nodeID="_:genid2147483656"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
 </Ontology>

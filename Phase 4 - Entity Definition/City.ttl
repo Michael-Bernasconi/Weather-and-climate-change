@@ -1,0 +1,27 @@
+_:wccdl_City1_ef6ea9d5b769e12c7a5d0ea101b9185d19926717_N13 <http://knowdive.disi.unitn.it/etype#has_name> "Predazzo"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:wccdl_City1_ef6ea9d5b769e12c7a5d0ea101b9185d19926717_N13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+_:wccdl_City1_d586b8209661d260b81207b406671bfc6fbe0150_N15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+_:wccdl_City1_d586b8209661d260b81207b406671bfc6fbe0150_N15 <http://knowdive.disi.unitn.it/etype#has_name> "Trento"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+_:wccdl_City1_df4b719dac862510d213f555b3bb523c51fa0989_N17 <http://knowdive.disi.unitn.it/etype#has_name> "Povo"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:wccdl_City1_df4b719dac862510d213f555b3bb523c51fa0989_N17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+_:wccdl_City1_55ab83a0ecfecb79d130cd17f8fb99d16d50a13c_N19 <http://knowdive.disi.unitn.it/etype#has_name> "Arco"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:wccdl_City1_55ab83a0ecfecb79d130cd17f8fb99d16d50a13c_N19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+_:wccdl_City1_10e19089a3cb185c724e3ee29e50ed8c21828178_N21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+_:wccdl_City1_10e19089a3cb185c724e3ee29e50ed8c21828178_N21 <http://knowdive.disi.unitn.it/etype#has_name> "Lavarone"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+_:wccdl_City1_b4ad264757874e286e9acb4f187481e5c22ac69f_N23 <http://knowdive.disi.unitn.it/etype#has_name> "Mezzana"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:wccdl_City1_b4ad264757874e286e9acb4f187481e5c22ac69f_N23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+_:wccdl_City1_b47b1477c7b60779a1fd3d79861aa8a13b046e10_N25 <http://knowdive.disi.unitn.it/etype#has_name> "Cavalese"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:wccdl_City1_b47b1477c7b60779a1fd3d79861aa8a13b046e10_N25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+_:wccdl_City1_33dc016cf6065874a4f0842c557e91b5fc542b68_N27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+_:wccdl_City1_33dc016cf6065874a4f0842c557e91b5fc542b68_N27 <http://knowdive.disi.unitn.it/etype#has_name> "Tenno"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+_:wccdl_City1_2c7ed2276967a53ef300b985c0a25809d78f61ac_N29 <http://knowdive.disi.unitn.it/etype#has_name> "Telve"^^<http://www.w3.org/2001/XMLSchema#string> .
+_:wccdl_City1_2c7ed2276967a53ef300b985c0a25809d78f61ac_N29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
