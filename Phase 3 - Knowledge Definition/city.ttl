@@ -1,0 +1,36 @@
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://knowdive.disi.unitn.it/etype#has_name> "Predazzo" .
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://knowdive.disi.unitn.it/etype#has_name> "Trento" .
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://knowdive.disi.unitn.it/etype#has_name> "Povo" .
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://knowdive.disi.unitn.it/etype#has_name> "Arco" .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://knowdive.disi.unitn.it/etype#has_name> "Lavarone" .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://knowdive.disi.unitn.it/etype#has_name> "Mezzana" .
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://knowdive.disi.unitn.it/etype#has_name> "Cavalese" .
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://knowdive.disi.unitn.it/etype#has_name> "Tenno" .
+
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Thing> .
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://knowdive.disi.unitn.it/etype#has_name> "Telve" .
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+

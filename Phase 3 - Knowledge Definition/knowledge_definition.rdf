@@ -738,12 +738,22 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://knowdive.disi.unitn.it/etype#has_season_name -->
+
+    <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_season_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
     <!-- http://knowdive.disi.unitn.it/etype#has_season_year -->
 
     <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_season_year">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </DatatypeProperty>
     
 
@@ -953,15 +963,6 @@ In the original OWL-Time the following constraint appeared:
     <!-- http://knowdive.disi.unitn.it/etype#Humidity -->
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#Humidity">
-        <equivalentClass>
-            <Class>
-                <unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity"/>
-                </unionOf>
-            </Class>
-        </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherPhenomenon"/>
         <rdfs:comment>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity</rdfs:comment>
         <rdfs:comment xml:lang="en">represents the relative humidity of the air in percent</rdfs:comment>
@@ -1237,48 +1238,6 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
     
 
 
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveRoomTemperature -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveRoomTemperature"/>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveZeroTemperature -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#AboveZeroTemperature"/>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowOrZeroTemperature -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowOrZeroTemperature"/>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowRoomTemperature -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#BelowRoomTemperature"/>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity"/>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeFrost -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeFrost"/>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeHeat -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ExtremeHeat"/>
-    
-
-
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze -->
 
     <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze">
@@ -1359,12 +1318,6 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
     
 
 
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Frost -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Frost"/>
-    
-
-
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze -->
 
     <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze">
@@ -1402,12 +1355,6 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
             </Class>
         </equivalentClass>
     </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Heat -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Heat"/>
     
 
 
@@ -1746,12 +1693,6 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
     
 
 
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity"/>
-    
-
-
     <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation -->
 
     <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation">
@@ -1807,18 +1748,6 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
             </Class>
         </equivalentClass>
     </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity"/>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#RoomTemperature -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#RoomTemperature"/>
     
 
 
@@ -2532,14 +2461,6 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#DryHumidity"/>
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#MoistHumidity"/>
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#OptimumHumidity"/>
-        </members>
-    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <members rdf:parseType="Collection">

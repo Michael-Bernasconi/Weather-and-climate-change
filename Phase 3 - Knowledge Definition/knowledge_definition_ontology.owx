@@ -316,6 +316,9 @@
         <DataProperty abbreviatedIRI="wccdl:has_report_datetime"/>
     </Declaration>
     <Declaration>
+        <DataProperty abbreviatedIRI="wccdl:has_season_name"/>
+    </Declaration>
+    <Declaration>
         <DataProperty abbreviatedIRI="wccdl:has_season_year"/>
     </Declaration>
     <Declaration>
@@ -1524,6 +1527,10 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty abbreviatedIRI="wccdl:has_season_name"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty abbreviatedIRI="wccdl:has_season_year"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -1632,6 +1639,10 @@
         <Class abbreviatedIRI="wccdl:WeatherReport"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty abbreviatedIRI="wccdl:has_season_name"/>
+        <Class abbreviatedIRI="wccdl:YearSeason"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty abbreviatedIRI="wccdl:has_season_year"/>
         <Class abbreviatedIRI="wccdl:YearSeason"/>
     </DataPropertyDomain>
@@ -1725,8 +1736,12 @@
         <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty abbreviatedIRI="wccdl:has_season_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty abbreviatedIRI="wccdl:has_season_year"/>
-        <Datatype abbreviatedIRI="xsd:gYear"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="wccdl:has_speed"/>
