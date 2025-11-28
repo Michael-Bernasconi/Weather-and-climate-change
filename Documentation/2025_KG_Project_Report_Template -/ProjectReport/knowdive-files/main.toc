@@ -22,7 +22,7 @@
 \contentsline {subsubsection}{\numberline {4.4.2}Data Collected from APIs}{16}{subsubsection.4.4.2}%
 \contentsline {subsubsection}{\numberline {4.4.3}Data Collected and Derived from APIs and Local Sources}{16}{subsubsection.4.4.3}%
 \contentsline {section}{\numberline {5}Knowledge Definition}{21}{section.5}%
-\contentsline {section}{\numberline {6}Entity Definition}{23}{section.6}%
-\contentsline {section}{\numberline {7}Evaluation}{24}{section.7}%
-\contentsline {section}{\numberline {8}Metadata Definition}{25}{section.8}%
-\contentsline {section}{\numberline {9}Open Issues}{26}{section.9}%
+\contentsline {section}{\numberline {6}Entity Definition}{22}{section.6}%
+\contentsline {section}{\numberline {7}Evaluation}{23}{section.7}%
+\contentsline {section}{\numberline {8}Metadata Definition}{24}{section.8}%
+\contentsline {section}{\numberline {9}Open Issues}{25}{section.9}%
