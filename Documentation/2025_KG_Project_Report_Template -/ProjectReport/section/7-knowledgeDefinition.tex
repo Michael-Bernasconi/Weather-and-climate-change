@@ -1,5 +1,7 @@
 \section{Knowledge Definition}
-In this section, we will analyze the Knowledge defition phase. During this phase, the aim was to define the object and data properties for the eTypes defined in the previous section. To do so, we started from the ER model precedently defined. 
+In this section, we will analyze the Knowledge defition phase. The definition of object and data properties was directly guided by the Purpose of the project, which required the ability to formally describe, connect, and query meteorological phenomena, climate trends, seasonal characteristics, and their relation to specific cities in the Trentino region. The Entity–Relationship (ER) model served as the conceptual backbone for this phase: each meaningful relationship identified in the ER diagram was translated into an OWL object property, preserving its semantic direction, cardinality, and intended meaning within the domain.
+Attributes associated with entities in the ER schema were transformed into data properties, for which appropriate XSD datatypes were selected to ensure semantic correctness, validation, and interoperability.
+The Data Layer played a crucial role in consolidating and validating these modeling decisions. Whenever discrepancies or inconsistencies emerged between the ER structure and the real datasets, the ontology was shaped to remain both faithful to the conceptual model and compatible with the actual data. Through this process, the resulting ontology maintains strong coherence across Purpose, ER, and Data Layer—allowing semantically meaningful integration, querying, and reasoning over the heterogeneous climate and weather data sources involved in the project.
 \subsection{Object properties}
 \begin{figure}[h]
     \centering
@@ -12,6 +14,8 @@ The result of object properties definition is shown in Figure  \ref{fig:object_p
 To define the location of each \textit{WeatherStation} we used an obejct property already defined in Home Weather Location that relate it to the concept of \textit{SpatialThing}, that has already defined attributes like altitude, longitude and latitude. 
 
 Another aspect that we modeled like an object property is the temperature range that is present for a microclimate. We decided at first to define the concept of \textit{Range}, which as upper and lower bound attributes. We modeled it as an eType to make it also reusable in other contexts if needed. We than defined the property \texttt{has\_temperature\_range} to create the relationship between the two eTypes. 
+
+Each object property has been defined by specifying its domain, range, and semantic direction, ensuring alignment with the ER model and consistency with OWL best practices. Functional characteristics were assigned when appropriate (e.g., each YearSeason is observed in exactly one City).
 
 \subsection{Data properties}
 \begin{figure}[h]
@@ -26,5 +30,7 @@ One aspect that has been changed from the ER model is that the date and time att
 
 Another relevant aspect modeled as data property is the \textit{type} attribute for anomaly and microclimate. We decided to model it as a data property of type \texttt{string} instead of an object property creating the type class in order to give more freedom in defining this attribute, as new types can be created and defined. 
 
+All data properties were assigned appropriate XSD datatypes to guarantee precise validation and interoperability. Mandatory attributes (e.g., detectionDate for Anomaly) were distinguished from optional ones, reflecting both the ER model and the structure of the available datasets.
 
-In conclusion, the final result is the \href{https://github.com/Michael-Bernasconi/Weather-and-climate-change/blob/50495365ff2c8e0d8fb5170f74a65995a37dc640/Phase%203%20-%20Knowledge%20Definition/knowledge_definition.rdf}{ontolgy file}.
+
+In conclusion, the final result is the \href{https://github.com/Michael-Bernasconi/Weather-and-climate-change/blob/50495365ff2c8e0d8fb5170f74a65995a37dc640/Phase%203%20-%20Knowledge%20Definition/knowledge_definition.rdf}{ontolgy file}. There has not been made any modify to CQs and ER model precedently defined as it was possible to model all the aspects.
