@@ -1,2 +1,30 @@
 \section{Knowledge Definition}
-In this section, we will analyze the Knowledge defition phase. During this phase, the aim was to define the object and data properties for the eTypes defined in the previous section. 
+In this section, we will analyze the Knowledge defition phase. During this phase, the aim was to define the object and data properties for the eTypes defined in the previous section. To do so, we started from the ER model precedently defined. 
+\subsection{Object properties}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../../../../Phase 3 - Knowledge Definition/img/object_properties.png}
+    \caption{Object properties defined for our ontology.}
+    \label{fig:object_properties}
+\end{figure}
+The result of object properties definition is shown in Figure  \ref{fig:object_properties}. To represent some information like temperature, precipitation and humidity, for which it was needed a set of information (e.g. minimum, mean and maximum), we decided to definte an hierarchy for which the single aspect observated is a sub property of \texttt{has\_phenomenon\_information}. To represent this information we used the subclasses of \textit{WeatherPhenomenon}, which were already defined in the Home Weather Ontology. This helped us to have already represented key characteristics for each phenomenon (e.g. the precipitation mm). 
+
+To define the location of each \textit{WeatherStation} we used an obejct property already defined in Home Weather Location that relate it to the concept of \textit{SpatialThing}, that has already defined attributes like altitude, longitude and latitude. 
+
+Another aspect that we modeled like an object property is the temperature range that is present for a microclimate. We decided at first to define the concept of \textit{Range}, which as upper and lower bound attributes. We modeled it as an eType to make it also reusable in other contexts if needed. We than defined the property \texttt{has\_temperature\_range} to create the relationship between the two eTypes. 
+
+\subsection{Data properties}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../../../../Phase 3 - Knowledge Definition/img/data_properties.png}
+    \caption{Data properties defined for our ontology.}
+    \label{fig:data_properties}
+\end{figure}
+The result of the data properties definition phase is shown on Figure \ref{fig:data_properties}. Like we said in the previous paragraph, the data properties relate to the spatial position like latitude, longitude and altitude were already defined in the Home Weather Ontology. The others were defined based on the ER model of our domain and on the object properties defined. 
+
+One aspect that has been changed from the ER model is that the date and time attributes that were separated, they've been merged in one attribute of type \texttt{datetime}. 
+
+Another relevant aspect modeled as data property is the \textit{type} attribute for anomaly and microclimate. We decided to model it as a data property of type \texttt{string} instead of an object property creating the type class in order to give more freedom in defining this attribute, as new types can be created and defined. 
+
+
+In conclusion, the final result is the \href{https://github.com/Michael-Bernasconi/Weather-and-climate-change/blob/50495365ff2c8e0d8fb5170f74a65995a37dc640/Phase%203%20-%20Knowledge%20Definition/knowledge_definition.rdf}{ontolgy file}.

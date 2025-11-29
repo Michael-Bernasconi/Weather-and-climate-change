@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1764351772.26319 "/Users/fronzofronzo/Desktop/Weather-and-climate-change/Documentation/2025_KG_Project_Report_Template -/ProjectReport/knowdive-files/main.tex" "main.pdf" "main" 1764351774.19742 0
+["pdflatex"] 1764428281.39105 "/Users/fronzofronzo/Desktop/Weather-and-climate-change/Documentation/2025_KG_Project_Report_Template -/ProjectReport/knowdive-files/main.tex" "main.pdf" "main" 1764428283.5001 0
   "../../../../Phase 1 - Purpose Definition/ER_after_IG.png" 1763639756.57524 63589 8020827015b01c960ce57ad94e5e0713 ""
   "../../../../Phase 1 - Purpose Definition/er_model_modified.png" 1763655952.40409 337890 fe669bbe87d13917b4188908a80ffd34 ""
   "../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png" 1763657302.38474 227287 35bf912a0ec0b143c64e603fef3c0507 ""
@@ -13,6 +13,8 @@
   "../../../../Phase 2 - Language Definition/knowledge_data_link.png" 1763749123.99723 201182 687719ea909eac050d3daa9f74100276 ""
   "../../../../Phase 2 - Language Definition/language_definition.png" 1763749123.98172 330990 f32a5e038d6f2a90cb09e503f7094a01 ""
   "../../../../Phase 2 - Language Definition/ontology_definition.png" 1764351542.40606 195334 8246fabc458ad7ce8d8e6366e0771d94 ""
+  "../../../../Phase 3 - Knowledge Definition/img/data_properties.png" 1764427282.6065 141340 692d1cc0523ce6c902bbd6b125771052 ""
+  "../../../../Phase 3 - Knowledge Definition/img/object_properties.png" 1764423699.60625 182996 e7553d6cd739476d25e0dd0e12b5f4ad ""
   "../knowdive-files/purpose_formalization_sheet.png" 1762013078.69942 127438 ff277806169bb33ab3b1f3c4d2d5c788 ""
   "../section/0-introduction.tex" 1761730189.01388 1309 2e9243f392a302373cdf4ca26a4e5193 ""
   "../section/1-purpose-doi.tex" 1761730189.01398 849 65b285be610747649fafc0eccce99e0b ""
@@ -20,7 +22,7 @@
   "../section/11-openIssues.tex" 1761730189.01418 997 8f9bea654e595d6a2fee4db5aa987028 ""
   "../section/4-purposeFormaliation.tex" 1763662136.79068 20953 be727d5ea64543ed9e6e46044ff5af20 ""
   "../section/6-languageDefinition.tex" 1764351772.04174 16004 84cda06e2fabb964f685a9e9ce2168b2 ""
-  "../section/7-knowledgeDefinition.tex" 1764350676.70136 214 70053a976fc648f7b02ca438a1e27790 ""
+  "../section/7-knowledgeDefinition.tex" 1764428281.17146 3255 9dc848da5c6d0764c9ef5a7be29b6965 ""
   "../section/8-dataDefinition.tex" 1761730189.01516 2449 4bc7ed8e73609695d7504a6ff18d154b ""
   "../section/9-evaluation.tex" 1761730189.01525 950 966d98f7857585092583ee56afe7dd5c ""
   "/Users/fronzofronzo/Desktop/Weather-and-climate-change/Documentation/2025_KG_Project_Report_Template -/ProjectReport/knowdive-files/main.tex" 1763997517.27748 2247 2357484ac83dc69a2c41f719c12f433e ""
@@ -166,10 +168,10 @@
   "Knowdive_color_bar.png" 1761730189.00898 212038 61c9f9d4e717cc1b2205107628cb8c06 ""
   "knowDiveUNITN.png" 1761730189.00957 112478 ea78646f3d9e2fc2d2bdefad11beae7a ""
   "knowdive.cls" 1761730189.00982 4526 592e15ea8f3403ef8f87fb3793cf11cf ""
-  "main.aux" 1764351774.11952 9220 35444c34f01af0028085e73a885d703b "pdflatex"
-  "main.out" 1764351774.12017 4292 fb3428dc32f75268ba3334b23c00c4e0 "pdflatex"
+  "main.aux" 1764428283.42256 10004 7a712bcb02180dca7f6a3cef754bd1ab "pdflatex"
+  "main.out" 1764428283.42323 4574 b3b1d4649be14040b5cf2606a55f482b "pdflatex"
   "main.tex" 1763997517.27748 2247 2357484ac83dc69a2c41f719c12f433e ""
-  "main.toc" 1764351774.12032 2411 adef921a9e603b56533490cc6d9cc7b6 "pdflatex"
+  "main.toc" 1764428283.42337 2577 b3be58cbb5411931a9924fd66d1b0344 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
