@@ -1,0 +1,90 @@
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Trento_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Trento_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://knowdive.disi.unitn.it/etype#has_name> "Trento" .
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Trento_1990-2025_(35.0_years)> .
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Trento_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0708" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Trento_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean " .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Trento_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "2.48" .
+
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Povo_1990-2025_(35.0_years)> .
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://knowdive.disi.unitn.it/etype#has_name> "Povo" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Povo_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "2.53" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Povo_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Povo_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Povo_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean " .
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean%20_Povo_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0724" .
+
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Rovereto_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Rovereto_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Rovereto_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/City/Rovereto> <http://knowdive.disi.unitn.it/etype#has_name> "Rovereto" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Rovereto_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "1.72" .
+<http://knowdive.disi.unitn.it/etype/City/Rovereto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Rovereto_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0490" .
+<http://knowdive.disi.unitn.it/etype/City/Rovereto> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Rovereto_1990-2025_(35.0_years)> .
+
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Tenno_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "1.64" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Tenno_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Tenno_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean" .
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://knowdive.disi.unitn.it/etype#has_name> "Tenno" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Tenno_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0470" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Tenno_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Tenno_1990-2025_(35.0_years)> .
+
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Mezzana_1990-2025_(35.0_years)> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Mezzana_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "1.93" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Mezzana_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0550" .
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Mezzana_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean" .
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://knowdive.disi.unitn.it/etype#has_name> "Mezzana" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Mezzana_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Mezzana_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Predazzo_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0497" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Predazzo_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Predazzo_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean" .
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://knowdive.disi.unitn.it/etype#has_name> "Predazzo" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Predazzo_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "1.74" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Predazzo_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Predazzo_1990-2025_(35.0_years)> .
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Lavarone_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0487" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Lavarone_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Lavarone_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Lavarone_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://knowdive.disi.unitn.it/etype#has_name> "Lavarone" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Lavarone_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "1.70" .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Lavarone_1990-2025_(35.0_years)> .
+
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Telve_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "1.39" .
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Telve_1990-2025_(35.0_years)> .
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://knowdive.disi.unitn.it/etype#has_name> "Telve" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Telve_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Telve_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0398" .
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Telve_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Telve_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean" .
+
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Cavalese_1990-2025_(35.0_years)> .
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://knowdive.disi.unitn.it/etype#has_name> "Cavalese" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Cavalese_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Cavalese_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Cavalese_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "2.05" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Cavalese_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Cavalese_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0587" .
+
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Arco_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_parameter_measured> "temperature_2m_mean" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Arco_1990-2025_(35.0_years)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#ClimateTrend> .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Arco_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_rate> "0.0603" .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://knowdive.disi.unitn.it/etype#has_name> "Arco" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Arco_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_variation> "2.11" .
+<http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Arco_1990-2025_(35.0_years)> <http://knowdive.disi.unitn.it/etype#has_time_window> "1990-2025 (35.0 years)" .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://knowdive.disi.unitn.it/etype#has_climate_trend> <http://knowdive.disi.unitn.it/etype/ClimateTrend/temperature_2m_mean_Arco_1990-2025_(35.0_years)> .
+

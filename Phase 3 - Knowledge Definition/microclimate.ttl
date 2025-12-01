@@ -1,0 +1,90 @@
+<http://knowdive.disi.unitn.it/etype/Microclimate/Trento_temperate> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "22 - 100" .
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://knowdive.disi.unitn.it/etype#has_name> "Trento" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Trento_temperate> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "temperate" .
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Trento_temperate> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "light winds, avg 4.0 km/h, dominant 312" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Trento_temperate> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Trento> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Trento_temperate> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-20.9 - 20.7" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Trento_temperate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://knowdive.disi.unitn.it/etype#has_name> "Povo" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Povo_warm> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-15.0 - 26.6" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Povo_warm> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "warm" .
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Povo_warm> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Povo> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Povo_warm> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "29 - 99" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Povo_warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Povo_warm> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "light winds, avg 3.9 km/h, dominant 337" .
+
+<http://knowdive.disi.unitn.it/etype/Microclimate/Rovereto_hot> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Rovereto> .
+<http://knowdive.disi.unitn.it/etype/City/Rovereto> <http://knowdive.disi.unitn.it/etype#has_name> "Rovereto" .
+<http://knowdive.disi.unitn.it/etype/City/Rovereto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Rovereto_hot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Rovereto_hot> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-6.1 – 31.9" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Rovereto_hot> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "23 - 99" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Rovereto_hot> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "hot" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Rovereto_hot> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "moderate winds, avg 5.7 km/h, dominant 82" .
+
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Tenno_hot> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "31 - 98" .
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://knowdive.disi.unitn.it/etype#has_name> "Tenno" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Tenno_hot> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-6.1 - 31.1" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Tenno_hot> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "moderate winds, avg 5.4 km/h, dominant 73" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Tenno_hot> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Tenno> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Tenno_hot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Tenno_hot> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "hot" .
+
+<http://knowdive.disi.unitn.it/etype/Microclimate/Mezzana_temperate> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "16 - 100" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Mezzana_temperate> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-26.7 – 19.2" .
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Mezzana_temperate> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "temperate" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Mezzana_temperate> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Mezzana> .
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://knowdive.disi.unitn.it/etype#has_name> "Mezzana" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Mezzana_temperate> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "light winds, avg 4.8 km/h, dominant 341" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Mezzana_temperate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+
+<http://knowdive.disi.unitn.it/etype/Microclimate/Predazzo_temperate> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-21.2 - 21.2" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Predazzo_temperate> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "light winds, avg 4.2 km/h, dominant 305" .
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://knowdive.disi.unitn.it/etype#has_name> "Predazzo" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Predazzo_temperate> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "temperate" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Predazzo_temperate> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Predazzo> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Predazzo_temperate> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "22 - 100" .
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Predazzo_temperate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+
+<http://knowdive.disi.unitn.it/etype/Microclimate/Lavarone_warm> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-9.8 – 28.7" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Lavarone_warm> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "28 - 100" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Lavarone_warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Lavarone_warm> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "light winds, avg 4.9 km/h, dominant 342" .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://knowdive.disi.unitn.it/etype#has_name> "Lavarone" .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Lavarone_warm> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Lavarone> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Lavarone_warm> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "warm" .
+
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://knowdive.disi.unitn.it/etype#has_name> "Telve" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Telve_warm> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "28 - 100" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Telve_warm> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "warm" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Telve_warm> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-15.4 – 24.2" .
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Telve_warm> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Telve> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Telve_warm> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "light winds, avg 3.6 km/h, dominant 193" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Telve_warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Cavalese_warm> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-17.8 - 24.9" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Cavalese_warm> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Cavalese> .
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://knowdive.disi.unitn.it/etype#has_name> "Cavalese" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Cavalese_warm> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "warm" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Cavalese_warm> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "17 - 100" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Cavalese_warm> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "light winds, avg 4.5 km/h, dominant 168" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Cavalese_warm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+
+<http://knowdive.disi.unitn.it/etype/Microclimate/Arco_hot> <http://knowdive.disi.unitn.it/etype#has_microclimate_type> "hot" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Arco_hot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Microclimate> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Arco_hot> <http://knowdive.disi.unitn.it/etype#has_humidity_range> "32 - 98" .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Arco_hot> <http://knowdive.disi.unitn.it/etype#has_shown_in> <http://knowdive.disi.unitn.it/etype/City/Arco> .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://knowdive.disi.unitn.it/etype#has_name> "Arco" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Arco_hot> <http://knowdive.disi.unitn.it/etype#has_wind_pattern> "moderate winds, avg 6.3 km/h, dominant 79" .
+<http://knowdive.disi.unitn.it/etype/Microclimate/Arco_hot> <http://knowdive.disi.unitn.it/etype#has_temperature_range> "-5.0 – 31.5" .
+

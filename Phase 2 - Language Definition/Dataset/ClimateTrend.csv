@@ -1,11 +1,11 @@
-City,ClimateTrend,ParameterMeasured,TimeWindow,Variation,Rate
-Trento,Warming (Increase),temperature_2m_mean (°C),1990-2025 (35.0 years),2.48°C (total change),0.0708°C/year
-Povo,Warming (Increase),temperature_2m_mean (°C),1990-2025 (35.0 years),2.53°C (total change),0.0724°C/year
-Rovereto,Stable (Minimal Change),temperature_2m_mean (°C),1990-2025 (35.0 years),1.72°C (total change),0.0490°C/year
-Tenno,Stable (Minimal Change),temperature_2m_mean (°C),1990-2025 (35.0 years),1.64°C (total change),0.0470°C/year
-Mezzana,Warming (Increase),temperature_2m_mean (°C),1990-2025 (35.0 years),1.93°C (total change),0.0550°C/year
-Predazzo,Stable (Minimal Change),temperature_2m_mean (°C),1990-2025 (35.0 years),1.74°C (total change),0.0497°C/year
-Lavarone,Stable (Minimal Change),temperature_2m_mean (°C),1990-2025 (35.0 years),1.70°C (total change),0.0487°C/year
-Telve,Stable (Minimal Change),temperature_2m_mean (°C),1990-2025 (35.0 years),1.39°C (total change),0.0398°C/year
-Cavalese,Warming (Increase),temperature_2m_mean (°C),1990-2025 (35.0 years),2.05°C (total change),0.0587°C/year
-Arco,Warming (Increase),temperature_2m_mean (°C),1990-2025 (35.0 years),2.11°C (total change),0.0603°C/year
+City,ParameterMeasured (Celsius),TimeWindow,Variation (Celsius),Rate (Celsius/Year)
+Trento,temperature_2m_mean ,1990-2025 (35.0 years),2.48,0.0708
+Povo,temperature_2m_mean ,1990-2025 (35.0 years),2.53,0.0724
+Rovereto,temperature_2m_mean,1990-2025 (35.0 years),1.72,0.0490
+Tenno,temperature_2m_mean,1990-2025 (35.0 years),1.64,0.0470
+Mezzana,temperature_2m_mean,1990-2025 (35.0 years),1.93,0.0550
+Predazzo,temperature_2m_mean,1990-2025 (35.0 years),1.74,0.0497
+Lavarone,temperature_2m_mean,1990-2025 (35.0 years),1.70,0.0487
+Telve,temperature_2m_mean,1990-2025 (35.0 years),1.39,0.0398
+Cavalese,temperature_2m_mean,1990-2025 (35.0 years),2.05,0.0587
+Arco,temperature_2m_mean,1990-2025 (35.0 years),2.11,0.0603
