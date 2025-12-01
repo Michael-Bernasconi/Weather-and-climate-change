@@ -334,16 +334,6 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
     
 
 
-    <!-- http://knowdive.disi.unitn.it/etype#has_humidity_range -->
-
-    <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_humidity_range">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Microclimate"/>
-        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Range"/>
-    </ObjectProperty>
-    
-
-
     <!-- http://knowdive.disi.unitn.it/etype#has_location_in_city -->
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_location_in_city">
@@ -481,16 +471,6 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
     
 
 
-    <!-- http://knowdive.disi.unitn.it/etype#has_temperature_range -->
-
-    <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_temperature_range">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Microclimate"/>
-        <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Range"/>
-    </ObjectProperty>
-    
-
-
     <!-- http://knowdive.disi.unitn.it/etype#has_time_window -->
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_time_window">
@@ -564,15 +544,6 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- http://knowdive.disi.unitn.it/etype#has_bound -->
-
-    <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_bound">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Range"/>
-    </DatatypeProperty>
-    
-
-
     <!-- http://knowdive.disi.unitn.it/etype#has_detection_datetime -->
 
     <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_detection_datetime">
@@ -626,6 +597,17 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
+    <!-- http://knowdive.disi.unitn.it/etype#has_humidity_range -->
+
+    <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_humidity_range">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Microclimate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Humidity range for a given microclimate</rdfs:comment>
+    </DatatypeProperty>
+    
+
+
     <!-- http://knowdive.disi.unitn.it/etype#has_intensity -->
 
     <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_intensity">
@@ -658,14 +640,6 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:comment>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#long</rdfs:comment>
         <rdfs:comment xml:lang="en">The WGS84 longitude of a SpatialThing (decimal degrees)</rdfs:comment>
         <rdfs:label>longitude</rdfs:label>
-    </DatatypeProperty>
-    
-
-
-    <!-- http://knowdive.disi.unitn.it/etype#has_lower_bound -->
-
-    <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_lower_bound">
-        <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_bound"/>
     </DatatypeProperty>
     
 
@@ -794,10 +768,13 @@ above the local reference ellipsoid).</rdfs:comment>
     
 
 
-    <!-- http://knowdive.disi.unitn.it/etype#has_upper_bound -->
+    <!-- http://knowdive.disi.unitn.it/etype#has_temperature_range -->
 
-    <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_upper_bound">
-        <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_bound"/>
+    <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_temperature_range">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Microclimate"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Temperature range for a given microclimate</rdfs:comment>
     </DatatypeProperty>
     
 
@@ -1005,14 +982,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         </rdfs:subClassOf>
         <rdfs:comment>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation</rdfs:comment>
         <rdfs:comment xml:lang="en">represents precipitation in millimetres</rdfs:comment>
-    </Class>
-    
-
-
-    <!-- http://knowdive.disi.unitn.it/etype#Range -->
-
-    <Class rdf:about="http://knowdive.disi.unitn.it/etype#Range">
-        <rdfs:comment xml:lang="en">A range is an interval characterized by a lower bound and an upper bound, representing the span between two limiting values. It is used to specify the permissible or observed limits of a measurable quantity.</rdfs:comment>
     </Class>
     
 
@@ -2393,12 +2362,6 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
         <rdf:type rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherCondition"/>
     </NamedIndividual>
     <rdf:Description>
-        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
-    </rdf:Description>
-    <rdf:Description>
-        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
-    </rdf:Description>
-    <rdf:Description>
         <xsd:pattern>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
@@ -2411,13 +2374,19 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
         <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
+        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+    </rdf:Description>
+    <rdf:Description>
+        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+    </rdf:Description>
+    <rdf:Description>
         <xsd:pattern>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
         <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
-        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     
 
