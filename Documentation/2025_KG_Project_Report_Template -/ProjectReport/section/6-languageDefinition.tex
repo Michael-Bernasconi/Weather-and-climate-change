@@ -149,11 +149,10 @@ In addition, to reflect in the best way the changes made, we also modified Perso
     \item \textbf{Persona}: Giulia Ferrari, 23 years old, a climatology student. She enjoys studying microclimates and climate variations \textbf{between different cities of Trentino}.
 \end{itemize}
 
-Another modified made to the previous ER model it is about the \textit{Anomaly} entity: since an anomaly it's strictly related to the city where it has been relevated, we decided to add directly this information as an attribute of the entity. Given the modifies described, the ER model after this phase is shown on Figure \ref{fig:language_definition}
-
+Another modification made to the previous ER model concerns the Anomaly entity: since an Anomaly is strictly related to the city, we decided to remove its link with WeatherReport and connect it directly to the city. The final ER is shown on Figure \ref{fig:er_ld}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.75\textwidth]{../../../../Phase 2 - Language Definition/er_model_language_definition.png}
+    \includegraphics[width=1\textwidth]{../../../../Phase 2 - Language Definition/er_model_language_definition.png}
     \caption{ER model after the Language Definition Phase}
     \label{fig:er_ld}
 \end{figure}
