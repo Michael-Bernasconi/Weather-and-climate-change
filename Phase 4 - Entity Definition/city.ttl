@@ -1,0 +1,70 @@
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/11.595069_46.310012> .
+<http://knowdive.disi.unitn.it/etype/Point/11.595069_46.310012> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/Point/11.595069_46.310012> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.310012" .
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://knowdive.disi.unitn.it/etype#has_name> "Predazzo" .
+<http://knowdive.disi.unitn.it/etype/Point/11.595069_46.310012> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.595069" .
+<http://knowdive.disi.unitn.it/etype/City/Predazzo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://knowdive.disi.unitn.it/etype#has_name> "Trento" .
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Point/11.12606_46.015993> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.015993" .
+<http://knowdive.disi.unitn.it/etype/City/Trento> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/11.12606_46.015993> .
+<http://knowdive.disi.unitn.it/etype/Point/11.12606_46.015993> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/Point/11.12606_46.015993> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.12606" .
+
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://knowdive.disi.unitn.it/etype#has_name> "Povo" .
+<http://knowdive.disi.unitn.it/etype/Point/11.157728_46.066882> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Point/11.157728_46.066882> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.157728" .
+<http://knowdive.disi.unitn.it/etype/City/Povo> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/11.157728_46.066882> .
+<http://knowdive.disi.unitn.it/etype/Point/11.157728_46.066882> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.066882" .
+
+<http://knowdive.disi.unitn.it/etype/Point/10.883035_45.922268> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/Point/10.883035_45.922268> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.922268" .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/10.883035_45.922268> .
+<http://knowdive.disi.unitn.it/etype/City/Arco> <http://knowdive.disi.unitn.it/etype#has_name> "Arco" .
+<http://knowdive.disi.unitn.it/etype/Point/10.883035_45.922268> <http://knowdive.disi.unitn.it/etype#has_longitude> "10.883035" .
+
+<http://knowdive.disi.unitn.it/etype/Point/11.253721_45.940308> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/Point/11.253721_45.940308> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.940308" .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://knowdive.disi.unitn.it/etype#has_name> "Lavarone" .
+<http://knowdive.disi.unitn.it/etype/Point/11.253721_45.940308> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.253721" .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Lavarone> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/11.253721_45.940308> .
+
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Point/10.795904_46.313313> <http://knowdive.disi.unitn.it/etype#has_longitude> "10.795904" .
+<http://knowdive.disi.unitn.it/etype/Point/10.795904_46.313313> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://knowdive.disi.unitn.it/etype#has_name> "Mezzana" .
+<http://knowdive.disi.unitn.it/etype/Point/10.795904_46.313313> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.313313" .
+<http://knowdive.disi.unitn.it/etype/City/Mezzana> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/10.795904_46.313313> .
+
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Point/11.451713_46.284782> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.284782" .
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://knowdive.disi.unitn.it/etype#has_name> "Cavalese" .
+<http://knowdive.disi.unitn.it/etype/Point/11.451713_46.284782> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/Point/11.451713_46.284782> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.451713" .
+<http://knowdive.disi.unitn.it/etype/City/Cavalese> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/11.451713_46.284782> .
+
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/10.831278_45.91905> .
+<http://knowdive.disi.unitn.it/etype/Point/10.831278_45.91905> <http://knowdive.disi.unitn.it/etype#has_longitude> "10.831278" .
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/City/Tenno> <http://knowdive.disi.unitn.it/etype#has_name> "Tenno" .
+<http://knowdive.disi.unitn.it/etype/Point/10.831278_45.91905> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/Point/10.831278_45.91905> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.91905" .
+
+<http://knowdive.disi.unitn.it/etype/Point/11.477478_46.058046> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.477478" .
+<http://knowdive.disi.unitn.it/etype/Point/11.477478_46.058046> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://knowdive.disi.unitn.it/etype#has_name> "Telve" .
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/11.477478_46.058046> .
+<http://knowdive.disi.unitn.it/etype/Point/11.477478_46.058046> <http://knowdive.disi.unitn.it/etype#has_latitude> "46.058046" .
+<http://knowdive.disi.unitn.it/etype/City/Telve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+
+<http://knowdive.disi.unitn.it/etype/Point/11.043987_45.896325> <http://knowdive.disi.unitn.it/etype#has_longitude> "11.043987" .
+<http://knowdive.disi.unitn.it/etype/City/Rovereto> <http://knowdive.disi.unitn.it/etype#has_name> "Rovereto" .
+<http://knowdive.disi.unitn.it/etype/Point/11.043987_45.896325> <http://knowdive.disi.unitn.it/etype#has_latitude> "45.896325" .
+<http://knowdive.disi.unitn.it/etype/City/Rovereto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#City> .
+<http://knowdive.disi.unitn.it/etype/Point/11.043987_45.896325> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://knowdive.disi.unitn.it/etype#Point> .
+<http://knowdive.disi.unitn.it/etype/City/Rovereto> <http://knowdive.disi.unitn.it/etype#has_city_location> <http://knowdive.disi.unitn.it/etype/Point/11.043987_45.896325> .
+
