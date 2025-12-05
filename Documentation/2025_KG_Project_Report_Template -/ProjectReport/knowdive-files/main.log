@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.29)  2 DEC 2025 18:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.29)  5 DEC 2025 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -452,7 +452,7 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 ) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
  Excluding comment 'comment')
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 59.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 60.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -462,24 +462,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count311
@@ -539,113 +539,108 @@ Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count317
-Package hyperref Info: Link coloring OFF on input line 59.
+Package hyperref Info: Link coloring OFF on input line 60.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<knowDiveUNITN.png, id=124, 668.4975pt x 137.51375pt>
+<knowDiveUNITN.png, id=156, 668.4975pt x 137.51375pt>
 File: knowDiveUNITN.png Graphic file (type png)
 <use knowDiveUNITN.png>
-Package pdftex.def Info: knowDiveUNITN.png  used on input line 61.
+Package pdftex.def Info: knowDiveUNITN.png  used on input line 62.
 (pdftex.def)             Requested size: 512.1496pt x 105.35924pt.
 
-Overfull \hbox (26.6656pt too wide) in paragraph at lines 61--61
+Overfull \hbox (26.6656pt too wide) in paragraph at lines 62--62
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
  []
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 61.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 62.
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 61.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 62.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 61.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 62.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 61.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 62.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 61.
+(Font)              <10> on input line 62.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 61.
+(Font)              <7> on input line 62.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 61.
+(Font)              <5> on input line 62.
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 61--61
+Overfull \hbox (23.99998pt too wide) in alignment at lines 62--62
 [][] 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 61.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 62.
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
  []
 
-<Knowdive_color_bar.png, id=126, 2260.445pt x 375.4025pt>
+<Knowdive_color_bar.png, id=158, 2260.445pt x 375.4025pt>
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 61.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 62.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./knowDiveUNITN.png> <./Knowdive_color_bar.png>] (./main.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc} <./knowDiveUNITN.png> <./Knowdive_color_bar.png>] (./main.toc
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 38.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[2])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
  []
 
 
-Overfull \hbox (15.0pt too wide) in paragraph at lines 61--61
+Overfull \hbox (15.0pt too wide) in paragraph at lines 62--62
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
 
  []
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 61.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 62.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[0]
-File: Knowdive_color_bar.png Graphic file (type png)
-<use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 61.
-(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
-
-
-Package fancyhdr Warning: \footskip is too small (30.0pt): 
-(fancyhdr)                Make it at least 48.59483pt, for example:
-(fancyhdr)                \setlength{\footskip}{48.59483pt}.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.61 \begin
-           {sloppypar} [1] (../section/0-introduction.tex
+[0] (../section/0-introduction.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
@@ -653,7 +648,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 )
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 70.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 71.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -665,11 +660,11 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.70 \clearpage
+l.71 \clearpage
                 [1] (../section/1-purpose-doi.tex)
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 72.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 73.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -677,7 +672,12 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[2
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 \clearpage
+                [2
 
 ] (../section/4-purposeFormaliation.tex
 File: Knowdive_color_bar.png Graphic file (type png)
@@ -732,12 +732,12 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [5]
-<../knowdive-files/purpose_formalization_sheet.png, id=220, 944.52875pt x 170.6375pt>
+<../knowdive-files/purpose_formalization_sheet.png, id=260, 944.52875pt x 170.6375pt>
 File: ../knowdive-files/purpose_formalization_sheet.png Graphic file (type png)
 <use ../knowdive-files/purpose_formalization_sheet.png>
 Package pdftex.def Info: ../knowdive-files/purpose_formalization_sheet.png  used on input line 65.
 (pdftex.def)             Requested size: 500.484pt x 90.4192pt.
-<../../../../Phase 1 - Purpose Definition/er_model_modified.png, id=222, 1505.625pt x 1108.14pt>
+<../../../../Phase 1 - Purpose Definition/er_model_modified.png, id=262, 1505.625pt x 1108.14pt>
 File: ../../../../Phase 1 - Purpose Definition/er_model_modified.png Graphic file (type png)
 <use ../../../../Phase 1 - Purpose Definition/er_model_modified.png>
 Package pdftex.def Info: ../../../../Phase 1 - Purpose Definition/er_model_modified.png  used on input line 79.
@@ -789,7 +789,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [9]
-<../../../../Phase 1 - Purpose Definition/ER_after_IG.png, id=253, 1075.01625pt x 839.68706pt>
+<../../../../Phase 1 - Purpose Definition/ER_after_IG.png, id=293, 1075.01625pt x 839.68706pt>
 File: ../../../../Phase 1 - Purpose Definition/ER_after_IG.png Graphic file (type png)
 <use ../../../../Phase 1 - Purpose Definition/ER_after_IG.png>
 Package pdftex.def Info: ../../../../Phase 1 - Purpose Definition/ER_after_IG.png  used on input line 144.
@@ -801,7 +801,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 )
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 74.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 75.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -812,7 +812,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 [10]
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 74.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 75.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -821,7 +821,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [11 <../../../../Phase 1 - Purpose Definition/ER_after_IG.png>] (../section/6-languageDefinition.tex
-<../../../../Phase 2 - Language Definition/language_definition.png, id=268, 707.64375pt x 579.16376pt>
+<../../../../Phase 2 - Language Definition/language_definition.png, id=309, 707.64375pt x 579.16376pt>
 File: ../../../../Phase 2 - Language Definition/language_definition.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/language_definition.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/language_definition.png  used on input line 9.
@@ -839,7 +839,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 [12
 
  <../../../../Phase 2 - Language Definition/language_definition.png>]
-<../../../../Phase 2 - Language Definition/ontology_definition.png, id=278, 554.07pt x 728.22063pt>
+<../../../../Phase 2 - Language Definition/ontology_definition.png, id=319, 554.07pt x 728.22063pt>
 File: ../../../../Phase 2 - Language Definition/ontology_definition.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/ontology_definition.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/ontology_definition.png  used on input line 23.
@@ -855,7 +855,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [13 <../../../../Phase 2 - Language Definition/ontology_definition.png>]
-<../../../../Phase 2 - Language Definition/knowledge_data_link.png, id=287, 438.63875pt x 541.52313pt>
+<../../../../Phase 2 - Language Definition/knowledge_data_link.png, id=328, 438.63875pt x 541.52313pt>
 File: ../../../../Phase 2 - Language Definition/knowledge_data_link.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/knowledge_data_link.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/knowledge_data_link.png  used on input line 46.
@@ -891,11 +891,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
 
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png, id=302, 2828.5675pt x 461.725pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png, id=342, 2601.72pt x 231.86626pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png  used on input line 90.
-(pdftex.def)             Requested size: 500.484pt x 81.69785pt.
+(pdftex.def)             Requested size: 500.484pt x 44.60342pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 91.
@@ -950,7 +950,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 95
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png, id=309, 2016.53375pt x 274.02374pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png, id=349, 2016.53375pt x 274.02374pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png  used on input line 97.
@@ -961,7 +961,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 98.
 See the caption package documentation for explanation.
 
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png, id=310, 146.5475pt x 368.37625pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png, id=350, 146.5475pt x 368.37625pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png  used on input line 104.
@@ -971,7 +971,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 105.
 See the caption package documentation for explanation.
 
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png, id=311, 1805.74625pt x 393.47pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png, id=351, 1805.74625pt x 393.47pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png  used on input line 111.
@@ -1011,7 +1011,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [17 <../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png> <../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png> <../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png>]
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png, id=324, 926.46124pt x 285.065pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png, id=364, 926.46124pt x 285.065pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png  used on input line 118.
@@ -1037,7 +1037,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--119
 \T1/lmr/m/n/12 for each year, it fa-cil-i-tates multi-year com-par-i-son and sea-sonal im-pact anal-y-sis.
  []
 
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png, id=325, 1528.71124pt x 393.47pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png, id=365, 1528.71124pt x 393.47pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png  used on input line 123.
@@ -1062,7 +1062,7 @@ Underfull \hbox (badness 1701) in paragraph at lines 123--124
 \T1/lmtt/m/n/12 Rate \T1/lmr/m/n/12 (e.g., $[]$C/year) and clas-si-fies the over-all trend as \T1/lmtt/m/n/12 Warming\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 Cooling\T1/lmr/m/n/12 , or \T1/lmtt/m/n/12 Stable\T1/lmr/m/n/12 .
  []
 
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png, id=326, 1308.89pt x 435.6275pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png, id=366, 1308.89pt x 435.6275pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png  used on input line 130.
@@ -1102,7 +1102,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [18{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc} <../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png> <../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png> <../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png>]
-<../../../../Phase 2 - Language Definition/er_model_language_definition.png, id=340, 1075.01625pt x 714.11794pt>
+<../../../../Phase 2 - Language Definition/er_model_language_definition.png, id=380, 1075.01625pt x 714.11794pt>
 File: ../../../../Phase 2 - Language Definition/er_model_language_definition.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/er_model_language_definition.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/er_model_language_definition.png  used on input line 155.
@@ -1113,7 +1113,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 76.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 77.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -1123,7 +1123,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 [19 <../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png>]
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 76.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 77.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -1132,7 +1132,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [20 <../../../../Phase 2 - Language Definition/er_model_language_definition.png>] (../section/7-knowledgeDefinition.tex
-<../../../../Phase 3 - Knowledge Definition/img/object_properties.png, id=355, 554.07pt x 731.73375pt>
+<../../../../Phase 3 - Knowledge Definition/img/object_properties.png, id=395, 554.07pt x 731.73375pt>
 File: ../../../../Phase 3 - Knowledge Definition/img/object_properties.png Graphic file (type png)
 <use ../../../../Phase 3 - Knowledge Definition/img/object_properties.png>
 Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/object_properties.png  used on input line 8.
@@ -1141,7 +1141,7 @@ Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/object_p
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../../../../Phase 3 - Knowledge Definition/img/data_properties.png, id=357, 500.87125pt x 733.23938pt>
+<../../../../Phase 3 - Knowledge Definition/img/data_properties.png, id=397, 500.87125pt x 733.23938pt>
 File: ../../../../Phase 3 - Knowledge Definition/img/data_properties.png Graphic file (type png)
 <use ../../../../Phase 3 - Knowledge Definition/img/data_properties.png>
 Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/data_properties.png  used on input line 23.
@@ -1163,7 +1163,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 ])
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 78.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 79.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -1174,7 +1174,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 [22 <../../../../Phase 3 - Knowledge Definition/img/object_properties.png>]
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 78.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 79.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -1182,10 +1182,12 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[23 <../../../../Phase 3 - Knowledge Definition/img/data_properties.png>] (../section/8-dataDefinition.tex)
+[23 <../../../../Phase 3 - Knowledge Definition/img/data_properties.png>] (../section/8-dataDefinition.tex
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 28.
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 80.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 32.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -1195,10 +1197,29 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 
 [24
 
-] (../section/9-evaluation.tex)
+]
+Underfull \hbox (badness 2119) in paragraph at lines 33--34
+[]\T1/lmtt/b/n/12 weatherreport.ttl\T1/lmr/m/n/12 : This en-tity un-der-went a sig-nif-i-cant re-duc-tion to man-age its
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 33--34
+\T1/lmr/m/n/12 large file size. It was cre-ated from \T1/lmtt/m/n/12 WeatherReportMinimum.csv \T1/lmr/m/n/12 (a re-fined ver-sion
+ []
+
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 82.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 65.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[25])
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 81.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -1206,7 +1227,18 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[25
+[26] (../section/9-evaluation.tex)
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 83.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[27
 
 ] (../section/10-metadataDefinition.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1226,7 +1258,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 )
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 84.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 85.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -1234,7 +1266,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[26
+[28
 
 ] (../section/11-openIssues.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1249,7 +1281,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 )
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 89.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 90.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -1257,7 +1289,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[27
+[29
 
 ] 
 enddocument/afterlastpage: lastpage setting LastPage.
@@ -1267,21 +1299,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B3B1D4649BE14040B5CF2606A55F482B;4574.
+(rerunfilecheck)             Checksum: 67B7B6FEE8E0CCA073EB00922D61D5F8;5841.
  ) 
 Here is how much of TeX's memory you used:
- 15189 strings out of 474222
- 246609 string characters out of 5748732
+ 15210 strings out of 474222
+ 246921 string characters out of 5748732
  1948975 words of memory out of 5000000
- 37076 multiletter control sequences out of 15000+600000
- 625632 words of font info for 75 fonts, out of 8000000 for 9000
+ 37086 multiletter control sequences out of 15000+600000
+ 625950 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,81p,1202b,939s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (30 pages, 2559160 bytes).
+</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (32 pages, 2560816 bytes).
 PDF statistics:
- 472 PDF objects out of 1000 (max. 8388607)
- 378 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 530 PDF objects out of 1000 (max. 8388607)
+ 431 compressed objects within 5 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 395 words of extra memory for PDF output out of 10000 (max. 10000000)
 

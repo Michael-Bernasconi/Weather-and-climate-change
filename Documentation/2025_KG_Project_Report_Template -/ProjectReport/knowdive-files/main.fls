@@ -248,12 +248,12 @@ INPUT ./main.toc
 INPUT ./main.toc
 INPUT main.toc
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx10.tfm
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
 OUTPUT main.toc
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmr12.tfm
 INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmbx12.tfm
-INPUT ./Knowdive_color_bar.png
-INPUT ./Knowdive_color_bar.png
-INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
@@ -454,6 +454,13 @@ INPUT ../section/8-dataDefinition.tex
 INPUT ../section/8-dataDefinition.tex
 INPUT ../section/8-dataDefinition.tex
 INPUT ../section/8-dataDefinition.tex
+INPUT /usr/share/texmf/fonts/tfm/public/lm/ec-lmtk10.tfm
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
+INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
 INPUT ./Knowdive_color_bar.png
@@ -493,4 +500,5 @@ INPUT /usr/share/texmf/fonts/type1/public/lm/lmr12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmr9.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmri12.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb
+INPUT /usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb
 INPUT /usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb

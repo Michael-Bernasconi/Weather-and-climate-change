@@ -1,31 +1,84 @@
 \section{Entity Definition}
-This section is dedicated to the description of the Entity Definition phase. Like in the previous section, it aims to describe the different sub activities performed by all the team members, as well as the phase outcomes produced. The division between knowledge and data activities in this section is not defined, because, in this phase the two layers are merged to form a single data structure composed by the knowledge structures defined in the last section, and the aligned dataset. The obtained result is a structured Knowledge Graph including both the two layers.
 
+This section is dedicated to the description of the \textbf{Entity Definition} phase. As in the previous stages, it aims to describe the different sub-activities performed by the team, as well as the phase outcomes produced. In this phase, the division between knowledge and data is merged to form a unified data structure, combining the knowledge structures defined in the \textbf{Knowledge Definition} phase with the aligned datasets from the \textbf{Data Layer}. The final result is a structured Knowledge Graph (\textbf{KG}) that integrates both layers.
 
-\noindent Entity Definition sub activities:
+\vspace{0.5cm}
+
+\subsection{Overview and Objectives}
+
+The Entity Definition phase is the final step in the iTelos methodology, with the primary objective of merging the knowledge and data layers into a unified \textbf{Knowledge Graph}. The input for this phase consisted of the cleaned and aligned data resources (collected from IlMeteo.it, APIs, and Open Data Trentino) and the ontology created in previous stages (Language and Knowledge Definition phases).
+
+The objective is to address the remaining heterogeneity of data values, ensuring that entities across datasets are uniquely identified, matched, and mapped, thereby generating the final \textbf{KG}.
+
+The main activities performed were:
 \begin{itemize}
-    \item the first set of activities aim at merging the knowledge layer of a single dataset with the data values present within such a dataset.
-    
-    \begin{itemize}
-            \item Entity identification 
-            \item Data mapping
-    \end{itemize}
-
-    \item the second set of activities merges the knowledge and data layers considering the composition of different datasets, thus mapping multiple datasets to one single knowledge structure (the teleontology), instead of merging the mapping one dataset to its relative knowledge structure, as the producer process does.
-    
-    \begin{itemize}
-            \item Entity identification 
-            \item Data mapping
-    \end{itemize}
+    \item \textbf{Entity Matching \& Data Reduction:} Resolving discrepancies and aligning data values through cleaning, removal of superfluous data, and calculation of necessary fields.
+    \item \textbf{Entity Identification:} Ensuring each entity instance is uniquely and consistently represented.
+    \item \textbf{Entity Mapping:} Combining the ontology with the corresponding data values to generate the final Knowledge Graph in RDF-Turtle format.
 \end{itemize}
 
-\noindent The report of the work done during this phase of the methodology, has to includes also the description of the  different choices made, with their strong and weak points. In other words the report should provide to the reader, a clear description of the reasoning conducted by all the different team members.
+\vspace{0.5cm}
 
-Evaluation - Entity Definition: A detailed description of the Entity layer evaluation over the data layer of the KG -
+\subsection{Entity Matching and Data Reduction}
+
+Entity matching in this project primarily focused on \textbf{data alignment and cleansing}. This activity ensured data quality and mitigated heterogeneity by removing redundant or superfluous columns and by calculating necessary geographical data.
+
+The following transformations were performed on the raw data files to produce the final Turtle files:
 \begin{itemize}
-    \item How many entities initially considered? How many entities finally considered? How many entities could be modelled as the KG?
-    \item If valid, how was the knowledge graph enriched/adapted over different iterations of Karma mapping? report details in a table.
-    \item Other details/ difficulties encountered during Entity Definition via Karma.
-    \item Did you have to return to change something in the Purpose Definition and/or Language Definition and/or Knowledge Definition phase? If yes, report here.
-    \item If valid, report dataset-level formatting and transformations done in this phase?
+    \item \textbf{\texttt{anomaly.ttl}}: Created from \texttt{Anomaly.csv}, with the column 'Anomaly' being eliminated, as the remaining column 'TypeAnomaly' was already sufficiently exhaustive for the purpose.
+    \item \textbf{\texttt{climatetrend.ttl}}: Created from \texttt{ClimateTrend.csv}, with the column 'ClimateTrend' removed for being superfluous.
+    \item \textbf{\texttt{microclimate.ttl}}: Created from \texttt{MicroClimate.csv}, with the column 'MicroClimate' removed for being superfluous.
+    \item \textbf{\texttt{weatherstation.ttl}}: Created from \texttt{WeatherStation.csv}, eliminating redundant columns such as 'name', 'east', and 'north', as the necessary geographical information was present in 'shortname' and the calculated 'latitude'/'longitude' fields.
+    \item \textbf{\texttt{city.ttl}}: Created from \texttt{City.csv}, by adding calculated geographical fields for latitude and longitude.
+    \item \textbf{\texttt{weatherreport.ttl}}: This entity underwent a significant reduction to manage its large file size. It was created from \texttt{WeatherReportMinimum.csv} (a refined version of \texttt{WeatherReport.csv}) by eliminating the columns \texttt{MinTemperature}, \texttt{MaxTemperature}, \texttt{MinHumidity}, \texttt{MaxHumidity}, and \texttt{PrecipitationHours}. Crucially, the \texttt{StationCode} column was maintained to enable the linkage to the \texttt{WeatherStation} entity.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\subsection{Entity Identification}
+
+Once the datasets were cleaned and reduced, the focus shifted to entity identification. A critical step was the \textbf{standardization of temporal data}. The format of the dates in all generated \texttt{.ttl} files was modified to ensure compatibility with the \textbf{ISO 8601} standard. This standard format is essential for correctly identifying and querying time-bound entities. Furthermore, the inclusion of \texttt{StationCode} in the \texttt{WeatherReport} entity was key for establishing a unique identifier that allows direct connection to the corresponding \texttt{WeatherStation}.
+
+\vspace{0.5cm}
+
+\subsection{Entity Mapping}
+
+Entity mapping integrates the defined ontology with the cleaned data values. This activity was implemented using the \textbf{Karma} tool, which facilitated the creation of the mapping models.
+
+The output of this process is a set of RDF-Turtle files (\texttt{.ttl}) for each entity type:
+\begin{itemize}
+    \item \texttt{anomaly.ttl}
+    \item \texttt{city.ttl}
+    \item \texttt{climatetrend.ttl}
+    \item \texttt{microclimate.ttl}
+    \item \texttt{season.ttl}
+    \item \texttt{weatherstation.ttl}
+    \item \texttt{weatherreport.ttl}
+\end{itemize}
+Due to its considerable size, the final \texttt{weatherreport.ttl} file was inserted into a \textbf{ZIP archive} for easier handling and storage.
+
+\vspace{0.5cm}
+
+\subsection{Phase Outcomes}
+
+The Entity Definition phase concludes with the creation of the finalized and unified \textbf{Knowledge Graph}. This output integrates the semantic knowledge structures (ontology) with the aligned meteorological and climatic data, providing a robust resource for answering the defined Competency Questions (\textbf{CQs}). The Knowledge Graph, represented by the complete set of RDF-Turtle files, is now prepared for performing efficient queries on the \textbf{GraphDB} platform.
+
+\vspace{0.5cm}
+
+\subsection{Decisions and Reflections}
+
+During this phase, several key decisions were made to ensure the robustness and query-efficiency of the final \textbf{KG}.
+
+\subsubsection{Strengths}
+\begin{itemize}
+    \item \textbf{Temporal Standardization (ISO 8601):} The adoption of the \textbf{ISO 8601} standard for all date and time attributes guaranteed semantic correctness and greatly improved the consistency and interoperability of temporal queries within the \textbf{KG}.
+    \item \textbf{Robust Entity Linkage:} The explicit inclusion of the \texttt{StationCode} in the \texttt{WeatherReport} entity ensures a reliable link between daily reports and their respective weather stations, which is essential for geographical and relational queries.
+    \item \textbf{Lean Data Structure:} The cleansing and \textbf{targeted data reduction} (removal of superfluous and redundant columns) resulted in a leaner and more focused \textbf{KG} structure, improving query efficiency and reducing the computational load on \textbf{GraphDB}.
+    \item \textbf{Process Repeatability:} The utilization of the \textbf{Karma} tool ensured that the conceptual mappings were consistently translated into the RDF-Turtle format, maintaining the integrity of the iTelos process and making the mapping repeatable.
+\end{itemize}
+
+\subsubsection{Weaknesses}
+\begin{itemize}
+    \item \textbf{Source Data Heterogeneity:} The main obstacle encountered in this phase was the \textbf{incredible heterogeneity of the data} present in the original CSV files. This required a significant manual pre-processing effort to align, correct, and adjust the files before they could be input into \textbf{Karma}, extending the duration of the Entity Definition phase beyond initial estimates.
+    \item \textbf{Trade-off on \texttt{WeatherReport} Granularity:} The decision to eliminate several columns (\texttt{Min/MaxTemperature}, \texttt{PrecipitationHours}) from the \texttt{WeatherReport} file was a \textbf{necessary trade-off} to manage its large size. While it ensured the efficiency and manageability of the \textbf{KG} on \textbf{GraphDB}, it reduced the granularity of information available for certain potential \textbf{CQs}.
 \end{itemize}
