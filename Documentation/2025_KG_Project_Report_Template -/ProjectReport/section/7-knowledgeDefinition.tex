@@ -1,7 +1,14 @@
 \section{Knowledge Definition}
 In this section, we will analyze the Knowledge defition phase. The definition of object and data properties was directly guided by the Purpose of the project, which required the ability to formally describe, connect, and query meteorological phenomena, climate trends, seasonal characteristics, and their relation to specific cities in the Trentino region. The Entity–Relationship (ER) model served as the conceptual backbone for this phase: each meaningful relationship identified in the ER diagram was translated into an OWL object property, preserving its semantic direction, cardinality, and intended meaning within the domain.
 Attributes associated with entities in the ER schema were transformed into data properties, for which appropriate XSD datatypes were selected to ensure semantic correctness, validation, and interoperability.
-The Data Layer played a crucial role in consolidating and validating these modeling decisions. Whenever discrepancies or inconsistencies emerged between the ER structure and the real datasets, the ontology was shaped to remain both faithful to the conceptual model and compatible with the actual data. Through this process, the resulting ontology maintains strong coherence across Purpose, ER, and Data Layer—allowing semantically meaningful integration, querying, and reasoning over the heterogeneous climate and weather data sources involved in the project.
+The Data Layer played a crucial role in consolidating and validating these modeling decisions. Whenever discrepancies or inconsistencies emerged between the ER structure and the real datasets, the ontology was shaped to remain both faithful to the conceptual model and compatible with the actual data. Through this process, the resulting ontology maintains strong coherence across Purpose, ER, and Data Layer—allowing semantically meaningful integration, querying, and reasoning over the heterogeneous climate and weather data sources involved in the project. 
+Now, we'll see an example of entity definition: in particular, we'll see the \textit{WeatherStation} concept. From Home Weather Ontology we kept the concept of \textit{WeatherReportSource} and then added as a sub-class of it the \textit{WeatherStation} entity. The result 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../../../../Phase 3 - Knowledge Definition/img/entity_example.png}
+    \caption{Example of entity: in the image is shown the \textit{WeatherStation} entity.}
+    \label{fig:entity_example}
+\end{figure}
 \subsection{Object properties}
 \begin{figure}[h]
     \centering

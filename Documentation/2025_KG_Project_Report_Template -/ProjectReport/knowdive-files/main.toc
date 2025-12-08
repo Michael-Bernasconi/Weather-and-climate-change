@@ -22,23 +22,23 @@
 \contentsline {subsubsection}{\numberline {4.4.2}Data Collected from APIs}{16}{subsubsection.4.4.2}%
 \contentsline {subsubsection}{\numberline {4.4.3}Data Collected and Derived from APIs and Local Sources}{16}{subsubsection.4.4.3}%
 \contentsline {section}{\numberline {5}Knowledge Definition}{21}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Object properties}{21}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Data properties}{21}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Entity Definition}{24}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Overview and Objectives}{24}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Entity Matching and Data Reduction}{24}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Entity Identification}{25}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Entity Mapping}{25}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}Phase Outcomes (The Knowledge Graph)}{25}{subsubsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.5}Revised Competency Questions}{26}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Decisions and Reflections}{26}{subsection.6.6}%
-\contentsline {subsubsection}{\numberline {6.6.1}Strengths}{26}{subsubsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.6.2}Weaknesses}{27}{subsubsection.6.6.2}%
-\contentsline {section}{\numberline {7}Evaluation}{28}{section.7}%
-\contentsline {section}{\numberline {8}Metadata Definition}{29}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Project Metadata Description}{29}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}People Metadata Description}{30}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Data Resources Metadata Description}{30}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Open Issues}{31}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Adherence to Schedule and Achievement of Objectives}{31}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Open Issues at Project Conclusion}{31}{subsection.9.2}%
+\contentsline {subsection}{\numberline {5.1}Object properties}{22}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Data properties}{23}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Entity Definition}{25}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Overview and Objectives}{25}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Entity Matching and Data Reduction}{25}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Entity Identification}{26}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Entity Mapping}{26}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Phase Outcomes (The Knowledge Graph)}{27}{subsubsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.5}Revised Competency Questions}{28}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Decisions and Reflections}{28}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Strengths}{28}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}Weaknesses}{29}{subsubsection.6.6.2}%
+\contentsline {section}{\numberline {7}Evaluation}{30}{section.7}%
+\contentsline {section}{\numberline {8}Metadata Definition}{31}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Project Metadata Description}{31}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}People Metadata Description}{31}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Data Resources Metadata Description}{31}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Open Issues}{35}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Adherence to Schedule and Achievement of Objectives}{35}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Open Issues at Project Conclusion}{35}{subsection.9.2}%
