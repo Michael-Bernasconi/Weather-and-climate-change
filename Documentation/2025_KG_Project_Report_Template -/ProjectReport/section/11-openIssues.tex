@@ -1,29 +1,31 @@
 \section{Open Issues}
-This section concludes the current document with final conclusions regarding the quality of the process and final outcome, and describes the issues that (due to lack of time, resources, or data) remained open, whose resolution is deferred to future project iterations.
+This section concludes the document by reporting final considerations on the quality of the development process and the achieved outcomes, and by describing the main issues that, due to limitations in time, resources, or data availability, remain unresolved and are therefore deferred to future project iterations.
 
-\subsection{Adherence to Scheduling and Satisfaction of Purpose}
+\subsection{Adherence to Schedule and Achievement of Objectives}
 
-The project successfully adhered to the initial planning, completing the scheduled phases within the established deadline for documentation.
+The project successfully respected the initial planning, with all scheduled phases completed within the established documentation deadlines.
 
-Nevertheless, although significant progress was made and a coherent and functional Knowledge Graph (KG) was generated, the final results did not fully satisfy the original purpose of the project.
+However, despite the significant progress achieved and the construction of a coherent and functional Knowledge Graph (KG), the final results did not fully satisfy the original objectives of the project.
 
-In particular, the Domain of Interest (DOI) was circumscribed in two fundamental aspects due to data management and dimensionality reasons:
+In particular, the Domain of Interest (DOI) was necessarily reduced in two fundamental dimensions due to data management and scalability constraints:
 
 \begin{itemize}
-    \item \textbf{Geographical Scope:} The initial goal was to model meteorological phenomena and microclimates across the entire Trentino Alto Adige Region, focusing on variations among alpine areas, valleys, and lake regions. To limit the dataset size and maintain file manageability, it was necessary to redefine the conceptual class \texttt{Region} as \texttt{City}, concentrating the analysis exclusively on ten specific locations. The part of the original scope that was not covered therefore concerns the in-depth analysis and modeling of specific microclimates in the valleys and lake areas of Trentino.
-    \item \textbf{Temporal Coverage:} Due to the same constraints related to dataset size and performance, the temporal window of measurement was reduced from an original extension of 30 years to 15 years.
+    \item \textbf{Geographical Scope:} The initial objective was to model meteorological phenomena and microclimatic variations across the entire Trentino-Alto Adige region, with a specific focus on alpine zones, valleys, and lake areas. In order to limit dataset size and ensure computational manageability, the conceptual class \texttt{Region} was redefined as \texttt{City}, restricting the analysis to ten specific locations. As a consequence, the original goal of modelling detailed microclimatic behaviors in valleys and lake districts could not be fully addressed.
+    
+    \item \textbf{Temporal Coverage:} For similar performance and storage-related reasons, the observation time span was reduced from the originally planned 30 years to a 15-year historical window.
 \end{itemize}
 
 \subsection{Open Issues at Project Conclusion}
-The most relevant issues that emerged during the project process, which constitute the starting point for future iterations, are summarized below:
+
+The most relevant unresolved issues identified during the project, which constitute the basis for future extensions and refinements, are summarized as follows:
 
 \begin{itemize}
-    \item \textbf{Data-Driven Geographical and Temporal Limitation:}
-    The open issue stems from the dual restriction imposed to ensure project manageability: the shift from "alpine and valley areas" to "cities" and the reduction of the historical analysis period from 30 to 15 years. This limitation, although necessary for the current realization, required the adjustment of the initial Competency Questions (CQs). It prevents fully answering questions related to macro-area climate dynamics and the analysis of climate trends over broader temporal horizons, thereby restricting the scope of obtainable inferences. Several solutions were considered, such as searching for and integrating additional local data sources or selecting alternative datasets with greater spatial coverage; however, time constraints did not permit full implementation.
-
-    \item \textbf{Refinement of Complex Entity Derivation:}
-    Key entities of the Knowledge Graph, such as \texttt{Anomaly}, \texttt{Microclimate}, \texttt{ClimateTrend}, and \texttt{Season}, were derived (generated) by applying specific algorithmic logic to the raw data. Despite the results achieved, the derivation logic requires further targeted testing and optimization. This is fundamental for refining the precision and robustness of the generated entities and, consequently, improving the usability and reliability of the KG in response to complex queries.
-
-    \item \textbf{Harmonization and Consistency of Heterogeneous Data:}
-    The Knowledge Graph was constructed by integrating data from heterogeneous sources (\textit{Open Data Trentino}, \textit{ilMeteo.it}, \textit{Historical Weather API}), each with its own structure. Despite the accurate data cleaning phase, the process of complete structural harmonization and the management of residual inconsistencies (due to missing, incomplete, or non-updated attributes) remain a significant challenge that requires further validation and alignment steps for future model evolutions.
+    \item \textbf{Data-Driven Geographical and Temporal Constraints:}  
+    A major open issue derives from the necessity to constrain both spatial and temporal dimensions of the dataset. The transition from broad geographical macro-areas to individual cities, together with the reduction of the historical time span, required a partial reformulation of the original Competency Questions (CQs). These limitations prevent a complete investigation of large-scale climate dynamics and long-term trends, thereby restricting the depth of possible inferences. Several mitigation strategies were considered, including the integration of additional local datasets and the adoption of alternative data sources with wider spatial coverage; however, implementation was not feasible within the available time frame.
+    
+    \item \textbf{Refinement of Complex Entity Derivation:}  
+    Core Knowledge Graph entities such as \texttt{Anomaly}, \texttt{Microclimate}, \texttt{ClimateTrend}, and \texttt{Season} were generated through algorithmic derivation from raw data. Although the current implementation produced meaningful results, the underlying derivation logic requires more extensive testing, validation, and optimization. This refinement is essential to improve the accuracy, robustness, and interpretability of these entities, and to enhance the overall reliability of the KG when addressing complex analytical queries.
+    
+    \item \textbf{Harmonization and Consistency of Heterogeneous Data Sources:}  
+    The Knowledge Graph was built by integrating data from heterogeneous sources (namely \textit{Open Data Trentino}, \textit{ilMeteo.it}, and the \textit{Historical Weather API}), each characterized by distinct schemas and formats. Although a thorough data cleaning phase was conducted, full structural harmonization and the systematic management of residual inconsistencies (arising from missing, incomplete, or outdated attributes) remain open challenges. These aspects require further validation, alignment, and standardization steps in future iterations of the model.
 \end{itemize}
