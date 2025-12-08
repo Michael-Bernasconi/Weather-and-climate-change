@@ -40,3 +40,5 @@
 \contentsline {subsection}{\numberline {8.2}People Metadata Description}{30}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}Data Resources Metadata Description}{30}{subsection.8.3}%
 \contentsline {section}{\numberline {9}Open Issues}{31}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Adherence to Scheduling and Satisfaction of Purpose}{31}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Open Issues at Project Conclusion}{31}{subsection.9.2}%

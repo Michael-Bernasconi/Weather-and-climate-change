@@ -1,18 +1,29 @@
 \section{Open Issues}
+This section concludes the current document with final conclusions regarding the quality of the process and final outcome, and describes the issues that (due to lack of time, resources, or data) remained open, whose resolution is deferred to future project iterations.
 
-This section concludes the current document with final conclusions regarding the quality of the process and final outcome, and the description of the issues that (for lack of time or any other cause) remained open.\\
+\subsection{Adherence to Scheduling and Satisfaction of Purpose}
+
+The project successfully adhered to the initial planning, completing the scheduled phases within the established deadline for documentation.
+
+Nevertheless, although significant progress was made and a coherent and functional Knowledge Graph (KG) was generated, the final results did not fully satisfy the original purpose of the project.
+
+In particular, the Domain of Interest (DOI) was circumscribed in two fundamental aspects due to data management and dimensionality reasons:
 
 \begin{itemize}
-    \item Did the project respect the scheduling expected in the beginning ?
-    \item Are the final results able to satisfy the initial Purpose ?
-        \begin{itemize}
-            \item If no, or not entirely, why ? which parts of the Purpose have not been covered ?
-        \end{itemize}
+    \item \textbf{Geographical Scope:} The initial goal was to model meteorological phenomena and microclimates across the entire Trentino Alto Adige Region, focusing on variations among alpine areas, valleys, and lake regions. To limit the dataset size and maintain file manageability, it was necessary to redefine the conceptual class \texttt{Region} as \texttt{City}, concentrating the analysis exclusively on ten specific locations. The part of the original scope that was not covered therefore concerns the in-depth analysis and modeling of specific microclimates in the valleys and lake areas of Trentino.
+    \item \textbf{Temporal Coverage:} Due to the same constraints related to dataset size and performance, the temporal window of measurement was reduced from an original extension of 30 years to 15 years.
 \end{itemize}
 
-
-\noindent Moreover, this section aims to summarize the most relevant issues/problems remained open along the iTelos process. The description of open issues has to provide a clear explanation about the problems, the approaches adopted while trying to solve them and, eventually, any proposed solution that has not been applied.\\
+\subsection{Open Issues at Project Conclusion}
+The most relevant issues that emerged during the project process, which constitute the starting point for future iterations, are summarized below:
 
 \begin{itemize}
-    \item which are the issues remained open at the end of the project ?
+    \item \textbf{Data-Driven Geographical and Temporal Limitation:}
+    The open issue stems from the dual restriction imposed to ensure project manageability: the shift from "alpine and valley areas" to "cities" and the reduction of the historical analysis period from 30 to 15 years. This limitation, although necessary for the current realization, required the adjustment of the initial Competency Questions (CQs). It prevents fully answering questions related to macro-area climate dynamics and the analysis of climate trends over broader temporal horizons, thereby restricting the scope of obtainable inferences. Several solutions were considered, such as searching for and integrating additional local data sources or selecting alternative datasets with greater spatial coverage; however, time constraints did not permit full implementation.
+
+    \item \textbf{Refinement of Complex Entity Derivation:}
+    Key entities of the Knowledge Graph, such as \texttt{Anomaly}, \texttt{Microclimate}, \texttt{ClimateTrend}, and \texttt{Season}, were derived (generated) by applying specific algorithmic logic to the raw data. Despite the results achieved, the derivation logic requires further targeted testing and optimization. This is fundamental for refining the precision and robustness of the generated entities and, consequently, improving the usability and reliability of the KG in response to complex queries.
+
+    \item \textbf{Harmonization and Consistency of Heterogeneous Data:}
+    The Knowledge Graph was constructed by integrating data from heterogeneous sources (\textit{Open Data Trentino}, \textit{ilMeteo.it}, \textit{Historical Weather API}), each with its own structure. Despite the accurate data cleaning phase, the process of complete structural harmonization and the management of residual inconsistencies (due to missing, incomplete, or non-updated attributes) remain a significant challenge that requires further validation and alignment steps for future model evolutions.
 \end{itemize}
