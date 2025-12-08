@@ -36,4 +36,7 @@
 \contentsline {subsubsection}{\numberline {6.6.2}Weaknesses}{27}{subsubsection.6.6.2}%
 \contentsline {section}{\numberline {7}Evaluation}{28}{section.7}%
 \contentsline {section}{\numberline {8}Metadata Definition}{29}{section.8}%
-\contentsline {section}{\numberline {9}Open Issues}{30}{section.9}%
+\contentsline {subsection}{\numberline {8.1}Project Metadata Description}{29}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}People Metadata Description}{30}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Data Resources Metadata Description}{30}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Open Issues}{31}{section.9}%
