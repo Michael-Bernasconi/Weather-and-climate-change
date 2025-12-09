@@ -2,13 +2,7 @@
 In this section, we will analyze the Knowledge defition phase. The definition of object and data properties was directly guided by the Purpose of the project, which required the ability to formally describe, connect, and query meteorological phenomena, climate trends, seasonal characteristics, and their relation to specific cities in the Trentino region. The Entity–Relationship (ER) model served as the conceptual backbone for this phase: each meaningful relationship identified in the ER diagram was translated into an OWL object property, preserving its semantic direction, cardinality, and intended meaning within the domain.
 Attributes associated with entities in the ER schema were transformed into data properties, for which appropriate XSD datatypes were selected to ensure semantic correctness, validation, and interoperability.
 The Data Layer played a crucial role in consolidating and validating these modeling decisions. Whenever discrepancies or inconsistencies emerged between the ER structure and the real datasets, the ontology was shaped to remain both faithful to the conceptual model and compatible with the actual data. Through this process, the resulting ontology maintains strong coherence across Purpose, ER, and Data Layer—allowing semantically meaningful integration, querying, and reasoning over the heterogeneous climate and weather data sources involved in the project. 
-Now, we'll see an example of entity definition: in particular, we'll see the \textit{WeatherStation} concept. From Home Weather Ontology we kept the concept of \textit{WeatherReportSource} and then added as a sub-class of it the \textit{WeatherStation} entity. The result 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{../../../../Phase 3 - Knowledge Definition/img/entity_example.png}
-    \caption{Example of entity: in the image is shown the \textit{WeatherStation} entity.}
-    \label{fig:entity_example}
-\end{figure}
+
 \subsection{Object properties}
 \begin{figure}[h]
     \centering
@@ -39,5 +33,48 @@ Another relevant aspect modeled as data property is the \textit{type} attribute 
 
 All data properties were assigned appropriate XSD datatypes to guarantee precise validation and interoperability. Mandatory attributes (e.g., detectionDate for Anomaly) were distinguished from optional ones, reflecting both the ER model and the structure of the available datasets.
 
+To clarify the entire knowledge definition process, we present three representative examples—one for each modeling activity: entity definition, object property definition, and data property definition.
+\subsection{Entity Definition Example: Weather Station}
+uring the entity definition phase, we focused on identifying the core concepts relevant to the Purpose and the ER model. As part of this process, we analyzed whether similar concepts already existed in the Home Weather Ontology (HWO). Since HWO includes the concept WeatherReportSource, which semantically aligns with our notion of a physical station producing weather observations, we extended this ontology by defining WeatherStation as a subclass of WeatherReportSource.
+This allowed us to reuse established semantic structures while tailoring the concept to the needs of our domain.
+A descriptive comment was added to clarify the meaning and expected role of WeatherStation within the ontology.
+The resulting definition is shown in Figure \ref{fig:entity_example}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../../../../Phase 3 - Knowledge Definition/img/entity_example.png}
+    \caption{Example of entity: in the image is shown the \textit{WeatherStation} entity.}
+    \label{fig:entity_example}
+\end{figure}
+
+\subsection{Object Property Definition Example: has\_wind\_information}
+Once the entities were defined, we proceeded with the creation of object properties to model the relationships between eTypes. As an illustrative example, we consider the relationship between WeatherReport and Wind.
+Since each weather report contains a complete set of wind-related measurements, we introduced the object property has\_wind\_information.
+The domain of this property is WeatherReport and its range is Wind.
+This choice preserves the semantic direction (a report includes wind information) and ensures compatibility with the structure of the Data Layer, where all wind attributes originate from the same weather report.
+Figure \ref{fig:object_property_example} shows the final definition.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../../../../Phase 3 - Knowledge Definition/img/object_property_example.png}
+    \caption{Example of object property: in the image is shown the object property that links \textit{WeatherReport} to \textit{Wind}}
+    \label{fig:object_property_example}
+\end{figure}
+
+\subsection{Data Property Definition Example: WeatherStation code }
+Finally, we defined the data properties. When possible, we reused the datatype properties already defined in the W3.org ontologies adopted by HWO—such as those related to geographic coordinates (Point) or wind characteristics (Wind).
+For concepts introduced in our ontology, new data properties were defined accordingly.
+For example, each WeatherStation must have a unique identifier, which is represented in the datasets as an alphanumeric code.
+We therefore modeled this as a datatype property with domain WeatherStation and range xsd:string.
+Figure \ref{fig:data_property_example} shows the final structure of this property.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../../../../Phase 3 - Knowledge Definition/img/data_property_example.png}
+    \caption{Example of data property: in the image is shown the data property that models the unique code for a \textit{WeatherStation}}.
+    \label{fig:data_property_example}
+\end{figure}
+
+These three examples illustrate the methodology applied throughout the entire Knowledge Definition phase:
+starting from the ER model and guided by the project Purpose and the available datasets, we defined entities, object properties, and data properties that together form a coherent and semantically rich ontology.
 
 In conclusion, the final result is the \href{https://github.com/Michael-Bernasconi/Weather-and-climate-change/blob/50495365ff2c8e0d8fb5170f74a65995a37dc640/Phase%203%20-%20Knowledge%20Definition/knowledge_definition.rdf}{ontolgy file}. There has not been made any modify to CQs and ER model precedently defined as it was possible to model all the aspects.
