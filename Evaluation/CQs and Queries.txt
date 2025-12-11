@@ -1,0 +1,431 @@
+===========================================================================================================================================
+===========Maria Bianchi 1.1 Which areas of Trentino have experienced significant increase in annual rainfall over the past decade?========
+===========================================================================================================================================
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#># Fil
+
+SELECT ?cityName ?recentRain ?pastRain (?recentRain - ?pastRain AS ?increase)
+WHERE {
+
+  # ---------- Recent decade total annual rainfall ----------
+  {
+    SELECT ?cityName (AVG(?annualRain) AS ?recentRain)
+    WHERE {
+      SELECT ?cityName ?year (SUM(xsd:float(?prec)) AS ?annualRain)
+      WHERE {
+        ?ys a etype:YearSeason ;
+             etype:has_season_year ?year ;
+             etype:has_average_precipitation ?prec ;
+             etype:has_been_observed_in ?city .
+
+        ?city etype:has_name ?cityName .
+
+        FILTER(xsd:integer(?year) >= (2025 - 10))  # last decade
+      }
+      GROUP BY ?cityName ?year
+    }
+    GROUP BY ?cityName
+  }
+
+  # ---------- Previous decade total annual rainfall ----------
+  OPTIONAL {
+    SELECT ?cityName (AVG(?annualRain2) AS ?pastRain)
+    WHERE {
+      SELECT ?cityName ?year2 (SUM(xsd:float(?prec2)) AS ?annualRain2)
+      WHERE {
+        ?ys2 a etype:YearSeason ;
+              etype:has_season_year ?year2 ;
+              etype:has_average_precipitation ?prec2 ;
+              etype:has_been_observed_in ?city2 .
+
+        ?city2 etype:has_name ?cityName .
+
+        FILTER(
+          xsd:integer(?year2) < (2025 - 10) &&
+          xsd:integer(?year2) >= (2025 - 20)
+        )
+      }
+      GROUP BY ?cityName ?year2
+    }
+    GROUP BY ?cityName
+  }
+
+  FILTER(BOUND(?recentRain) && BOUND(?pastRain) && ?recentRain > ?pastRain)
+}
+ORDER BY DESC(?increase)
+LIMIT 100
+
+=========================================================================================================================================
+=====Maria Bianchi How has the average monthly rainfall evolved in each valley or municipality of Trentino over the last ten years=======
+=========================================================================================================================================
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT ?cityName ?year ?month (AVG(xsd:float(?precVal)) AS ?avgMonthlyRainfall)
+WHERE {
+    ?report a etype:WeatherReport ;
+             etype:has_city_report ?city ;
+             etype:has_precipitation_mm ?precNode ;
+             etype:has_report_datetime ?date .
+
+    ?city etype:has_name ?cityName .
+    ?precNode etype:has_intensity ?intensity .
+
+    BIND(xsd:float(?intensity) AS ?precVal)
+    BIND(xsd:integer(SUBSTR(STR(?date), 1, 4)) AS ?year)
+    BIND(xsd:integer(SUBSTR(STR(?date), 6, 2)) AS ?month)
+
+    # Last 10 years relative to 2025
+    FILTER(?year >= 2015)
+}
+GROUP BY ?cityName ?year ?month
+ORDER BY ?cityName ?year ?month
+
+
+============================================================================================================================================
+========================Giulia Ferrari 2.3: How does wind speed and direction vary across the Trentino region?=============================
+============================================================================================================================================
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT ?cityName ?avgWindSpeed ?prevailingDirection
+WHERE {
+  
+  # --- average speed wind---
+  {
+    SELECT ?cityName (AVG(xsd:float(?speed)) AS ?avgWindSpeed)
+    WHERE {
+      ?report a etype:WeatherReport ;
+              etype:has_city_report ?city ;
+              etype:has_wind_information ?wind .
+
+      ?city etype:has_name ?cityName .
+      ?wind etype:has_speed ?speed .
+    }
+    GROUP BY ?cityName
+  }
+
+  # --- prevailing Direction wind---
+  {
+    SELECT ?cityName ?prevailingDirection
+    WHERE {
+      ?report2 a etype:WeatherReport ;
+               etype:has_city_report ?city2 ;
+               etype:has_wind_information ?wind2 .
+
+      ?city2 etype:has_name ?cityName .
+      ?wind2 etype:has_direction ?prevailingDirection .
+    }
+    GROUP BY ?cityName ?prevailingDirection
+    ORDER BY DESC(COUNT(?prevailingDirection))
+    LIMIT 100
+  }
+
+}
+ORDER BY DESC(?avgWindSpeed)
+
+============================================================================================================================================
+====================Giulia Ferrari2.6: Which valleys show the most distinctive microclimatic patterns according to sensor data?=============
+============================================================================================================================================
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT ?valleyName ?microType ?tempRange ?humidityRange ?windPattern
+WHERE {
+  
+  ?micro a etype:Microclimate ;
+         etype:has_microclimate_type ?microType ;
+         etype:has_temperature_range ?tempRange ;
+         etype:has_humidity_range ?humidityRange ;
+         etype:has_wind_pattern ?windPattern ;
+         etype:has_shown_in ?city .
+
+  ?city etype:has_name ?valleyName .
+}
+ORDER BY ?microType ?valleyName
+LIMIT 100
+
+============================================================================================================================================
+===================Alessandro Rossi 3.4: How do current weather anomalies compare to past extreme events recorded in the KG?================
+============================================================================================================================================
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT ?cityName ?currentTemp ?maxPastTemp ?minPastTemp ?currentPrecip ?maxPastPrecip ?minPastPrecip
+WHERE {
+
+  ?city a etype:City ;
+        etype:has_name ?cityName .
+
+  {
+    SELECT ?city ?currentTemp ?currentPrecip
+    WHERE {
+      ?reportCurrent a etype:WeatherReport ;
+                     etype:has_city_report ?city ;
+                     etype:has_report_datetime ?dateCurrent ;
+                     etype:has_mean_temperature ?tempNode ;
+                     etype:has_precipitation_mm ?precNode .
+
+      ?tempNode etype:has_temperature_value ?currentTemp .
+      ?precNode etype:has_intensity ?currentPrecip .
+
+      # Filter recent report
+      FILTER(xsd:dateTime(?dateCurrent) >= "2024-01-01T00:00:00"^^xsd:dateTime)
+    }
+  }
+
+  # ---Extreme event past 30 years
+  {
+    SELECT ?city
+           (MAX(xsd:float(?tempPastVal)) AS ?maxPastTemp)
+           (MIN(xsd:float(?tempPastVal)) AS ?minPastTemp)
+           (MAX(xsd:float(?precPastVal)) AS ?maxPastPrecip)
+           (MIN(xsd:float(?precPastVal)) AS ?minPastPrecip)
+    WHERE {
+      ?reportPast a etype:WeatherReport ;
+                  etype:has_city_report ?city ;
+                  etype:has_report_datetime ?datePast ;
+                  etype:has_mean_temperature ?tempNodePast ;
+                  etype:has_precipitation_mm ?precNodePast .
+
+      ?tempNodePast etype:has_temperature_value ?tempPastVal .
+      ?precNodePast etype:has_intensity ?precPastVal .
+
+      FILTER(xsd:dateTime(?datePast) < "2024-01-01T00:00:00"^^xsd:dateTime)
+    }
+    GROUP BY ?city
+  }
+
+}
+ORDER BY DESC(?currentTemp)
+LIMIT 100
+
+
+============================================================================================================================================
+==================Alessandro Rossi: 3.5: Can the KG highlight areas with recurring climatic anomalies over multiple years?==================
+============================================================================================================================================
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT ?cityName (COUNT(?anomalyReport) AS ?numAnomalies)
+WHERE {
+  
+  ?city a etype:City ;
+        etype:has_name ?cityName .
+
+  ?anomalyReport a etype:WeatherReport ;
+                 etype:has_city_report ?city ;
+                 etype:has_report_datetime ?date ;
+                 etype:has_mean_temperature ?tempNode .
+
+  ?tempNode etype:has_temperature_value ?tempVal .
+
+  # ---- Simple anomaly definition: temperature > 30°C or < -5°C ----
+  FILTER(xsd:float(?tempVal) > 30 || xsd:float(?tempVal) < -5)
+
+  # Optional: consider only the last N years
+  FILTER(xsd:dateTime(?date) >= "2005-01-01T00:00:00"^^xsd:dateTime)
+}
+GROUP BY ?cityName
+HAVING(?numAnomalies > 1)
+ORDER BY DESC(?numAnomalies)
+LIMIT 100
+
+
+============================================================================================================================================
+======Francesca Romano 4.1: How have the average start and end dates of each season changed in Trentino over the past 15 years?=============
+============================================================================================================================================
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?seasonName
+       ?avgTempRecent ?avgTempPast
+       (?avgTempRecent - ?avgTempPast AS ?tempChange)
+       ?avgPrecRecent ?avgPrecPast
+       (?avgPrecRecent - ?avgPrecPast AS ?precChange)
+WHERE {
+
+  ### ----- RECENT 15 YEARS -----
+  {
+    SELECT ?seasonName
+           (AVG(xsd:float(?temp)) AS ?avgTempRecent)
+           (AVG(xsd:float(?prec)) AS ?avgPrecRecent)
+    WHERE {
+      ?s a etype:YearSeason ;
+         etype:has_season_name ?seasonName ;
+         etype:has_season_year ?year ;
+         etype:has_average_temperature ?temp ;
+         etype:has_average_precipitation ?prec ;
+         etype:has_been_observed_in ?city .
+      ?city etype:has_name "Trento" .
+
+      FILTER(xsd:integer(?year) >= 2010)
+    }
+    GROUP BY ?seasonName
+  }
+
+  ### ----- PREVIOUS 15 YEARS -----
+  OPTIONAL {
+    SELECT ?seasonName
+           (AVG(xsd:float(?temp2)) AS ?avgTempPast)
+           (AVG(xsd:float(?prec2)) AS ?avgPrecPast)
+    WHERE {
+      ?s2 a etype:YearSeason ;
+          etype:has_season_name ?seasonName ;
+          etype:has_season_year ?year2 ;
+          etype:has_average_temperature ?temp2 ;
+          etype:has_average_precipitation ?prec2 ;
+          etype:has_been_observed_in ?city2 .
+      ?city2 etype:has_name "Trento" .
+
+      FILTER(xsd:integer(?year2) < 2010 &&
+             xsd:integer(?year2) >= 1995)
+    }
+    GROUP BY ?seasonName
+  }
+}
+ORDER BY ?seasonName
+============================================================================================================================================
+========================Francesca Romano 4.4: How does current spring temperature compare to historical averages from 2015 to 2025?=======
+============================================================================================================================================
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT ?cityName ?currentYear ?currentTemp ?historicAvg
+WHERE {
+
+  # --- Current spring temperature (most recent year available) ---
+  {
+    SELECT ?cityName ?currentYear (xsd:float(?temp) AS ?currentTemp)
+    WHERE {
+      ?ys a etype:YearSeason ;
+          etype:has_season_name "Spring" ;
+          etype:has_been_observed_in ?city ;
+          etype:has_season_year ?year ;
+          etype:has_average_temperature ?temp .
+      ?city etype:has_name ?cityName .
+      BIND(xsd:integer(?year) AS ?currentYear)
+    }
+    ORDER BY DESC(?currentYear)
+    LIMIT 1   # most recent spring only
+  }
+
+  # --- Historical spring averages from 2015 to 2025 (excluding current year) ---
+  OPTIONAL {
+    SELECT ?cityName (AVG(xsd:float(?temp2)) AS ?historicAvg)
+    WHERE {
+      ?ys2 a etype:YearSeason ;
+           etype:has_season_name "Spring" ;
+           etype:has_been_observed_in ?city2 ;
+           etype:has_season_year ?year2 ;
+           etype:has_average_temperature ?temp2 .
+      ?city2 etype:has_name ?cityName .
+
+      FILTER(xsd:integer(?year2) >= 2015 && xsd:integer(?year2) <= 2025)
+      FILTER(xsd:integer(?year2) != ?currentYear)  # exclude the current year
+    }
+    GROUP BY ?cityName
+  }
+}
+
+
+============================================================================================================================================
+===================Marco Ricci 5.1: Which areas of Trentino have recorded the highest temperature increases over the past 15 years?=========
+============================================================================================================================================
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT ?cityName ?recentAvg ?pastAvg (?recentAvg - ?pastAvg AS ?increase)
+WHERE {
+
+  # --- Compute average temperature for last 15 years ---
+  {
+    SELECT ?cityName (AVG(xsd:float(?temp)) AS ?recentAvg)
+    WHERE {
+      ?ys a etype:YearSeason ;
+          etype:has_season_year ?year ;
+          etype:has_average_temperature ?temp ;
+          etype:has_been_observed_in ?city .
+
+      ?city etype:has_name ?cityName .
+
+      FILTER(xsd:integer(?year) >= (2025 - 15))   # last 15 years relative to 2025
+    }
+    GROUP BY ?cityName
+  }
+
+  # --- Compute average temperature for previous 15-year window ---
+  OPTIONAL {
+    SELECT ?cityName (AVG(xsd:float(?temp2)) AS ?pastAvg)
+    WHERE {
+      ?ys2 a etype:YearSeason ;
+           etype:has_season_year ?year2 ;
+           etype:has_average_temperature ?temp2 ;
+           etype:has_been_observed_in ?city2 .
+
+      ?city2 etype:has_name ?cityName .
+
+      FILTER(
+        xsd:integer(?year2) < (2025 - 15) &&       # older than recent window
+        xsd:integer(?year2) >= (2025 - 30)         # up to 30 years behind today
+      )
+    }
+    GROUP BY ?cityName
+  }
+
+  # ensure both values exist
+  FILTER(BOUND(?recentAvg) && BOUND(?pastAvg))
+}
+ORDER BY DESC(?increase)
+LIMIT 100
+
+============================================================================================================================================
+===========================Marco Ricci 5.6: Which weather stations show the most evident long- term warming trends?=========================
+============================================================================================================================================
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX etype: <http://knowdive.disi.unitn.it/etype#>
+
+SELECT ?stationName ?recentAvg ?pastAvg (?recentAvg - ?pastAvg AS ?warmingTrend)
+WHERE {
+
+  # --- Recent 15-year average temperature ---
+  {
+    SELECT ?stationName (AVG(xsd:float(?temp)) AS ?recentAvg)
+    WHERE {
+      ?ys a etype:YearSeason ;
+           etype:has_season_year ?year ;
+           etype:has_average_temperature ?temp ;
+           etype:has_been_observed_in ?station .
+
+      ?station etype:has_name ?stationName .
+
+      FILTER(xsd:integer(?year) >= (2025 - 15))
+    }
+    GROUP BY ?stationName
+  }
+
+  # --- Previous 15-year average temperature ---
+  OPTIONAL {
+    SELECT ?stationName (AVG(xsd:float(?temp2)) AS ?pastAvg)
+    WHERE {
+      ?ys2 a etype:YearSeason ;
+            etype:has_season_year ?year2 ;
+            etype:has_average_temperature ?temp2 ;
+            etype:has_been_observed_in ?station2 .
+
+      ?station2 etype:has_name ?stationName .
+
+      FILTER(
+        xsd:integer(?year2) < (2025 - 15) &&
+        xsd:integer(?year2) >= (2025 - 30)
+      )
+    }
+    GROUP BY ?stationName
+  }
+
+  # Keep only stations with data in both windows
+  FILTER(BOUND(?recentAvg) && BOUND(?pastAvg))
+}
+ORDER BY DESC(?warmingTrend)
+LIMIT 100
+
