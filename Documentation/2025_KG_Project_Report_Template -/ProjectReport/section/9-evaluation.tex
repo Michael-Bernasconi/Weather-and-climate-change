@@ -1,11 +1,118 @@
 \section{Evaluation}
 
-This section aims at describing the evaluation performed at the end of the whole process over the final outcome of the iTelos methodology. More in details, this section as to report:
+This section aims at describing the evaluation performed at the end of the whole process over the final outcome of the iTelos methodology. More in details, this section has to report:
 
+\subsection{the final Knowledge Graph information statistics}
+(like, number of etypes and properties, number of entities for each etype, and so on).
+
+\subsection{Knowledge layer evaluation}
+the results of the application of the evaluation metrics applied over the knowledge layer of the final KG.
+
+\subsection{Data layer evaluation}
+the results of the application of the evaluation metrics applied over the data layer of the final KG.
+
+\subsection{Query execution}
+To assess the suitability of the final Knowledge Graph (KG) in supporting the project objectives regarding climate and environmental analysis in Trentino, a series of \textit{competency queries} were executed. These queries evaluate the KG's ability to retrieve relevant climate information and verify its structural and semantic consistency.
+
+All files and scripts related to the evaluation can be found in the \href{https://github.com/Michael-Bernasconi/Weather-and-climate-change/tree/documentation/Evaluation}{GitHub repository}.
+
+\subsubsection*{1. Maria Bianchi 1.1: Areas with Significant Rainfall Increase}
+\textbf{Query:} Which areas of Trentino have experienced significant increase in annual rainfall over the past decade?
+
+This query identifies municipalities that experienced the largest increase in average annual rainfall, comparing 2015–2025 with 2005–2015.
 \begin{itemize}
-    \item the final Knowledge Graph information statistics (like, number of etypes and properties, number of entities for each etype, and so on).
-    \item Knowledge layer evaluation: the results of the application of the evaluation metrics applied over the knowledge layer of the final KG.
-    \item Data layer evaluation: the results of the application of the evaluation metrics applied over the data layer of the final KG.
-    \item Query execution: the description of the competency queries executed over the final KG in order to test the suitability of the KG to satisfy the project purpose. How many CQs could be transformed into SPAQRL queries? For how many SPARQL queries the KG returned desired answers?
+    \item Compute average rainfall for recent decade (\texttt{recentRain}) and previous decade (\texttt{pastRain}) via subgraphs.
+    \item Calculate difference \texttt{increase = recentRain - pastRain}.
+    \item Filter municipalities with positive increase and sort descendingly by \texttt{increase}.
 \end{itemize}
 
+\subsubsection*{2. Maria Bianchi 1.2: Monthly Rainfall Trends}
+\textbf{Query:} How has the average monthly rainfall evolved in each valley or municipality of Trentino over the last ten years?
+
+This query tracks average monthly rainfall evolution for each municipality from 2015 to 2025.
+\begin{itemize}
+    \item Retrieve all \texttt{WeatherReport} from 2015 onward.
+    \item Extract municipality name, year, month, and precipitation value.
+    \item Group by municipality, year, month and calculate monthly average (\texttt{avgMonthlyRainfall}).
+    \item Sort chronologically to provide a detailed time series.
+\end{itemize}
+
+\subsubsection*{3. Giulia Ferrari 2.3: Wind Speed and Direction Variation}
+\textbf{Query:} How does wind speed and direction vary across the Trentino region?
+
+This query analyzes average wind speed and prevailing wind direction across municipalities.
+\begin{itemize}
+    \item Compute average wind speed per municipality (\texttt{avgWindSpeed}).
+    \item Identify prevailing wind direction (\texttt{prevailingDirection}) by frequency.
+    \item Combine results per municipality and sort by average speed.
+\end{itemize}
+
+\subsubsection*{4. Giulia Ferrari 2.6: Distinctive Microclimates}
+\textbf{Query:} Which valleys show the most distinctive microclimatic patterns according to sensor data?
+
+This query identifies municipalities or valleys with the most distinctive microclimatic patterns.
+\begin{itemize}
+    \item Retrieve \texttt{Microclimate} entities linked to municipalities.
+    \item Extract valley name, microclimate type, temperature range, humidity range, and wind pattern.
+    \item Sort by microclimate type and municipality name.
+\end{itemize}
+
+\subsubsection*{5. Alessandro Rossi 3.4: Comparison with Past Extreme Events}
+\textbf{Query:} How do current weather anomalies compare to past extreme events recorded in the KG?
+
+This query compares recent climate values with historical extreme events over the past 30 years.
+\begin{itemize}
+    \item Retrieve recent temperature (\texttt{currentTemp}) and precipitation (\texttt{currentPrecip}).
+    \item Retrieve historical extremes (\texttt{maxPastTemp}, \texttt{minPastTemp}, \texttt{maxPastPrecip}, \texttt{minPastPrecip}).
+    \item Combine recent and historical data to identify anomalies.
+\end{itemize}
+
+\subsubsection*{6. Alessandro Rossi 3.5: Areas with Recurring Climatic Anomalies}
+\textbf{Query:} Can the KG highlight areas with recurring climatic anomalies over multiple years?
+
+This query identifies municipalities with recurring climatic anomalies over 2005–2025.
+\begin{itemize}
+    \item Define anomaly: \texttt{tempVal > 30°C} or \texttt{tempVal < -5°C}.
+    \item Count anomalous reports per municipality (\texttt{numAnomalies}).
+    \item Filter municipalities with more than one anomaly.
+\end{itemize}
+
+\subsubsection*{7. Francesca Romano 4.1: Historical Seasonal Changes}
+\textbf{Query:} How have the average start and end dates of each season changed in Trentino over the past 15 years?
+
+This query analyzes changes in average seasonal climate from 2010–2025 vs. 1995–2009.
+\begin{itemize}
+    \item Compute recent seasonal averages (\texttt{avgTempRecent}, \texttt{avgPrecRecent}).
+    \item Compute past seasonal averages (\texttt{avgTempPast}, \texttt{avgPrecPast}).
+    \item Calculate differences (\texttt{tempChange}, \texttt{precChange}) per season.
+\end{itemize}
+
+\subsubsection*{8. Francesca Romano 4.4: Current Spring Temperature Comparison}
+\textbf{Query:} How does current spring temperature compare to historical averages from 2015 to 2025?
+
+This query compares most recent spring temperature to the historical average of 2015–2025.
+\begin{itemize}
+    \item Retrieve current spring temperature (\texttt{currentTemp}) for each municipality.
+    \item Calculate historical spring average (\texttt{historicAvg}) excluding current year.
+    \item Output direct comparison for anomaly detection.
+\end{itemize}
+
+\subsubsection*{9. Marco Ricci 5.1: Areas with Temperature Increase}
+\textbf{Query:} Which areas of Trentino have recorded the highest temperature increases over the past 15 years?
+
+This query identifies municipalities with largest increase in mean temperature, comparing 2010–2025 vs. 1995–2009.
+\begin{itemize}
+    \item Compute recent average temperature (\texttt{recentAvg}) and past average (\texttt{pastAvg}).
+    \item Calculate increase (\texttt{increase = recentAvg - pastAvg}).
+    \item Filter for complete data and sort descendingly by \texttt{increase}.
+\end{itemize}
+
+\subsubsection*{10. Marco Ricci 5.6: Stations with Long-term Warming Trend}
+\textbf{Query:} Which weather stations show the most evident long-term warming trends?
+
+This query identifies meteorological stations with the strongest long-term warming trends.
+\begin{itemize}
+    \item Compute recent station average (\texttt{recentAvg}) and past average (\texttt{pastAvg}).
+    \item Calculate warming trend (\texttt{warmingTrend = recentAvg - pastAvg}).
+    \item Filter complete data and sort descendingly by \texttt{warmingTrend}.
+\end{itemize}
