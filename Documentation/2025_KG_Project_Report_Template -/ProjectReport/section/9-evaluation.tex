@@ -1,12 +1,66 @@
 \section{Evaluation}
 
-This section aims at describing the evaluation performed at the end of the whole process over the final outcome of the iTelos methodology. More in details, this section has to report:
+This section is intended to evaluate the KG produced at the end od the iTelos methodology. It aims to evaluate the structure, quality and effectiveness in meeting the project purpose. In detail, the evaluation has been divided in:
+\begin{itemize}
+    \item \textbf{Purpose Definition evaluation}, by which it can be evaluated how well an available dataset aligns with the project's purpose.
+    \item \textbf{Language Definition evaluation}, by which it can be evaluated how well the terms of the domain language are aligned to the reference LTLO.
+    \item \textbf{Knowledge Definition Evaluation}, by which it can be evaluated how well the schema of the KG is aligned to knowledge elements.
+    \item \textbf{Entity Definition Evaluation}, by which it can be evaluated how "dense" is the KG at the end of the iTelos process.
+\end{itemize}
 
 \subsection{the final Knowledge Graph information statistics}
 (like, number of etypes and properties, number of entities for each etype, and so on).
 
-\subsection{Knowledge layer evaluation}
-the results of the application of the evaluation metrics applied over the knowledge layer of the final KG.
+\subsection{Purpose Definition evaluation}
+\[
+    Cov_{E}^{CQ} = \frac{|ETypes_{CQ} \cap ETypes_{\text{Dataset}}|}{|Etypes_{CQ}|} = \frac{13}{13} = 1.0
+\]
+
+To evaluate the alignment between the Competency Questions and the selected datasets, we analyzed the entity types required to answer the CQs and compared them with the conceptual coverage provided by the available data sources. The analysis shows that all required entity types—including City, WeatherReport, WeatherStation, Season, ClimateTrend, Microclimate, and Anomaly—are represented in the datasets. According to the metric defined in the iTelos methodology, the resulting CQ-to-dataset coverage is equal to 1.0, indicating that the selected data sources are sufficient to support the defined Competency Questions
+
+\[
+    Cov_{\text{Properties}}^{CQ} = \frac{|P_{CQ} \cap P_{\text{Dataset}}|}{|P_{CQ}|} = \frac{20}{20} = 1.0
+\]
+
+In addition to entity type coverage, we evaluated the coverage of properties required by the Competency Questions. The analysis considered both data and object properties necessary to express meteorological measurements, temporal dimensions, and spatial relationships. Results show that all required properties—including temperature, precipitation, humidity, wind-related attributes, temporal references, and inter-entity relationships—are supported by the selected datasets. According to the adopted metric, the CQ-to-dataset property coverage is equal to 1.0, further confirming the adequacy of the data sources for answering the defined Competency Questions.
+
+\[
+Cov_{E}^{CQ} = \frac{|ETypes_{CQ} \cap ETypes_{\text{Dataset}}|}{|Etypes_{\text{Dataset}}|} = \frac{13}{15} = 0.87
+\]
+
+The dataset-to-CQ entity type coverage was also evaluated in order to assess the alignment between the available data and the defined information needs. The analysis shows that most entity types present in the datasets are directly required by the Competency Questions. According to the adopted metric, the resulting dataset-to-CQ coverage is approximately 0.87. The remaining entity types, such as spatial location and weather phenomenon, provide complementary contextual information and support future extensions of the Knowledge Graph.
+
+\[
+    Cov_{\text{Properties}}^{CQ} = \frac{|P_{CQ} \cap P_{\text{Dataset}}|}{|P_{\text{Dataset}}|} = \frac{20}{24} = 0.83
+\]
+
+A similar evaluation was conducted for properties. Results indicate a dataset-to-CQ property coverage of approximately 0.83. The properties not directly required by the Competency Questions mainly describe auxiliary characteristics (e.g., station metadata or geographical coordinates) and do not negatively impact the scope of the Knowledge Graph.
+
+\subsection{Language Definition Evaluation}
+\[
+    Cov_{ET}(LTLO) = \frac{|\text{ETerms}_\text{final} \cap \text{LTLO}_\text{ETerms}|}{|\text{ETerms}_\text{final}|} = \frac{13}{19} = 0.684
+\]
+
+The entity type coverage shows that a significant portion of the classes defined in the ontology has been reused from existing reference ontologies, such as the Home Weather Ontology, SWEET, WGS84, and OWL-Time. This result reflects a design choice aimed at maximizing semantic interoperability and alignment with established domain vocabularies.
+At the same time, a limited number of new entity types were introduced to model domain-specific concepts not directly available in the reference ontologies, such as City, YearSeason, ClimateTrend, and Anomaly. These additions were necessary to support the Competency Questions and to accurately represent the structure and granularity of the available datasets. Overall, the resulting coverage indicates a balanced trade-off between reuse and domain-specific expressiveness.
+
+\[
+    Cov_{OPT}(LTLO) = \frac{|\text{OPTerms}_\text{final} \cap \text{LTLO}_\text{OPTerms}|}{|\text{OPTerms}_\text{final}|} = \frac{2}{24} = 0.0833
+\]
+
+The object property coverage is relatively low, as most of the relationships defined in the ontology were introduced specifically to connect the domain entities according to the project requirements. While reference ontologies provide well-established concepts, they often do not include task-specific relationships needed to model interactions between cities, weather reports, stations, seasons, and climate trends.
+Consequently, the majority of object properties were newly defined to capture these domain-specific relationships in a clear and explicit manner. This result is consistent with the goal of ensuring semantic clarity and structural coherence, rather than forcing the reuse of generic relations that would not accurately represent the intended meaning.
+
+\[
+    Cov_{DPT}(LTLO) = \frac{|\text{DPTerms}_\text{final} \cap \text{LTLO}_\text{DPTerms}|}{|\text{DPTerms}_\text{final}|} = \frac{6}{31} = 0.1935
+\]
+
+The data property coverage reflects a selective reuse strategy. Standard datatype properties related to spatial and meteorological measurements—such as latitude, longitude, wind speed, and direction—were reused from established vocabularies whenever possible.
+However, many data properties were newly introduced to represent attributes directly derived from the datasets, including identifiers, aggregated values, temporal descriptors, and trend-related measures. These properties are inherently application-specific and therefore not commonly available in reference ontologies. The resulting coverage demonstrates a pragmatic balance between reuse of standard attributes and the need to faithfully model dataset-specific information.
+
+Overall, the language definition evaluation confirms that the ontology adopts a consistent and well-structured vocabulary, combining reused terms from established ontologies with newly defined concepts and properties tailored to the project domain. The observed coverage values are coherent with the modeling objectives and highlight a conscious design approach that prioritizes semantic correctness, clarity, and extensibility over superficial term reuse.
+
+\subsection{}
 
 \subsection{Data layer evaluation}
 the results of the application of the evaluation metrics applied over the data layer of the final KG.
