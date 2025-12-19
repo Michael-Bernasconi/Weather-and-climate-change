@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  18 DEC 2025 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  19 DEC 2025 14:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1364,10 +1364,16 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [32]
+<../../../../Evaluation/connectivity_matrix.png, id=566, 1100.11pt x 228.855pt>
+File: ../../../../Evaluation/connectivity_matrix.png Graphic file (type png)
+<use ../../../../Evaluation/connectivity_matrix.png>
+Package pdftex.def Info: ../../../../Evaluation/connectivity_matrix.png  used on input line 90.
+(pdftex.def)             Requested size: 500.484pt x 104.1152pt.
+
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 91.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 94.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -1375,21 +1381,54 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [33]
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 129.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 139.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 120.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[34])
+[34 <../../../../Evaluation/connectivity_matrix.png>]
+
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 131.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[35{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 163.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[36]
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 195.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+File: Knowdive_color_bar.png Graphic file (type png)
+<use Knowdive_color_bar.png>
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 213.
+(pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
+
+Package fancyhdr Warning: \footskip is too small (30.0pt): 
+(fancyhdr)                Make it at least 48.59483pt, for example:
+(fancyhdr)                \setlength{\footskip}{48.59483pt}.
+
+[37])
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
@@ -1400,13 +1439,13 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[35] (../section/10-metadataDefinition.tex
-<../../../../Metadata/img/ProjectMetadata.png, id=585, 2759.30875pt x 606.265pt>
+[38] (../section/10-metadataDefinition.tex
+<../../../../Metadata/img/ProjectMetadata.png, id=605, 2759.30875pt x 606.265pt>
 File: ../../../../Metadata/img/ProjectMetadata.png Graphic file (type png)
 <use ../../../../Metadata/img/ProjectMetadata.png>
 Package pdftex.def Info: ../../../../Metadata/img/ProjectMetadata.png  used on input line 31.
 (pdftex.def)             Requested size: 500.484pt x 109.96481pt.
-<../../../../Metadata/img/PeopleMetadata.png, id=587, 2120.92375pt x 140.525pt>
+<../../../../Metadata/img/PeopleMetadata.png, id=607, 2120.92375pt x 140.525pt>
 File: ../../../../Metadata/img/PeopleMetadata.png Graphic file (type png)
 <use ../../../../Metadata/img/PeopleMetadata.png>
 Package pdftex.def Info: ../../../../Metadata/img/PeopleMetadata.png  used on input line 45.
@@ -1422,10 +1461,10 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[36
+[39
 
  <../../../../Metadata/img/ProjectMetadata.png>]
-<../../../../Metadata/img/DatasetMetadata.png, id=596, 2826.56pt x 214.8025pt>
+<../../../../Metadata/img/DatasetMetadata.png, id=616, 2826.56pt x 214.8025pt>
 File: ../../../../Metadata/img/DatasetMetadata.png Graphic file (type png)
 <use ../../../../Metadata/img/DatasetMetadata.png>
 Package pdftex.def Info: ../../../../Metadata/img/DatasetMetadata.png  used on input line 68.
@@ -1441,7 +1480,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[37 <../../../../Metadata/img/PeopleMetadata.png> <../../../../Metadata/img/DatasetMetadata.png>] (../section/11-openIssues.tex
+[40 <../../../../Metadata/img/PeopleMetadata.png> <../../../../Metadata/img/DatasetMetadata.png>] (../section/11-openIssues.tex
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
@@ -1452,7 +1491,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[38
+[41
 
 ])
 
@@ -1465,7 +1504,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                Make it at least 48.59483pt, for example:
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
-[39] 
+[42] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./main.aux)
  ***********
@@ -1473,21 +1512,21 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 915FA8056BE7A8D99D5AA6D012AF48AA;9464.
+(rerunfilecheck)             Checksum: 8DFFAE6104E0E816E6BE3D4F71B4CDD8;9633.
  ) 
 Here is how much of TeX's memory you used:
- 15687 strings out of 473190
- 259636 string characters out of 5715799
- 673100 words of memory out of 5000000
- 38517 multiletter control sequences out of 15000+600000
+ 15702 strings out of 473190
+ 260135 string characters out of 5715799
+ 673343 words of memory out of 5000000
+ 38527 multiletter control sequences out of 15000+600000
  637586 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,87p,1216b,998s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (42 pages, 3453183 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on main.pdf (45 pages, 3528008 bytes).
 PDF statistics:
- 728 PDF objects out of 1000 (max. 8388607)
- 593 compressed objects within 6 object streams
- 128 named destinations out of 1000 (max. 500000)
- 550 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 755 PDF objects out of 1000 (max. 8388607)
+ 612 compressed objects within 7 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 555 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -41,13 +41,13 @@
 \contentsline {subsection}{\numberline {7.1}the final Knowledge Graph information statistics}{31}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Purpose Definition evaluation}{31}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Language Definition Evaluation}{32}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}}{33}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.4}Knowledge definition Evaluation}{33}{subsection.7.4}%
 \contentsline {subsection}{\numberline {7.5}Data layer evaluation}{33}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Query execution}{33}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Metadata Definition}{36}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Project Metadata Description}{36}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}People Metadata Description}{37}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Data Resources Metadata Description}{37}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Open Issues}{38}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Adherence to Schedule and Achievement of Objectives}{38}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Open Issues at Project Conclusion}{38}{subsection.9.2}%
+\contentsline {subsection}{\numberline {7.6}Query execution}{36}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Metadata Definition}{39}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Project Metadata Description}{39}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}People Metadata Description}{40}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Data Resources Metadata Description}{40}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Open Issues}{41}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Adherence to Schedule and Achievement of Objectives}{41}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Open Issues at Project Conclusion}{41}{subsection.9.2}%

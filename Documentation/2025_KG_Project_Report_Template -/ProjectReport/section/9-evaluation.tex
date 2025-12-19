@@ -60,10 +60,76 @@ However, many data properties were newly introduced to represent attributes dire
 
 Overall, the language definition evaluation confirms that the ontology adopts a consistent and well-structured vocabulary, combining reused terms from established ontologies with newly defined concepts and properties tailored to the project domain. The observed coverage values are coherent with the modeling objectives and highlight a conscious design approach that prioritizes semantic correctness, clarity, and extensibility over superficial term reuse.
 
-\subsection{}
+\subsection{Knowledge definition Evaluation}
+
+\[
+    Cov_E(\text{KATOM}_E) = \frac{|\text{KATOM}_E \cap T_E|}{|\text{KATOM}_E|} = \frac{14}{14} = 1.0
+\]
+
+The entity type coverage evaluates whether all conceptual entities required to represent the domain and answer the Competency Questions are explicitly defined in the ontology. A coverage value equal to 1.0 indicates that every necessary entity type has been included, ensuring that the teleology provides a complete conceptual representation of the domain.
+
+\[
+    Cov_{OP}(\text{KATOM}_{OP}) = \frac{|\text{KATOM}_{OP} \cap T_{OP}|}{|\text{KATOM}_{OP}|} = \frac{9}{9} = 1.0
+\]
+
+The object property coverage measures the extent to which the relationships needed to connect the domain entities are represented in the ontology. Full coverage confirms that all required inter-entity relationships are explicitly modeled, allowing the Knowledge Graph to correctly express how entities such as cities, weather reports, stations, and climatic aggregates are semantically connected.
+
+
+\[
+    Cov_{DP}(\text{KATOM}_{DP}) = \frac{|\text{KATOM}_{DP} \cap T_{DP}|}{|\text{KATOM}_{DP}|} = \frac{17}{17} = 1.0
+\]
+
+The data property coverage assesses whether all attributes required to describe the entities and support the Competency Questions are available in the ontology. A coverage value of 1.0 indicates that all necessary quantitative and descriptive properties—such as meteorological measurements, temporal information, and derived indicators—are properly defined and can be used to populate the Knowledge Graph.
+
+Together, these results demonstrate that the knowledge definition is complete with respect to the information needs expressed by the Competency Questions.
 
 \subsection{Data layer evaluation}
-the results of the application of the evaluation metrics applied over the data layer of the final KG.
+The connectivity matrix , shown on Figure \ref{fig:confusion_matrix}, was built by considering entity types as rows (domain) and columns (range). Diagonal cells report the total number of non-null data property values for each entity type, while off-diagonal cells represent the number of instantiated object properties linking domain and range entity types. Empty or zero-valued cells indicate the absence of direct semantic relationships between the corresponding entity types.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{../../../../Evaluation/connectivity_matrix.png}
+    \caption{Confusion matrix - on the main diagonal it's computed the number of non-null data properties, while on the other cells are indicated the number of non-null object properties that have X as domain and Y as range}
+    \label{fig:confusion_matrix}
+\end{figure}
+
+\begin{align*}
+    EC(\text{WeatherReport}) &= \frac{346980}{6} = 57830 \\
+    EC(\text{WeatherStation}) &= \frac{207}{1} = 207\\
+    EC(\text{City}) &= \frac{30}{3} = 10\\
+    EC(\text{Anomaly}) &= \frac{10000}{1} = 10000\\
+    EC(\text{YearSeason}) &= \frac{1440}{1} = 1440\\
+    EC(\text{Microclimate}) &= \frac{10}{1} = 10
+\end{align*}
+
+\[ EC(KG) = 57830+207+10+10000+1440+10=69497\]
+Entity Connectivity was computed by summing, for each entity type, the number of instantiated object property values linking it to other entity types and normalizing this value by the number of object properties defined for that entity. Results show that WeatherReport is the most connected entity, reflecting its central role in the knowledge graph, while City acts as a hub for higher-level abstractions such as ClimateTrend and Microclimate. Entity types without outgoing object properties were excluded from the computation, as prescribed by the evaluation methodology.
+
+\begin{align*}
+    PC(\text{WeatherReport}) &= \frac{462640}{3} = 154213.33\\
+    PC(\text{WeatherStation}) &= \frac{923}{4} = 230.75\\
+    PC(\text{City}) &= \frac{30}{1} = 30\\
+    PC(\text{Wind}) &= \frac{173490}{3} = 57830\\
+    PC(\text{Humidity}) &= \frac{57830}{1} = 57830\\
+    PC(\text{Temperature}) &= \frac{57830}{1} = 57830\\
+    PC(\text{Precipitation}) &= \frac{57830}{1} = 57830\\
+    PC(\text{Anomaly}) &= \frac{40000}{3} = 13333.33\\
+    PC(\text{YearSeason}) &= \frac{8640}{2} = 4320\\
+    PC(\text{Point}) &= \frac{621}{3} = 207\\
+    PC(\text{ClimateTrend}) &= \frac{40}{3} = 13.33\\
+    PC(\text{Microclimate}) &= \frac{50}{4} = 12.50\\
+\end{align*}
+
+\[PC(KG) = \sum_X PC(X) = 403680.25\]
+
+Property Connectivity measures the extent to which data properties are populated for each entity type by relating the total number of non-null data property values to the number of data properties defined in the ontology. Higher values indicate entities whose attributes are extensively instantiated in the data layer.
+
+Results show that WeatherReport and measurement-related entities such as Temperature, Humidity, and Precipitation exhibit the highest Property Connectivity values, reflecting their data-intensive nature and the systematic population of observational attributes. Intermediate values are observed for aggregation-level entities such as YearSeason and Anomaly, which contain fewer instances but still maintain a consistent use of their data properties. Lower Property Connectivity values characterize conceptual entities such as City, ClimateTrend, and Microclimate, as expected due to their limited number of instances and descriptive role.
+
+Overall, the Property Connectivity analysis confirms that data properties are coherently populated across the knowledge graph, with connectivity levels aligned with the semantic role and intended abstraction of each entity type.
+
+In conclusion, the Data Layer evaluation confirms that the instantiated Knowledge Graph is coherent, well-structured, and effectively aligned with the underlying ontology. Entity Connectivity results highlight the central role of WeatherReport as the main integration point of the graph, ensuring strong inter-entity connections across observational and contextual concepts. Property Connectivity results further demonstrate that data properties are consistently populated, with higher values associated with data-intensive entities and lower values characterizing abstract or derived concepts.
+
+Together, these findings indicate that the data population process correctly exploits the ontology design, producing a connected and informative Knowledge Graph capable of supporting the defined Competency Questions. The observed connectivity patterns reflect the intended semantic roles of the entities and confirm the robustness and adequacy of the Data Layer for subsequent querying and analysis tasks.
 
 \subsection{Query execution}
 To assess the suitability of the final Knowledge Graph (KG) in supporting the project objectives regarding climate and environmental analysis in Trentino, a series of \textit{competency queries} were executed. These queries evaluate the KG's ability to retrieve relevant climate information and verify its structural and semantic consistency.
