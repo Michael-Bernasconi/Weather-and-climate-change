@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  4 JAN 2026 21:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.30)  4 JAN 2026 21:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -819,7 +819,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 113.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 114.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -838,10 +838,10 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [11]
-<../../../../Phase 1 - Purpose Definition/ER_after_IG.png, id=396, 1075.01625pt x 839.68706pt>
+<../../../../Phase 1 - Purpose Definition/ER_after_IG.png, id=397, 1075.01625pt x 839.68706pt>
 File: ../../../../Phase 1 - Purpose Definition/ER_after_IG.png Graphic file (type png)
 <use ../../../../Phase 1 - Purpose Definition/ER_after_IG.png>
-Package pdftex.def Info: ../../../../Phase 1 - Purpose Definition/ER_after_IG.png  used on input line 149.
+Package pdftex.def Info: ../../../../Phase 1 - Purpose Definition/ER_after_IG.png  used on input line 150.
 (pdftex.def)             Requested size: 500.484pt x 390.92451pt.
 
 
@@ -870,7 +870,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [13 <../../../../Phase 1 - Purpose Definition/ER_after_IG.png>] (../section/6-languageDefinition.tex
-<../../../../Phase 2 - Language Definition/language_definition.png, id=410, 707.64375pt x 579.16376pt>
+<../../../../Phase 2 - Language Definition/language_definition.png, id=411, 707.64375pt x 579.16376pt>
 File: ../../../../Phase 2 - Language Definition/language_definition.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/language_definition.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/language_definition.png  used on input line 9.
@@ -889,7 +889,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 [14
 
  <../../../../Phase 2 - Language Definition/language_definition.png>]
-<../../../../Phase 2 - Language Definition/ontology_definition.png, id=420, 554.07pt x 728.22063pt>
+<../../../../Phase 2 - Language Definition/ontology_definition.png, id=421, 554.07pt x 728.22063pt>
 File: ../../../../Phase 2 - Language Definition/ontology_definition.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/ontology_definition.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/ontology_definition.png  used on input line 23.
@@ -910,7 +910,7 @@ Underfull \hbox (badness 1082) in paragraph at lines 41--42
 []\T1/lmr/m/n/12 The map-ping pro-cess iden-ti-fied, for each key con-cept in the Knowl-edge Graph (e.g.,
  []
 
-<../../../../Phase 2 - Language Definition/knowledge_data_link.png, id=429, 438.63875pt x 541.52313pt>
+<../../../../Phase 2 - Language Definition/knowledge_data_link.png, id=430, 438.63875pt x 541.52313pt>
 File: ../../../../Phase 2 - Language Definition/knowledge_data_link.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/knowledge_data_link.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/knowledge_data_link.png  used on input line 45.
@@ -943,7 +943,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [17 <../../../../Phase 2 - Language Definition/knowledge_data_link.png>]
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png, id=445, 2601.72pt x 231.86626pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png, id=446, 2601.72pt x 231.86626pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png  used on input line 82.
@@ -995,7 +995,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 87
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png, id=451, 2016.53375pt x 274.02374pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png, id=452, 2016.53375pt x 274.02374pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png  used on input line 88.
@@ -1006,7 +1006,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 89.
 See the caption package documentation for explanation.
 
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png, id=452, 146.5475pt x 368.37625pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png, id=453, 146.5475pt x 368.37625pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png  used on input line 94.
@@ -1026,7 +1026,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--95
 \T1/lmr/m/n/12 tored lo-ca-tions. De-rived from the lo-ca-tions queried via APIs.
  []
 
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png, id=453, 1805.74625pt x 393.47pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png, id=454, 1805.74625pt x 393.47pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png  used on input line 100.
@@ -1046,7 +1046,7 @@ Underfull \hbox (badness 2961) in paragraph at lines 99--101
 \T1/lmr/m/n/12 max-i-mum tem-per-a-ture val-ues and cat-e-go-riz-ing re-sults into \T1/lmtt/m/n/12 cold\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 temperate\T1/lmr/m/n/12 , or \T1/lmtt/m/n/12 hot\T1/lmr/m/n/12 .
  []
 
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png, id=454, 926.46124pt x 285.065pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png, id=455, 926.46124pt x 285.065pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png  used on input line 106.
@@ -1073,7 +1073,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [19 <../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png> <../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png> <../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png> <../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png>]
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png, id=469, 1528.71124pt x 393.47pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png, id=470, 1528.71124pt x 393.47pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png  used on input line 112.
@@ -1094,7 +1094,7 @@ Underfull \hbox (badness 4981) in paragraph at lines 111--113
 \T1/lmr/m/n/12 a \T1/lmtt/m/n/12 Rate \T1/lmr/m/n/12 (e.g., $[]$C/year) and clas-si-fies the trend as \T1/lmtt/m/n/12 Warming\T1/lmr/m/n/12 , \T1/lmtt/m/n/12 Cooling\T1/lmr/m/n/12 , or \T1/lmtt/m/n/12 Stable\T1/lmr/m/n/12 .
  []
 
-<../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png, id=470, 1308.89pt x 435.6275pt>
+<../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png, id=471, 1308.89pt x 435.6275pt>
 File: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png  used on input line 118.
@@ -1131,7 +1131,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [20{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png> <../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png> <../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png>]
-<../../../../Phase 2 - Language Definition/er_model_language_definition.png, id=484, 1075.01625pt x 714.11794pt>
+<../../../../Phase 2 - Language Definition/er_model_language_definition.png, id=485, 1075.01625pt x 714.11794pt>
 File: ../../../../Phase 2 - Language Definition/er_model_language_definition.png Graphic file (type png)
 <use ../../../../Phase 2 - Language Definition/er_model_language_definition.png>
 Package pdftex.def Info: ../../../../Phase 2 - Language Definition/er_model_language_definition.png  used on input line 149.
@@ -1163,7 +1163,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [22 <../../../../Phase 2 - Language Definition/er_model_language_definition.png>] (../section/7-knowledgeDefinition.tex
-<../../../../Phase 3 - Knowledge Definition/img/object_properties.png, id=498, 554.07pt x 731.73375pt>
+<../../../../Phase 3 - Knowledge Definition/img/object_properties.png, id=499, 554.07pt x 731.73375pt>
 File: ../../../../Phase 3 - Knowledge Definition/img/object_properties.png Graphic file (type png)
 <use ../../../../Phase 3 - Knowledge Definition/img/object_properties.png>
 Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/object_properties.png  used on input line 9.
@@ -1172,7 +1172,7 @@ Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/object_p
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../../../../Phase 3 - Knowledge Definition/img/data_properties.png, id=500, 500.87125pt x 733.23938pt>
+<../../../../Phase 3 - Knowledge Definition/img/data_properties.png, id=501, 500.87125pt x 733.23938pt>
 File: ../../../../Phase 3 - Knowledge Definition/img/data_properties.png Graphic file (type png)
 <use ../../../../Phase 3 - Knowledge Definition/img/data_properties.png>
 Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/data_properties.png  used on input line 25.
@@ -1205,7 +1205,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [24 <../../../../Phase 3 - Knowledge Definition/img/object_properties.png>]
-<../../../../Phase 3 - Knowledge Definition/img/entity_example.png, id=516, 659.96562pt x 788.9475pt>
+<../../../../Phase 3 - Knowledge Definition/img/entity_example.png, id=517, 659.96562pt x 788.9475pt>
 File: ../../../../Phase 3 - Knowledge Definition/img/entity_example.png Graphic file (type png)
 <use ../../../../Phase 3 - Knowledge Definition/img/entity_example.png>
 Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/entity_example.png  used on input line 47.
@@ -1226,7 +1226,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [25 <../../../../Phase 3 - Knowledge Definition/img/data_properties.png>]
-<../../../../Phase 3 - Knowledge Definition/img/object_property_example.png, id=525, 661.47125pt x 798.985pt>
+<../../../../Phase 3 - Knowledge Definition/img/object_property_example.png, id=526, 661.47125pt x 798.985pt>
 File: ../../../../Phase 3 - Knowledge Definition/img/object_property_example.png Graphic file (type png)
 <use ../../../../Phase 3 - Knowledge Definition/img/object_property_example.png>
 Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/object_property_example.png  used on input line 59.
@@ -1235,7 +1235,7 @@ Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/object_p
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../../../../Phase 3 - Knowledge Definition/img/data_property_example.png, id=527, 667.49374pt x 789.95125pt>
+<../../../../Phase 3 - Knowledge Definition/img/data_property_example.png, id=528, 667.49374pt x 789.95125pt>
 File: ../../../../Phase 3 - Knowledge Definition/img/data_property_example.png Graphic file (type png)
 <use ../../../../Phase 3 - Knowledge Definition/img/data_property_example.png>
 Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/data_property_example.png  used on input line 71.
@@ -1293,7 +1293,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 [29
 
 ]
-<../../../../Phase 4 - Entity Definition/img/WeatherReportKarmaScreen.jpeg, id=557, 1284.8pt x 499.8675pt>
+<../../../../Phase 4 - Entity Definition/img/WeatherReportKarmaScreen.jpeg, id=558, 1284.8pt x 499.8675pt>
 File: ../../../../Phase 4 - Entity Definition/img/WeatherReportKarmaScreen.jpeg Graphic file (type jpg)
 <use ../../../../Phase 4 - Entity Definition/img/WeatherReportKarmaScreen.jpeg>
 Package pdftex.def Info: ../../../../Phase 4 - Entity Definition/img/WeatherReportKarmaScreen.jpeg  used on input line 62.
@@ -1362,7 +1362,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [34]
-<../../../../Evaluation/connectivity_matrix.png, id=594, 1100.11pt x 228.855pt>
+<../../../../Evaluation/connectivity_matrix.png, id=595, 1100.11pt x 228.855pt>
 File: ../../../../Evaluation/connectivity_matrix.png Graphic file (type png)
 <use ../../../../Evaluation/connectivity_matrix.png>
 Package pdftex.def Info: ../../../../Evaluation/connectivity_matrix.png  used on input line 90.
@@ -1438,12 +1438,12 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [40] (../section/10-metadataDefinition.tex
-<../../../../Metadata/img/ProjectMetadata.png, id=632, 2759.30875pt x 606.265pt>
+<../../../../Metadata/img/ProjectMetadata.png, id=633, 2759.30875pt x 606.265pt>
 File: ../../../../Metadata/img/ProjectMetadata.png Graphic file (type png)
 <use ../../../../Metadata/img/ProjectMetadata.png>
 Package pdftex.def Info: ../../../../Metadata/img/ProjectMetadata.png  used on input line 31.
 (pdftex.def)             Requested size: 500.484pt x 109.96481pt.
-<../../../../Metadata/img/PeopleMetadata.png, id=634, 2120.92375pt x 140.525pt>
+<../../../../Metadata/img/PeopleMetadata.png, id=635, 2120.92375pt x 140.525pt>
 File: ../../../../Metadata/img/PeopleMetadata.png Graphic file (type png)
 <use ../../../../Metadata/img/PeopleMetadata.png>
 Package pdftex.def Info: ../../../../Metadata/img/PeopleMetadata.png  used on input line 45.
@@ -1462,7 +1462,7 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 [41
 
  <../../../../Metadata/img/ProjectMetadata.png>]
-<../../../../Metadata/img/DatasetMetadata.png, id=643, 2826.56pt x 214.8025pt>
+<../../../../Metadata/img/DatasetMetadata.png, id=644, 2826.56pt x 214.8025pt>
 File: ../../../../Metadata/img/DatasetMetadata.png Graphic file (type png)
 <use ../../../../Metadata/img/DatasetMetadata.png>
 Package pdftex.def Info: ../../../../Metadata/img/DatasetMetadata.png  used on input line 68.
@@ -1521,10 +1521,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,15n,87p,1216b,1014s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (47 pages, 3530989 bytes).
+Output written on main.pdf (47 pages, 3531673 bytes).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
+ 783 PDF objects out of 1000 (max. 8388607)
+ 638 compressed objects within 7 object streams
  137 named destinations out of 1000 (max. 500000)
  579 words of extra memory for PDF output out of 10000 (max. 10000000)
 
