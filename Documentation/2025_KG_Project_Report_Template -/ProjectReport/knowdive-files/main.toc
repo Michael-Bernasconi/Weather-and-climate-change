@@ -29,7 +29,7 @@
 \contentsline {subsection}{\numberline {7.2}Data properties}{23}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Entity Definition Example: Weather Station}{24}{subsection.7.3}%
 \contentsline {subsection}{\numberline {7.4}Object Property Definition Example: has\_wind\_information}{25}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Data Property Definition Example: WeatherStation code }{26}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.5}Data Property Definition Example: WeatherStation code}{26}{subsection.7.5}%
 \contentsline {section}{\numberline {8}Entity Definition}{29}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Overview and Objectives}{29}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Entity Matching and Data Reduction}{29}{subsection.8.2}%

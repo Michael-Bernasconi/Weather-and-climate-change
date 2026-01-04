@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.29)  4 JAN 2026 15:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.10.29)  4 JAN 2026 20:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1147,14 +1147,14 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../../../../Phase 3 - Knowledge Definition/img/data_properties.png, id=499, 500.87125pt x 733.23938pt>
 File: ../../../../Phase 3 - Knowledge Definition/img/data_properties.png Graphic file (type png)
 <use ../../../../Phase 3 - Knowledge Definition/img/data_properties.png>
-Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/data_properties.png  used on input line 24.
+Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/data_properties.png  used on input line 25.
 (pdftex.def)             Requested size: 250.24199pt x 366.33908pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 29.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 31.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -1164,14 +1164,9 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 [23
 
 ]
-<../../../../Phase 3 - Knowledge Definition/img/entity_example.png, id=509, 659.96562pt x 788.9475pt>
-File: ../../../../Phase 3 - Knowledge Definition/img/entity_example.png Graphic file (type png)
-<use ../../../../Phase 3 - Knowledge Definition/img/entity_example.png>
-Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/entity_example.png  used on input line 44.
-(pdftex.def)             Requested size: 250.24199pt x 299.15309pt.
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 48.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 42.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 
@@ -1180,17 +1175,18 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [24 <../../../../Phase 3 - Knowledge Definition/img/object_properties.png>]
+<../../../../Phase 3 - Knowledge Definition/img/entity_example.png, id=515, 659.96562pt x 788.9475pt>
+File: ../../../../Phase 3 - Knowledge Definition/img/entity_example.png Graphic file (type png)
+<use ../../../../Phase 3 - Knowledge Definition/img/entity_example.png>
+Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/entity_example.png  used on input line 47.
+(pdftex.def)             Requested size: 250.24199pt x 299.15309pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../../../../Phase 3 - Knowledge Definition/img/object_property_example.png, id=517, 661.47125pt x 798.985pt>
-File: ../../../../Phase 3 - Knowledge Definition/img/object_property_example.png Graphic file (type png)
-<use ../../../../Phase 3 - Knowledge Definition/img/object_property_example.png>
-Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/object_property_example.png  used on input line 58.
-(pdftex.def)             Requested size: 250.24199pt x 302.26419pt.
 File: Knowdive_color_bar.png Graphic file (type png)
 <use Knowdive_color_bar.png>
-Package pdftex.def Info: Knowdive_color_bar.png  used on input line 61.
+Package pdftex.def Info: Knowdive_color_bar.png  used on input line 56.
 (pdftex.def)             Requested size: 500.47267pt x 44.9948pt.
 
 Package fancyhdr Warning: \footskip is too small (30.0pt): 
@@ -1198,13 +1194,19 @@ Package fancyhdr Warning: \footskip is too small (30.0pt):
 (fancyhdr)                \setlength{\footskip}{48.59483pt}.
 
 [25 <../../../../Phase 3 - Knowledge Definition/img/data_properties.png>]
+<../../../../Phase 3 - Knowledge Definition/img/object_property_example.png, id=524, 661.47125pt x 798.985pt>
+File: ../../../../Phase 3 - Knowledge Definition/img/object_property_example.png Graphic file (type png)
+<use ../../../../Phase 3 - Knowledge Definition/img/object_property_example.png>
+Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/object_property_example.png  used on input line 59.
+(pdftex.def)             Requested size: 250.24199pt x 302.26419pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../../../../Phase 3 - Knowledge Definition/img/data_property_example.png, id=527, 667.49374pt x 789.95125pt>
+<../../../../Phase 3 - Knowledge Definition/img/data_property_example.png, id=526, 667.49374pt x 789.95125pt>
 File: ../../../../Phase 3 - Knowledge Definition/img/data_property_example.png Graphic file (type png)
 <use ../../../../Phase 3 - Knowledge Definition/img/data_property_example.png>
-Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/data_property_example.png  used on input line 72.
+Package pdftex.def Info: ../../../../Phase 3 - Knowledge Definition/img/data_property_example.png  used on input line 71.
 (pdftex.def)             Requested size: 250.24199pt x 296.1466pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1471,7 +1473,7 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DC770CB84FAD7167CB74B6E2BB95247E;10039.
+(rerunfilecheck)             Checksum: 37FD0C6D8AABCE2B5D045895830D391D;10031.
  ) 
 Here is how much of TeX's memory you used:
  15410 strings out of 474222
@@ -1482,7 +1484,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,15n,81p,1202b,979s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
-Output written on main.pdf (47 pages, 3532525 bytes).
+Output written on main.pdf (47 pages, 3533226 bytes).
 PDF statistics:
  781 PDF objects out of 1000 (max. 8388607)
  636 compressed objects within 7 object streams
