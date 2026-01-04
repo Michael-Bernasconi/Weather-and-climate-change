@@ -2,62 +2,58 @@
 This section describes the Language Definition phase. The main objective of this phase is to ensure clarity, consistency, and interoperability by addressing the ambiguity and diversity of both natural and domain-specific languages. By fixing the vocabulary and formalizing the meaning of concepts, object properties, and data properties, this phase enables accurate data annotation, reduces misunderstandings, and supports system integration. The outputs produced in this phase are stored in the folder: Phase 2 - Language definition.
 
 \subsection{Concept Identification}
-During the language definition phase, the relevant concepts needed to represent the information defined in the Purpose Definition phase were identified. Each concept was assigned a unique identifier ID and an accompanying gloss to clarify its meaning. This approach ensures reusability and reduces ambiguity. Some examples of the defined concepts are reported in Figure \ref{fig:language_definition}
+During the Language Definition phase, the relevant concepts required to represent the information defined in the Purpose Definition phase were identified. Each concept was assigned a unique identifier (ID) and an accompanying gloss to clarify its meaning. This approach ensures reusability and reduces ambiguity. Examples of the defined concepts are reported in Figure \ref{fig:language_definition}.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.75\textwidth]{../../../../Phase 2 - Language Definition/language_definition.png}
-    \caption{Classes of our ontology properly defined. There are some classed directly from the Weather Ontology schema and some defined to fit the ontology to our domain}
+    \caption{Classes of the ontology properly defined. Some classes are directly derived from the Weather Ontology schema, while others were created to adapt the ontology to the specific domain.}
     \label{fig:language_definition}
 \end{figure}
 
-Concepts were aligned with the Language Teleontology when available. When no appropriate parent concept existed, the Teleontology was enriched with project-specific concepts to maintain completeness and consistency with the project purpose. In some cases, when formal descriptions were not available in reference sources, custom definitions were created to ensure that all necessary concepts were properly represented.
+Concepts were aligned with the Language Teleontology whenever possible. In cases where no appropriate parent concept existed, the Teleontology was extended with project-specific concepts to maintain completeness and consistency with the project objectives. For concepts lacking formal descriptions in reference sources, custom definitions were created to ensure comprehensive representation.
 
-\subsection{Knowledge layer}
-The Knowledge layer is responsible for define the classes of our Knowldege Graph. We have tried to reuse as many already defined classes as possible and, in particular, the base of our ontology is represented by Home Weather Ontology, as already indicated in the Information Gathering section of the previous chapter. The choice to use that ontology is strictly related to the fact that it has defined a lot of usefull concepts for our domain.  
+\subsection{Knowledge Layer}
+The Knowledge Layer defines the classes of the Knowledge Graph. A reuse strategy was applied to incorporate as many pre-existing classes as possible. The foundational ontology employed is the Home Weather Ontology (HWO), as indicated in the Information Gathering section. This ontology was selected due to the large number of domain-relevant concepts it provides.  
 
-Once checked the already defined classes, we started to define the eTypes that we needed in order to complete our domain (e.g. the Anomaly concept that is relevant for our Scenario 3). The final results in term of classes defined of this process is shown on Figure \ref{fig:ontology_classes} and the relative ontology file is \href{https://github.com/Michael-Bernasconi/Weather-and-climate-change/blob/56b059a57c71f5885cc68e8ff9bd61367d3b069b/Phase%202%20-%20Language%20Definition/language_definition_ontology.owx}{this}. 
+After verifying the existing classes, additional eTypes were defined to cover domain-specific requirements (e.g., the \textit{Anomaly} concept, relevant for Scenario 3). The resulting classes are shown in Figure \ref{fig:ontology_classes}, and the corresponding ontology file is available \href{https://github.com/Michael-Bernasconi/Weather-and-climate-change/blob/56b059a57c71f5885cc68e8ff9bd61367d3b069b/Phase%202%20-%20Language%20Definition/language_definition_ontology.owx}{here}.
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{../../../../Phase 2 - Language Definition/ontology_definition.png}
-    \caption{Classes of our ontology properly defined. Some of the classes has been directly imported from other ontologies, while others has been defined from scratch}
+    \caption{Classes of the ontology properly defined. Some classes were imported from existing ontologies, while others were defined from scratch.}
     \label{fig:ontology_classes}
 \end{figure}
 
-The Home Weather Ontology had already defined one of our key concept: Weather Report. To the properties that are already defined, in the next phase of Knowledge definition it will be necessary to defined couple more to fit to our domain. We also decided to keep the concept of \textit{WeatherReportSource} and to make our \textit{WeatherStation} a descendant of that class. Also classes that define temporal istant and intervals were already present in HWO and they were imported from another ontology W3.org. 
+The Home Weather Ontology already included key concepts such as \textit{Weather Report}. Additional properties were defined to align these concepts with the domain-specific requirements. The concept \textit{WeatherReportSource} was retained, and \textit{WeatherStation} was defined as a subclass of this concept. Classes representing temporal instants and intervals were imported from the W3.org ontology.
 
-\subsection{Knowledge - Data Link}
+\subsection{Knowledge-Data Link}
 
-The subsequent phase following the definition of the Knowledge Layer is the establishment of an explicit link between the ontology concepts (the defined classes and properties) and the data sources that will populate them. This activity is crucial to ensure that the \textbf{Knowledge Graph (KG)} can be instantiated with real and up-to-date data.
+The phase following the Knowledge Layer definition establishes an explicit link between ontology concepts (classes and properties) and the corresponding data sources. This linkage ensures that the \textbf{Knowledge Graph (KG)} can be instantiated with real and up-to-date data.
 
-The \textbf{Knowledge-Data link} was achieved by mapping each \textbf{Custom Concept} defined in our ontology to specific \textbf{Data Concepts} available through the selected data sources. The main data sources used are:
+The \textbf{Knowledge-Data link} was established by mapping each \textbf{Custom Concept} in the ontology to specific \textbf{Data Concepts} available in the selected sources. The primary data sources used were:
 
 \begin{itemize}
-    \item \textbf{External APIs (API):} Used to obtain real-time or historical data related to fundamental meteorological measurements such as temperature ($MeanTemp$, $MaxTemperature$, $MinTemperature$), precipitation ($Precipitation$), humidity, and wind.
-    \item \textbf{Open Data Trentino:} A fundamental resource for descriptive and geographical data concerning weather stations ($WeatherStation$, $Name$, $Elevation$, $Latitude$, $Longitude$) and territorial entities ($City$, $Shortname$, $Region$).
+    \item \textbf{External APIs (API):} Providing real-time or historical data for fundamental meteorological measurements such as temperature ($MeanTemp$, $MaxTemperature$, $MinTemperature$), precipitation ($Precipitation$), humidity, and wind.
+    \item \textbf{Open Data Trentino:} Offering descriptive and geographical information regarding weather stations ($WeatherStation$, $Name$, $Elevation$, $Latitude$, $Longitude$) and territorial entities ($City$, $Shortname$, $Region$).
 \end{itemize}
 
-The mapping process allowed us to identify, for each key concept in the Knowledge Graph (e.g., $WeatherReport$, $WeatherStation$, $Anomaly$), the specific attributes needed for its representation (e.g., $Date$, $WeatherCode$, $StartDate$, $EndDate$) and the corresponding source from which to extract the value. The result of this process is shown in Figure \ref{fig:knowledge_data_link}
+The mapping process identified, for each key concept in the Knowledge Graph (e.g., $WeatherReport$, $WeatherStation$, $Anomaly$), the specific attributes required for its representation (e.g., $Date$, $WeatherCode$, $StartDate$, $EndDate$) and the corresponding data sources. The outcome of this process is shown in Figure \ref{fig:knowledge_data_link}.
 
-Furthermore, the \textbf{Knowledge-Data link} includes concepts that have been \textbf{Generated} (such as $TypeAnomaly$, $MicroClimate$, $ClimateTrend$, $Season$, and $Variation$), which do not originate directly from an API endpoint but are the result of internal processing or inference processes applied to the raw data extracted from the primary sources. This approach ensures that the Knowledge Graph is not merely a data container but also a hub for \textbf{processed knowledge}.
+Additionally, the \textbf{Knowledge-Data link} includes generated concepts (e.g., $TypeAnomaly$, $MicroClimate$, $ClimateTrend$, $Season$, and $Variation$), which do not originate directly from API endpoints but result from internal processing or inference applied to the raw data. This approach ensures that the Knowledge Graph functions as a repository of both raw and processed knowledge.
 
-% Inserimento Immagine forzato
-    \centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/knowledge_data_link.png}}
-    \captionof{figure}{For each concept of the ontology, it's indicated the relative attribute taken in the data }
-    \label{fig:knowledge_data_link}
-    \vspace{1em}
+\centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/knowledge_data_link.png}}
+\captionof{figure}{For each ontology concept, the corresponding attribute extracted from the data sources is indicated.}
+\label{fig:knowledge_data_link}
+\vspace{1em}
 
 \subsection{Data Layer}
-The data layer is responsible for acquiring, filtering, cleaning, and formatting the datasets used in the system.
+The Data Layer is responsible for acquiring, filtering, cleaning, and formatting the datasets used within the system.
+
 \subsubsection{Data Collected from IlMeteo.it}
+Historical weather data were obtained from \textit{IlMeteo.it}, organized by month and year, spanning from January 2000 to October 2025. Data were collected for the following locations: Rovereto, Trento, Povo, Tenno, Mezzana, Predazzo, Lavarone, Telve, Cavalese, and Arco. Each file contained complete daily weather observations for a specific month and location.
 
-Historical weather data were downloaded from \textit{IlMeteo.it}, organized by month and year, from January 2000 to October 2025. 
-The datasets were collected for the following locations: Rovereto, Trento, Povo, Tenno, Mezzana, Predazzo, Lavarone, Telve, Cavalese, and Arco. 
-Each file contained a complete set of daily weather observations for a given month and location.
-
-During the data cleaning and preprocessing phase, only the relevant columns were retained in order to standardize the format and remove redundant information. 
-The selected attributes were: 
+During preprocessing, only relevant columns were retained to standardize the format and remove redundant information. Selected attributes include: 
 \begin{itemize}
     \item \textbf{Location}
     \item \textbf{Date}
@@ -71,88 +67,86 @@ The selected attributes were:
     \item \textbf{Phenomena}
 \end{itemize}
 
-Each dataset was then merged chronologically, maintaining a consistent structure suitable for further integration into the knowledge graph. 
-All files can be found in the folder Phase 2 - Language Definition.
-\\
+Datasets were merged chronologically to maintain a consistent structure suitable for integration into the Knowledge Graph. All files are stored in the folder \textit{Phase 2 - Language Definition}.
 
 \subsubsection{Data Collected from APIs}
-In addition to the historical datasets from IlMeteo.it, data were also obtained via external APIs.
-These APIs provide current weather parameters such as temperature, humidity, wind speed, and precipitation in a machine-readable format (typically CSV).
-The collected data undergo a similar cleaning and normalization process to ensure consistency with the IlMeteo.it datasets, enabling seamless integration within the data layer and downstream processing components of the system.
+In addition to historical datasets, data were obtained from external APIs providing current weather parameters such as temperature, humidity, wind speed, and precipitation in machine-readable formats (e.g., CSV). These datasets were cleaned and normalized to maintain consistency with the IlMeteo.it data, ensuring seamless integration into the data layer.
 
 \subsubsection{Data Collected and Derived from APIs and Local Sources}
-In parallel with the historical collection, the data layer integrates meteorological data obtained via external APIs. These APIs supply current weather parameters—such as temperature, humidity, wind speed, and precipitation—in a machine-readable CSV format. This data is subject to rigorous cleaning and normalization to ensure structural and semantic consistency with the \textit{IlMeteo.it} datasets, enabling seamless integration within the system.
+The Data Layer also integrates meteorological data obtained from APIs. These datasets, supplied in machine-readable formats, were subjected to cleaning and normalization to ensure structural and semantic consistency with historical datasets.
 
-A crucial function of the data layer is the derivation of complex, high-level entities from the raw and aggregated data. These derived datasets form essential nodes and relationships within the Knowledge Graph, providing specialized context and analytical depth:
+High-level entities were derived from raw and aggregated data. These derived datasets provide key nodes and relationships within the Knowledge Graph:
 
 \begin{itemize}
-\item \textbf{WeatherReport}: This is the primary dataset, acting as a chronological record of daily weather observations. It is derived by merging the cleaned historical data (\textit{IlMeteo.it}) and the real-time observations (API) to create a continuous and comprehensive view of meteorological events. This comprehensive dataset is logically partitioned and organized for all ten monitored cities (\textit{Rovereto, Trento, Povo, Tenno, Mezzana, Predazzo, Lavarone, Telve, Cavalese, and Arco}).   
-\centerline{\includegraphics[width=1\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png}}
-    \captionof{figure}{Example rows of the \textbf{WeatherReport}.}
+    \item \textbf{WeatherReport:} A chronological record of daily weather observations, obtained by merging cleaned historical data (IlMeteo.it) and real-time observations (API) to create a continuous dataset for all monitored cities (\textit{Rovereto, Trento, Povo, Tenno, Mezzana, Predazzo, Lavarone, Telve, Cavalese, Arco}).   
+    \centerline{\includegraphics[width=1\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherReport.png}}
+    \captionof{figure}{Example rows of the \textbf{WeatherReport} dataset.}
     \label{fig:weatherreport_data_example}
-\vspace{1em}
+    \vspace{1em}
 
-    \item \textbf{WeatherStation}: This entity maps the physical infrastructure used for data collection. It is derived from publicly available data (e.g., from the "Weather Trentino" service) and enriched with key metadata such as \texttt{code}, \texttt{name}, \texttt{elevation}, and geographic coordinates (\texttt{latitude}, \texttt{longitude}).
-    % Inserimento Immagine forzato
+    \item \textbf{WeatherStation:} Represents physical monitoring infrastructure. Derived from publicly available data and enriched with metadata such as \texttt{code}, \texttt{name}, \texttt{elevation}, \texttt{latitude}, and \texttt{longitude}.
     \centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/WeatherStation.png}}
-    \captionof{figure}{Example rows of the \textbf{WeatherStation} derived dataset, showing key metadata for the physical monitoring infrastructure.}
+    \captionof{figure}{Example rows of the \textbf{WeatherStation} dataset.}
     \label{fig:weatherstation_data_example}
     \vspace{1em}
 
-    \item \textbf{Region}: This dataset establishes the geographic hierarchy, listing all relevant locations (cities) for which weather data is tracked. It is directly derived from the list of locations queried via the APIs.
-    % Inserimento Immagine forzato
+    \item \textbf{Region:} Establishes the geographic hierarchy, listing all monitored locations. Derived from the locations queried via APIs.
     \centerline{\includegraphics[width=0.1\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/Region.png}}
-    \captionof{figure}{Example rows of the \textbf{Region} derived dataset, detailing the monitored locations.}
+    \captionof{figure}{Example rows of the \textbf{Region} dataset.}
     \label{fig:region_data_example}
     \vspace{1em}
 
-    \item \textbf{Microclimate}: This dataset provides a specialized classification of the local climate for each city. It is derived from long-term API data by aggregating minimum and maximum temperature values and classifying the result into custom categories such as \texttt{cold}, \texttt{temperate}, or \texttt{hot}, based on defined thresholds.
-    % Inserimento Immagine forzato
+    \item \textbf{Microclimate:} Classifies local climates for each city by aggregating minimum and maximum temperature values and categorizing results into \texttt{cold}, \texttt{temperate}, or \texttt{hot}.
     \centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/Microclimate.png}}
-    \captionof{figure}{Example rows of the \textbf{Microclimate} derived dataset, showing the temperature range and climate classification for each city.}
+    \captionof{figure}{Example rows of the \textbf{Microclimate} dataset.}
     \label{fig:microclimate_data_example}
     \vspace{1em}
 
-    \item \textbf{Season}: This dataset abstracts daily weather data into seasonal averages. By aggregating temperature and precipitation values over defined seasonal periods for each year, it facilitates multi-year comparison and seasonal impact analysis.
-    % Inserimento Immagine forzato
+    \item \textbf{Season:} Abstracts daily data into seasonal averages, facilitating multi-year comparisons and seasonal analysis.
     \centerline{\includegraphics[width=0.5\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/Season.png}}
-    \captionof{figure}{Example rows of the \textbf{Season} derived dataset, with averaged meteorological parameters for each city and year.}
+    \captionof{figure}{Example rows of the \textbf{Season} dataset.}
     \label{fig:season_data_example}
     \vspace{1em}
 
-\item \textbf{ClimateTrend}: This entity is the result of a statistical time series analysis. It tracks the long-term temperature change for each city.The analysis produces a specific \texttt{Rate} (e.g., $^\circ$C/year) and classifies the overall trend as \texttt{Warming}, \texttt{Cooling}, or \texttt{Stable}.    \centerline{\includegraphics[width=0.9\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png}}
-    \captionof{figure}{Example rows of the \textbf{ClimateTrend} derived dataset, detailing the calculated long-term temperature rate and variation.}
+    \item \textbf{ClimateTrend:} Represents long-term temperature trends for each city. Produces a \texttt{Rate} (e.g., $^\circ$C/year) and classifies the trend as \texttt{Warming}, \texttt{Cooling}, or \texttt{Stable}.
+    \centerline{\includegraphics[width=0.9\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/ClimateTrend.png}}
+    \captionof{figure}{Example rows of the \textbf{ClimateTrend} dataset.}
     \label{fig:climatetrend_data_example}
     \vspace{1em}
 
-    \item \textbf{Anomaly}: This dataset identifies and classifies extreme weather events. It is derived by comparing recorded observations against established historical norms for a specific location. Each entry includes the \texttt{TypeAnomaly} (e.g., Excessive Wind, Too Hot Temperature) and a qualitative \texttt{Severity} level (e.g., Critical, High).
-    % Inserimento Immagine forzato
+    \item \textbf{Anomaly:} Identifies and classifies extreme weather events by comparing observations with historical norms. Attributes include \texttt{TypeAnomaly} and qualitative \texttt{Severity} levels.
     \centerline{\includegraphics[width=0.8\textwidth]{../../../../Phase 2 - Language Definition/Dataset Screenshot/Anomaly.png}}
-    \captionof{figure}{Example rows of the \textbf{Anomaly} derived dataset, showing the type and severity of detected extreme weather events.}
+    \captionof{figure}{Example rows of the \textbf{Anomaly} dataset.}
     \label{fig:anomaly_data_example}
     \vspace{1em}
 \end{itemize}
 
-After working on both the knowledge layer and the data layer we have made some changes in the ER model and the competency questions precedently defined. The main change it's related to the \textit{Region} class: since the data selected in the data cleaning phase of weather reports are related to weather stations located in different cities, the concept of \textit{Region} has been properly redefined as \textit{City}. We considered this definition more appropriate to the data available. In order to reflect this change some competency questions have been slightly modified: 
+Following analysis of both the Knowledge and Data layers, modifications were introduced to the ER model and previously defined competency questions. The main change concerns the \textit{Region} class: as weather reports correspond to stations located in distinct cities, the concept was redefined as \textit{City}. Consequently, several competency questions were updated:
 
 \begin{tabular}{|p{5cm}|p{1cm}|p{10cm}|}
 \hline
 \textbf{Person} & \textbf{N.o.} & \textbf{Competency Question (CQ)} \\
 \hline
-Maria Bianchi & 1.3 & How has the average monthly rainfall evolved in each \textbf{city} of Trentino over the last ten years? \\ Giulia Ferrari & 2.2 & Which \textbf{cities} show microclimatic differences despite geographical proximity? \\ Giulia Ferrari & 2.5 & How stable are microclimates across seasons (winter vs. summer) in different \textbf{cities}? \\ Giulia Ferrari & 2.6 & Which \textbf{cities} show the most distinctive microclimatic patterns according to sensor data? \\ Marco Ricci & 5.2 & How have long-term temperature and precipitation trends evolved across different \textbf{cities}? \\
+Maria Bianchi & 1.3 & How has the average monthly rainfall evolved in each \textbf{city} of Trentino over the last ten years? \\ 
+Giulia Ferrari & 2.2 & Which \textbf{cities} show microclimatic differences despite geographical proximity? \\ 
+Giulia Ferrari & 2.5 & How stable are microclimates across seasons (winter vs. summer) in different \textbf{cities}? \\ 
+Giulia Ferrari & 2.6 & Which \textbf{cities} show the most distinctive microclimatic patterns according to sensor data? \\ 
+Marco Ricci & 5.2 & How have long-term temperature and precipitation trends evolved across different \textbf{cities}? \\
 \hline
 \end{tabular}
 
-In addition, to reflect in the best way the changes made, we also modified Persona and Scenario 2, the ones regarding Giulia. Since we don't have information about valleys and these types of areas and since we decide to change the \textit{Region} entity in the \textit{City} entity, we decided to modify them like it follows:
+Persona and Scenario 2 were also updated to reflect the change from \textit{Region} to \textit{City}, ensuring consistency with available data:
+
 \begin{itemize}
-    \item \textbf{Scenario}: Giulia, a climatology student, wants to stuy the microclimate present in the \textbf{different cities of Trentino}, She needs access to temperature, humidity and wind data collected by various sensors across territory.
-    \item \textbf{Persona}: Giulia Ferrari, 23 years old, a climatology student. She enjoys studying microclimates and climate variations \textbf{between different cities of Trentino}.
+    \item \textbf{Scenario}: A climatology student intends to study microclimates in the \textbf{different cities of Trentino}, requiring access to temperature, humidity, and wind data collected by various sensors across the territory.
+    \item \textbf{Persona}: Giulia Ferrari, 23 years old, a climatology student, focusing on microclimatic and climate variations \textbf{between different cities of Trentino}.
 \end{itemize}
 
-Another modification made to the previous ER model concerns the Anomaly entity: since an Anomaly is strictly related to the city, we decided to remove its link with WeatherReport and connect it directly to the city. The final ER is shown on Figure \ref{fig:er_ld}
+Furthermore, the \textit{Anomaly} entity was restructured: as anomalies are strictly city-specific, the link with \textit{WeatherReport} was removed and the entity was connected directly to the city. The final ER model is shown in Figure \ref{fig:er_ld}.
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{../../../../Phase 2 - Language Definition/er_model_language_definition.png}
-    \caption{ER model after the Language Definition Phase}
+    \caption{ER model after the Language Definition Phase.}
     \label{fig:er_ld}
 \end{figure}

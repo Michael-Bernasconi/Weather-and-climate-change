@@ -16,42 +16,41 @@
 \contentsline {subsection}{\numberline {5.2}Information Gathering}{10}{subsection.5.2}%
 \contentsline {subsubsection}{\numberline {5.2.1}Knowledge Sources}{10}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}Data Sources}{10}{subsubsection.5.2.2}%
-\contentsline {section}{\numberline {6}Information Gathering}{14}{section.6}%
-\contentsline {section}{\numberline {7}Language Definition}{15}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Concept Identification}{15}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Knowledge layer}{16}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Knowledge - Data Link}{17}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Data Layer}{18}{subsection.7.4}%
-\contentsline {subsubsection}{\numberline {7.4.1}Data Collected from IlMeteo.it}{19}{subsubsection.7.4.1}%
-\contentsline {subsubsection}{\numberline {7.4.2}Data Collected from APIs}{19}{subsubsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.3}Data Collected and Derived from APIs and Local Sources}{19}{subsubsection.7.4.3}%
-\contentsline {section}{\numberline {8}Knowledge Definition}{24}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Object properties}{24}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Data properties}{24}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Entity Definition Example: Weather Station}{25}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Object Property Definition Example: has\_wind\_information}{26}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Data Property Definition Example: WeatherStation code }{27}{subsection.8.5}%
-\contentsline {section}{\numberline {9}Entity Definition}{30}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Overview and Objectives}{30}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Entity Matching and Data Reduction}{30}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Entity Identification}{31}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Entity Mapping}{31}{subsection.9.4}%
-\contentsline {subsubsection}{\numberline {9.4.1}Phase Outcomes (The Knowledge Graph)}{31}{subsubsection.9.4.1}%
-\contentsline {subsection}{\numberline {9.5}Revised Competency Questions}{32}{subsection.9.5}%
-\contentsline {subsection}{\numberline {9.6}Decisions and Reflections}{32}{subsection.9.6}%
-\contentsline {subsubsection}{\numberline {9.6.1}Strengths}{32}{subsubsection.9.6.1}%
-\contentsline {subsubsection}{\numberline {9.6.2}Weaknesses}{33}{subsubsection.9.6.2}%
-\contentsline {section}{\numberline {10}Evaluation}{34}{section.10}%
-\contentsline {subsection}{\numberline {10.1}the final Knowledge Graph information statistics}{34}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Purpose Definition evaluation}{34}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Language Definition Evaluation}{35}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Knowledge definition Evaluation}{36}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Data layer evaluation}{36}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}Query execution}{39}{subsection.10.6}%
-\contentsline {section}{\numberline {11}Metadata Definition}{42}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Project Metadata Description}{42}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}People Metadata Description}{43}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}Data Resources Metadata Description}{43}{subsection.11.3}%
-\contentsline {section}{\numberline {12}Open Issues}{44}{section.12}%
-\contentsline {subsection}{\numberline {12.1}Adherence to Schedule and Achievement of Objectives}{44}{subsection.12.1}%
-\contentsline {subsection}{\numberline {12.2}Open Issues at Project Conclusion}{44}{subsection.12.2}%
+\contentsline {section}{\numberline {6}Language Definition}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Concept Identification}{14}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Knowledge Layer}{15}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Knowledge-Data Link}{16}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Data Layer}{17}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Data Collected from IlMeteo.it}{18}{subsubsection.6.4.1}%
+\contentsline {subsubsection}{\numberline {6.4.2}Data Collected from APIs}{18}{subsubsection.6.4.2}%
+\contentsline {subsubsection}{\numberline {6.4.3}Data Collected and Derived from APIs and Local Sources}{18}{subsubsection.6.4.3}%
+\contentsline {section}{\numberline {7}Knowledge Definition}{23}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Object properties}{23}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Data properties}{23}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Entity Definition Example: Weather Station}{24}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Object Property Definition Example: has\_wind\_information}{25}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Data Property Definition Example: WeatherStation code }{26}{subsection.7.5}%
+\contentsline {section}{\numberline {8}Entity Definition}{29}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Overview and Objectives}{29}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Entity Matching and Data Reduction}{29}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Entity Identification}{30}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Entity Mapping}{30}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Phase Outcomes (The Knowledge Graph)}{30}{subsubsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.5}Revised Competency Questions}{31}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Decisions and Reflections}{31}{subsection.8.6}%
+\contentsline {subsubsection}{\numberline {8.6.1}Strengths}{31}{subsubsection.8.6.1}%
+\contentsline {subsubsection}{\numberline {8.6.2}Weaknesses}{32}{subsubsection.8.6.2}%
+\contentsline {section}{\numberline {9}Evaluation}{33}{section.9}%
+\contentsline {subsection}{\numberline {9.1}the final Knowledge Graph information statistics}{33}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Purpose Definition evaluation}{33}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Language Definition Evaluation}{34}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Knowledge definition Evaluation}{35}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Data layer evaluation}{35}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Query execution}{38}{subsection.9.6}%
+\contentsline {section}{\numberline {10}Metadata Definition}{41}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Project Metadata Description}{41}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}People Metadata Description}{42}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Data Resources Metadata Description}{42}{subsection.10.3}%
+\contentsline {section}{\numberline {11}Open Issues}{43}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Adherence to Schedule and Achievement of Objectives}{43}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Open Issues at Project Conclusion}{43}{subsection.11.2}%
