@@ -242,8 +242,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_anomaly_city">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Anomaly"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
+        <rdfs:comment xml:lang="it">Rappresenta la relazione tra un&apos;anomalia e la città in cui si è verificata</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the relationship between an anomaly and the city in which it has occured.</rdfs:comment>
+        <rdfs:label xml:lang="it">E succcesso a</rdfs:label>
+        <rdfs:label xml:lang="en">Has happened in</rdfs:label>
     </ObjectProperty>
     
 
@@ -252,8 +257,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_average_precipitation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Precipitation"/>
+        <rdfs:comment xml:lang="it">Rappresenta le precipitazioni medie reigstrate in un certo anno, durante una certa stagione (vengono espresse in mm).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the fact that in a articular year and in a particular season it has been registered an average quantity of precipitations (expressed in mm).</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha precipitazioni medie</rdfs:label>
+        <rdfs:label xml:lang="en">Has average precipitation</rdfs:label>
     </ObjectProperty>
     
 
@@ -264,6 +274,10 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Temperature"/>
+        <rdfs:comment xml:lang="it">Rappresenta la temperatura media registrata in un certo anno, durante una certa stagione (viene espressa in gradi Celsius).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the fact that in a articular year and in a particular season it has been registered an average temperature (expressed in Celsius).</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha temperatura media</rdfs:label>
+        <rdfs:label xml:lang="en">Has average temperature</rdfs:label>
     </ObjectProperty>
     
 
@@ -274,7 +288,10 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#ClimateTrend"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui un trend climatico è stato derivato da un insieme di report metereologici.</rdfs:comment>
         <rdfs:comment xml:lang="en">It represents the relation by which a climate trend is derivated from weather reports</rdfs:comment>
+        <rdfs:label xml:lang="it">E stato ottenuto da</rdfs:label>
+        <rdfs:label xml:lang="en">Has been derived from</rdfs:label>
     </ObjectProperty>
     
 
@@ -283,9 +300,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_been_observed_in">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
+        <rdfs:comment xml:lang="it">Indica la città in cui una stagione di un determinato anno è stata registrata</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicate the city in which an year season has been releveated</rdfs:comment>
+        <rdfs:label xml:lang="it">E&apos; stata osservata in</rdfs:label>
+        <rdfs:label xml:lang="en">Has been observed in</rdfs:label>
     </ObjectProperty>
     
 
@@ -297,7 +318,10 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherStation"/>
-        <rdfs:comment xml:lang="en">It indicates the fact that a weather report is generated bya certain weather station</rdfs:comment>
+        <rdfs:comment xml:lang="en">It indicates the fact that a weather report is generated by a certain weather station</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta la relazione per cui un report metereologico è stato registrato presso una determinata stazione</rdfs:comment>
+        <rdfs:label xml:lang="it">E stato registrato presso</rdfs:label>
+        <rdfs:label xml:lang="en">Has been recorded at</rdfs:label>
     </ObjectProperty>
     
 
@@ -306,9 +330,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_city_location">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Point"/>
+        <rdfs:comment xml:lang="it">Locazione spaziale di una determinata città</rdfs:comment>
         <rdfs:comment xml:lang="en">Spatial location of a given city</rdfs:comment>
+        <rdfs:label xml:lang="it">Città si trova in</rdfs:label>
+        <rdfs:label xml:lang="en">City has location</rdfs:label>
     </ObjectProperty>
     
 
@@ -319,6 +347,10 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
+        <rdfs:comment xml:lang="it">Rappresenta la relazione per cui un determinato report metereologico è rilevato in una certa città</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the relationship by which each weather report refers to a particular city.</rdfs:comment>
+        <rdfs:label xml:lang="it">Città in cui è stato registrato il report</rdfs:label>
+        <rdfs:label xml:lang="en">City of the report</rdfs:label>
     </ObjectProperty>
     
 
@@ -329,7 +361,10 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#ClimateTrend"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui una città viene associata ad un trend climatico, che ne indica le caratteristiche che si sono sviluppate nel tempo.</rdfs:comment>
         <rdfs:comment xml:lang="en">represents the relationship by which a City is associated with its corresponding ClimateTrend, indicating the long-term climatic patterns or variations observed for that specific location.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha un trend climatico</rdfs:label>
+        <rdfs:label xml:lang="en">Has a climate trend</rdfs:label>
     </ObjectProperty>
     
 
@@ -338,8 +373,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_humidity_information">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Humidity"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui un report metereologico contiene informazioni relative all&apos;umidità</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicate the relationship by which a weather report contains information about humidity.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha informazioni sull&apos;umidità</rdfs:label>
+        <rdfs:label xml:lang="en">Has humidity information</rdfs:label>
     </ObjectProperty>
     
 
@@ -351,6 +391,9 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherStation"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
         <rdfs:comment xml:lang="en">Each Weather Station is located in a certain city</rdfs:comment>
+        <rdfs:comment xml:lang="it">Ogni stazione meteo è localizzata in una certa città</rdfs:comment>
+        <rdfs:label xml:lang="en">Has location in city</rdfs:label>
+        <rdfs:label xml:lang="it">Si trova nella città</rdfs:label>
     </ObjectProperty>
     
 
@@ -359,8 +402,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_max_humidity">
         <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_humidity_information"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Humidity"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui un report metereologico contiene informazioni relative all&apos;umidità massima registrata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicate the relationship by which a weather report contains information about max humidity recorded.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha umidità massima</rdfs:label>
+        <rdfs:label xml:lang="en">Has maximum humidity</rdfs:label>
     </ObjectProperty>
     
 
@@ -369,8 +417,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_max_temperature">
         <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_temperature_information"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Temperature"/>
+        <rdfs:comment xml:lang="it">Indica la relazione tra un report meteo e la massima temperatura registrata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicate the relationship between weather report and the maximum temperature registered.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha temperatura massima</rdfs:label>
+        <rdfs:label xml:lang="en">Has maximum temperature</rdfs:label>
     </ObjectProperty>
     
 
@@ -379,8 +432,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_mean_humidity">
         <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_humidity_information"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Humidity"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui un report metereologico contiene informazioni relative all&apos;umidità media registrata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicate the relationship by which a weather report contains information about mean humidity recorded.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha umidità media</rdfs:label>
+        <rdfs:label xml:lang="en">Has mean humidity</rdfs:label>
     </ObjectProperty>
     
 
@@ -389,8 +447,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_mean_temperature">
         <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_temperature_information"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Temperature"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui in un report viene indicata la temperatura media registrata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship by which a report has a mean temperature registered.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha temperatura media</rdfs:label>
+        <rdfs:label xml:lang="en">Has mean temperature</rdfs:label>
     </ObjectProperty>
     
 
@@ -399,8 +462,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_min_humidity">
         <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_humidity_information"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Humidity"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui un report metereologico contiene informazioni relative all&apos;umidità minima registrata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicate the relationship by which a weather report contains information about minimum humidity recorded.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha umidità minima</rdfs:label>
+        <rdfs:label xml:lang="en">Has minimum humidity</rdfs:label>
     </ObjectProperty>
     
 
@@ -409,8 +477,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_min_temperature">
         <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_temperature_information"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Temperature"/>
+        <rdfs:comment xml:lang="it">Indica il fatto che ogni report meteo ha una temperatura minima registrata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship bi which a weather report has a minimum temperature registered.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha temperatura minima</rdfs:label>
+        <rdfs:label xml:lang="en">Has minimum temperature</rdfs:label>
     </ObjectProperty>
     
 
@@ -419,8 +492,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_precipitation_information">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
+        <rdfs:comment xml:lang="it">Indica il fatto che ogni report metereologico contiene informazioni relative alle precipitazioni registrate</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicate the relationship bi which each report has information about the precipitation occurred.</rdfs:comment>
         <rdfs:comment>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPrecipitation</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha informazioni relative alle precipitazioni.</rdfs:label>
+        <rdfs:label xml:lang="en">Has precipitation information</rdfs:label>
     </ObjectProperty>
     
 
@@ -429,7 +507,12 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_precipitation_mm">
         <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_precipitation_information"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Precipitation"/>
+        <rdfs:comment xml:lang="en">Indicates the relationship by which each weather report has information about the mm of rain registered.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta la relazione per cui ogni report ha le informazioni relative ai mm di pioggia registrati.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha millimetri di pioggia registrati</rdfs:label>
+        <rdfs:label xml:lang="en">Has precipitation millimeters</rdfs:label>
     </ObjectProperty>
     
 
@@ -440,6 +523,10 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Season"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui una stagione annuale (avente proprie caratteristiche registrate) ha una stagione canonica di riferimento.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship by which an yearly season (with its own registered data) has a canonical season of reference.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha stagione di riferimento</rdfs:label>
+        <rdfs:label xml:lang="en">Has relative season</rdfs:label>
     </ObjectProperty>
     
 
@@ -450,7 +537,10 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Microclimate"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
+        <rdfs:comment xml:lang="it">Indica la città in cui è stato registrato un particolare microclima</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicate the City in which has been seen a mircolimate</rdfs:comment>
+        <rdfs:label xml:lang="en">Has shown in</rdfs:label>
+        <rdfs:label xml:lang="it">Si è manifestato in</rdfs:label>
     </ObjectProperty>
     
 
@@ -458,17 +548,14 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
     <!-- http://knowdive.disi.unitn.it/etype#has_station_location -->
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_station_location">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherStation"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#SpatialThing"/>
+        <rdfs:comment xml:lang="it">Indica la posizione nello spazio della stazione meteo</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the spatial location in which the weather station is located.</rdfs:comment>
         <rdfs:comment xml:lang="en">Original property: http://www.w3.org/2003/01/geo/wgs84_pos#location</rdfs:comment>
-        <rdfs:comment xml:lang="en">The relation between something and the point, 
- or other geometrical thing in space, where it is.  For example, the realtionship between
- a radio tower and a Point with a given lat and long.
- Or a relationship between a park and its outline as a closed arc of points, or a road and
- its location as a arc (a sequence of points).
- Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
- an accuracy appropriate for the size of the object and uses such as mapping .</rdfs:comment>
-        <rdfs:label>location</rdfs:label>
+        <rdfs:label xml:lang="it">Locazione della stazione meteo</rdfs:label>
+        <rdfs:label xml:lang="en">Station location</rdfs:label>
     </ObjectProperty>
     
 
@@ -477,8 +564,13 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_temperature_information">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Temperature"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui in un report meteo sono indicate le informazioni relative alla temperatura registrata</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the relationship by which a weather report has information about temperature registered.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha informazioni sulla temperatura</rdfs:label>
+        <rdfs:label xml:lang="en">Has temperature information</rdfs:label>
     </ObjectProperty>
     
 
@@ -490,7 +582,10 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Wind"/>
+        <rdfs:comment xml:lang="it">Indica la relazione per cui in un report meteo vengono registrate le informazioni sul vento registrate.</rdfs:comment>
         <rdfs:comment xml:lang="en">Indicate the relationship between weather report and the wind phenomenon that has been releveated in that weather report</rdfs:comment>
+        <rdfs:label xml:lang="it">Ha informazioni sul vento</rdfs:label>
+        <rdfs:label xml:lang="en">Has wind information</rdfs:label>
     </ObjectProperty>
     
 
@@ -514,7 +609,8 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <rdfs:comment>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#alt</rdfs:comment>
         <rdfs:comment xml:lang="en">The WGS84 altitude of a SpatialThing (decimal meters 
 above the local reference ellipsoid).</rdfs:comment>
-        <rdfs:comment xml:lang="en">altitude</rdfs:comment>
+        <rdfs:label xml:lang="en">Altitude</rdfs:label>
+        <rdfs:label xml:lang="it">Altitudine</rdfs:label>
     </DatatypeProperty>
     
 
@@ -525,6 +621,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Anomaly"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">An anomaly has a certain severity level.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Ogni anomalia ha la propria gravità.</rdfs:comment>
+        <rdfs:label xml:lang="en">Anomaly severity</rdfs:label>
+        <rdfs:label xml:lang="it">Gravità dell&apos;anomalia</rdfs:label>
     </DatatypeProperty>
     
 
@@ -895,6 +995,8 @@ above the local reference ellipsoid).</rdfs:comment>
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#Anomaly">
         <rdfs:comment xml:lang="en">The difference between the observed value of a meteorological variable and its long-term climatological average (baseline).</rdfs:comment>
         <rdfs:comment xml:lang="it">Una deviazione significativa delle condizioni climatiche medie o normali per una specifica area e periodo di tempo</rdfs:comment>
+        <rdfs:label xml:lang="it">Anomalia</rdfs:label>
+        <rdfs:label xml:lang="en">Anomaly</rdfs:label>
     </Class>
     
 
@@ -902,8 +1004,10 @@ above the local reference ellipsoid).</rdfs:comment>
     <!-- http://knowdive.disi.unitn.it/etype#City -->
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#City">
-        <rdfs:comment xml:lang="it">Città del Trentino</rdfs:comment>
-        <rdfs:comment xml:lang="en">City of Trentino</rdfs:comment>
+        <rdfs:comment xml:lang="en">In the context of this project, this class is used to spatially locate Weather Stations and to group weather observations by administrative territory. It serves as a key granularity level for analyzing local climate trends.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents a large and permanent human settlement. A city is typically a significant administrative, commercial, and cultural center, characterized by a higher population density and more complex infrastructure compared to towns or villages.</rdfs:comment>
+        <rdfs:label xml:lang="it">Città</rdfs:label>
+        <rdfs:label xml:lang="en">City</rdfs:label>
     </Class>
     
 
@@ -922,6 +1026,8 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#Climate"/>
         <rdfs:comment xml:lang="en">A persistent pattern or direction of change in average climatic conditions (such as temperature or precipitation) observed over a long period of time.</rdfs:comment>
         <rdfs:comment xml:lang="it">Una tendenza o direzione persistente di cambiamento nelle condizioni climatiche medie (come temperatura o precipitazioni) osservata su un lungo periodo di tempo.</rdfs:comment>
+        <rdfs:label xml:lang="en">Climate Trend</rdfs:label>
+        <rdfs:label xml:lang="it">Trend climatico</rdfs:label>
     </Class>
     
 
@@ -930,27 +1036,11 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#DayOfWeek">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:comment xml:lang="es">El día de la semana</rdfs:comment>
+        <rdfs:comment xml:lang="it">Giorno della settimana</rdfs:comment>
         <rdfs:comment>Original eType: http://www.w3.org/2006/time#DayOfWeek</rdfs:comment>
-        <rdfs:comment xml:lang="en">The day of week</rdfs:comment>
         <rdfs:label xml:lang="en">Day of week</rdfs:label>
-        <rdfs:label xml:lang="es">día de la semana</rdfs:label>
-        <skos:changeNote xml:lang="en">Remove enumeration from definition, in order to allow other days to be used when required in other calendars. 
-NOTE: existing days are still present as members of the class, but the class membership is now open. 
-
-In the original OWL-Time the following constraint appeared: 
-  owl:oneOf (
-      time:Monday
-      time:Tuesday
-      time:Wednesday
-      time:Thursday
-      time:Friday
-      time:Saturday
-      time:Sunday
-    ) ;</skos:changeNote>
-        <skos:definition xml:lang="es">El día de la semana</skos:definition>
+        <rdfs:label xml:lang="it">Giorno della settimana</rdfs:label>
         <skos:definition xml:lang="en">The day of week</skos:definition>
-        <skos:note xml:lang="es">La pertenencia a la clase &apos;día de la semana&apos; está abierta, para permitir longitudes de semana alternativas y diferentes nombres de días.</skos:note>
         <skos:note xml:lang="en">Membership of the class :DayOfWeek is open, to allow for alternative week lengths and different day names.</skos:note>
     </Class>
     
@@ -961,7 +1051,10 @@ In the original OWL-Time the following constraint appeared:
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#Humidity">
         <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherPhenomenon"/>
         <rdfs:comment>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Humidity</rdfs:comment>
-        <rdfs:comment xml:lang="en">represents the relative humidity of the air in percent</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta la percentuale di umidità presente nell&apos;aria</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents the relative humidity of the air in percent</rdfs:comment>
+        <rdfs:label xml:lang="en">Humidity</rdfs:label>
+        <rdfs:label xml:lang="it">Umidità</rdfs:label>
     </Class>
     
 
@@ -970,9 +1063,11 @@ In the original OWL-Time the following constraint appeared:
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#Microclimate">
         <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#Climate"/>
-        <rdfs:comment>A set of local atmospheric conditions that differ from those in the surrounding general area. Microclimates are influenced by local features such as topography, water bodies, vegetation, and urban structures, and can exist on scales ranging from a few square meters to several kilometers.&quot;</rdfs:comment>
         <rdfs:comment>Original eType: http://sweetontology.net/phenPlanetClimate/Microclimate</rdfs:comment>
-        <rdfs:label xml:lang="en">microclimate</rdfs:label>
+        <rdfs:comment xml:lang="it">Un insieme di condizioni atmosferiche che si differenzia da quelle dell&apos;area che lo circonda. Un microclima è influenzato da caratteristiche locali come topografia, vegetazione e struttura urbana e può essere di pochi metri quadrati fino a molti kilometri</rdfs:comment>
+        <rdfs:comment>A set of local atmospheric conditions that differ from those in the surrounding general area. Microclimates are influenced by local features such as topography, vegetation, and urban structures, and can exist on scales ranging from a few square meters to several kilometers.&quot;</rdfs:comment>
+        <rdfs:label xml:lang="it">Microclima</rdfs:label>
+        <rdfs:label xml:lang="en">Microclimate</rdfs:label>
     </Class>
     
 
@@ -990,7 +1085,9 @@ spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
 sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).</rdfs:comment>
         <rdfs:comment xml:lang="en">A point, typically described using a coordinate system relative to Earth, such as WGS84.</rdfs:comment>
         <rdfs:comment>Original eType: http://www.w3.org/2003/01/geo/wgs84_pos#Point</rdfs:comment>
-        <rdfs:label>point</rdfs:label>
+        <rdfs:comment xml:lang="it">Un punto, normalmente descritto utilizzando un sistema di coordinate latitudine-longitudine-altitudine</rdfs:comment>
+        <rdfs:label xml:lang="en">Point</rdfs:label>
+        <rdfs:label xml:lang="it">Punto</rdfs:label>
     </Class>
     
 
@@ -998,16 +1095,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- http://knowdive.disi.unitn.it/etype#Precipitation -->
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#Precipitation">
-        <equivalentClass>
-            <Class>
-                <unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation"/>
-                </unionOf>
-            </Class>
-        </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherPhenomenon"/>
         <rdfs:subClassOf>
             <Restriction>
@@ -1017,14 +1104,24 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Precipitation</rdfs:comment>
-        <rdfs:comment xml:lang="en">represents precipitation in millimetres</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta le precipitazioni registrate in millimetri</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents precipitation in millimetres</rdfs:comment>
+        <rdfs:label xml:lang="it">Pioggia</rdfs:label>
+        <rdfs:label xml:lang="en">Precipitation</rdfs:label>
     </Class>
     
 
 
     <!-- http://knowdive.disi.unitn.it/etype#Season -->
 
-    <Class rdf:about="http://knowdive.disi.unitn.it/etype#Season"/>
+    <Class rdf:about="http://knowdive.disi.unitn.it/etype#Season">
+        <rdfs:comment xml:lang="en">Division of the year (Spring, Summer, Autumn, Winter) marked by particular weather patterns and daylight hours.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Divisione dell&apos;anno (Primavera, Estate, Autunno, Inverno) basato su particolari condizioni metereologiche e ore di sole.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In the context of this project, it&apos;s used to group weather reports and it is essential for analyzing long-term climate trends and identifying seasonal anomalies (e.g., warmer winters) within the region over the observed period.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Per questo progetto, viene usata per raggruppare i report metereologici e per poter analizzare trend climati a lungo termine e individuare anomalie stagionali (e.g. inverni più caldi) nella regione nel periodo considerato.</rdfs:comment>
+        <rdfs:label xml:lang="en">Season</rdfs:label>
+        <rdfs:label xml:lang="it">Stagione</rdfs:label>
+    </Class>
     
 
 
@@ -1034,7 +1131,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:comment xml:lang="en">Anything with spatial extent, i.e. size, shape, or position.
  e.g. people, places, bowling balls, as well as abstract areas like cubes.</rdfs:comment>
         <rdfs:comment>Original eType: http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</rdfs:comment>
-        <rdfs:label>SpatialThing</rdfs:label>
+        <rdfs:comment xml:lang="it">Qualsiasi cosa che abbia una posizione nello spazio (e.g. persone, posti)</rdfs:comment>
+        <rdfs:label xml:lang="it">Entità spaziale</rdfs:label>
+        <rdfs:label xml:lang="en">Spatial Thing</rdfs:label>
     </Class>
     
 
@@ -1043,8 +1142,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#Temperature">
         <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherPhenomenon"/>
-        <rdfs:comment>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature</rdfs:comment>
-        <rdfs:comment xml:lang="en">exterior temperature in degrees Celsius</rdfs:comment>
+        <rdfs:comment xml:lang="en">Exterior temperature in degrees Celsius</rdfs:comment>
+        <rdfs:comment xml:lang="en">Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature</rdfs:comment>
+        <rdfs:comment xml:lang="it">Temperatura esterna espressa in gradi Celsiusit</rdfs:comment>
+        <rdfs:label xml:lang="it">Temperatura</rdfs:label>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
     </Class>
     
 
@@ -1070,8 +1172,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </Class>
         </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="it">Condizione metereologica osservata.</rdfs:comment>
         <rdfs:comment xml:lang="en">One-word description of the observed weather condition</rdfs:comment>
         <rdfs:comment>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition</rdfs:comment>
+        <rdfs:label xml:lang="it">Condizione metereologica</rdfs:label>
+        <rdfs:label xml:lang="en">Weather Condition</rdfs:label>
     </Class>
     
 
@@ -1079,8 +1184,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- http://knowdive.disi.unitn.it/etype#WeatherPhenomenon -->
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#WeatherPhenomenon">
+        <rdfs:comment xml:lang="en">Different weather phenomena that may influence the current and forecasted weather state.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Fenomeno metereologico che può influenzare le condizioni metereologiche</rdfs:comment>
         <rdfs:comment>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon</rdfs:comment>
-        <rdfs:comment xml:lang="en">different weather phenomena that may influence the current and forecasted weather state.</rdfs:comment>
+        <rdfs:label xml:lang="it">Fenomeno metereologico</rdfs:label>
+        <rdfs:label xml:lang="en">Weather Phenomenon</rdfs:label>
     </Class>
     
 
@@ -1095,10 +1203,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                 <onClass rdf:resource="http://knowdive.disi.unitn.it/etype#Point"/>
             </Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A systematic record or statement describing the observed state of the atmosphere at a specific geographical location and time. It typically includes quantitative measurements of weather phenomenon such as temperature, humidity, precipitation, wind speed and registered data such as atmospheric pressure.</rdfs:comment>
         <rdfs:comment>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReport</rdfs:comment>
-        <rdfs:comment xml:lang="en">a weather report that can be retrieved through a local sensor (e.g. weather station integrated in the smart home) or a remote internet service. Further a time division has been realized to differentiate between current, short, mid and long term forecasts. 
-
-For the smart home domain, a time window of 24 hours for weather forecasts has been seen as suitable with a 24 hours forecast being classified as long-term forecast</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un record sistematico o una dichiarazione che descrive lo stato osservato dell&apos;atmosfera in una specifica località geografica e in un determinato momento. Tipicamente include misurazioni quantitative di fenomenic atmosferici come temperatura, umidità, precipitazioni, velocità del vento e dati registrati come la pressione atmosferica.</rdfs:comment>
+        <rdfs:label xml:lang="it">Report metereologico</rdfs:label>
+        <rdfs:label xml:lang="en">Weather Report</rdfs:label>
     </Class>
     
 
@@ -1108,6 +1217,9 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#WeatherReportSource">
         <rdfs:comment xml:lang="en">Holds information about the origins of weather reports</rdfs:comment>
         <rdfs:comment>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherReportSource</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta la fonte da cui vengono registrate le condizioni metereologiche, che danno poi luogo ad un report metereologico</rdfs:comment>
+        <rdfs:label xml:lang="it">Fonte del report metereologico</rdfs:label>
+        <rdfs:label xml:lang="en">Weather Report Source</rdfs:label>
     </Class>
     
 
@@ -1116,7 +1228,10 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#WeatherStation">
         <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReportSource"/>
-        <rdfs:comment xml:lang="en">A WeatherStation represents a physical monitoring installation equipped with standardized meteorological instruments used to collect environmental and climatic measurements. Each WeatherStation is associated with a specific geographical location and continuously records variables such as temperature, humidity, wind speed, precipitation, and other atmospheric indicators.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A WeatherStation represents a physical monitoring installation equipped with standardized meteorological instruments used to collect environmental and climatic measurements. Each WeatherStation is associated with a specific geographical location.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Una stazione metereologica è un&apos;installazione fisica equipaggiata con strumenti metereologici, usati per effettuare misurazioni ambientali e climatiche. Ogni stazione metereologica è associata ad una specifica posizione geografica.</rdfs:comment>
+        <rdfs:label xml:lang="it">Stazione metereologica</rdfs:label>
+        <rdfs:label>Weather Station</rdfs:label>
     </Class>
     
 
@@ -1124,28 +1239,6 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     <!-- http://knowdive.disi.unitn.it/etype#Wind -->
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#Wind">
-        <equivalentClass>
-            <Class>
-                <unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshGale"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hurricane"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightAir"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightBreeze"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateBreeze"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateGale"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongBreeze"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongGale"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ViolentStorm"/>
-                    <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WholeGale"/>
-                </unionOf>
-            </Class>
-        </equivalentClass>
         <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherPhenomenon"/>
         <rdfs:subClassOf>
             <Class>
@@ -1176,6 +1269,7 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
         <rdfs:comment xml:lang="en">Unit of wind direction is degrees 
 </rdfs:comment>
         <rdfs:comment xml:lang="en">Unit of wind speed in metres per second (m/s).</rdfs:comment>
+        <rdfs:comment xml:lang="it">Viene indicato con direzione in gradi e velocità in metri al secondo (m/s)</rdfs:comment>
         <rdfs:comment xml:lang="en">Wind direction and speed are represented as datatype properties&quot;hasDirection&quot; and &quot;hasSpeed&quot;
 </rdfs:comment>
     </Class>
@@ -1187,6 +1281,8 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#YearSeason">
         <rdfs:comment xml:lang="en">A climatological analysis unit representing the seasonal conditions observed in a specific geographic region during a given year, serving as a context for assessing climate trends.</rdfs:comment>
         <rdfs:comment xml:lang="it">Un&apos;unità di analisi climatologica che rappresenta le condizioni stagionali osservate in una specifica regione geografica durante un determinato anno, fungendo da contesto per la valutazione dei trend climatici.</rdfs:comment>
+        <rdfs:label xml:lang="it">Stagione annuale</rdfs:label>
+        <rdfs:label xml:lang="en">Year Season</rdfs:label>
     </Class>
     
 
@@ -1223,746 +1319,6 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
         <skos:prefLabel xml:lang="ar">سنة</skos:prefLabel>
         <skos:prefLabel xml:lang="ja">年</skos:prefLabel>
         <skos:prefLabel xml:lang="zh">年</skos:prefLabel>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshBreeze">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.7</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshGale -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#FreshGale">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.1</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.7</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#GentleBreeze">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.4</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.4</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Precipitation"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_intensity"/>
-                        <allValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </allValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hurricane -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Hurricane">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.6</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightAir -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightAir">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightBreeze -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightBreeze">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.5</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.4</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Precipitation"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_intensity"/>
-                        <allValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </allValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_intensity"/>
-                        <allValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </allValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.7</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateBreeze -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateBreeze">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.4</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">7.9</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateGale -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModerateGale">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.8</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.1</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Precipitation"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_intensity"/>
-                        <allValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </allValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_intensity"/>
-                        <allValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </allValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-        <rdfs:comment xml:lang="en">this concept was known as &quot;MediumPrecipitation&quot; in prior versions of the ontology</rdfs:comment>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Precipitation"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_intensity"/>
-                        <hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</hasValue>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.4</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongBreeze -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongBreeze">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.7</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">13.8</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongGale -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongGale">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.7</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.4</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.7</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.4</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ViolentStorm -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ViolentStorm">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28.4</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">32.6</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
-    </Class>
-    
-
-
-    <!-- https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WholeGale -->
-
-    <Class rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WholeGale">
-        <equivalentClass>
-            <Class>
-                <intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://knowdive.disi.unitn.it/etype#Wind"/>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.4</xsd:minExclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                    <Restriction>
-                        <onProperty rdf:resource="http://knowdive.disi.unitn.it/etype#has_speed"/>
-                        <someValuesFrom>
-                            <rdfs:Datatype>
-                                <onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-                                <withRestrictions rdf:parseType="Collection">
-                                    <rdf:Description>
-                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28.4</xsd:maxInclusive>
-                                    </rdf:Description>
-                                </withRestrictions>
-                            </rdfs:Datatype>
-                        </someValuesFrom>
-                    </Restriction>
-                </intersectionOf>
-            </Class>
-        </equivalentClass>
     </Class>
     
 
@@ -2399,22 +1755,22 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
         <rdf:type rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherCondition"/>
     </NamedIndividual>
     <rdf:Description>
-        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
         <xsd:pattern>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
-        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
-    </rdf:Description>
-    <rdf:Description>
-        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
-    </rdf:Description>
-    <rdf:Description>
         <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
+        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+    </rdf:Description>
+    <rdf:Description>
         <xsd:pattern>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+    </rdf:Description>
+    <rdf:Description>
+        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
         <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
@@ -2438,35 +1794,6 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
 
     <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#dateTimeStamp">
         <rdfs:label xml:lang="es">sello de tiempo</rdfs:label>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#HeavyPrecipitation"/>
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightPrecipitation"/>
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#ModeratePrecipitation"/>
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoPrecipitation"/>
-        </members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#LightWind"/>
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#NoWind"/>
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Storm"/>
-            <rdf:Description rdf:about="https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#StrongWind"/>
-        </members>
     </rdf:Description>
 </rdf:RDF>
 
