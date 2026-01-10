@@ -635,7 +635,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Anomaly"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Indica il tipo di anomalia registrata</rdfs:comment>
         <rdfs:comment xml:lang="en">It indicates the type of the anomaly that has been registered</rdfs:comment>
+        <rdfs:label xml:lang="it">Tipo dell&apos;anomalia</rdfs:label>
+        <rdfs:label>Anomaly type</rdfs:label>
     </DatatypeProperty>
     
 
@@ -646,6 +649,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Anomaly"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="it">Indica data e orario ai quali si è registrata l&apos;anomalia</rdfs:comment>
+        <rdfs:comment xml:lang="en">It indicates the date-time at which an anomaly has been registered.</rdfs:comment>
+        <rdfs:label xml:lang="en">Datetime anomaly</rdfs:label>
+        <rdfs:label xml:lang="it">Giorno e ora dell&apos;anomalia</rdfs:label>
     </DatatypeProperty>
     
 
@@ -665,9 +672,12 @@ above the local reference ellipsoid).</rdfs:comment>
                 </withRestrictions>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment xml:lang="it">Direzione del vento in gradi</rdfs:comment>
         <rdfs:comment>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasDirection</rdfs:comment>
         <rdfs:comment xml:lang="en">Wind direction</rdfs:comment>
         <rdfs:comment xml:lang="en">Wind direction represented in degrees</rdfs:comment>
+        <rdfs:label xml:lang="it">Direzione del vento</rdfs:label>
+        <rdfs:label xml:lang="en">Wind direction</rdfs:label>
     </DatatypeProperty>
     
 
@@ -677,8 +687,11 @@ above the local reference ellipsoid).</rdfs:comment>
     <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_end_date">
         <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_station_date"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherStation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="it">Data in cui la stazione è stata dismessa.</rdfs:comment>
         <rdfs:comment xml:lang="en">Date in which the station has ended operating</rdfs:comment>
+        <rdfs:label xml:lang="it">Data di chiusura della stazione</rdfs:label>
+        <rdfs:label xml:lang="en">Station end date</rdfs:label>
     </DatatypeProperty>
     
 
@@ -689,6 +702,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Wind"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="it">Impproviso aumento della velocità del vento.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Sudden and short burst of increasing wind speed.</rdfs:comment>
+        <rdfs:label xml:lang="it">Raffica di vento</rdfs:label>
+        <rdfs:label xml:lang="en">Wind gust</rdfs:label>
     </DatatypeProperty>
     
 
@@ -700,6 +717,9 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Microclimate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Humidity range for a given microclimate</rdfs:comment>
+        <rdfs:comment xml:lang="it">Range di umidità per un dato microclima</rdfs:comment>
+        <rdfs:label xml:lang="en">Humidity range for microclimate</rdfs:label>
+        <rdfs:label xml:lang="it">Range di umidità per un microclima</rdfs:label>
     </DatatypeProperty>
     
 
@@ -710,7 +730,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Humidity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment xml:lang="en">Value of the percentage of humifity</rdfs:comment>
+        <rdfs:comment xml:lang="it">Valore in percentuale di umidità</rdfs:comment>
+        <rdfs:comment xml:lang="en">Value of the percentage of humidity</rdfs:comment>
+        <rdfs:label xml:lang="en">Humidity value</rdfs:label>
+        <rdfs:label xml:lang="it">Valore di umidità</rdfs:label>
     </DatatypeProperty>
     
 
@@ -720,7 +743,11 @@ above the local reference ellipsoid).</rdfs:comment>
     <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_intensity">
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Precipitation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="it">Indica la quantità di pioggia registrata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicate sthe quantity of precipitation registered.</rdfs:comment>
         <rdfs:comment>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity</rdfs:comment>
+        <rdfs:label xml:lang="it">Intesità delle precipitazioni</rdfs:label>
+        <rdfs:label xml:lang="en">Precipitation intensity</rdfs:label>
     </DatatypeProperty>
     
 
@@ -757,6 +784,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Microclimate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Indica la tipologia di microclima.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the microclimate&apos;s type.</rdfs:comment>
+        <rdfs:label xml:lang="en">Microclimate type</rdfs:label>
+        <rdfs:label xml:lang="it">Tipologia di microclima.</rdfs:label>
     </DatatypeProperty>
     
 
@@ -767,14 +798,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
-    
-
-
-    <!-- http://knowdive.disi.unitn.it/etype#has_parameter_measured -->
-
-    <DatatypeProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_parameter_measured">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:comment xml:lang="en">Name of the city</rdfs:comment>
+        <rdfs:comment xml:lang="it">Nome della città.</rdfs:comment>
+        <rdfs:label xml:lang="en">City name</rdfs:label>
+        <rdfs:label xml:lang="it">Nome della città</rdfs:label>
     </DatatypeProperty>
     
 
@@ -785,6 +812,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="it">Indica il numero di ore nelle quali si sono registrate delle precipitazioni.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the number of hours on which any precipitation has been registered.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ore con precipitazioni</rdfs:label>
+        <rdfs:label xml:lang="en">Precipitation hours</rdfs:label>
     </DatatypeProperty>
     
 
@@ -795,7 +826,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#ClimateTrend"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="it">Indica il rapporto della variazione sul periodo di tempo considerato.</rdfs:comment>
         <rdfs:comment xml:lang="en">It indicates the rate of the variation on the time window considered</rdfs:comment>
+        <rdfs:label xml:lang="it">Rapporto variazione-tempo</rdfs:label>
+        <rdfs:label xml:lang="en">Rate</rdfs:label>
     </DatatypeProperty>
     
 
@@ -806,6 +840,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="it">Indica data e ora di quando il rapporto è stato prodotto.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the datetime at which the report has been produced.</rdfs:comment>
+        <rdfs:label xml:lang="it">Data e ora del report</rdfs:label>
+        <rdfs:label xml:lang="en">Report datetime</rdfs:label>
     </DatatypeProperty>
     
 
@@ -816,6 +854,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Indica il nome della stagione</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the name of the season.</rdfs:comment>
+        <rdfs:label xml:lang="it">Nome della stagione</rdfs:label>
+        <rdfs:label xml:lang="en">Season name</rdfs:label>
     </DatatypeProperty>
     
 
@@ -826,6 +868,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Indica l&apos;anno di riferimento per la stagione (nel caso in cui si stia lavorando con la classe YearSeason).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the year of the season considered (in case we are dealing with YearSeason class).</rdfs:comment>
+        <rdfs:label xml:lang="it">Anno della stagione</rdfs:label>
+        <rdfs:label xml:lang="en">Season&apos;s year</rdfs:label>
     </DatatypeProperty>
     
 
@@ -849,7 +895,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://knowdive.disi.unitn.it/etype#has_station_date"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherStation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Data dalla quale la stazione è diventata operativa.</rdfs:comment>
         <rdfs:comment xml:lang="en">Date from which the station has started operating</rdfs:comment>
+        <rdfs:label xml:lang="it">Data di avvio della stazione</rdfs:label>
+        <rdfs:label xml:lang="en">Station start date</rdfs:label>
     </DatatypeProperty>
     
 
@@ -860,7 +909,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherStation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Indica il codice univoco per la stazione meteo.</rdfs:comment>
         <rdfs:comment xml:lang="en">It indicates the unique code of the weather station</rdfs:comment>
+        <rdfs:label xml:lang="it">Codice della stazione</rdfs:label>
+        <rdfs:label xml:lang="en">Station code</rdfs:label>
     </DatatypeProperty>
     
 
@@ -879,6 +931,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherStation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Name of the weather station.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Nome della stazione meteo.</rdfs:comment>
+        <rdfs:label xml:lang="it">Nome della stazione</rdfs:label>
+        <rdfs:label xml:lang="en">Station name</rdfs:label>
     </DatatypeProperty>
     
 
@@ -889,7 +945,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Microclimate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Range di temperatura per un certo microclima.</rdfs:comment>
         <rdfs:comment xml:lang="en">Temperature range for a given microclimate</rdfs:comment>
+        <rdfs:label xml:lang="it">Range della temperatura</rdfs:label>
+        <rdfs:label xml:lang="en">Temperature range</rdfs:label>
     </DatatypeProperty>
     
 
@@ -900,7 +959,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Temperature"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="it">Valore di temperatura registrata.</rdfs:comment>
         <rdfs:comment xml:lang="en">Value of the temperature</rdfs:comment>
+        <rdfs:label xml:lang="en">Temperature value</rdfs:label>
+        <rdfs:label xml:lang="it">Valore della temperatura</rdfs:label>
     </DatatypeProperty>
     
 
@@ -911,6 +973,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#ClimateTrend"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Indica la finestra di tempo nella quale è stato analizzato il trend del clima.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the time window in which climate trend has been analyzed</rdfs:comment>
+        <rdfs:label xml:lang="it">Finestra temporale</rdfs:label>
+        <rdfs:label xml:lang="en">Time window</rdfs:label>
     </DatatypeProperty>
     
 
@@ -921,7 +987,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#ClimateTrend"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="it">Indica la variazione tra il valore iniziale regisrato e quello finale.</rdfs:comment>
         <rdfs:comment xml:lang="en">It indicates the variation between the starting value of the parameter measured and the final one</rdfs:comment>
+        <rdfs:label xml:lang="en">Variation</rdfs:label>
+        <rdfs:label xml:lang="it">Variazione</rdfs:label>
     </DatatypeProperty>
     
 
@@ -932,7 +1001,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Indica il codice del fenomeno metereologico registrato seguendo la codifica WMO.</rdfs:comment>
         <rdfs:comment xml:lang="en">expresses the relationship between a weather condition (e.g., cloudy, light rain, heavy rain) and the corresponding WMO weather code that identifies the same phenomenon according to the World Meteorological Organization classification system.</rdfs:comment>
+        <rdfs:label xml:lang="it">Codice meteo</rdfs:label>
+        <rdfs:label xml:lang="en">Weather code</rdfs:label>
     </DatatypeProperty>
     
 
@@ -943,6 +1015,10 @@ above the local reference ellipsoid).</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#Microclimate"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="it">Indica il pattern del vento per un certo microclima</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the wind pattern of a given microclimate</rdfs:comment>
+        <rdfs:label xml:lang="it">Pattern del vento</rdfs:label>
+        <rdfs:label xml:lang="en">Wind pattern</rdfs:label>
     </DatatypeProperty>
     
 
@@ -1063,9 +1139,9 @@ above the local reference ellipsoid).</rdfs:comment>
 
     <Class rdf:about="http://knowdive.disi.unitn.it/etype#Microclimate">
         <rdfs:subClassOf rdf:resource="http://knowdive.disi.unitn.it/etype#Climate"/>
+        <rdfs:comment>A set of local atmospheric conditions that differ from those in the surrounding general area. Microclimates are influenced by local features such as topography, vegetation, and urban structures, and can exist on scales ranging from a few square meters to several kilometers.&quot;</rdfs:comment>
         <rdfs:comment>Original eType: http://sweetontology.net/phenPlanetClimate/Microclimate</rdfs:comment>
         <rdfs:comment xml:lang="it">Un insieme di condizioni atmosferiche che si differenzia da quelle dell&apos;area che lo circonda. Un microclima è influenzato da caratteristiche locali come topografia, vegetazione e struttura urbana e può essere di pochi metri quadrati fino a molti kilometri</rdfs:comment>
-        <rdfs:comment>A set of local atmospheric conditions that differ from those in the surrounding general area. Microclimates are influenced by local features such as topography, vegetation, and urban structures, and can exist on scales ranging from a few square meters to several kilometers.&quot;</rdfs:comment>
         <rdfs:label xml:lang="it">Microclima</rdfs:label>
         <rdfs:label xml:lang="en">Microclimate</rdfs:label>
     </Class>
@@ -1755,31 +1831,31 @@ It is deprecated in this edition of OWL-Time. </skos:historyNote>
         <rdf:type rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherCondition"/>
     </NamedIndividual>
     <rdf:Description>
-        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
         <xsd:pattern>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
-        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
-        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
         <xsd:pattern>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
-        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
-        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
         <xsd:pattern>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
-        <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     
 
