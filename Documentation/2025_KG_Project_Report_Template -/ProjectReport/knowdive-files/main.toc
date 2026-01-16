@@ -16,7 +16,7 @@
 \contentsline {section}{\numberline {4}Language Definition}{12}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Concept Identification}{12}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Knowledge Layer}{13}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Knowledge-Data Link}{14}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Knowledge-Data Link}{13}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Data Layer}{15}{subsection.4.4}%
 \contentsline {subsubsection}{\numberline {4.4.1}Data Collected from IlMeteo.it}{16}{subsubsection.4.4.1}%
 \contentsline {subsubsection}{\numberline {4.4.2}Data Collected from APIs}{16}{subsubsection.4.4.2}%
