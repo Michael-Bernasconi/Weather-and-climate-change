@@ -56,7 +56,7 @@ ORDER BY DESC(?increase)
 LIMIT 100
 
 =========================================================================================================================================
-=====Maria Bianchi How has the average monthly rainfall evolved in each valley or municipality of Trentino over the last ten years=======
+=====Maria Bianchi 1.2: How has the average monthly rainfall evolved in each valley or municipality of Trentino over the last ten years=======
 =========================================================================================================================================
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX etype: <http://knowdive.disi.unitn.it/etype#>

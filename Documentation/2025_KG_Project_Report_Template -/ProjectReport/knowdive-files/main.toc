@@ -27,23 +27,23 @@
 \contentsline {subsection}{\numberline {5.3}Entity Definition Example: Weather Station}{22}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}Object Property Definition Example: has\_wind\_information}{23}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Data Property Definition Example: WeatherStation code}{24}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Entity Definition}{27}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Overview and Objectives}{27}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Entity Matching and Data Reduction}{27}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Entity Identification}{28}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Entity Mapping}{28}{subsection.6.4}%
-\contentsline {subsubsection}{\numberline {6.4.1}Phase Outcomes (The Knowledge Graph)}{28}{subsubsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.5}Revised Competency Questions}{29}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Decisions and Reflections}{29}{subsection.6.6}%
-\contentsline {subsubsection}{\numberline {6.6.1}Strengths}{29}{subsubsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.6.2}Weaknesses}{30}{subsubsection.6.6.2}%
-\contentsline {section}{\numberline {7}Evaluation}{31}{section.7}%
-\contentsline {subsection}{\numberline {7.1}the final Knowledge Graph information statistics}{31}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Purpose Definition evaluation}{31}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Language Definition Evaluation}{32}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Knowledge definition Evaluation}{33}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Data layer evaluation}{33}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Query execution}{36}{subsection.7.6}%
+\contentsline {section}{\numberline {6}Entity Definition}{26}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Overview and Objectives}{26}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Entity Matching and Data Reduction}{26}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Entity Identification}{27}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Entity Mapping}{27}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Phase Outcomes (The Knowledge Graph)}{27}{subsubsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.5}Revised Competency Questions}{28}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Decisions and Reflections}{28}{subsection.6.6}%
+\contentsline {subsubsection}{\numberline {6.6.1}Strengths}{28}{subsubsection.6.6.1}%
+\contentsline {subsubsection}{\numberline {6.6.2}Weaknesses}{29}{subsubsection.6.6.2}%
+\contentsline {section}{\numberline {7}Evaluation}{30}{section.7}%
+\contentsline {subsection}{\numberline {7.1}the final Knowledge Graph information statistics}{30}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Purpose Definition evaluation}{30}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Language Definition Evaluation}{31}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Knowledge definition Evaluation}{32}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Data layer evaluation}{32}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Query Execution and Results}{35}{subsection.7.6}%
 \contentsline {section}{\numberline {8}Metadata Definition}{39}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Project Metadata Description}{39}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}People Metadata Description}{40}{subsection.8.2}%

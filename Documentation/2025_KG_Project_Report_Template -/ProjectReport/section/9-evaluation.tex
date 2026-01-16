@@ -131,20 +131,33 @@ In conclusion, the Data Layer evaluation confirms that the instantiated Knowledg
 
 Together, these findings indicate that the data population process correctly exploits the ontology design, producing a connected and informative Knowledge Graph capable of supporting the defined Competency Questions. The observed connectivity patterns reflect the intended semantic roles of the entities and confirm the robustness and adequacy of the Data Layer for subsequent querying and analysis tasks.
 
-\subsection{Query execution}
-To assess the suitability of the final Knowledge Graph (KG) in supporting the project objectives regarding climate and environmental analysis in Trentino, a series of \textit{competency queries} were executed. These queries evaluate the KG's ability to retrieve relevant climate information and verify its structural and semantic consistency.
+\subsection{Query Execution and Results}
+To assess the suitability of the final Knowledge Graph (KG) in supporting the project objectives regarding climate and environmental analysis in Trentino, a series of \textit{competency queries} were executed. These queries were designed to test the KG's ability to provide meaningful answers to climate-related questions, verify the semantic and structural integrity of the data, and highlight trends and anomalies across the region.
 
-All files and scripts related to the evaluation can be found in the \href{https://github.com/Michael-Bernasconi/Weather-and-climate-change/tree/documentation/Evaluation}{GitHub repository}.
+The queries cover a range of topics, including rainfall and temperature trends, wind patterns, microclimatic distinctions, seasonal changes, and historical extreme events. By comparing recent observations with historical data, these queries allow a comprehensive evaluation of both the quality and the practical utility of the KG.
+
+All files and scripts related to the evaluation can be found in the \href{https://github.com/Michael-Bernasconi/Weather-and-climate-change/tree/documentation/Evaluation}{GitHub repository}. The query outputs were collected and stored in the file \texttt{CQs-query-output.xlsx}. For illustrative purposes, the results of the first query are shown in Figure~\ref{fig:example-query-result}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=1.0\textwidth]{../../../../Evaluation/CQs-query-output.png}
+    \caption{Example result of Query Maria Bianchi 1.1: Areas with Significant Rainfall Increase. The table shows municipalities with the largest increase in average annual rainfall between 2005–2015 and 2015–2025.}
+    \label{fig:example-query-result}
+\end{figure}
 
 \subsubsection*{1. Maria Bianchi 1.1: Areas with Significant Rainfall Increase}
+The following query investigates the municipalities in Trentino that have experienced the largest increase in annual rainfall over the past decade.
+
 \textbf{Query:} Which areas of Trentino have experienced significant increase in annual rainfall over the past decade?
 
-This query identifies municipalities that experienced the largest increase in average annual rainfall, comparing 2015–2025 with 2005–2015.
 \begin{itemize}
     \item Compute average rainfall for recent decade (\texttt{recentRain}) and previous decade (\texttt{pastRain}) via subgraphs.
     \item Calculate difference \texttt{increase = recentRain - pastRain}.
     \item Filter municipalities with positive increase and sort descendingly by \texttt{increase}.
 \end{itemize}
+
+\newpage
+\textbf{Results:} The output highlights the municipalities where the average annual rainfall has increased most significantly. Full results for all queries are stored in \texttt{CQs-query-output.xlsx}.
 
 \subsubsection*{2. Maria Bianchi 1.2: Monthly Rainfall Trends}
 \textbf{Query:} How has the average monthly rainfall evolved in each valley or municipality of Trentino over the last ten years?
