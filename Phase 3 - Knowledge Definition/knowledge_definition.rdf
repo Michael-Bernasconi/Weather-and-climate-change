@@ -272,6 +272,7 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_average_temperature">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Temperature"/>
         <rdfs:comment xml:lang="it">Rappresenta la temperatura media registrata in un certo anno, durante una certa stagione (viene espressa in gradi Celsius).</rdfs:comment>
@@ -345,6 +346,7 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_city_report">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherReport"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
         <rdfs:comment xml:lang="it">Rappresenta la relazione per cui un determinato report metereologico è rilevato in una certa città</rdfs:comment>
@@ -388,6 +390,7 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_location_in_city">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#WeatherStation"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#City"/>
         <rdfs:comment xml:lang="en">Each Weather Station is located in a certain city</rdfs:comment>
@@ -521,6 +524,7 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
 
     <ObjectProperty rdf:about="http://knowdive.disi.unitn.it/etype#has_relative_season">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://knowdive.disi.unitn.it/etype#YearSeason"/>
         <rdfs:range rdf:resource="http://knowdive.disi.unitn.it/etype#Season"/>
         <rdfs:comment xml:lang="it">Indica la relazione per cui una stagione annuale (avente proprie caratteristiche registrate) ha una stagione canonica di riferimento.</rdfs:comment>
