@@ -33,21 +33,22 @@
 \contentsline {subsection}{\numberline {6.3}Entity Identification}{27}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Entity Mapping}{27}{subsection.6.4}%
 \contentsline {subsubsection}{\numberline {6.4.1}Phase Outcomes (The Knowledge Graph)}{27}{subsubsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.5}Revised Competency Questions}{28}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Decisions and Reflections}{28}{subsection.6.6}%
-\contentsline {subsubsection}{\numberline {6.6.1}Strengths}{28}{subsubsection.6.6.1}%
-\contentsline {subsubsection}{\numberline {6.6.2}Weaknesses}{29}{subsubsection.6.6.2}%
-\contentsline {section}{\numberline {7}Evaluation}{30}{section.7}%
-\contentsline {subsection}{\numberline {7.1}the final Knowledge Graph information statistics}{30}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Purpose Definition evaluation}{30}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Language Definition Evaluation}{31}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Knowledge definition Evaluation}{32}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Data layer evaluation}{32}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Query Execution and Results}{35}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Metadata Definition}{39}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Project Metadata Description}{39}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}People Metadata Description}{40}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Data Resources Metadata Description}{40}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Open Issues}{41}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Adherence to Schedule and Achievement of Objectives}{41}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Open Issues at Project Conclusion}{41}{subsection.9.2}%
+\contentsline {subsection}{\numberline {6.5}Visualization graphs}{28}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Revised Competency Questions}{29}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Decisions and Reflections}{29}{subsection.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.1}Strengths}{29}{subsubsection.6.7.1}%
+\contentsline {subsubsection}{\numberline {6.7.2}Weaknesses}{30}{subsubsection.6.7.2}%
+\contentsline {section}{\numberline {7}Evaluation}{33}{section.7}%
+\contentsline {subsection}{\numberline {7.1}the final Knowledge Graph information statistics}{33}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Purpose Definition evaluation}{33}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Language Definition Evaluation}{34}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Knowledge definition Evaluation}{35}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Data layer evaluation}{35}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Query Execution and Results}{38}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Metadata Definition}{42}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Project Metadata Description}{42}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}People Metadata Description}{43}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Data Resources Metadata Description}{43}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Open Issues}{44}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Adherence to Schedule and Achievement of Objectives}{44}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Open Issues at Project Conclusion}{44}{subsection.9.2}%

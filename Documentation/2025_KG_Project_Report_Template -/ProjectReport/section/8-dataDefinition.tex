@@ -80,6 +80,47 @@ These files collectively form the final, unified \textbf{Knowledge Graph}, which
 
 \vspace{0.5cm}
 
+\subsection{Visualization graphs}
+After generating RDF-Turtle files, they've been imported in GraphDB and it has been analyzed the quality of the result produced. At first, it has been analyzed the class relationship, in order to find out if they've been modeled as intended. The result is shown on Figure \ref{fig:class_relationship}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../../../../Phase 4 - Entity Definition/img/class_Relationship.png}
+    \caption{Visualization graph for class relationship}
+    \label{fig:class_relationship}
+\end{figure}
+Then, it has been analyzed the class hierarchy graph. It shows the distribution of the classes on the ontology. It's a bubble chart for which eeach bubble's dimension indicates the number of istances for that class. The result is shown on Figure \ref{fig:class_hierarchy} and confirms that the majority of the istances are related to observation data, directly related to the central entity \textit{WeatherReport}.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{../../../../Phase 4 - Entity Definition/img/class_hierarchy.png}
+    \caption{Class hierarchy visualization graph}
+    \label{fig:class_hierarchy}
+\end{figure}
+Afterwards, it has been generated different visualization graphs to show how istances of different entities are related. The results are shown on Figure \ref{fig:wr_visualization} for the class weather report, for which an istance has been expanded to shown other class relationships; Figure \ref{fig:anomaly_visualization} for the anomaly class; Figure \ref{fig:microclimate_visualization} for the microclimate class and Figure \ref{fig:season_visualization} for the season class.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../../../Phase 4 - Entity Definition/img/anomaly_visualization_graph.png}
+    \caption{Visualization graph for anomaly class}
+    \label{fig:anomaly_visualization}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../../../Phase 4 - Entity Definition/img/weather_report_visualization_graph.png}
+    \caption{Visualization graph for weather report class}
+    \label{fig:wr_visualization}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../../../Phase 4 - Entity Definition/img/microclimate_visual_graph.png}
+    \caption{Visualization graph for microclimate class }
+    \label{fig:microclimate_visualization}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{../../../../Phase 4 - Entity Definition/img/yearseason_visualization_graph.png}
+    \caption{Visualization graph for year season class }
+    \label{fig:season_visualization}
+\end{figure}
+
 \subsection{Revised Competency Questions}
 
 To ensure the resulting Knowledge Graph remains relevant to current data constraints and user interests, several Competency Questions (\textbf{CQs}) were updated during this phase. The table below lists the original questions and their modified versions, reflecting adjusted temporal scopes or geographical foci.
