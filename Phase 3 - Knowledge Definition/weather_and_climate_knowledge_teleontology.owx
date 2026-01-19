@@ -18,19 +18,13 @@
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="wccdl" IRI="http://knowdive.disi.unitn.it/etype#"/>
     <Prefix name="schema" IRI="https://schema.org/"/>
-    <Import>http://sweetontology.net/phenPlanetClimate/Climate</Import>
-    <Import>https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/weather/WeatherOntology_1.03.owl</Import>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="terms:creator"/>
-        <Literal xml:lang="en">Gabriele Fronzoni and Micheal Bernasconi</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="it">Onotlogia progettata per rappresentare dati meteorologici e modelli climatici, specificamente adattato per la regione Trentino. L&apos;ontologia è incentrata sul concetto di WeatherReport, che funge da unità granulare per registrare osservazioni spaziotemporali dei fenomeni atmosferici. Oltre ai dati grezzi, il modello definisce esplicitamente concetti di alto livello come Trend Climatici e Anomalie, abilitando il ragionamento semantico e l&apos;analisi storica avanzata dei comportamenti meteorologici nel tempo.</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="it">Ontologia creata per l&apos;analisi dei dati metereologici. Il modello integra concetti come quello di report del meteo, stazione meteo, fenomeno metereologico e anche concetti come anomalie e trend climatici a lungo termine.</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="en">This ontology has been created for monitoring and analyzing meterological phenomenon and data. The model integrates concepts like weather report, weather station, metereological phenomenon, but also concepts like weather anomalies and long term climate trend.</Literal>
+        <Literal xml:lang="en">Weather and Climate Ontology: This ontology has been created to model weather and climate domains, with a specific focus on the Trentino region. The core of the model is the Weather Report, which records heterogeneous data regarding observed atmospheric phenomena. Additionally, the ontology models complex aspects such as Climate Anomalies and Trends, providing a structured basis for long-term weather analysis.</Literal>
     </Annotation>
     <Declaration>
         <Class abbreviatedIRI="wccdl:Anomaly"/>
@@ -58,6 +52,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="wccdl:Precipitation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="wccdl:Season"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="wccdl:SpatialThing"/>
@@ -91,66 +88,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/2006/time#Year"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:FreshBreeze"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:FreshGale"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:GentleBreeze"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:Hurricane"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:LightAir"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:LightBreeze"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:LightPrecipitation"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:LightWind"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:ModerateBreeze"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:ModerateGale"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:NoPrecipitation"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:NoWind"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:Storm"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:StrongBreeze"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:StrongGale"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:StrongWind"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:ViolentStorm"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="hwo:WholeGale"/>
     </Declaration>
     <Declaration>
         <ObjectProperty abbreviatedIRI="wccdl:has_anomaly_city"/>
@@ -265,9 +202,6 @@
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="wccdl:has_name"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty abbreviatedIRI="wccdl:has_parameter_measured"/>
     </Declaration>
     <Declaration>
         <DataProperty abbreviatedIRI="wccdl:has_precipitation_hours"/>
@@ -495,15 +429,6 @@
         <Datatype IRI="http://www.w3.org/2006/time#generalYear"/>
     </Declaration>
     <EquivalentClasses>
-        <Class abbreviatedIRI="wccdl:Precipitation"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
-            <Class abbreviatedIRI="hwo:LightPrecipitation"/>
-            <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
-            <Class abbreviatedIRI="hwo:NoPrecipitation"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class abbreviatedIRI="wccdl:WeatherCondition"/>
         <ObjectOneOf>
             <NamedIndividual abbreviatedIRI="hwo:Cloud"/>
@@ -518,466 +443,6 @@
             <NamedIndividual abbreviatedIRI="hwo:Sun"/>
             <NamedIndividual abbreviatedIRI="hwo:Thunder"/>
         </ObjectOneOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="wccdl:Wind"/>
-        <ObjectUnionOf>
-            <Class abbreviatedIRI="hwo:FreshBreeze"/>
-            <Class abbreviatedIRI="hwo:FreshGale"/>
-            <Class abbreviatedIRI="hwo:GentleBreeze"/>
-            <Class abbreviatedIRI="hwo:Hurricane"/>
-            <Class abbreviatedIRI="hwo:LightAir"/>
-            <Class abbreviatedIRI="hwo:LightBreeze"/>
-            <Class abbreviatedIRI="hwo:LightWind"/>
-            <Class abbreviatedIRI="hwo:ModerateBreeze"/>
-            <Class abbreviatedIRI="hwo:ModerateGale"/>
-            <Class abbreviatedIRI="hwo:NoWind"/>
-            <Class abbreviatedIRI="hwo:Storm"/>
-            <Class abbreviatedIRI="hwo:StrongBreeze"/>
-            <Class abbreviatedIRI="hwo:StrongGale"/>
-            <Class abbreviatedIRI="hwo:StrongWind"/>
-            <Class abbreviatedIRI="hwo:ViolentStorm"/>
-            <Class abbreviatedIRI="hwo:WholeGale"/>
-        </ObjectUnionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:FreshBreeze"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.9</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.7</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:FreshGale"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">17.1</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.7</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:GentleBreeze"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Precipitation"/>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_intensity"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:Hurricane"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">32.6</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:LightAir"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.2</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:LightBreeze"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.5</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">3.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:LightPrecipitation"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Precipitation"/>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_intensity"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_intensity"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:LightWind"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.2</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.7</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:ModerateBreeze"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.9</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:ModerateGale"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">13.8</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">17.1</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Precipitation"/>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_intensity"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-            <DataAllValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_intensity"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataAllValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:NoPrecipitation"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Precipitation"/>
-            <DataHasValue>
-                <DataProperty abbreviatedIRI="wccdl:has_intensity"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:NoWind"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.2</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:Storm"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">24.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:StrongBreeze"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.7</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">13.8</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:StrongGale"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.7</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">24.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:StrongWind"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">10.7</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">24.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:ViolentStorm"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">28.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">32.6</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class abbreviatedIRI="hwo:WholeGale"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="wccdl:Wind"/>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">24.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-            <DataSomeValuesFrom>
-                <DataProperty abbreviatedIRI="wccdl:has_speed"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:float"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">28.4</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
     </EquivalentClasses>
     <SubClassOf>
         <Class abbreviatedIRI="wccdl:ClimateTrend"/>
@@ -1051,18 +516,22 @@
             </DataExactCardinality>
         </ObjectIntersectionOf>
     </SubClassOf>
-    <DisjointClasses>
-        <Class abbreviatedIRI="hwo:HeavyPrecipitation"/>
-        <Class abbreviatedIRI="hwo:LightPrecipitation"/>
-        <Class abbreviatedIRI="hwo:ModeratePrecipitation"/>
-        <Class abbreviatedIRI="hwo:NoPrecipitation"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class abbreviatedIRI="hwo:LightWind"/>
-        <Class abbreviatedIRI="hwo:NoWind"/>
-        <Class abbreviatedIRI="hwo:Storm"/>
-        <Class abbreviatedIRI="hwo:StrongWind"/>
-    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="wccdl:Season"/>
+        <NamedIndividual abbreviatedIRI="wccdl:Autumn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="wccdl:Season"/>
+        <NamedIndividual abbreviatedIRI="wccdl:Spring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="wccdl:Season"/>
+        <NamedIndividual abbreviatedIRI="wccdl:Summer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="wccdl:Season"/>
+        <NamedIndividual abbreviatedIRI="wccdl:Winter"/>
+    </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="wccdl:DayOfWeek"/>
         <NamedIndividual IRI="http://www.w3.org/2006/time#Friday"/>
@@ -1228,7 +697,64 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_anomaly_city"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_average_precipitation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_average_temperature"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_been_observed_in"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
         <ObjectProperty abbreviatedIRI="wccdl:has_been_recorded_at"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_city_location"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_city_report"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_humidity_information"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_location_in_city"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_max_humidity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_max_temperature"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_mean_humidity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_mean_temperature"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_min_humidity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_min_temperature"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_precipitation_information"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_precipitation_mm"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_relative_season"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_station_location"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="wccdl:has_temperature_information"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty abbreviatedIRI="wccdl:has_wind_information"/>
@@ -1398,6 +924,10 @@
         <Class abbreviatedIRI="wccdl:Precipitation"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="wccdl:has_relative_season"/>
+        <Class abbreviatedIRI="wccdl:Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty abbreviatedIRI="wccdl:has_shown_in"/>
         <Class abbreviatedIRI="wccdl:City"/>
     </ObjectPropertyRange>
@@ -1447,10 +977,6 @@
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty abbreviatedIRI="wccdl:has_name"/>
-        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty abbreviatedIRI="wccdl:has_parameter_measured"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
@@ -1514,7 +1040,22 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_altitude"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_anomaly_severity"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_detection_datetime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
         <DataProperty abbreviatedIRI="wccdl:has_direction"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_end_date"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_intensity"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
         <DataProperty abbreviatedIRI="wccdl:has_latitude"/>
@@ -1523,7 +1064,43 @@
         <DataProperty abbreviatedIRI="wccdl:has_longitude"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_microclimate_type"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_report_datetime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_season_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_season_year"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
         <DataProperty abbreviatedIRI="wccdl:has_speed"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_start_date"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_station_code"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_station_name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_temperature_value"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_variation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_weather_code"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="wccdl:has_wind_pattern"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty abbreviatedIRI="wccdl:has_altitude"/>
@@ -1668,7 +1245,7 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="wccdl:has_end_date"/>
-        <Datatype abbreviatedIRI="xsd:date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty abbreviatedIRI="wccdl:has_gust"/>
@@ -1781,14 +1358,34 @@
         <Literal xml:lang="it">Una deviazione significativa delle condizioni climatiche medie o normali per una specifica area e periodo di tempo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>wccdl:City</AbbreviatedIRI>
-        <Literal xml:lang="it">Città del Trentino</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Anomaly</AbbreviatedIRI>
+        <Literal xml:lang="it">Anomalia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Anomaly</AbbreviatedIRI>
+        <Literal xml:lang="en">Anomaly</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:City</AbbreviatedIRI>
-        <Literal xml:lang="en">City of Trentino</Literal>
+        <Literal xml:lang="en">In the context of this project, this class is used to spatially locate Weather Stations and to group weather observations by administrative territory. It serves as a key granularity level for analyzing local climate trends.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:City</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents a large and permanent human settlement. A city is typically a significant administrative, commercial, and cultural center, characterized by a higher population density and more complex infrastructure compared to towns or villages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:City</AbbreviatedIRI>
+        <Literal xml:lang="it">Città</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:City</AbbreviatedIRI>
+        <Literal xml:lang="en">City</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1806,19 +1403,24 @@
         <Literal xml:lang="it">Una tendenza o direzione persistente di cambiamento nelle condizioni climatiche medie (come temperatura o precipitazioni) osservata su un lungo periodo di tempo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:ClimateTrend</AbbreviatedIRI>
+        <Literal xml:lang="en">Climate Trend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:ClimateTrend</AbbreviatedIRI>
+        <Literal xml:lang="it">Trend climatico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
-        <Literal xml:lang="es">El día de la semana</Literal>
+        <Literal xml:lang="it">Giorno della settimana</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
         <Literal>Original eType: http://www.w3.org/2006/time#DayOfWeek</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
-        <Literal xml:lang="en">The day of week</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1828,39 +1430,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
-        <Literal xml:lang="es">día de la semana</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:changeNote"/>
-        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
-        <Literal xml:lang="en">Remove enumeration from definition, in order to allow other days to be used when required in other calendars. 
-NOTE: existing days are still present as members of the class, but the class membership is now open. 
-
-In the original OWL-Time the following constraint appeared: 
-  owl:oneOf (
-      time:Monday
-      time:Tuesday
-      time:Wednesday
-      time:Thursday
-      time:Friday
-      time:Saturday
-      time:Sunday
-    ) ;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:definition"/>
-        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
-        <Literal xml:lang="es">El día de la semana</Literal>
+        <Literal xml:lang="it">Giorno della settimana</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
         <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
         <Literal xml:lang="en">The day of week</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:note"/>
-        <AbbreviatedIRI>wccdl:DayOfWeek</AbbreviatedIRI>
-        <Literal xml:lang="es">La pertenencia a la clase &apos;día de la semana&apos; está abierta, para permitir longitudes de semana alternativas y diferentes nombres de días.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:note"/>
@@ -1875,12 +1450,27 @@ In the original OWL-Time the following constraint appeared:
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:Humidity</AbbreviatedIRI>
-        <Literal xml:lang="en">represents the relative humidity of the air in percent</Literal>
+        <Literal xml:lang="it">Rappresenta la percentuale di umidità presente nell&apos;aria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Humidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents the relative humidity of the air in percent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Humidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Humidity</AbbreviatedIRI>
+        <Literal xml:lang="it">Umidità</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:Microclimate</AbbreviatedIRI>
-        <Literal>A set of local atmospheric conditions that differ from those in the surrounding general area. Microclimates are influenced by local features such as topography, water bodies, vegetation, and urban structures, and can exist on scales ranging from a few square meters to several kilometers.&quot;</Literal>
+        <Literal>A set of local atmospheric conditions that differ from those in the surrounding general area. Microclimates are influenced by local features such as topography, vegetation, and urban structures, and can exist on scales ranging from a few square meters to several kilometers.&quot;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1888,9 +1478,19 @@ In the original OWL-Time the following constraint appeared:
         <Literal>Original eType: http://sweetontology.net/phenPlanetClimate/Microclimate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Microclimate</AbbreviatedIRI>
+        <Literal xml:lang="it">Un insieme di condizioni atmosferiche che si differenzia da quelle dell&apos;area che lo circonda. Un microclima è influenzato da caratteristiche locali come topografia, vegetazione e struttura urbana e può essere di pochi metri quadrati fino a molti kilometri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>wccdl:Microclimate</AbbreviatedIRI>
-        <Literal xml:lang="en">microclimate</Literal>
+        <Literal xml:lang="it">Microclima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Microclimate</AbbreviatedIRI>
+        <Literal xml:lang="en">Microclimate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1914,9 +1514,19 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <Literal>Original eType: http://www.w3.org/2003/01/geo/wgs84_pos#Point</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Point</AbbreviatedIRI>
+        <Literal xml:lang="it">Un punto, normalmente descritto utilizzando un sistema di coordinate latitudine-longitudine-altitudine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>wccdl:Point</AbbreviatedIRI>
-        <Literal>point</Literal>
+        <Literal xml:lang="en">Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Point</AbbreviatedIRI>
+        <Literal xml:lang="it">Punto</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1926,7 +1536,52 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:Precipitation</AbbreviatedIRI>
-        <Literal xml:lang="en">represents precipitation in millimetres</Literal>
+        <Literal xml:lang="it">Rappresenta le precipitazioni registrate in millimetri</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Precipitation</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents precipitation in millimetres</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Precipitation</AbbreviatedIRI>
+        <Literal xml:lang="it">Pioggia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Precipitation</AbbreviatedIRI>
+        <Literal xml:lang="en">Precipitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Season</AbbreviatedIRI>
+        <Literal xml:lang="en">Division of the year (Spring, Summer, Autumn, Winter) marked by particular weather patterns and daylight hours.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Season</AbbreviatedIRI>
+        <Literal xml:lang="it">Divisione dell&apos;anno (Primavera, Estate, Autunno, Inverno) basato su particolari condizioni metereologiche e ore di sole.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Season</AbbreviatedIRI>
+        <Literal xml:lang="en">In the context of this project, it&apos;s used to group weather reports and it is essential for analyzing long-term climate trends and identifying seasonal anomalies (e.g., warmer winters) within the region over the observed period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Season</AbbreviatedIRI>
+        <Literal xml:lang="it">Per questo progetto, viene usata per raggruppare i report metereologici e per poter analizzare trend climati a lungo termine e individuare anomalie stagionali (e.g. inverni più caldi) nella regione nel periodo considerato.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Season</AbbreviatedIRI>
+        <Literal xml:lang="en">Season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Season</AbbreviatedIRI>
+        <Literal xml:lang="it">Stagione</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1940,19 +1595,49 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <Literal>Original eType: http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:SpatialThing</AbbreviatedIRI>
+        <Literal xml:lang="it">Qualsiasi cosa che abbia una posizione nello spazio (e.g. persone, posti)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>wccdl:SpatialThing</AbbreviatedIRI>
-        <Literal>SpatialThing</Literal>
+        <Literal xml:lang="it">Entità spaziale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:SpatialThing</AbbreviatedIRI>
+        <Literal xml:lang="en">Spatial Thing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:Temperature</AbbreviatedIRI>
-        <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature</Literal>
+        <Literal xml:lang="en">Exterior temperature in degrees Celsius</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:Temperature</AbbreviatedIRI>
-        <Literal xml:lang="en">exterior temperature in degrees Celsius</Literal>
+        <Literal xml:lang="en">Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Temperatura esterna espressa in gradi Celsiusit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Temperatura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:Temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">Temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherCondition</AbbreviatedIRI>
+        <Literal xml:lang="it">Condizione metereologica osservata.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1965,14 +1650,44 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherCondition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:WeatherCondition</AbbreviatedIRI>
+        <Literal xml:lang="it">Condizione metereologica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:WeatherCondition</AbbreviatedIRI>
+        <Literal xml:lang="en">Weather Condition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherPhenomenon</AbbreviatedIRI>
+        <Literal xml:lang="en">Different weather phenomena that may influence the current and forecasted weather state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherPhenomenon</AbbreviatedIRI>
+        <Literal xml:lang="it">Fenomeno metereologico che può influenzare le condizioni metereologiche</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:WeatherPhenomenon</AbbreviatedIRI>
         <Literal>Original eType: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#WeatherPhenomenon</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>wccdl:WeatherPhenomenon</AbbreviatedIRI>
-        <Literal xml:lang="en">different weather phenomena that may influence the current and forecasted weather state.</Literal>
+        <Literal xml:lang="it">Fenomeno metereologico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:WeatherPhenomenon</AbbreviatedIRI>
+        <Literal xml:lang="en">Weather Phenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherReport</AbbreviatedIRI>
+        <Literal xml:lang="en">A systematic record or statement describing the observed state of the atmosphere at a specific geographical location and time. It typically includes quantitative measurements of weather phenomenon such as temperature, humidity, precipitation, wind speed and registered data such as atmospheric pressure.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1982,9 +1697,17 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:WeatherReport</AbbreviatedIRI>
-        <Literal xml:lang="en">a weather report that can be retrieved through a local sensor (e.g. weather station integrated in the smart home) or a remote internet service. Further a time division has been realized to differentiate between current, short, mid and long term forecasts. 
-
-For the smart home domain, a time window of 24 hours for weather forecasts has been seen as suitable with a 24 hours forecast being classified as long-term forecast</Literal>
+        <Literal xml:lang="it">Un record sistematico o una dichiarazione che descrive lo stato osservato dell&apos;atmosfera in una specifica località geografica e in un determinato momento. Tipicamente include misurazioni quantitative di fenomenic atmosferici come temperatura, umidità, precipitazioni, velocità del vento e dati registrati come la pressione atmosferica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:WeatherReport</AbbreviatedIRI>
+        <Literal xml:lang="it">Report metereologico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:WeatherReport</AbbreviatedIRI>
+        <Literal xml:lang="en">Weather Report</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1998,8 +1721,38 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherReportSource</AbbreviatedIRI>
+        <Literal xml:lang="it">Rappresenta la fonte da cui vengono registrate le condizioni metereologiche, che danno poi luogo ad un report metereologico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:WeatherReportSource</AbbreviatedIRI>
+        <Literal xml:lang="it">Fonte del report metereologico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:WeatherReportSource</AbbreviatedIRI>
+        <Literal xml:lang="en">Weather Report Source</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:WeatherStation</AbbreviatedIRI>
-        <Literal xml:lang="en">A WeatherStation represents a physical monitoring installation equipped with standardized meteorological instruments used to collect environmental and climatic measurements. Each WeatherStation is associated with a specific geographical location and continuously records variables such as temperature, humidity, wind speed, precipitation, and other atmospheric indicators.</Literal>
+        <Literal xml:lang="en">A WeatherStation represents a physical monitoring installation equipped with standardized meteorological instruments used to collect environmental and climatic measurements. Each WeatherStation is associated with a specific geographical location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:WeatherStation</AbbreviatedIRI>
+        <Literal xml:lang="it">Una stazione metereologica è un&apos;installazione fisica equipaggiata con strumenti metereologici, usati per effettuare misurazioni ambientali e climatiche. Ogni stazione metereologica è associata ad una specifica posizione geografica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:WeatherStation</AbbreviatedIRI>
+        <Literal xml:lang="it">Stazione metereologica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:WeatherStation</AbbreviatedIRI>
+        <Literal>Weather Station</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2020,6 +1773,11 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:Wind</AbbreviatedIRI>
+        <Literal xml:lang="it">Viene indicato con direzione in gradi e velocità in metri al secondo (m/s)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:Wind</AbbreviatedIRI>
         <Literal xml:lang="en">Wind direction and speed are represented as datatype properties&quot;hasDirection&quot; and &quot;hasSpeed&quot;
 </Literal>
     </AnnotationAssertion>
@@ -2034,6 +1792,16 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
         <Literal xml:lang="it">Un&apos;unità di analisi climatologica che rappresenta le condizioni stagionali osservate in una specifica regione geografica durante un determinato anno, fungendo da contesto per la valutazione dei trend climatici.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:YearSeason</AbbreviatedIRI>
+        <Literal xml:lang="it">Stagione annuale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:YearSeason</AbbreviatedIRI>
+        <Literal xml:lang="en">Year Season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_altitude</AbbreviatedIRI>
         <Literal>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#alt</Literal>
@@ -2045,9 +1813,59 @@ For the smart home domain, a time window of 24 hours for weather forecasts has b
 above the local reference ellipsoid).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>wccdl:has_altitude</AbbreviatedIRI>
-        <Literal xml:lang="en">altitude</Literal>
+        <Literal xml:lang="en">Altitude</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_altitude</AbbreviatedIRI>
+        <Literal xml:lang="it">Altitudine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_city</AbbreviatedIRI>
+        <Literal xml:lang="it">Rappresenta la relazione tra un&apos;anomalia e la città in cui si è verificata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_city</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents the relationship between an anomaly and the city in which it has occured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_city</AbbreviatedIRI>
+        <Literal xml:lang="it">E succcesso a</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_city</AbbreviatedIRI>
+        <Literal xml:lang="en">Has happened in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_severity</AbbreviatedIRI>
+        <Literal xml:lang="en">An anomaly has a certain severity level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_severity</AbbreviatedIRI>
+        <Literal xml:lang="it">Ogni anomalia ha la propria gravità.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_severity</AbbreviatedIRI>
+        <Literal xml:lang="en">Anomaly severity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_severity</AbbreviatedIRI>
+        <Literal xml:lang="it">Gravità dell&apos;anomalia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_type</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica il tipo di anomalia registrata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2055,9 +1873,79 @@ above the local reference ellipsoid).</Literal>
         <Literal xml:lang="en">It indicates the type of the anomaly that has been registered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_type</AbbreviatedIRI>
+        <Literal>Anomaly type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_anomaly_type</AbbreviatedIRI>
+        <Literal xml:lang="it">Tipo dell&apos;anomalia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_average_precipitation</AbbreviatedIRI>
+        <Literal xml:lang="it">Rappresenta le precipitazioni medie reigstrate in un certo anno, durante una certa stagione (vengono espresse in mm).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_average_precipitation</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents the fact that in a articular year and in a particular season it has been registered an average quantity of precipitations (expressed in mm).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_average_precipitation</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha precipitazioni medie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_average_precipitation</AbbreviatedIRI>
+        <Literal xml:lang="en">Has average precipitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_average_temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Rappresenta la temperatura media registrata in un certo anno, durante una certa stagione (viene espressa in gradi Celsius).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_average_temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents the fact that in a articular year and in a particular season it has been registered an average temperature (expressed in Celsius).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_average_temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha temperatura media</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_average_temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">Has average temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_been_derived_from</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui un trend climatico è stato derivato da un insieme di report metereologici.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_been_derived_from</AbbreviatedIRI>
         <Literal xml:lang="en">It represents the relation by which a climate trend is derivated from weather reports</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_been_derived_from</AbbreviatedIRI>
+        <Literal xml:lang="it">E stato ottenuto da</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_been_derived_from</AbbreviatedIRI>
+        <Literal xml:lang="en">Has been derived from</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_been_observed_in</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la città in cui una stagione di un determinato anno è stata registrata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2065,9 +1953,39 @@ above the local reference ellipsoid).</Literal>
         <Literal xml:lang="en">Indicate the city in which an year season has been releveated</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_been_observed_in</AbbreviatedIRI>
+        <Literal xml:lang="it">E&apos; stata osservata in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_been_observed_in</AbbreviatedIRI>
+        <Literal xml:lang="en">Has been observed in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_been_recorded_at</AbbreviatedIRI>
-        <Literal xml:lang="en">It indicates the fact that a weather report is generated bya certain weather station</Literal>
+        <Literal xml:lang="en">It indicates the fact that a weather report is generated by a certain weather station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_been_recorded_at</AbbreviatedIRI>
+        <Literal xml:lang="it">Rappresenta la relazione per cui un report metereologico è stato registrato presso una determinata stazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_been_recorded_at</AbbreviatedIRI>
+        <Literal xml:lang="it">E stato registrato presso</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_been_recorded_at</AbbreviatedIRI>
+        <Literal xml:lang="en">Has been recorded at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_city_location</AbbreviatedIRI>
+        <Literal xml:lang="it">Locazione spaziale di una determinata città</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2075,9 +1993,79 @@ above the local reference ellipsoid).</Literal>
         <Literal xml:lang="en">Spatial location of a given city</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_city_location</AbbreviatedIRI>
+        <Literal xml:lang="it">Città si trova in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_city_location</AbbreviatedIRI>
+        <Literal xml:lang="en">City has location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_city_report</AbbreviatedIRI>
+        <Literal xml:lang="it">Rappresenta la relazione per cui un determinato report metereologico è rilevato in una certa città</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_city_report</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents the relationship by which each weather report refers to a particular city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_city_report</AbbreviatedIRI>
+        <Literal xml:lang="it">Città in cui è stato registrato il report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_city_report</AbbreviatedIRI>
+        <Literal xml:lang="en">City of the report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_climate_trend</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui una città viene associata ad un trend climatico, che ne indica le caratteristiche che si sono sviluppate nel tempo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_climate_trend</AbbreviatedIRI>
         <Literal xml:lang="en">represents the relationship by which a City is associated with its corresponding ClimateTrend, indicating the long-term climatic patterns or variations observed for that specific location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_climate_trend</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha un trend climatico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_climate_trend</AbbreviatedIRI>
+        <Literal xml:lang="en">Has a climate trend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_detection_datetime</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica data e orario ai quali si è registrata l&apos;anomalia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_detection_datetime</AbbreviatedIRI>
+        <Literal xml:lang="en">It indicates the date-time at which an anomaly has been registered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_detection_datetime</AbbreviatedIRI>
+        <Literal xml:lang="en">Datetime anomaly</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_detection_datetime</AbbreviatedIRI>
+        <Literal xml:lang="it">Giorno e ora dell&apos;anomalia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_direction</AbbreviatedIRI>
+        <Literal xml:lang="it">Direzione del vento in gradi</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2095,9 +2083,74 @@ above the local reference ellipsoid).</Literal>
         <Literal xml:lang="en">Wind direction represented in degrees</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_direction</AbbreviatedIRI>
+        <Literal xml:lang="it">Direzione del vento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_direction</AbbreviatedIRI>
+        <Literal xml:lang="en">Wind direction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_end_date</AbbreviatedIRI>
+        <Literal xml:lang="it">Data in cui la stazione è stata dismessa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_end_date</AbbreviatedIRI>
         <Literal xml:lang="en">Date in which the station has ended operating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_end_date</AbbreviatedIRI>
+        <Literal xml:lang="it">Data di chiusura della stazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_end_date</AbbreviatedIRI>
+        <Literal xml:lang="en">Station end date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_gust</AbbreviatedIRI>
+        <Literal xml:lang="it">Impproviso aumento della velocità del vento.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_gust</AbbreviatedIRI>
+        <Literal xml:lang="en">Sudden and short burst of increasing wind speed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_gust</AbbreviatedIRI>
+        <Literal xml:lang="it">Raffica di vento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_gust</AbbreviatedIRI>
+        <Literal xml:lang="en">Wind gust</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_humidity_information</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui un report metereologico contiene informazioni relative all&apos;umidità</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_humidity_information</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicate the relationship by which a weather report contains information about humidity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_humidity_information</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha informazioni sull&apos;umidità</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_humidity_information</AbbreviatedIRI>
+        <Literal xml:lang="en">Has humidity information</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2106,13 +2159,63 @@ above the local reference ellipsoid).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_humidity_range</AbbreviatedIRI>
+        <Literal xml:lang="it">Range di umidità per un dato microclima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_humidity_range</AbbreviatedIRI>
+        <Literal xml:lang="en">Humidity range for microclimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_humidity_range</AbbreviatedIRI>
+        <Literal xml:lang="it">Range di umidità per un microclima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_humidity_value</AbbreviatedIRI>
-        <Literal xml:lang="en">Value of the percentage of humifity</Literal>
+        <Literal xml:lang="it">Valore in percentuale di umidità</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_humidity_value</AbbreviatedIRI>
+        <Literal xml:lang="en">Value of the percentage of humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_humidity_value</AbbreviatedIRI>
+        <Literal xml:lang="en">Humidity value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_humidity_value</AbbreviatedIRI>
+        <Literal xml:lang="it">Valore di umidità</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_intensity</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la quantità di pioggia registrata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_intensity</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicate sthe quantity of precipitation registered.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_intensity</AbbreviatedIRI>
         <Literal>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasIntensity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_intensity</AbbreviatedIRI>
+        <Literal xml:lang="it">Intesità delle precipitazioni</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_intensity</AbbreviatedIRI>
+        <Literal xml:lang="en">Precipitation intensity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2136,6 +2239,21 @@ above the local reference ellipsoid).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_location_in_city</AbbreviatedIRI>
+        <Literal xml:lang="it">Ogni stazione meteo è localizzata in una certa città</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_location_in_city</AbbreviatedIRI>
+        <Literal xml:lang="en">Has location in city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_location_in_city</AbbreviatedIRI>
+        <Literal xml:lang="it">Si trova nella città</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_longitude</AbbreviatedIRI>
         <Literal>Original property: http://www.w3.org/2003/01/geo/wgs84_pos#long</Literal>
     </AnnotationAssertion>
@@ -2151,8 +2269,233 @@ above the local reference ellipsoid).</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_max_humidity</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui un report metereologico contiene informazioni relative all&apos;umidità massima registrata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_max_humidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicate the relationship by which a weather report contains information about max humidity recorded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_max_humidity</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha umidità massima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_max_humidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Has maximum humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_max_temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione tra un report meteo e la massima temperatura registrata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_max_temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicate the relationship between weather report and the maximum temperature registered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_max_temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha temperatura massima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_max_temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">Has maximum temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_mean_humidity</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui un report metereologico contiene informazioni relative all&apos;umidità media registrata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_mean_humidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicate the relationship by which a weather report contains information about mean humidity recorded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_mean_humidity</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha umidità media</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_mean_humidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Has mean humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_mean_temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui in un report viene indicata la temperatura media registrata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_mean_temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the relationship by which a report has a mean temperature registered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_mean_temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha temperatura media</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_mean_temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">Has mean temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_microclimate_type</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la tipologia di microclima.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_microclimate_type</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the microclimate&apos;s type.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_microclimate_type</AbbreviatedIRI>
+        <Literal xml:lang="en">Microclimate type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_microclimate_type</AbbreviatedIRI>
+        <Literal xml:lang="it">Tipologia di microclima.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_min_humidity</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui un report metereologico contiene informazioni relative all&apos;umidità minima registrata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_min_humidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicate the relationship by which a weather report contains information about minimum humidity recorded.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_min_humidity</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha umidità minima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_min_humidity</AbbreviatedIRI>
+        <Literal xml:lang="en">Has minimum humidity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_min_temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica il fatto che ogni report meteo ha una temperatura minima registrata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_min_temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the relationship bi which a weather report has a minimum temperature registered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_min_temperature</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha temperatura minima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_min_temperature</AbbreviatedIRI>
+        <Literal xml:lang="en">Has minimum temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_name</AbbreviatedIRI>
+        <Literal xml:lang="en">Name of the city</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_name</AbbreviatedIRI>
+        <Literal xml:lang="it">Nome della città.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_name</AbbreviatedIRI>
+        <Literal xml:lang="en">City name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_name</AbbreviatedIRI>
+        <Literal xml:lang="it">Nome della città</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_hours</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica il numero di ore nelle quali si sono registrate delle precipitazioni.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_hours</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the number of hours on which any precipitation has been registered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_hours</AbbreviatedIRI>
+        <Literal xml:lang="it">Ore con precipitazioni</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_hours</AbbreviatedIRI>
+        <Literal xml:lang="en">Precipitation hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_information</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica il fatto che ogni report metereologico contiene informazioni relative alle precipitazioni registrate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_information</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicate the relationship bi which each report has information about the precipitation occurred.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_precipitation_information</AbbreviatedIRI>
         <Literal>Original property: https://www.auto.tuwien.ac.at/downloads/thinkhome/ontology/WeatherOntology.owl#hasPrecipitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_information</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha informazioni relative alle precipitazioni.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_information</AbbreviatedIRI>
+        <Literal xml:lang="en">Has precipitation information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_mm</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the relationship by which each weather report has information about the mm of rain registered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_mm</AbbreviatedIRI>
+        <Literal xml:lang="it">Rappresenta la relazione per cui ogni report ha le informazioni relative ai mm di pioggia registrati.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_mm</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha millimetri di pioggia registrati</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_precipitation_mm</AbbreviatedIRI>
+        <Literal xml:lang="en">Has precipitation millimeters</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_rate</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica il rapporto della variazione sul periodo di tempo considerato.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2160,9 +2503,114 @@ above the local reference ellipsoid).</Literal>
         <Literal xml:lang="en">It indicates the rate of the variation on the time window considered</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_rate</AbbreviatedIRI>
+        <Literal xml:lang="it">Rapporto variazione-tempo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_rate</AbbreviatedIRI>
+        <Literal xml:lang="en">Rate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_relative_season</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui una stagione annuale (avente proprie caratteristiche registrate) ha una stagione canonica di riferimento.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_relative_season</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the relationship by which an yearly season (with its own registered data) has a canonical season of reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_relative_season</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha stagione di riferimento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_relative_season</AbbreviatedIRI>
+        <Literal xml:lang="en">Has relative season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_report_datetime</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica data e ora di quando il rapporto è stato prodotto.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_report_datetime</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the datetime at which the report has been produced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_report_datetime</AbbreviatedIRI>
+        <Literal xml:lang="it">Data e ora del report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_report_datetime</AbbreviatedIRI>
+        <Literal xml:lang="en">Report datetime</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_season_name</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica il nome della stagione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_season_name</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the name of the season.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_season_name</AbbreviatedIRI>
+        <Literal xml:lang="it">Nome della stagione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_season_name</AbbreviatedIRI>
+        <Literal xml:lang="en">Season name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_season_year</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica l&apos;anno di riferimento per la stagione (nel caso in cui si stia lavorando con la classe YearSeason).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_season_year</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the year of the season considered (in case we are dealing with YearSeason class).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_season_year</AbbreviatedIRI>
+        <Literal xml:lang="it">Anno della stagione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_season_year</AbbreviatedIRI>
+        <Literal xml:lang="en">Season&apos;s year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_shown_in</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la città in cui è stato registrato un particolare microclima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_shown_in</AbbreviatedIRI>
         <Literal xml:lang="en">Indicate the City in which has been seen a mircolimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_shown_in</AbbreviatedIRI>
+        <Literal xml:lang="en">Has shown in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_shown_in</AbbreviatedIRI>
+        <Literal xml:lang="it">Si è manifestato in</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2182,7 +2630,27 @@ above the local reference ellipsoid).</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_start_date</AbbreviatedIRI>
+        <Literal xml:lang="it">Data dalla quale la stazione è diventata operativa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_start_date</AbbreviatedIRI>
         <Literal xml:lang="en">Date from which the station has started operating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_start_date</AbbreviatedIRI>
+        <Literal xml:lang="it">Data di avvio della stazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_start_date</AbbreviatedIRI>
+        <Literal xml:lang="en">Station start date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_station_code</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica il codice univoco per la stazione meteo.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2190,25 +2658,84 @@ above the local reference ellipsoid).</Literal>
         <Literal xml:lang="en">It indicates the unique code of the weather station</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_station_code</AbbreviatedIRI>
+        <Literal xml:lang="it">Codice della stazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_station_code</AbbreviatedIRI>
+        <Literal xml:lang="en">Station code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_station_location</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la posizione nello spazio della stazione meteo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_station_location</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the spatial location in which the weather station is located.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_station_location</AbbreviatedIRI>
         <Literal xml:lang="en">Original property: http://www.w3.org/2003/01/geo/wgs84_pos#location</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>wccdl:has_station_location</AbbreviatedIRI>
-        <Literal xml:lang="en">The relation between something and the point, 
- or other geometrical thing in space, where it is.  For example, the realtionship between
- a radio tower and a Point with a given lat and long.
- Or a relationship between a park and its outline as a closed arc of points, or a road and
- its location as a arc (a sequence of points).
- Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
- an accuracy appropriate for the size of the object and uses such as mapping .</Literal>
+        <Literal xml:lang="it">Locazione della stazione meteo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>wccdl:has_station_location</AbbreviatedIRI>
-        <Literal>location</Literal>
+        <Literal xml:lang="en">Station location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_station_name</AbbreviatedIRI>
+        <Literal xml:lang="en">Name of the weather station.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_station_name</AbbreviatedIRI>
+        <Literal xml:lang="it">Nome della stazione meteo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_station_name</AbbreviatedIRI>
+        <Literal xml:lang="it">Nome della stazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_station_name</AbbreviatedIRI>
+        <Literal xml:lang="en">Station name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_temperature_information</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui in un report meteo sono indicate le informazioni relative alla temperatura registrata</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_temperature_information</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the relationship by which a weather report has information about temperature registered.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_temperature_information</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha informazioni sulla temperatura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_temperature_information</AbbreviatedIRI>
+        <Literal xml:lang="en">Has temperature information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_temperature_range</AbbreviatedIRI>
+        <Literal xml:lang="it">Range di temperatura per un certo microclima.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2216,9 +2743,59 @@ above the local reference ellipsoid).</Literal>
         <Literal xml:lang="en">Temperature range for a given microclimate</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_temperature_range</AbbreviatedIRI>
+        <Literal xml:lang="it">Range della temperatura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_temperature_range</AbbreviatedIRI>
+        <Literal xml:lang="en">Temperature range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_temperature_value</AbbreviatedIRI>
+        <Literal xml:lang="it">Valore di temperatura registrata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_temperature_value</AbbreviatedIRI>
         <Literal xml:lang="en">Value of the temperature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_temperature_value</AbbreviatedIRI>
+        <Literal xml:lang="en">Temperature value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_temperature_value</AbbreviatedIRI>
+        <Literal xml:lang="it">Valore della temperatura</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_time_window</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la finestra di tempo nella quale è stato analizzato il trend del clima.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_time_window</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the time window in which climate trend has been analyzed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_time_window</AbbreviatedIRI>
+        <Literal xml:lang="it">Finestra temporale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_time_window</AbbreviatedIRI>
+        <Literal xml:lang="en">Time window</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_variation</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la variazione tra il valore iniziale regisrato e quello finale.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2226,14 +2803,74 @@ above the local reference ellipsoid).</Literal>
         <Literal xml:lang="en">It indicates the variation between the starting value of the parameter measured and the final one</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_variation</AbbreviatedIRI>
+        <Literal xml:lang="en">Variation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_variation</AbbreviatedIRI>
+        <Literal xml:lang="it">Variazione</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_weather_code</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica il codice del fenomeno metereologico registrato seguendo la codifica WMO.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_weather_code</AbbreviatedIRI>
         <Literal xml:lang="en">expresses the relationship between a weather condition (e.g., cloudy, light rain, heavy rain) and the corresponding WMO weather code that identifies the same phenomenon according to the World Meteorological Organization classification system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_weather_code</AbbreviatedIRI>
+        <Literal xml:lang="it">Codice meteo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_weather_code</AbbreviatedIRI>
+        <Literal xml:lang="en">Weather code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_wind_information</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica la relazione per cui in un report meteo vengono registrate le informazioni sul vento registrate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>wccdl:has_wind_information</AbbreviatedIRI>
         <Literal xml:lang="en">Indicate the relationship between weather report and the wind phenomenon that has been releveated in that weather report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_wind_information</AbbreviatedIRI>
+        <Literal xml:lang="it">Ha informazioni sul vento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_wind_information</AbbreviatedIRI>
+        <Literal xml:lang="en">Has wind information</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_wind_pattern</AbbreviatedIRI>
+        <Literal xml:lang="it">Indica il pattern del vento per un certo microclima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>wccdl:has_wind_pattern</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the wind pattern of a given microclimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_wind_pattern</AbbreviatedIRI>
+        <Literal xml:lang="it">Pattern del vento</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>wccdl:has_wind_pattern</AbbreviatedIRI>
+        <Literal xml:lang="en">Wind pattern</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3455,54 +4092,49 @@ Note that the value-space is not defined, so a generic OWL2 processor cannot com
         <Literal>Utilizando xsd:dateTime en este lugar significa que la duración del intervalo está implícita: se corresponde con la longitud del elemento más pequeño distinto de cero del literal fecha-hora. Sin embargo, esta regla no se puede utilizar para intervalos cuya duración es mayor que un rango más pequeño que el tiempo de comienzo - p.ej. el primer minuto o segundo del día, la primera hora del mes, o el primer día del año. En estos casos el intervalo deseado no se puede distinguir del intervalo correspondiente al próximo rango más alto. Debido a esta ambigüedad esencial, no se recomienda el uso de esta propiedad y está desaprobada.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>hwo:ModeratePrecipitation</AbbreviatedIRI>
-        <Literal xml:lang="en">this concept was known as &quot;MediumPrecipitation&quot; in prior versions of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483931"/>
-        <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483932"/>
-        <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483933"/>
+        <AnonymousIndividual nodeID="_:genid2147483682"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483934"/>
-        <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483935"/>
+        <AnonymousIndividual nodeID="_:genid2147483683"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483936"/>
-        <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483937"/>
+        <AnonymousIndividual nodeID="_:genid2147483684"/>
         <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483938"/>
+        <AnonymousIndividual nodeID="_:genid2147483685"/>
+        <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+        <AnonymousIndividual nodeID="_:genid2147483686"/>
         <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
-        <AnonymousIndividual nodeID="_:genid2147483939"/>
+        <AnonymousIndividual nodeID="_:genid2147483687"/>
+        <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+        <AnonymousIndividual nodeID="_:genid2147483688"/>
         <Literal>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+        <AnonymousIndividual nodeID="_:genid2147483689"/>
+        <Literal>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="xsd:pattern"/>
+        <AnonymousIndividual nodeID="_:genid2147483690"/>
+        <Literal>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</Literal>
     </AnnotationAssertion>
 </Ontology>
 
