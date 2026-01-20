@@ -39,7 +39,7 @@
 \contentsline {subsubsection}{\numberline {6.7.1}Strengths}{29}{subsubsection.6.7.1}%
 \contentsline {subsubsection}{\numberline {6.7.2}Weaknesses}{31}{subsubsection.6.7.2}%
 \contentsline {section}{\numberline {7}Evaluation}{33}{section.7}%
-\contentsline {subsection}{\numberline {7.1}the final Knowledge Graph information statistics}{33}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.1}Final Knowledge Graph Information Statistics}{33}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Purpose Definition evaluation}{33}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}Language Definition Evaluation}{34}{subsection.7.3}%
 \contentsline {subsection}{\numberline {7.4}Knowledge definition Evaluation}{35}{subsection.7.4}%
@@ -47,7 +47,7 @@
 \contentsline {subsection}{\numberline {7.6}Query Execution and Results}{38}{subsection.7.6}%
 \contentsline {section}{\numberline {8}Metadata Definition}{42}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Project Metadata Description}{42}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}People Metadata Description}{43}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.2}People Metadata Description}{42}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}Data Resources Metadata Description}{43}{subsection.8.3}%
 \contentsline {section}{\numberline {9}Open Issues}{44}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Adherence to Schedule and Achievement of Objectives}{44}{subsection.9.1}%
